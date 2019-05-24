@@ -1,0 +1,2098 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- BSI implementation of pepXML output for PEAKS Studio -->
+<msms_pipeline_analysis xmlns="http://regis-web.systemsbiology.net/pepXML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://regis-web.systemsbiology.net/pepXML pepXML_v18_peaks_denovo.xsd" date="27-Jul-12 11:21" summary_xml="de novo peptides.xml">
+  <msms_run_summary base_name="filename" raw_data_type="" raw_data="">
+    <sample_enzyme name="Trypsin">
+      <specificity sense="C" cut="RK" no_cut="P"/>
+    </sample_enzyme>
+    <search_summary base_name="Instrument_default" search_engine="PEAKS_DENOVO" precursor_mass_type="monoisotopic" fragment_mass_type="monoisotopic" out_data_type="" out_data="" search_id="1">
+      <enzymatic_search_constraint enzyme="Trypsin" max_num_internal_cleavages="0" min_number_termini="2"/>
+      <parameter name="instrument" value="Ion Trap"/>
+      <parameter name="parent_error" value="0.8"/>
+      <parameter name="delta" value="0.3"/>
+      <parameter name="top" value="5"/>
+      <parameter name="enzyme" value="Trypsin"/>
+      <parameter name="max_ptm" value="3"/>
+    </search_summary>
+    <spectrum_query spectrum="data.mzXML" start_scan="297" end_scan="297" precursor_neutral_mass="1038.5927" assumed_charge="1" index="297">
+      <search_result>
+        <search_hit hit_rank="1" peptide="VVRDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6298" massdiff="-35.7">
+          <search_score name="PeaksDenovoScore" value="6.0059147"/>
+          <search_score name="positional_conf" value="0.84,0.83,0.82,0.98,0.87,0.58,0.40,0.41,0.28"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="307" end_scan="307" precursor_neutral_mass="1038.5927" assumed_charge="1" index="307">
+      <search_result>
+        <search_hit hit_rank="1" peptide="VVRDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6298" massdiff="-35.7">
+          <search_score name="PeaksDenovoScore" value="5.975909"/>
+          <search_score name="positional_conf" value="0.75,0.71,0.78,0.97,0.74,0.68,0.53,0.53,0.29"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="323" end_scan="323" precursor_neutral_mass="1038.5927" assumed_charge="1" index="323">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RVVDPQGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="5.5778475"/>
+          <search_score name="positional_conf" value="0.78,0.83,0.83,0.95,0.87,0.53,0.29,0.29,0.20"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="342" end_scan="342" precursor_neutral_mass="1038.5927" assumed_charge="1" index="342">
+      <search_result>
+        <search_hit hit_rank="1" peptide="VVRNTPPTR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="5.533916"/>
+          <search_score name="positional_conf" value="0.69,0.65,0.64,0.76,0.84,0.76,0.48,0.50,0.21"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="317" end_scan="317" precursor_neutral_mass="1038.5927" assumed_charge="1" index="317">
+      <search_result>
+        <search_hit hit_rank="1" peptide="VVRDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6298" massdiff="-35.7">
+          <search_score name="PeaksDenovoScore" value="5.4375157"/>
+          <search_score name="positional_conf" value="0.65,0.62,0.79,0.97,0.78,0.52,0.40,0.42,0.28"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="234" end_scan="234" precursor_neutral_mass="1038.5927" assumed_charge="1" index="234">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RVVDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6298" massdiff="-35.7">
+          <search_score name="PeaksDenovoScore" value="5.2518644"/>
+          <search_score name="positional_conf" value="0.78,0.62,0.62,0.76,0.89,0.64,0.34,0.34,0.26"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="344" end_scan="344" precursor_neutral_mass="1038.5927" assumed_charge="1" index="344">
+      <search_result>
+        <search_hit hit_rank="1" peptide="VGMGPKPPTR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5645" massdiff="27.1">
+          <search_score name="PeaksDenovoScore" value="5.813977"/>
+          <search_score name="positional_conf" value="0.70,0.69,0.81,0.84,0.57,0.55,0.64,0.40,0.41,0.21"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="291" end_scan="291" precursor_neutral_mass="1038.5927" assumed_charge="1" index="291">
+      <search_result>
+        <search_hit hit_rank="1" peptide="VGVVDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6185" massdiff="-24.9">
+          <search_score name="PeaksDenovoScore" value="5.733877"/>
+          <search_score name="positional_conf" value="0.75,0.54,0.53,0.58,0.93,0.83,0.53,0.39,0.39,0.26"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="215" end_scan="215" precursor_neutral_mass="1038.5927" assumed_charge="1" index="215">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RVVDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6298" massdiff="-35.7">
+          <search_score name="PeaksDenovoScore" value="5.152647"/>
+          <search_score name="positional_conf" value="0.69,0.54,0.55,0.95,0.69,0.56,0.44,0.45,0.29"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="147" end_scan="147" precursor_neutral_mass="1038.5927" assumed_charge="1" index="147">
+      <search_result>
+        <search_hit hit_rank="1" peptide="VVRDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6298" massdiff="-35.7">
+          <search_score name="PeaksDenovoScore" value="5.1492305"/>
+          <search_score name="positional_conf" value="0.87,0.84,0.85,0.94,0.90,0.24,0.15,0.15,0.20"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="193" end_scan="193" precursor_neutral_mass="1038.5927" assumed_charge="1" index="193">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RVVDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6298" massdiff="-35.7">
+          <search_score name="PeaksDenovoScore" value="5.143635"/>
+          <search_score name="positional_conf" value="0.62,0.53,0.54,0.90,0.87,0.56,0.43,0.43,0.27"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="165" end_scan="165" precursor_neutral_mass="1038.5927" assumed_charge="1" index="165">
+      <search_result>
+        <search_hit hit_rank="1" peptide="VGPTDTFFR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5134" massdiff="76.2">
+          <search_score name="PeaksDenovoScore" value="5.0828867"/>
+          <search_score name="positional_conf" value="0.60,0.74,0.56,0.56,0.91,0.37,0.35,0.35,0.64"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="347" end_scan="347" precursor_neutral_mass="1038.5927" assumed_charge="1" index="347">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="5.052969"/>
+          <search_score name="positional_conf" value="0.74,0.58,0.58,0.94,0.63,0.48,0.41,0.42,0.29"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="177" end_scan="177" precursor_neutral_mass="1038.5927" assumed_charge="1" index="177">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RVVDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6298" massdiff="-35.7">
+          <search_score name="PeaksDenovoScore" value="5.0486503"/>
+          <search_score name="positional_conf" value="0.65,0.66,0.67,0.86,0.72,0.48,0.37,0.39,0.25"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="235" end_scan="235" precursor_neutral_mass="1038.5927" assumed_charge="1" index="235">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTNTPPTR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5570" massdiff="34.3">
+          <search_score name="PeaksDenovoScore" value="5.013622"/>
+          <search_score name="positional_conf" value="0.68,0.54,0.54,0.64,0.83,0.73,0.43,0.43,0.21"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="145" end_scan="145" precursor_neutral_mass="1038.5927" assumed_charge="1" index="145">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RVVDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6298" massdiff="-35.7">
+          <search_score name="PeaksDenovoScore" value="4.995604"/>
+          <search_score name="positional_conf" value="0.70,0.74,0.76,0.96,0.88,0.35,0.21,0.21,0.18"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="312" end_scan="312" precursor_neutral_mass="1038.5927" assumed_charge="1" index="312">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RVVDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6298" massdiff="-35.7">
+          <search_score name="PeaksDenovoScore" value="4.9869456"/>
+          <search_score name="positional_conf" value="0.73,0.53,0.53,0.73,0.83,0.59,0.40,0.41,0.23"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="236" end_scan="236" precursor_neutral_mass="1038.5927" assumed_charge="1" index="236">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RVVDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6298" massdiff="-35.7">
+          <search_score name="PeaksDenovoScore" value="4.9769087"/>
+          <search_score name="positional_conf" value="0.48,0.44,0.45,0.89,0.83,0.66,0.47,0.48,0.29"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="229" end_scan="229" precursor_neutral_mass="1038.5927" assumed_charge="1" index="229">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTNTPVVR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="4.940566"/>
+          <search_score name="positional_conf" value="0.71,0.52,0.52,0.77,0.87,0.75,0.31,0.31,0.17"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="264" end_scan="264" precursor_neutral_mass="1038.5927" assumed_charge="1" index="264">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="4.9325833"/>
+          <search_score name="positional_conf" value="0.56,0.26,0.26,0.85,0.85,0.79,0.51,0.52,0.34"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="331" end_scan="331" precursor_neutral_mass="1038.5927" assumed_charge="1" index="331">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RVVDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6298" massdiff="-35.7">
+          <search_score name="PeaksDenovoScore" value="4.925588"/>
+          <search_score name="positional_conf" value="0.50,0.47,0.48,0.85,0.85,0.65,0.42,0.43,0.27"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="260" end_scan="260" precursor_neutral_mass="1038.5927" assumed_charge="1" index="260">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RLCPPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6121" massdiff="-18.7">
+          <search_score name="PeaksDenovoScore" value="4.9234643"/>
+          <search_score name="positional_conf" value="0.80,0.54,0.52,0.59,0.91,0.54,0.38,0.38,0.26"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="238" end_scan="238" precursor_neutral_mass="1038.5927" assumed_charge="1" index="238">
+      <search_result>
+        <search_hit hit_rank="1" peptide="VGVVDTFFR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5498" massdiff="41.2">
+          <search_score name="PeaksDenovoScore" value="4.921318"/>
+          <search_score name="positional_conf" value="0.53,0.44,0.58,0.61,0.85,0.37,0.37,0.37,0.80"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="309" end_scan="309" precursor_neutral_mass="1038.5927" assumed_charge="1" index="309">
+      <search_result>
+        <search_hit hit_rank="1" peptide="VVRDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6298" massdiff="-35.7">
+          <search_score name="PeaksDenovoScore" value="4.906825"/>
+          <search_score name="positional_conf" value="0.62,0.49,0.52,0.79,0.83,0.50,0.44,0.45,0.27"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="152" end_scan="152" precursor_neutral_mass="1038.5927" assumed_charge="1" index="152">
+      <search_result>
+        <search_hit hit_rank="1" peptide="VGMGKPPPTR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5645" massdiff="27.1">
+          <search_score name="PeaksDenovoScore" value="5.438256"/>
+          <search_score name="positional_conf" value="0.73,0.72,0.85,0.78,0.35,0.41,0.60,0.37,0.40,0.21"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="357" end_scan="357" precursor_neutral_mass="1038.5927" assumed_charge="1" index="357">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RVVDPNALR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="4.8822155"/>
+          <search_score name="positional_conf" value="0.72,0.60,0.61,0.92,0.59,0.37,0.36,0.44,0.27"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="290" end_scan="290" precursor_neutral_mass="1038.5927" assumed_charge="1" index="290">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RVVDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6298" massdiff="-35.7">
+          <search_score name="PeaksDenovoScore" value="4.8652287"/>
+          <search_score name="positional_conf" value="0.64,0.42,0.42,0.90,0.69,0.63,0.42,0.44,0.31"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="279" end_scan="279" precursor_neutral_mass="1038.5927" assumed_charge="1" index="279">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RLCPPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6121" massdiff="-18.7">
+          <search_score name="PeaksDenovoScore" value="4.8549514"/>
+          <search_score name="positional_conf" value="0.80,0.50,0.49,0.56,0.91,0.57,0.38,0.39,0.26"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="263" end_scan="263" precursor_neutral_mass="1038.5927" assumed_charge="1" index="263">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RLCPPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6121" massdiff="-18.7">
+          <search_score name="PeaksDenovoScore" value="4.833228"/>
+          <search_score name="positional_conf" value="0.74,0.68,0.65,0.68,0.86,0.24,0.37,0.39,0.22"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="336" end_scan="336" precursor_neutral_mass="1038.5927" assumed_charge="1" index="336">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="4.815049"/>
+          <search_score name="positional_conf" value="0.77,0.54,0.54,0.89,0.54,0.46,0.42,0.43,0.22"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="346" end_scan="346" precursor_neutral_mass="1038.5927" assumed_charge="1" index="346">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RMGQPPVVR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5757" massdiff="16.3">
+          <search_score name="PeaksDenovoScore" value="4.8148184"/>
+          <search_score name="positional_conf" value="0.72,0.81,0.86,0.32,0.36,0.78,0.38,0.40,0.19"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="362" end_scan="362" precursor_neutral_mass="1038.5927" assumed_charge="1" index="362">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="4.8107715"/>
+          <search_score name="positional_conf" value="0.64,0.31,0.31,0.94,0.90,0.61,0.43,0.44,0.24"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="216" end_scan="216" precursor_neutral_mass="1038.5927" assumed_charge="1" index="216">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RVVNTPVVR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6299" massdiff="-35.8">
+          <search_score name="PeaksDenovoScore" value="4.8015513"/>
+          <search_score name="positional_conf" value="0.71,0.70,0.70,0.74,0.91,0.46,0.20,0.22,0.17"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="161" end_scan="161" precursor_neutral_mass="1038.5927" assumed_charge="1" index="161">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="4.795474"/>
+          <search_score name="positional_conf" value="0.64,0.54,0.54,0.95,0.77,0.57,0.27,0.28,0.24"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="384" end_scan="384" precursor_neutral_mass="1038.5927" assumed_charge="1" index="384">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RVVDPKAVR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6298" massdiff="-35.7">
+          <search_score name="PeaksDenovoScore" value="4.783631"/>
+          <search_score name="positional_conf" value="0.54,0.59,0.60,0.94,0.76,0.63,0.26,0.26,0.21"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="332" end_scan="332" precursor_neutral_mass="1038.5927" assumed_charge="1" index="332">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="4.7258267"/>
+          <search_score name="positional_conf" value="0.51,0.46,0.46,0.86,0.80,0.59,0.42,0.43,0.22"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="199" end_scan="199" precursor_neutral_mass="1038.5927" assumed_charge="1" index="199">
+      <search_result>
+        <search_hit hit_rank="1" peptide="VGVVNTPVVR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6187" massdiff="-25.0">
+          <search_score name="PeaksDenovoScore" value="5.2479362"/>
+          <search_score name="positional_conf" value="0.88,0.74,0.39,0.40,0.64,0.84,0.65,0.27,0.28,0.17"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="247" end_scan="247" precursor_neutral_mass="1038.5927" assumed_charge="1" index="247">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RTPNTPPTR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5570" massdiff="34.3">
+          <search_score name="PeaksDenovoScore" value="4.721769"/>
+          <search_score name="positional_conf" value="0.66,0.26,0.26,0.71,0.95,0.87,0.41,0.41,0.18"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="267" end_scan="267" precursor_neutral_mass="1038.5927" assumed_charge="1" index="267">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RVVDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6298" massdiff="-35.7">
+          <search_score name="PeaksDenovoScore" value="4.715914"/>
+          <search_score name="positional_conf" value="0.37,0.50,0.52,0.79,0.74,0.58,0.45,0.47,0.30"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="151" end_scan="151" precursor_neutral_mass="1038.5927" assumed_charge="1" index="151">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="4.7142286"/>
+          <search_score name="positional_conf" value="0.58,0.42,0.42,0.86,0.77,0.49,0.44,0.45,0.29"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="208" end_scan="208" precursor_neutral_mass="1038.5927" assumed_charge="1" index="208">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPNALR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5570" massdiff="34.3">
+          <search_score name="PeaksDenovoScore" value="4.714069"/>
+          <search_score name="positional_conf" value="0.72,0.59,0.59,0.94,0.45,0.28,0.34,0.46,0.35"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="283" end_scan="283" precursor_neutral_mass="1038.5927" assumed_charge="1" index="283">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPQGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5570" massdiff="34.3">
+          <search_score name="PeaksDenovoScore" value="4.7138925"/>
+          <search_score name="positional_conf" value="0.60,0.67,0.67,0.92,0.51,0.37,0.36,0.38,0.25"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="287" end_scan="287" precursor_neutral_mass="1038.5927" assumed_charge="1" index="287">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="4.7098784"/>
+          <search_score name="positional_conf" value="0.63,0.31,0.31,0.89,0.80,0.54,0.45,0.47,0.30"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="176" end_scan="176" precursor_neutral_mass="1038.5927" assumed_charge="1" index="176">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RVVDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6298" massdiff="-35.7">
+          <search_score name="PeaksDenovoScore" value="4.6823077"/>
+          <search_score name="positional_conf" value="0.48,0.58,0.60,0.89,0.70,0.51,0.35,0.36,0.21"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="351" end_scan="351" precursor_neutral_mass="1038.5927" assumed_charge="1" index="351">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="4.661068"/>
+          <search_score name="positional_conf" value="0.48,0.48,0.48,0.97,0.70,0.58,0.36,0.36,0.25"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="192" end_scan="192" precursor_neutral_mass="1038.5927" assumed_charge="1" index="192">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RVVDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6298" massdiff="-35.7">
+          <search_score name="PeaksDenovoScore" value="4.654038"/>
+          <search_score name="positional_conf" value="0.55,0.44,0.45,0.88,0.77,0.55,0.38,0.40,0.24"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="310" end_scan="310" precursor_neutral_mass="1038.5927" assumed_charge="1" index="310">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="4.645799"/>
+          <search_score name="positional_conf" value="0.57,0.26,0.26,0.93,0.88,0.58,0.44,0.44,0.28"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="259" end_scan="259" precursor_neutral_mass="1038.5927" assumed_charge="1" index="259">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTNTPPTR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5570" massdiff="34.3">
+          <search_score name="PeaksDenovoScore" value="4.6393895"/>
+          <search_score name="positional_conf" value="0.58,0.28,0.28,0.77,0.92,0.76,0.42,0.43,0.20"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="318" end_scan="318" precursor_neutral_mass="1038.5927" assumed_charge="1" index="318">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="4.6311216"/>
+          <search_score name="positional_conf" value="0.59,0.50,0.50,0.92,0.76,0.46,0.32,0.33,0.26"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="211" end_scan="211" precursor_neutral_mass="1038.5927" assumed_charge="1" index="211">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RVVDPNALR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="4.6307187"/>
+          <search_score name="positional_conf" value="0.68,0.61,0.63,0.97,0.58,0.17,0.18,0.43,0.37"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="179" end_scan="179" precursor_neutral_mass="1038.5927" assumed_charge="1" index="179">
+      <search_result>
+        <search_hit hit_rank="1" peptide="VVRDKPGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6298" massdiff="-35.7">
+          <search_score name="PeaksDenovoScore" value="4.61969"/>
+          <search_score name="positional_conf" value="0.66,0.55,0.55,0.95,0.33,0.32,0.45,0.53,0.28"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="261" end_scan="261" precursor_neutral_mass="1038.5927" assumed_charge="1" index="261">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RVVDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6298" massdiff="-35.7">
+          <search_score name="PeaksDenovoScore" value="4.606803"/>
+          <search_score name="positional_conf" value="0.59,0.47,0.48,0.89,0.77,0.57,0.29,0.30,0.25"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="382" end_scan="382" precursor_neutral_mass="1038.5927" assumed_charge="1" index="382">
+      <search_result>
+        <search_hit hit_rank="1" peptide="VVRDPNALR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="4.593405"/>
+          <search_score name="positional_conf" value="0.71,0.67,0.68,0.96,0.50,0.20,0.20,0.38,0.30"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="169" end_scan="169" precursor_neutral_mass="1038.5927" assumed_charge="1" index="169">
+      <search_result>
+        <search_hit hit_rank="1" peptide="VVRDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6298" massdiff="-35.7">
+          <search_score name="PeaksDenovoScore" value="4.5847764"/>
+          <search_score name="positional_conf" value="0.38,0.30,0.29,0.93,0.49,0.35,0.68,0.71,0.45"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="213" end_scan="213" precursor_neutral_mass="1038.5927" assumed_charge="1" index="213">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RVVDPQGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="4.565524"/>
+          <search_score name="positional_conf" value="0.41,0.63,0.65,0.85,0.67,0.38,0.35,0.35,0.28"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="195" end_scan="195" precursor_neutral_mass="1038.5927" assumed_charge="1" index="195">
+      <search_result>
+        <search_hit hit_rank="1" peptide="VVRDTFFR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5610" massdiff="30.4">
+          <search_score name="PeaksDenovoScore" value="4.044718"/>
+          <search_score name="positional_conf" value="0.31,0.27,0.27,0.97,0.57,0.47,0.47,0.71"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="373" end_scan="373" precursor_neutral_mass="1038.5927" assumed_charge="1" index="373">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="4.534797"/>
+          <search_score name="positional_conf" value="0.54,0.58,0.58,0.94,0.88,0.33,0.25,0.25,0.20"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="350" end_scan="350" precursor_neutral_mass="1038.5927" assumed_charge="1" index="350">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPAARR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5682" massdiff="23.5">
+          <search_score name="PeaksDenovoScore" value="4.526346"/>
+          <search_score name="positional_conf" value="0.58,0.35,0.35,0.97,0.97,0.41,0.34,0.34,0.23"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="378" end_scan="378" precursor_neutral_mass="1038.5927" assumed_charge="1" index="378">
+      <search_result>
+        <search_hit hit_rank="1" peptide="VGLCPPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6008" massdiff="-7.9">
+          <search_score name="PeaksDenovoScore" value="5.025667"/>
+          <search_score name="positional_conf" value="0.85,0.79,0.46,0.43,0.48,0.87,0.53,0.20,0.21,0.21"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="207" end_scan="207" precursor_neutral_mass="1038.5927" assumed_charge="1" index="207">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="4.522867"/>
+          <search_score name="positional_conf" value="0.56,0.29,0.29,0.86,0.86,0.56,0.42,0.42,0.27"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="253" end_scan="253" precursor_neutral_mass="1038.5927" assumed_charge="1" index="253">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="4.5174236"/>
+          <search_score name="positional_conf" value="0.70,0.47,0.47,0.91,0.77,0.49,0.24,0.24,0.23"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="330" end_scan="330" precursor_neutral_mass="1038.5927" assumed_charge="1" index="330">
+      <search_result>
+        <search_hit hit_rank="1" peptide="VGVVDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6185" massdiff="-24.9">
+          <search_score name="PeaksDenovoScore" value="5.0117345"/>
+          <search_score name="positional_conf" value="0.70,0.48,0.50,0.54,0.81,0.82,0.44,0.25,0.27,0.20"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="334" end_scan="334" precursor_neutral_mass="1038.5927" assumed_charge="1" index="334">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTNTPPTR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5570" massdiff="34.3">
+          <search_score name="PeaksDenovoScore" value="4.486267"/>
+          <search_score name="positional_conf" value="0.60,0.29,0.29,0.73,0.92,0.59,0.42,0.43,0.22"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="322" end_scan="322" precursor_neutral_mass="1038.5927" assumed_charge="1" index="322">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RLCPPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6121" massdiff="-18.7">
+          <search_score name="PeaksDenovoScore" value="4.4539022"/>
+          <search_score name="positional_conf" value="0.65,0.56,0.54,0.62,0.90,0.52,0.23,0.24,0.21"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="256" end_scan="256" precursor_neutral_mass="1038.5927" assumed_charge="1" index="256">
+      <search_result>
+        <search_hit hit_rank="1" peptide="VVRNTPPTR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="4.4518037"/>
+          <search_score name="positional_conf" value="0.31,0.27,0.29,0.81,0.95,0.73,0.43,0.44,0.21"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="300" end_scan="300" precursor_neutral_mass="1038.5927" assumed_charge="1" index="300">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="4.449508"/>
+          <search_score name="positional_conf" value="0.68,0.34,0.34,0.93,0.53,0.45,0.44,0.45,0.29"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="379" end_scan="379" precursor_neutral_mass="1038.5927" assumed_charge="1" index="379">
+      <search_result>
+        <search_hit hit_rank="1" peptide="VGMGKPPTPR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5645" massdiff="27.1">
+          <search_score name="PeaksDenovoScore" value="4.930477"/>
+          <search_score name="positional_conf" value="0.42,0.40,0.77,0.83,0.34,0.62,0.71,0.32,0.33,0.18"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="197" end_scan="197" precursor_neutral_mass="1038.5927" assumed_charge="1" index="197">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTNTPVVR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="4.435104"/>
+          <search_score name="positional_conf" value="0.35,0.17,0.17,0.27,0.86,0.85,0.69,0.72,0.33"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="223" end_scan="223" precursor_neutral_mass="1038.5927" assumed_charge="1" index="223">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RVVDPQGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="4.4179482"/>
+          <search_score name="positional_conf" value="0.44,0.62,0.64,0.89,0.51,0.36,0.34,0.36,0.26"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="191" end_scan="191" precursor_neutral_mass="1038.5927" assumed_charge="1" index="191">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RVVDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6298" massdiff="-35.7">
+          <search_score name="PeaksDenovoScore" value="4.4102116"/>
+          <search_score name="positional_conf" value="0.36,0.50,0.51,0.96,0.82,0.52,0.26,0.26,0.22"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="239" end_scan="239" precursor_neutral_mass="1038.5927" assumed_charge="1" index="239">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="4.4076157"/>
+          <search_score name="positional_conf" value="0.34,0.26,0.26,0.92,0.80,0.59,0.47,0.47,0.30"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="275" end_scan="275" precursor_neutral_mass="1038.5927" assumed_charge="1" index="275">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RTPDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="4.405726"/>
+          <search_score name="positional_conf" value="0.40,0.64,0.64,0.88,0.69,0.41,0.25,0.26,0.24"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="295" end_scan="295" precursor_neutral_mass="1038.5927" assumed_charge="1" index="295">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RVVDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6298" massdiff="-35.7">
+          <search_score name="PeaksDenovoScore" value="4.39975"/>
+          <search_score name="positional_conf" value="0.54,0.40,0.41,0.73,0.73,0.45,0.43,0.43,0.28"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="280" end_scan="280" precursor_neutral_mass="1038.5927" assumed_charge="1" index="280">
+      <search_result>
+        <search_hit hit_rank="1" peptide="VVRDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6298" massdiff="-35.7">
+          <search_score name="PeaksDenovoScore" value="4.3931346"/>
+          <search_score name="positional_conf" value="0.36,0.32,0.34,0.96,0.89,0.47,0.38,0.40,0.28"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="242" end_scan="242" precursor_neutral_mass="1038.5927" assumed_charge="1" index="242">
+      <search_result>
+        <search_hit hit_rank="1" peptide="VVRNTPPTR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="4.3812256"/>
+          <search_score name="positional_conf" value="0.34,0.33,0.34,0.75,0.82,0.74,0.42,0.44,0.20"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="315" end_scan="315" precursor_neutral_mass="1038.5927" assumed_charge="1" index="315">
+      <search_result>
+        <search_hit hit_rank="1" peptide="VVRDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6298" massdiff="-35.7">
+          <search_score name="PeaksDenovoScore" value="4.3787017"/>
+          <search_score name="positional_conf" value="0.58,0.51,0.55,0.89,0.54,0.45,0.30,0.32,0.23"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="209" end_scan="209" precursor_neutral_mass="1038.5927" assumed_charge="1" index="209">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="4.35218"/>
+          <search_score name="positional_conf" value="0.56,0.33,0.33,0.95,0.59,0.46,0.42,0.43,0.28"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="103" end_scan="103" precursor_neutral_mass="1038.5927" assumed_charge="1" index="103">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="4.343501"/>
+          <search_score name="positional_conf" value="0.68,0.44,0.44,0.92,0.85,0.40,0.21,0.22,0.19"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="338" end_scan="338" precursor_neutral_mass="1038.5927" assumed_charge="1" index="338">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="4.337124"/>
+          <search_score name="positional_conf" value="0.53,0.54,0.54,0.89,0.43,0.32,0.40,0.41,0.27"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="168" end_scan="168" precursor_neutral_mass="1038.5927" assumed_charge="1" index="168">
+      <search_result>
+        <search_hit hit_rank="1" peptide="VVRDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6298" massdiff="-35.7">
+          <search_score name="PeaksDenovoScore" value="4.3191385"/>
+          <search_score name="positional_conf" value="0.65,0.52,0.51,0.83,0.63,0.48,0.23,0.24,0.24"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="359" end_scan="359" precursor_neutral_mass="1038.5927" assumed_charge="1" index="359">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPNALR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5570" massdiff="34.3">
+          <search_score name="PeaksDenovoScore" value="4.3133755"/>
+          <search_score name="positional_conf" value="0.47,0.67,0.67,0.95,0.40,0.16,0.17,0.46,0.36"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="190" end_scan="190" precursor_neutral_mass="1038.5927" assumed_charge="1" index="190">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="4.313246"/>
+          <search_score name="positional_conf" value="0.34,0.23,0.23,0.86,0.81,0.60,0.47,0.47,0.29"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="93" end_scan="93" precursor_neutral_mass="1038.5927" assumed_charge="1" index="93">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDAAPRR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5682" massdiff="23.5">
+          <search_score name="PeaksDenovoScore" value="4.307981"/>
+          <search_score name="positional_conf" value="0.59,0.25,0.25,0.62,0.88,0.61,0.42,0.43,0.25"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="76" end_scan="76" precursor_neutral_mass="1038.5927" assumed_charge="1" index="76">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RTPDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="4.2998896"/>
+          <search_score name="positional_conf" value="0.82,0.49,0.45,0.74,0.43,0.31,0.37,0.41,0.28"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="178" end_scan="178" precursor_neutral_mass="1038.5927" assumed_charge="1" index="178">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RVVDPKAVR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6298" massdiff="-35.7">
+          <search_score name="PeaksDenovoScore" value="4.2869377"/>
+          <search_score name="positional_conf" value="0.47,0.56,0.58,0.91,0.78,0.47,0.18,0.18,0.15"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="228" end_scan="228" precursor_neutral_mass="1038.5927" assumed_charge="1" index="228">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="4.2700944"/>
+          <search_score name="positional_conf" value="0.53,0.30,0.30,0.94,0.69,0.48,0.40,0.42,0.23"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="365" end_scan="365" precursor_neutral_mass="1038.5927" assumed_charge="1" index="365">
+      <search_result>
+        <search_hit hit_rank="1" peptide="VGTPNTPTPR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5458" massdiff="45.1">
+          <search_score name="PeaksDenovoScore" value="4.7390347"/>
+          <search_score name="positional_conf" value="0.67,0.54,0.39,0.40,0.78,0.93,0.47,0.21,0.21,0.15"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="243" end_scan="243" precursor_neutral_mass="1038.5927" assumed_charge="1" index="243">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="4.2624598"/>
+          <search_score name="positional_conf" value="0.37,0.29,0.29,0.91,0.75,0.51,0.42,0.43,0.28"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="328" end_scan="328" precursor_neutral_mass="1038.5927" assumed_charge="1" index="328">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RVVDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6298" massdiff="-35.7">
+          <search_score name="PeaksDenovoScore" value="4.257587"/>
+          <search_score name="positional_conf" value="0.69,0.39,0.40,0.88,0.87,0.36,0.21,0.22,0.23"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="249" end_scan="249" precursor_neutral_mass="1038.5927" assumed_charge="1" index="249">
+      <search_result>
+        <search_hit hit_rank="1" peptide="VVRDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6298" massdiff="-35.7">
+          <search_score name="PeaksDenovoScore" value="4.2442694"/>
+          <search_score name="positional_conf" value="0.36,0.30,0.30,0.91,0.80,0.56,0.41,0.42,0.19"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="251" end_scan="251" precursor_neutral_mass="1038.5927" assumed_charge="1" index="251">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="4.2372913"/>
+          <search_score name="positional_conf" value="0.38,0.23,0.23,0.82,0.86,0.58,0.42,0.43,0.28"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="219" end_scan="219" precursor_neutral_mass="1038.5927" assumed_charge="1" index="219">
+      <search_result>
+        <search_hit hit_rank="1" peptide="GVVVDPQGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5822" massdiff="10.1">
+          <search_score name="PeaksDenovoScore" value="4.706904"/>
+          <search_score name="positional_conf" value="0.85,0.80,0.45,0.45,0.88,0.34,0.27,0.22,0.23,0.22"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="164" end_scan="164" precursor_neutral_mass="1038.5927" assumed_charge="1" index="164">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RVVDPQGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="4.2350006"/>
+          <search_score name="positional_conf" value="0.52,0.40,0.41,0.93,0.68,0.46,0.30,0.31,0.24"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="340" end_scan="340" precursor_neutral_mass="1038.5927" assumed_charge="1" index="340">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="4.223518"/>
+          <search_score name="positional_conf" value="0.37,0.25,0.25,0.91,0.89,0.60,0.33,0.33,0.30"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="204" end_scan="204" precursor_neutral_mass="1038.5927" assumed_charge="1" index="204">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPQGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5570" massdiff="34.3">
+          <search_score name="PeaksDenovoScore" value="4.216809"/>
+          <search_score name="positional_conf" value="0.56,0.53,0.53,0.92,0.86,0.16,0.16,0.24,0.26"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="159" end_scan="159" precursor_neutral_mass="1038.5927" assumed_charge="1" index="159">
+      <search_result>
+        <search_hit hit_rank="1" peptide="VVRDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6298" massdiff="-35.7">
+          <search_score name="PeaksDenovoScore" value="4.2155194"/>
+          <search_score name="positional_conf" value="0.37,0.32,0.34,0.94,0.88,0.31,0.38,0.41,0.24"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="381" end_scan="381" precursor_neutral_mass="1038.5927" assumed_charge="1" index="381">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RTPDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="4.1984835"/>
+          <search_score name="positional_conf" value="0.36,0.23,0.24,0.85,0.88,0.46,0.44,0.45,0.28"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="189" end_scan="189" precursor_neutral_mass="1038.5927" assumed_charge="1" index="189">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RVVDPAARR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6046" massdiff="-11.5">
+          <search_score name="PeaksDenovoScore" value="4.187122"/>
+          <search_score name="positional_conf" value="0.67,0.53,0.53,0.84,0.92,0.17,0.16,0.16,0.21"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="303" end_scan="303" precursor_neutral_mass="1038.5927" assumed_charge="1" index="303">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="4.1823688"/>
+          <search_score name="positional_conf" value="0.66,0.35,0.35,0.89,0.56,0.38,0.38,0.38,0.24"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="377" end_scan="377" precursor_neutral_mass="1038.5927" assumed_charge="1" index="377">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPQGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5570" massdiff="34.3">
+          <search_score name="PeaksDenovoScore" value="4.174632"/>
+          <search_score name="positional_conf" value="0.53,0.29,0.29,0.85,0.82,0.29,0.38,0.43,0.29"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="173" end_scan="173" precursor_neutral_mass="1038.5927" assumed_charge="1" index="173">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTNTPVVR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="4.1593695"/>
+          <search_score name="positional_conf" value="0.49,0.41,0.41,0.52,0.88,0.61,0.33,0.33,0.18"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="68" end_scan="68" precursor_neutral_mass="1038.5927" assumed_charge="1" index="68">
+      <search_result>
+        <search_hit hit_rank="1" peptide="VVRDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6298" massdiff="-35.7">
+          <search_score name="PeaksDenovoScore" value="4.1553226"/>
+          <search_score name="positional_conf" value="0.37,0.30,0.30,0.86,0.71,0.48,0.42,0.43,0.28"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="360" end_scan="360" precursor_neutral_mass="1038.5927" assumed_charge="1" index="360">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="4.1522636"/>
+          <search_score name="positional_conf" value="0.41,0.25,0.25,0.80,0.82,0.45,0.44,0.45,0.29"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="155" end_scan="155" precursor_neutral_mass="1038.5927" assumed_charge="1" index="155">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="4.144896"/>
+          <search_score name="positional_conf" value="0.57,0.24,0.24,0.60,0.84,0.53,0.42,0.43,0.28"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="146" end_scan="146" precursor_neutral_mass="1038.5927" assumed_charge="1" index="146">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RVVDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6298" massdiff="-35.7">
+          <search_score name="PeaksDenovoScore" value="4.142624"/>
+          <search_score name="positional_conf" value="0.63,0.43,0.44,0.88,0.68,0.39,0.23,0.24,0.22"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="266" end_scan="266" precursor_neutral_mass="1038.5927" assumed_charge="1" index="266">
+      <search_result>
+        <search_hit hit_rank="1" peptide="VVRDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6298" massdiff="-35.7">
+          <search_score name="PeaksDenovoScore" value="4.1369452"/>
+          <search_score name="positional_conf" value="0.31,0.26,0.26,0.95,0.76,0.46,0.40,0.43,0.30"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="356" end_scan="356" precursor_neutral_mass="1038.5927" assumed_charge="1" index="356">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RVVDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6298" massdiff="-35.7">
+          <search_score name="PeaksDenovoScore" value="4.134484"/>
+          <search_score name="positional_conf" value="0.65,0.25,0.25,0.67,0.74,0.44,0.42,0.44,0.29"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="301" end_scan="301" precursor_neutral_mass="1038.5927" assumed_charge="1" index="301">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RVVDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6298" massdiff="-35.7">
+          <search_score name="PeaksDenovoScore" value="4.132215"/>
+          <search_score name="positional_conf" value="0.29,0.34,0.36,0.93,0.77,0.38,0.36,0.44,0.28"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="326" end_scan="326" precursor_neutral_mass="1038.5927" assumed_charge="1" index="326">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="4.1306925"/>
+          <search_score name="positional_conf" value="0.66,0.28,0.28,0.78,0.57,0.43,0.42,0.44,0.28"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="325" end_scan="325" precursor_neutral_mass="1038.5927" assumed_charge="1" index="325">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="4.127186"/>
+          <search_score name="positional_conf" value="0.43,0.29,0.29,0.92,0.79,0.52,0.31,0.32,0.26"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="104" end_scan="104" precursor_neutral_mass="1038.5927" assumed_charge="1" index="104">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPQGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5570" massdiff="34.3">
+          <search_score name="PeaksDenovoScore" value="4.102644"/>
+          <search_score name="positional_conf" value="0.44,0.36,0.36,0.93,0.52,0.42,0.41,0.44,0.24"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="321" end_scan="321" precursor_neutral_mass="1038.5927" assumed_charge="1" index="321">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RVVDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6298" massdiff="-35.7">
+          <search_score name="PeaksDenovoScore" value="4.098633"/>
+          <search_score name="positional_conf" value="0.33,0.36,0.37,0.83,0.90,0.28,0.37,0.39,0.29"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="374" end_scan="374" precursor_neutral_mass="1038.5927" assumed_charge="1" index="374">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RVVDKPGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6298" massdiff="-35.7">
+          <search_score name="PeaksDenovoScore" value="4.0981717"/>
+          <search_score name="positional_conf" value="0.47,0.39,0.41,0.66,0.46,0.48,0.48,0.50,0.24"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="218" end_scan="218" precursor_neutral_mass="1038.5927" assumed_charge="1" index="218">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPQGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5570" massdiff="34.3">
+          <search_score name="PeaksDenovoScore" value="4.0919557"/>
+          <search_score name="positional_conf" value="0.37,0.28,0.28,0.88,0.78,0.45,0.38,0.40,0.27"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="252" end_scan="252" precursor_neutral_mass="1038.5927" assumed_charge="1" index="252">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RVVDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6298" massdiff="-35.7">
+          <search_score name="PeaksDenovoScore" value="4.090948"/>
+          <search_score name="positional_conf" value="0.44,0.27,0.27,0.66,0.70,0.55,0.45,0.46,0.29"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="306" end_scan="306" precursor_neutral_mass="1038.5927" assumed_charge="1" index="306">
+      <search_result>
+        <search_hit hit_rank="1" peptide="TPRDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="4.0892916"/>
+          <search_score name="positional_conf" value="0.28,0.28,0.29,0.97,0.84,0.55,0.30,0.31,0.27"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="153" end_scan="153" precursor_neutral_mass="1038.5927" assumed_charge="1" index="153">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="4.0801463"/>
+          <search_score name="positional_conf" value="0.28,0.22,0.22,0.95,0.78,0.54,0.39,0.41,0.28"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="348" end_scan="348" precursor_neutral_mass="1038.5927" assumed_charge="1" index="348">
+      <search_result>
+        <search_hit hit_rank="1" peptide="VVRDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6298" massdiff="-35.7">
+          <search_score name="PeaksDenovoScore" value="4.075248"/>
+          <search_score name="positional_conf" value="0.22,0.19,0.20,0.91,0.77,0.58,0.45,0.46,0.30"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="358" end_scan="358" precursor_neutral_mass="1038.5927" assumed_charge="1" index="358">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RLCPPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6121" massdiff="-18.7">
+          <search_score name="PeaksDenovoScore" value="4.0752225"/>
+          <search_score name="positional_conf" value="0.63,0.71,0.71,0.77,0.37,0.27,0.20,0.20,0.21"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="230" end_scan="230" precursor_neutral_mass="1038.5927" assumed_charge="1" index="230">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RLCPPQGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5757" massdiff="16.3">
+          <search_score name="PeaksDenovoScore" value="4.0725255"/>
+          <search_score name="positional_conf" value="0.84,0.58,0.52,0.56,0.86,0.20,0.17,0.18,0.17"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="265" end_scan="265" precursor_neutral_mass="1038.5927" assumed_charge="1" index="265">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="4.072521"/>
+          <search_score name="positional_conf" value="0.39,0.34,0.34,0.84,0.54,0.44,0.42,0.45,0.29"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="183" end_scan="183" precursor_neutral_mass="1038.5927" assumed_charge="1" index="183">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="4.0678096"/>
+          <search_score name="positional_conf" value="0.38,0.23,0.23,0.88,0.70,0.54,0.41,0.41,0.28"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="181" end_scan="181" precursor_neutral_mass="1038.5927" assumed_charge="1" index="181">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RTPDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="4.064837"/>
+          <search_score name="positional_conf" value="0.40,0.28,0.29,0.85,0.65,0.48,0.41,0.42,0.28"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="202" end_scan="202" precursor_neutral_mass="1038.5927" assumed_charge="1" index="202">
+      <search_result>
+        <search_hit hit_rank="1" peptide="TPRDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="4.059936"/>
+          <search_score name="positional_conf" value="0.35,0.34,0.37,0.95,0.64,0.49,0.34,0.34,0.25"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="167" end_scan="167" precursor_neutral_mass="1038.5927" assumed_charge="1" index="167">
+      <search_result>
+        <search_hit hit_rank="1" peptide="VVRDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6298" massdiff="-35.7">
+          <search_score name="PeaksDenovoScore" value="4.05602"/>
+          <search_score name="positional_conf" value="0.52,0.49,0.54,0.98,0.41,0.27,0.32,0.33,0.19"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="299" end_scan="299" precursor_neutral_mass="1038.5927" assumed_charge="1" index="299">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="4.0450277"/>
+          <search_score name="positional_conf" value="0.52,0.32,0.32,0.72,0.78,0.42,0.37,0.38,0.22"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="278" end_scan="278" precursor_neutral_mass="1038.5927" assumed_charge="1" index="278">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="4.031363"/>
+          <search_score name="positional_conf" value="0.40,0.38,0.38,0.84,0.88,0.55,0.21,0.21,0.18"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="250" end_scan="250" precursor_neutral_mass="1038.5927" assumed_charge="1" index="250">
+      <search_result>
+        <search_hit hit_rank="1" peptide="VVRDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6298" massdiff="-35.7">
+          <search_score name="PeaksDenovoScore" value="4.0310016"/>
+          <search_score name="positional_conf" value="0.26,0.22,0.22,0.98,0.81,0.54,0.36,0.37,0.27"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="166" end_scan="166" precursor_neutral_mass="1038.5927" assumed_charge="1" index="166">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RVVDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6298" massdiff="-35.7">
+          <search_score name="PeaksDenovoScore" value="4.0237007"/>
+          <search_score name="positional_conf" value="0.31,0.27,0.27,0.91,0.64,0.50,0.43,0.43,0.27"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="182" end_scan="182" precursor_neutral_mass="1038.5927" assumed_charge="1" index="182">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RVVDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6298" massdiff="-35.7">
+          <search_score name="PeaksDenovoScore" value="4.0108576"/>
+          <search_score name="positional_conf" value="0.63,0.29,0.29,0.82,0.73,0.36,0.31,0.33,0.25"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="320" end_scan="320" precursor_neutral_mass="1038.5927" assumed_charge="1" index="320">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDNPALR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5570" massdiff="34.3">
+          <search_score name="PeaksDenovoScore" value="3.998311"/>
+          <search_score name="positional_conf" value="0.41,0.46,0.46,0.95,0.46,0.46,0.27,0.31,0.23"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="314" end_scan="314" precursor_neutral_mass="1038.5927" assumed_charge="1" index="314">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="3.9966254"/>
+          <search_score name="positional_conf" value="0.40,0.23,0.23,0.58,0.88,0.64,0.39,0.40,0.26"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="69" end_scan="69" precursor_neutral_mass="1038.5927" assumed_charge="1" index="69">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDKPGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="3.996397"/>
+          <search_score name="positional_conf" value="0.47,0.26,0.26,0.91,0.28,0.31,0.57,0.62,0.31"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="271" end_scan="271" precursor_neutral_mass="1038.5927" assumed_charge="1" index="271">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="3.9898474"/>
+          <search_score name="positional_conf" value="0.40,0.35,0.35,0.81,0.78,0.59,0.24,0.24,0.22"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="380" end_scan="380" precursor_neutral_mass="1038.5927" assumed_charge="1" index="380">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="3.9738333"/>
+          <search_score name="positional_conf" value="0.51,0.53,0.53,0.94,0.57,0.26,0.22,0.23,0.18"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="248" end_scan="248" precursor_neutral_mass="1038.5927" assumed_charge="1" index="248">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RVVDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6298" massdiff="-35.7">
+          <search_score name="PeaksDenovoScore" value="3.9728184"/>
+          <search_score name="positional_conf" value="0.27,0.30,0.32,0.87,0.78,0.51,0.33,0.33,0.26"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="64" end_scan="64" precursor_neutral_mass="1038.5927" assumed_charge="1" index="64">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RVVDRAPAR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6046" massdiff="-11.5">
+          <search_score name="PeaksDenovoScore" value="3.9675407"/>
+          <search_score name="positional_conf" value="0.36,0.54,0.65,0.81,0.15,0.15,0.23,0.44,0.64"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="220" end_scan="220" precursor_neutral_mass="1038.5927" assumed_charge="1" index="220">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="3.9662046"/>
+          <search_score name="positional_conf" value="0.46,0.33,0.33,0.84,0.85,0.49,0.22,0.23,0.21"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="214" end_scan="214" precursor_neutral_mass="1038.5927" assumed_charge="1" index="214">
+      <search_result>
+        <search_hit hit_rank="1" peptide="TPRDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="3.9634445"/>
+          <search_score name="positional_conf" value="0.24,0.24,0.24,0.94,0.71,0.52,0.40,0.41,0.28"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="196" end_scan="196" precursor_neutral_mass="1038.5927" assumed_charge="1" index="196">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="3.9556766"/>
+          <search_score name="positional_conf" value="0.60,0.25,0.25,0.53,0.67,0.47,0.44,0.45,0.29"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="293" end_scan="293" precursor_neutral_mass="1038.5927" assumed_charge="1" index="293">
+      <search_result>
+        <search_hit hit_rank="1" peptide="VVRDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6298" massdiff="-35.7">
+          <search_score name="PeaksDenovoScore" value="3.9494145"/>
+          <search_score name="positional_conf" value="0.23,0.19,0.21,0.94,0.85,0.57,0.35,0.35,0.25"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="337" end_scan="337" precursor_neutral_mass="1038.5927" assumed_charge="1" index="337">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="3.9377587"/>
+          <search_score name="positional_conf" value="0.38,0.34,0.34,0.73,0.64,0.40,0.41,0.42,0.28"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="226" end_scan="226" precursor_neutral_mass="1038.5927" assumed_charge="1" index="226">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPQGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5570" massdiff="34.3">
+          <search_score name="PeaksDenovoScore" value="3.9341872"/>
+          <search_score name="positional_conf" value="0.37,0.28,0.28,0.77,0.82,0.48,0.33,0.34,0.25"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="201" end_scan="201" precursor_neutral_mass="1038.5927" assumed_charge="1" index="201">
+      <search_result>
+        <search_hit hit_rank="1" peptide="VVRDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6298" massdiff="-35.7">
+          <search_score name="PeaksDenovoScore" value="3.9340246"/>
+          <search_score name="positional_conf" value="0.41,0.36,0.37,0.94,0.65,0.50,0.25,0.26,0.19"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="361" end_scan="361" precursor_neutral_mass="1038.5927" assumed_charge="1" index="361">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="3.9313555"/>
+          <search_score name="positional_conf" value="0.37,0.34,0.34,0.90,0.83,0.54,0.19,0.20,0.22"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="227" end_scan="227" precursor_neutral_mass="1038.5927" assumed_charge="1" index="227">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="3.928474"/>
+          <search_score name="positional_conf" value="0.58,0.29,0.29,0.76,0.79,0.54,0.25,0.25,0.19"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="255" end_scan="255" precursor_neutral_mass="1038.5927" assumed_charge="1" index="255">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RTPDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="3.9276521"/>
+          <search_score name="positional_conf" value="0.27,0.21,0.21,0.79,0.90,0.50,0.39,0.40,0.27"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="366" end_scan="366" precursor_neutral_mass="1038.5927" assumed_charge="1" index="366">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="3.9272661"/>
+          <search_score name="positional_conf" value="0.44,0.24,0.24,0.62,0.89,0.45,0.38,0.38,0.28"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="268" end_scan="268" precursor_neutral_mass="1038.5927" assumed_charge="1" index="268">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RLCPPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6121" massdiff="-18.7">
+          <search_score name="PeaksDenovoScore" value="3.9263086"/>
+          <search_score name="positional_conf" value="0.48,0.37,0.36,0.46,0.81,0.52,0.34,0.34,0.24"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="157" end_scan="157" precursor_neutral_mass="1038.5927" assumed_charge="1" index="157">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPGAGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5570" massdiff="34.3">
+          <search_score name="PeaksDenovoScore" value="4.3624697"/>
+          <search_score name="positional_conf" value="0.28,0.19,0.19,0.60,0.84,0.52,0.32,0.28,0.33,0.81"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="186" end_scan="186" precursor_neutral_mass="1038.5927" assumed_charge="1" index="186">
+      <search_result>
+        <search_hit hit_rank="1" peptide="VGPTDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5822" massdiff="10.1">
+          <search_score name="PeaksDenovoScore" value="4.3616347"/>
+          <search_score name="positional_conf" value="0.20,0.38,0.39,0.39,0.94,0.63,0.46,0.36,0.37,0.25"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="142" end_scan="142" precursor_neutral_mass="1038.5927" assumed_charge="1" index="142">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RVVDPQGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="3.920332"/>
+          <search_score name="positional_conf" value="0.41,0.39,0.41,0.95,0.81,0.30,0.20,0.22,0.23"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="221" end_scan="221" precursor_neutral_mass="1038.5927" assumed_charge="1" index="221">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPQGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5570" massdiff="34.3">
+          <search_score name="PeaksDenovoScore" value="3.9053957"/>
+          <search_score name="positional_conf" value="0.41,0.24,0.24,0.85,0.82,0.42,0.35,0.36,0.22"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="156" end_scan="156" precursor_neutral_mass="1038.5927" assumed_charge="1" index="156">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPQGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5570" massdiff="34.3">
+          <search_score name="PeaksDenovoScore" value="3.8874464"/>
+          <search_score name="positional_conf" value="0.57,0.40,0.40,0.66,0.59,0.21,0.36,0.40,0.28"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="205" end_scan="205" precursor_neutral_mass="1038.5927" assumed_charge="1" index="205">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RVVDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6298" massdiff="-35.7">
+          <search_score name="PeaksDenovoScore" value="3.882504"/>
+          <search_score name="positional_conf" value="0.29,0.24,0.25,0.81,0.81,0.41,0.40,0.40,0.26"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="81" end_scan="81" precursor_neutral_mass="1038.5927" assumed_charge="1" index="81">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="3.8626175"/>
+          <search_score name="positional_conf" value="0.30,0.24,0.24,0.94,0.70,0.43,0.36,0.38,0.27"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="339" end_scan="339" precursor_neutral_mass="1038.5927" assumed_charge="1" index="339">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTNTPVVR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="3.8455482"/>
+          <search_score name="positional_conf" value="0.31,0.24,0.24,0.60,0.91,0.43,0.37,0.38,0.35"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="149" end_scan="149" precursor_neutral_mass="1038.5927" assumed_charge="1" index="149">
+      <search_result>
+        <search_hit hit_rank="1" peptide="VVRDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6298" massdiff="-35.7">
+          <search_score name="PeaksDenovoScore" value="3.8426902"/>
+          <search_score name="positional_conf" value="0.28,0.22,0.23,0.87,0.82,0.41,0.33,0.40,0.28"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="298" end_scan="298" precursor_neutral_mass="1038.5927" assumed_charge="1" index="298">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="3.8257418"/>
+          <search_score name="positional_conf" value="0.30,0.25,0.25,0.90,0.88,0.33,0.31,0.32,0.30"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="148" end_scan="148" precursor_neutral_mass="1038.5927" assumed_charge="1" index="148">
+      <search_result>
+        <search_hit hit_rank="1" peptide="VVRDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6298" massdiff="-35.7">
+          <search_score name="PeaksDenovoScore" value="3.8235426"/>
+          <search_score name="positional_conf" value="0.33,0.29,0.31,0.94,0.71,0.55,0.23,0.23,0.23"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="232" end_scan="232" precursor_neutral_mass="1038.5927" assumed_charge="1" index="232">
+      <search_result>
+        <search_hit hit_rank="1" peptide="VVRDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6298" massdiff="-35.7">
+          <search_score name="PeaksDenovoScore" value="3.8221536"/>
+          <search_score name="positional_conf" value="0.24,0.20,0.20,0.95,0.74,0.39,0.34,0.45,0.31"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="254" end_scan="254" precursor_neutral_mass="1038.5927" assumed_charge="1" index="254">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTNTPVVR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="3.8151398"/>
+          <search_score name="positional_conf" value="0.38,0.15,0.15,0.18,0.92,0.89,0.47,0.48,0.20"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="367" end_scan="367" precursor_neutral_mass="1038.5927" assumed_charge="1" index="367">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RVVDPLGKR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6298" massdiff="-35.7">
+          <search_score name="PeaksDenovoScore" value="3.8137722"/>
+          <search_score name="positional_conf" value="0.61,0.45,0.47,0.63,0.87,0.19,0.18,0.20,0.21"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="108" end_scan="108" precursor_neutral_mass="1038.5927" assumed_charge="1" index="108">
+      <search_result>
+        <search_hit hit_rank="1" peptide="VGTPDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5822" massdiff="10.1">
+          <search_score name="PeaksDenovoScore" value="4.235144"/>
+          <search_score name="positional_conf" value="0.72,0.39,0.25,0.25,0.79,0.63,0.49,0.24,0.25,0.22"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="188" end_scan="188" precursor_neutral_mass="1038.5927" assumed_charge="1" index="188">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="3.8065834"/>
+          <search_score name="positional_conf" value="0.23,0.28,0.28,0.85,0.80,0.38,0.34,0.37,0.28"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="273" end_scan="273" precursor_neutral_mass="1038.5927" assumed_charge="1" index="273">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RVVDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6298" massdiff="-35.7">
+          <search_score name="PeaksDenovoScore" value="3.804397"/>
+          <search_score name="positional_conf" value="0.24,0.25,0.25,0.88,0.90,0.41,0.31,0.32,0.26"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="319" end_scan="319" precursor_neutral_mass="1038.5927" assumed_charge="1" index="319">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RLCPPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6121" massdiff="-18.7">
+          <search_score name="PeaksDenovoScore" value="3.774977"/>
+          <search_score name="positional_conf" value="0.70,0.41,0.38,0.45,0.72,0.49,0.21,0.22,0.19"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="327" end_scan="327" precursor_neutral_mass="1038.5927" assumed_charge="1" index="327">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RVVDPGQLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="3.769527"/>
+          <search_score name="positional_conf" value="0.69,0.50,0.50,0.88,0.45,0.15,0.14,0.30,0.16"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="369" end_scan="369" precursor_neutral_mass="1038.5927" assumed_charge="1" index="369">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="3.7665732"/>
+          <search_score name="positional_conf" value="0.40,0.23,0.23,0.78,0.77,0.29,0.37,0.40,0.28"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="270" end_scan="270" precursor_neutral_mass="1038.5927" assumed_charge="1" index="270">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RVVDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6298" massdiff="-35.7">
+          <search_score name="PeaksDenovoScore" value="3.7572112"/>
+          <search_score name="positional_conf" value="0.30,0.28,0.28,0.88,0.63,0.46,0.34,0.34,0.25"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="296" end_scan="296" precursor_neutral_mass="1038.5927" assumed_charge="1" index="296">
+      <search_result>
+        <search_hit hit_rank="1" peptide="VVRDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6298" massdiff="-35.7">
+          <search_score name="PeaksDenovoScore" value="3.7429159"/>
+          <search_score name="positional_conf" value="0.38,0.28,0.28,0.89,0.48,0.36,0.42,0.42,0.23"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="180" end_scan="180" precursor_neutral_mass="1038.5927" assumed_charge="1" index="180">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="3.7381597"/>
+          <search_score name="positional_conf" value="0.55,0.26,0.26,0.91,0.49,0.28,0.39,0.40,0.22"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="170" end_scan="170" precursor_neutral_mass="1038.5927" assumed_charge="1" index="170">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RLCPPQGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5757" massdiff="16.3">
+          <search_score name="PeaksDenovoScore" value="3.728437"/>
+          <search_score name="positional_conf" value="0.66,0.29,0.23,0.25,0.84,0.45,0.36,0.38,0.26"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="158" end_scan="158" precursor_neutral_mass="1038.5927" assumed_charge="1" index="158">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="3.7265022"/>
+          <search_score name="positional_conf" value="0.31,0.20,0.20,0.65,0.72,0.56,0.40,0.41,0.26"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="289" end_scan="289" precursor_neutral_mass="1038.5927" assumed_charge="1" index="289">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPQGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5570" massdiff="34.3">
+          <search_score name="PeaksDenovoScore" value="3.723992"/>
+          <search_score name="positional_conf" value="0.41,0.27,0.27,0.80,0.81,0.34,0.28,0.29,0.27"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="313" end_scan="313" precursor_neutral_mass="1038.5927" assumed_charge="1" index="313">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RLCPPGAGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5757" massdiff="16.3">
+          <search_score name="PeaksDenovoScore" value="4.128692"/>
+          <search_score name="positional_conf" value="0.68,0.24,0.19,0.21,0.81,0.47,0.28,0.22,0.26,0.77"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="245" end_scan="245" precursor_neutral_mass="1038.5927" assumed_charge="1" index="245">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RNTPTPTPR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5570" massdiff="34.3">
+          <search_score name="PeaksDenovoScore" value="3.698633"/>
+          <search_score name="positional_conf" value="0.33,0.32,0.32,0.59,0.94,0.56,0.23,0.25,0.17"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="78" end_scan="78" precursor_neutral_mass="1038.5927" assumed_charge="1" index="78">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="3.6795564"/>
+          <search_score name="positional_conf" value="0.50,0.27,0.27,0.81,0.39,0.33,0.41,0.42,0.27"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="185" end_scan="185" precursor_neutral_mass="1038.5927" assumed_charge="1" index="185">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="3.67821"/>
+          <search_score name="positional_conf" value="0.41,0.24,0.24,0.76,0.62,0.40,0.39,0.39,0.23"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="276" end_scan="276" precursor_neutral_mass="1038.5927" assumed_charge="1" index="276">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPKAVR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="3.6762755"/>
+          <search_score name="positional_conf" value="0.22,0.20,0.20,0.88,0.90,0.54,0.25,0.25,0.22"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="371" end_scan="371" precursor_neutral_mass="1038.5927" assumed_charge="1" index="371">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RVVDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6298" massdiff="-35.7">
+          <search_score name="PeaksDenovoScore" value="3.6741781"/>
+          <search_score name="positional_conf" value="0.72,0.38,0.38,0.56,0.80,0.33,0.16,0.16,0.17"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="286" end_scan="286" precursor_neutral_mass="1038.5927" assumed_charge="1" index="286">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RTPDPGQLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5570" massdiff="34.3">
+          <search_score name="PeaksDenovoScore" value="3.6725054"/>
+          <search_score name="positional_conf" value="0.40,0.37,0.37,0.92,0.85,0.17,0.14,0.28,0.17"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="246" end_scan="246" precursor_neutral_mass="1038.5927" assumed_charge="1" index="246">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RVVDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6298" massdiff="-35.7">
+          <search_score name="PeaksDenovoScore" value="3.6683824"/>
+          <search_score name="positional_conf" value="0.34,0.46,0.46,0.82,0.43,0.35,0.28,0.29,0.25"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="143" end_scan="143" precursor_neutral_mass="1038.5927" assumed_charge="1" index="143">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RLCPPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6121" massdiff="-18.7">
+          <search_score name="PeaksDenovoScore" value="3.660865"/>
+          <search_score name="positional_conf" value="0.74,0.20,0.19,0.25,0.87,0.51,0.34,0.34,0.24"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="335" end_scan="335" precursor_neutral_mass="1038.5927" assumed_charge="1" index="335">
+      <search_result>
+        <search_hit hit_rank="1" peptide="GVPTDGGPALR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5458" massdiff="45.1">
+          <search_score name="PeaksDenovoScore" value="4.467381"/>
+          <search_score name="positional_conf" value="0.67,0.70,0.29,0.29,0.64,0.66,0.31,0.21,0.20,0.27,0.23"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="385" end_scan="385" precursor_neutral_mass="1038.5927" assumed_charge="1" index="385">
+      <search_result>
+        <search_hit hit_rank="1" peptide="VVRDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6298" massdiff="-35.7">
+          <search_score name="PeaksDenovoScore" value="3.654851"/>
+          <search_score name="positional_conf" value="0.32,0.26,0.26,0.96,0.60,0.53,0.25,0.26,0.23"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="257" end_scan="257" precursor_neutral_mass="1038.5927" assumed_charge="1" index="257">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RTPDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="3.6516922"/>
+          <search_score name="positional_conf" value="0.42,0.25,0.25,0.82,0.65,0.55,0.26,0.27,0.20"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="113" end_scan="113" precursor_neutral_mass="1038.5927" assumed_charge="1" index="113">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDTMYR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.4917" massdiff="97.1">
+          <search_score name="PeaksDenovoScore" value="3.2259097"/>
+          <search_score name="positional_conf" value="0.50,0.24,0.24,0.68,0.47,0.33,0.33,0.44"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="210" end_scan="210" precursor_neutral_mass="1038.5927" assumed_charge="1" index="210">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="3.61794"/>
+          <search_score name="positional_conf" value="0.42,0.24,0.24,0.64,0.78,0.28,0.37,0.38,0.27"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="244" end_scan="244" precursor_neutral_mass="1038.5927" assumed_charge="1" index="244">
+      <search_result>
+        <search_hit hit_rank="1" peptide="VVRDPNALR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="3.6156666"/>
+          <search_score name="positional_conf" value="0.32,0.27,0.27,0.87,0.57,0.22,0.23,0.48,0.39"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="258" end_scan="258" precursor_neutral_mass="1038.5927" assumed_charge="1" index="258">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="3.6146336"/>
+          <search_score name="positional_conf" value="0.24,0.35,0.35,0.65,0.73,0.39,0.31,0.32,0.25"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="162" end_scan="162" precursor_neutral_mass="1038.5927" assumed_charge="1" index="162">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDKPGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="3.607659"/>
+          <search_score name="positional_conf" value="0.60,0.26,0.26,0.71,0.21,0.23,0.48,0.57,0.28"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="171" end_scan="171" precursor_neutral_mass="1038.5927" assumed_charge="1" index="171">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPQGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5570" massdiff="34.3">
+          <search_score name="PeaksDenovoScore" value="3.601885"/>
+          <search_score name="positional_conf" value="0.44,0.25,0.25,0.84,0.60,0.42,0.28,0.29,0.24"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="305" end_scan="305" precursor_neutral_mass="1038.5927" assumed_charge="1" index="305">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="3.585328"/>
+          <search_score name="positional_conf" value="0.30,0.23,0.23,0.81,0.84,0.53,0.21,0.22,0.22"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="57" end_scan="57" precursor_neutral_mass="1038.5927" assumed_charge="1" index="57">
+      <search_result>
+        <search_hit hit_rank="1" peptide="GALLDEEHR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5094" massdiff="80.1">
+          <search_score name="PeaksDenovoScore" value="3.5642443"/>
+          <search_score name="positional_conf" value="0.73,0.55,0.37,0.37,0.45,0.31,0.29,0.30,0.20"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="89" end_scan="89" precursor_neutral_mass="1038.5927" assumed_charge="1" index="89">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RTPDAAPRR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5682" massdiff="23.5">
+          <search_score name="PeaksDenovoScore" value="3.5583265"/>
+          <search_score name="positional_conf" value="0.25,0.21,0.21,0.69,0.91,0.63,0.24,0.25,0.18"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="292" end_scan="292" precursor_neutral_mass="1038.5927" assumed_charge="1" index="292">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RVVDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6298" massdiff="-35.7">
+          <search_score name="PeaksDenovoScore" value="3.5576947"/>
+          <search_score name="positional_conf" value="0.54,0.40,0.40,0.66,0.44,0.31,0.28,0.29,0.23"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="272" end_scan="272" precursor_neutral_mass="1038.5927" assumed_charge="1" index="272">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RVVDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6298" massdiff="-35.7">
+          <search_score name="PeaksDenovoScore" value="3.5528789"/>
+          <search_score name="positional_conf" value="0.33,0.25,0.25,0.73,0.85,0.52,0.23,0.24,0.15"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="354" end_scan="354" precursor_neutral_mass="1038.5927" assumed_charge="1" index="354">
+      <search_result>
+        <search_hit hit_rank="1" peptide="VGVVDPNALR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5822" massdiff="10.1">
+          <search_score name="PeaksDenovoScore" value="3.945399"/>
+          <search_score name="positional_conf" value="0.69,0.40,0.37,0.41,0.89,0.50,0.15,0.15,0.18,0.21"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="333" end_scan="333" precursor_neutral_mass="1038.5927" assumed_charge="1" index="333">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="3.5484579"/>
+          <search_score name="positional_conf" value="0.39,0.24,0.24,0.60,0.63,0.35,0.41,0.42,0.28"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="175" end_scan="175" precursor_neutral_mass="1038.5927" assumed_charge="1" index="175">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTNTPVVR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="3.5456312"/>
+          <search_score name="positional_conf" value="0.23,0.21,0.21,0.40,0.95,0.71,0.32,0.32,0.17"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="233" end_scan="233" precursor_neutral_mass="1038.5927" assumed_charge="1" index="233">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RVVDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6298" massdiff="-35.7">
+          <search_score name="PeaksDenovoScore" value="3.5078368"/>
+          <search_score name="positional_conf" value="0.38,0.38,0.40,0.62,0.64,0.32,0.26,0.28,0.23"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="316" end_scan="316" precursor_neutral_mass="1038.5927" assumed_charge="1" index="316">
+      <search_result>
+        <search_hit hit_rank="1" peptide="VGLCPPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6008" massdiff="-7.9">
+          <search_score name="PeaksDenovoScore" value="3.8967686"/>
+          <search_score name="positional_conf" value="0.89,0.82,0.42,0.36,0.38,0.32,0.20,0.17,0.17,0.17"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="311" end_scan="311" precursor_neutral_mass="1038.5927" assumed_charge="1" index="311">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RLCPPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6121" massdiff="-18.7">
+          <search_score name="PeaksDenovoScore" value="3.5069578"/>
+          <search_score name="positional_conf" value="0.40,0.25,0.23,0.27,0.91,0.37,0.40,0.41,0.27"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="376" end_scan="376" precursor_neutral_mass="1038.5927" assumed_charge="1" index="376">
+      <search_result>
+        <search_hit hit_rank="1" peptide="VVRDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6298" massdiff="-35.7">
+          <search_score name="PeaksDenovoScore" value="3.5029967"/>
+          <search_score name="positional_conf" value="0.25,0.21,0.22,0.92,0.55,0.48,0.30,0.31,0.25"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="285" end_scan="285" precursor_neutral_mass="1038.5927" assumed_charge="1" index="285">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDKPGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="3.5026984"/>
+          <search_score name="positional_conf" value="0.58,0.33,0.33,0.89,0.16,0.16,0.31,0.51,0.23"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="140" end_scan="140" precursor_neutral_mass="1038.5927" assumed_charge="1" index="140">
+      <search_result>
+        <search_hit hit_rank="1" peptide="VVRDPQGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="3.4967158"/>
+          <search_score name="positional_conf" value="0.34,0.30,0.30,0.95,0.81,0.26,0.16,0.17,0.19"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="281" end_scan="281" precursor_neutral_mass="1038.5927" assumed_charge="1" index="281">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RTPDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="3.494741"/>
+          <search_score name="positional_conf" value="0.47,0.36,0.36,0.86,0.57,0.32,0.19,0.19,0.18"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="368" end_scan="368" precursor_neutral_mass="1038.5927" assumed_charge="1" index="368">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RTPDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="3.4689152"/>
+          <search_score name="positional_conf" value="0.22,0.20,0.20,0.91,0.45,0.33,0.43,0.45,0.29"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="341" end_scan="341" precursor_neutral_mass="1038.5927" assumed_charge="1" index="341">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RVVDPNALR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="3.4558492"/>
+          <search_score name="positional_conf" value="0.35,0.41,0.42,0.85,0.50,0.17,0.17,0.26,0.33"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="144" end_scan="144" precursor_neutral_mass="1038.5927" assumed_charge="1" index="144">
+      <search_result>
+        <search_hit hit_rank="1" peptide="VVRNTPPTR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="3.4552376"/>
+          <search_score name="positional_conf" value="0.33,0.15,0.15,0.23,0.95,0.65,0.39,0.40,0.20"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="329" end_scan="329" precursor_neutral_mass="1038.5927" assumed_charge="1" index="329">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RVVDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6298" massdiff="-35.7">
+          <search_score name="PeaksDenovoScore" value="3.4371815"/>
+          <search_score name="positional_conf" value="0.41,0.28,0.28,0.92,0.78,0.18,0.17,0.17,0.25"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="200" end_scan="200" precursor_neutral_mass="1038.5927" assumed_charge="1" index="200">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDKPGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="3.3984756"/>
+          <search_score name="positional_conf" value="0.32,0.18,0.18,0.82,0.26,0.28,0.51,0.58,0.28"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="304" end_scan="304" precursor_neutral_mass="1038.5927" assumed_charge="1" index="304">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RVVDPNALR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="3.3933873"/>
+          <search_score name="positional_conf" value="0.31,0.45,0.48,0.92,0.32,0.16,0.17,0.27,0.33"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="383" end_scan="383" precursor_neutral_mass="1038.5927" assumed_charge="1" index="383">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="3.3827899"/>
+          <search_score name="positional_conf" value="0.27,0.21,0.21,0.83,0.83,0.58,0.16,0.16,0.14"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="206" end_scan="206" precursor_neutral_mass="1038.5927" assumed_charge="1" index="206">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPQGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5570" massdiff="34.3">
+          <search_score name="PeaksDenovoScore" value="3.382418"/>
+          <search_score name="positional_conf" value="0.37,0.27,0.27,0.92,0.59,0.21,0.19,0.32,0.24"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="240" end_scan="240" precursor_neutral_mass="1038.5927" assumed_charge="1" index="240">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RVVDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6298" massdiff="-35.7">
+          <search_score name="PeaksDenovoScore" value="3.3804138"/>
+          <search_score name="positional_conf" value="0.41,0.31,0.33,0.96,0.60,0.28,0.16,0.17,0.16"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="198" end_scan="198" precursor_neutral_mass="1038.5927" assumed_charge="1" index="198">
+      <search_result>
+        <search_hit hit_rank="1" peptide="VGPTDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5822" massdiff="10.1">
+          <search_score name="PeaksDenovoScore" value="3.752424"/>
+          <search_score name="positional_conf" value="0.32,0.48,0.31,0.31,0.88,0.54,0.23,0.23,0.23,0.23"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="225" end_scan="225" precursor_neutral_mass="1038.5927" assumed_charge="1" index="225">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="3.3720531"/>
+          <search_score name="positional_conf" value="0.23,0.18,0.18,0.57,0.61,0.46,0.42,0.44,0.29"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="355" end_scan="355" precursor_neutral_mass="1038.5927" assumed_charge="1" index="355">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="3.359644"/>
+          <search_score name="positional_conf" value="0.35,0.23,0.23,0.88,0.56,0.43,0.22,0.23,0.23"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="203" end_scan="203" precursor_neutral_mass="1038.5927" assumed_charge="1" index="203">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RTPDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="3.3578525"/>
+          <search_score name="positional_conf" value="0.41,0.24,0.24,0.78,0.45,0.37,0.32,0.32,0.23"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="139" end_scan="139" precursor_neutral_mass="1038.5927" assumed_charge="1" index="139">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="3.3553672"/>
+          <search_score name="positional_conf" value="0.28,0.28,0.28,0.95,0.71,0.27,0.19,0.19,0.20"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="237" end_scan="237" precursor_neutral_mass="1038.5927" assumed_charge="1" index="237">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="3.3526382"/>
+          <search_score name="positional_conf" value="0.27,0.22,0.22,0.90,0.36,0.29,0.38,0.42,0.29"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="141" end_scan="141" precursor_neutral_mass="1038.5927" assumed_charge="1" index="141">
+      <search_result>
+        <search_hit hit_rank="1" peptide="VVRDPQGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="3.3488088"/>
+          <search_score name="positional_conf" value="0.64,0.29,0.28,0.77,0.36,0.28,0.24,0.25,0.25"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="284" end_scan="284" precursor_neutral_mass="1038.5927" assumed_charge="1" index="284">
+      <search_result>
+        <search_hit hit_rank="1" peptide="VVRDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6298" massdiff="-35.7">
+          <search_score name="PeaksDenovoScore" value="3.342022"/>
+          <search_score name="positional_conf" value="0.42,0.35,0.35,0.91,0.38,0.29,0.20,0.21,0.23"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="308" end_scan="308" precursor_neutral_mass="1038.5927" assumed_charge="1" index="308">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RVVNTPVVR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6299" massdiff="-35.8">
+          <search_score name="PeaksDenovoScore" value="3.3376894"/>
+          <search_score name="positional_conf" value="0.35,0.24,0.24,0.43,0.95,0.56,0.21,0.21,0.14"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="288" end_scan="288" precursor_neutral_mass="1038.5927" assumed_charge="1" index="288">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPQGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5570" massdiff="34.3">
+          <search_score name="PeaksDenovoScore" value="3.3290417"/>
+          <search_score name="positional_conf" value="0.53,0.27,0.27,0.92,0.70,0.13,0.13,0.16,0.21"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="150" end_scan="150" precursor_neutral_mass="1038.5927" assumed_charge="1" index="150">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="3.3211167"/>
+          <search_score name="positional_conf" value="0.59,0.25,0.25,0.81,0.50,0.34,0.20,0.20,0.18"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="138" end_scan="138" precursor_neutral_mass="1038.5927" assumed_charge="1" index="138">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTNTHSAR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5319" massdiff="58.5">
+          <search_score name="PeaksDenovoScore" value="3.3190615"/>
+          <search_score name="positional_conf" value="0.57,0.17,0.17,0.26,0.96,0.36,0.28,0.28,0.26"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="4" end_scan="4" precursor_neutral_mass="1038.5927" assumed_charge="1" index="4">
+      <search_result>
+        <search_hit hit_rank="1" peptide="APGEDAARPR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5205" massdiff="69.4">
+          <search_score name="PeaksDenovoScore" value="3.6855116"/>
+          <search_score name="positional_conf" value="0.35,0.40,0.36,0.62,0.86,0.18,0.18,0.18,0.37,0.19"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="187" end_scan="187" precursor_neutral_mass="1038.5927" assumed_charge="1" index="187">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RTPDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="3.3147008"/>
+          <search_score name="positional_conf" value="0.28,0.19,0.19,0.92,0.35,0.30,0.41,0.41,0.27"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="274" end_scan="274" precursor_neutral_mass="1038.5927" assumed_charge="1" index="274">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="3.2831745"/>
+          <search_score name="positional_conf" value="0.26,0.18,0.18,0.81,0.81,0.34,0.23,0.24,0.23"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="352" end_scan="352" precursor_neutral_mass="1038.5927" assumed_charge="1" index="352">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RTPDPAARR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5682" massdiff="23.5">
+          <search_score name="PeaksDenovoScore" value="3.2823668"/>
+          <search_score name="positional_conf" value="0.36,0.23,0.24,0.89,0.87,0.18,0.17,0.17,0.18"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="375" end_scan="375" precursor_neutral_mass="1038.5927" assumed_charge="1" index="375">
+      <search_result>
+        <search_hit hit_rank="1" peptide="VGPTDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5822" massdiff="10.1">
+          <search_score name="PeaksDenovoScore" value="3.6333663"/>
+          <search_score name="positional_conf" value="0.28,0.43,0.35,0.35,0.54,0.70,0.35,0.20,0.21,0.22"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="241" end_scan="241" precursor_neutral_mass="1038.5927" assumed_charge="1" index="241">
+      <search_result>
+        <search_hit hit_rank="1" peptide="VVRDPQGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="3.2669282"/>
+          <search_score name="positional_conf" value="0.21,0.19,0.19,0.88,0.60,0.32,0.27,0.36,0.26"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="224" end_scan="224" precursor_neutral_mass="1038.5927" assumed_charge="1" index="224">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="3.2629457"/>
+          <search_score name="positional_conf" value="0.38,0.18,0.18,0.38,0.59,0.48,0.39,0.40,0.27"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="172" end_scan="172" precursor_neutral_mass="1038.5927" assumed_charge="1" index="172">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPQGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5570" massdiff="34.3">
+          <search_score name="PeaksDenovoScore" value="3.2405877"/>
+          <search_score name="positional_conf" value="0.34,0.23,0.23,0.78,0.63,0.41,0.20,0.20,0.22"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="345" end_scan="345" precursor_neutral_mass="1038.5927" assumed_charge="1" index="345">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="3.2327995"/>
+          <search_score name="positional_conf" value="0.33,0.24,0.24,0.73,0.66,0.49,0.19,0.19,0.18"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="349" end_scan="349" precursor_neutral_mass="1038.5927" assumed_charge="1" index="349">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RVVDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6298" massdiff="-35.7">
+          <search_score name="PeaksDenovoScore" value="3.22624"/>
+          <search_score name="positional_conf" value="0.40,0.33,0.33,0.52,0.68,0.33,0.20,0.22,0.22"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="109" end_scan="109" precursor_neutral_mass="1038.5927" assumed_charge="1" index="109">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPQGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5570" massdiff="34.3">
+          <search_score name="PeaksDenovoScore" value="3.22227"/>
+          <search_score name="positional_conf" value="0.24,0.21,0.21,0.72,0.68,0.30,0.29,0.32,0.24"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="163" end_scan="163" precursor_neutral_mass="1038.5927" assumed_charge="1" index="163">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RVVDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6298" massdiff="-35.7">
+          <search_score name="PeaksDenovoScore" value="3.1990116"/>
+          <search_score name="positional_conf" value="0.20,0.21,0.21,0.94,0.74,0.31,0.18,0.19,0.22"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="294" end_scan="294" precursor_neutral_mass="1038.5927" assumed_charge="1" index="294">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="3.1825082"/>
+          <search_score name="positional_conf" value="0.21,0.21,0.21,0.82,0.64,0.47,0.20,0.21,0.20"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="324" end_scan="324" precursor_neutral_mass="1038.5927" assumed_charge="1" index="324">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RVVDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6298" massdiff="-35.7">
+          <search_score name="PeaksDenovoScore" value="3.138762"/>
+          <search_score name="positional_conf" value="0.41,0.22,0.23,0.56,0.51,0.37,0.29,0.30,0.25"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="231" end_scan="231" precursor_neutral_mass="1038.5927" assumed_charge="1" index="231">
+      <search_result>
+        <search_hit hit_rank="1" peptide="VGLCPPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6008" massdiff="-7.9">
+          <search_score name="PeaksDenovoScore" value="3.4872935"/>
+          <search_score name="positional_conf" value="0.73,0.58,0.19,0.19,0.27,0.65,0.21,0.22,0.22,0.22"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="262" end_scan="262" precursor_neutral_mass="1038.5927" assumed_charge="1" index="262">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RVVDPQGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="3.1339905"/>
+          <search_score name="positional_conf" value="0.34,0.26,0.27,0.47,0.90,0.27,0.20,0.20,0.24"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="302" end_scan="302" precursor_neutral_mass="1038.5927" assumed_charge="1" index="302">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDKPGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="3.1137831"/>
+          <search_score name="positional_conf" value="0.47,0.24,0.24,0.67,0.27,0.27,0.36,0.38,0.23"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="217" end_scan="217" precursor_neutral_mass="1038.5927" assumed_charge="1" index="217">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="3.1088736"/>
+          <search_score name="positional_conf" value="0.31,0.22,0.22,0.91,0.54,0.37,0.19,0.19,0.16"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="343" end_scan="343" precursor_neutral_mass="1038.5927" assumed_charge="1" index="343">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="3.0957778"/>
+          <search_score name="positional_conf" value="0.34,0.23,0.23,0.70,0.60,0.30,0.22,0.23,0.25"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="269" end_scan="269" precursor_neutral_mass="1038.5927" assumed_charge="1" index="269">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="3.0952363"/>
+          <search_score name="positional_conf" value="0.33,0.21,0.21,0.53,0.41,0.35,0.39,0.39,0.27"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="61" end_scan="61" precursor_neutral_mass="1038.5927" assumed_charge="1" index="61">
+      <search_result>
+        <search_hit hit_rank="1" peptide="DTHDANPLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1037.4890" massdiff="1062.7">
+          <search_score name="PeaksDenovoScore" value="3.0856197"/>
+          <search_score name="positional_conf" value="0.53,0.53,0.66,0.57,0.13,0.11,0.12,0.13,0.30"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="7" end_scan="7" precursor_neutral_mass="1038.5927" assumed_charge="1" index="7">
+      <search_result>
+        <search_hit hit_rank="1" peptide="GVVVDTFFR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5498" massdiff="41.2">
+          <search_score name="PeaksDenovoScore" value="3.0798013"/>
+          <search_score name="positional_conf" value="0.65,0.46,0.27,0.27,0.62,0.13,0.13,0.13,0.42"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="184" end_scan="184" precursor_neutral_mass="1038.5927" assumed_charge="1" index="184">
+      <search_result>
+        <search_hit hit_rank="1" peptide="VVRDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6298" massdiff="-35.7">
+          <search_score name="PeaksDenovoScore" value="3.0766377"/>
+          <search_score name="positional_conf" value="0.23,0.20,0.20,0.94,0.32,0.24,0.31,0.38,0.26"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="83" end_scan="83" precursor_neutral_mass="2077.1853" assumed_charge="2" index="83">
+      <search_result>
+        <search_hit hit_rank="1" peptide="EERRRRRGVVVDPYYK" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="2077.1292" massdiff="27.0">
+          <search_score name="PeaksDenovoScore" value="5.4440746"/>
+          <search_score name="positional_conf" value="0.36,0.15,0.13,0.13,0.18,0.15,0.15,0.63,0.57,0.56,0.57,0.88,0.50,0.18,0.13,0.18"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="370" end_scan="370" precursor_neutral_mass="1038.5927" assumed_charge="1" index="370">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="3.057197"/>
+          <search_score name="positional_conf" value="0.43,0.22,0.22,0.40,0.37,0.31,0.41,0.42,0.28"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="353" end_scan="353" precursor_neutral_mass="1038.5927" assumed_charge="1" index="353">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTNTPVVR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="3.0519464"/>
+          <search_score name="positional_conf" value="0.47,0.16,0.16,0.20,0.76,0.65,0.25,0.25,0.16"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="364" end_scan="364" precursor_neutral_mass="1038.5927" assumed_charge="1" index="364">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPQGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5570" massdiff="34.3">
+          <search_score name="PeaksDenovoScore" value="3.0445771"/>
+          <search_score name="positional_conf" value="0.31,0.24,0.24,0.75,0.82,0.17,0.14,0.15,0.23"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="174" end_scan="174" precursor_neutral_mass="1038.5927" assumed_charge="1" index="174">
+      <search_result>
+        <search_hit hit_rank="1" peptide="RPTDPKGLR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.5934" massdiff="-0.7">
+          <search_score name="PeaksDenovoScore" value="3.0310426"/>
+          <search_score name="positional_conf" value="0.44,0.26,0.26,0.81,0.33,0.25,0.21,0.24,0.23"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="3" end_scan="3" precursor_neutral_mass="1038.5927" assumed_charge="1" index="3">
+      <search_result>
+        <search_hit hit_rank="1" peptide="VGVVDKLPGR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6185" massdiff="-24.9">
+          <search_score name="PeaksDenovoScore" value="3.2159398"/>
+          <search_score name="positional_conf" value="0.73,0.51,0.25,0.26,0.71,0.14,0.14,0.20,0.20,0.10"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="25" end_scan="25" precursor_neutral_mass="2077.1853" assumed_charge="2" index="25">
+      <search_result>
+        <search_hit hit_rank="1" peptide="WERSRNPLRTPDYFLK" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="2077.0857" massdiff="47.9">
+          <search_score name="PeaksDenovoScore" value="5.016779"/>
+          <search_score name="positional_conf" value="0.20,0.11,0.11,0.11,0.12,0.16,0.21,0.23,0.75,0.80,0.86,0.87,0.13,0.11,0.12,0.14"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+    <spectrum_query spectrum="data.mzXML" start_scan="41" end_scan="41" precursor_neutral_mass="1038.5927" assumed_charge="1" index="41">
+      <search_result>
+        <search_hit hit_rank="1" peptide="GVVVDPLKGR" protein="not_applicable" num_tot_proteins="0" calc_neutral_pep_mass="1038.6185" massdiff="-24.9">
+          <search_score name="PeaksDenovoScore" value="3.1109073"/>
+          <search_score name="positional_conf" value="0.65,0.49,0.20,0.20,0.51,0.22,0.21,0.23,0.25,0.15"/>
+        </search_hit>
+      </search_result>
+    </spectrum_query>
+  </msms_run_summary>
+</msms_pipeline_analysis>

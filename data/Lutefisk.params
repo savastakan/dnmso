@@ -1,0 +1,52 @@
+//                           Lutefisk parameters file
+//
+//  If this file is present in the directory from which Lutefisk is invoked,
+//  then the value of the parameters listed in the 'VALUE' column below
+//  will override the program defaults.
+//
+
+// TITLE                      VALUE                                  DEFAULT
+
+CID Filename:                  Qtof_ELVISLIVESK.dta							 		| CID Filename.
+CID Quality:                    N                               | Check for CID data quality. (Y/N)
+Peptide MW:                     0                               | Peptide molecular weight.  Zero will calc. from input file.
+Charge-state:                   1                               | Number of charges on the precursor ion. Zero will calc. from input file.
+MaxEnt3:                        N                               | Data file processed using MaxEnt 3 (Qtof only) (Y/N)
+// Mass Tolerances ----------------------------------------------------------------------
+Peptide Error (u):              0.3                            | Peptide molecular weight tolerance.
+Fragment Error (u):             0.3                            | Fragment ion tolerance. Must be 0.25 or less for qtof scoring to take effect.
+Final Fragment Err (u):         0.04                           	| Fragment ion tolerance for final scoring of Qtof data. Zero will skip qtof scoring.
+// Memory and Speed ---------------------------------------------------------------------
+Max. Final Sequences:           20000                           | Number of final sequences stored.
+Max. Subsequences:              5000                           | Number of subsequence allowed.
+Mass Scrambles for Statistics:  0                               | Number of times to use a wrong precursor mass (for calculating score significance).
+// Spectral Processing ------------------------------------------------------------------
+CID File Type:                  D                               | CID file type: D='.dta', F=ICIS text file, L=LCQ "text", T=tab text, N='.dat'
+Profile/Centroid:               C                               | Is this CID data in profile or centroid form?  P=Profile, C=Centroid, A=Autodetect.
+Peak Width (u):                 0.75                           	| Peak width at about 10%. A value of 0 (zero) activates the auto-peak width mode.
+Ion Threshold:                  0.01                          	| Ion threshold.  (Ions > average intensity x Ion threshold are utilized.)
+Mass Offset (u):                0.0                             | Mass offset.
+Ions Per Window:                6                               | Ions per input window (windows are 60 Da wide). 8 for Qtof, 6 for LCQ
+Ions Per Residue:               6                               | Number of ions per average residue.  6 for Qtof, 4 for LCQ
+// Subsequencing ------------------------------------------------------------------------
+Transition Mass (u):            5000                            | Cutoff for monoisotopic to average mass calculations.
+Fragmentation Pattern:          Q                               | Fragmentation pattern (T=triple quad tryptic,L=ion trap tryptic, Q=Qtof tryptic)
+Max. Gaps:                      -1                              | Maximum number of gaps per subsequence. -1 implies a default value.
+Extension Threshold:            0.15                            | Extension threshold.
+Max. Extensions:                6                               | Maximum number of extensions per subsequence.
+// Extras -------------------------------------------------------------------------------
+Cysteine Mass:                  160.03065                       | Residue mass of cysteine. (160.03065, 161.01466, 208.06703 = carbamidomethyl, carboxymethyl and pyridylethyl)
+Proteolysis:                    T                               | Type of proteolysis? T=tryptic, K=Lys-C, E=V8, D=AspN, and N=none of the above
+Modified N-terminus:            1.0078                          | N-terminal mass  [1.0078(unmod), 43.0184(acetyl), 44.0136(carbamyl)]
+Modified C-terminus:            17.0027                         | C-terminal mass  [17.0027(unmod), 16.0187(amide), 31.0184(methyl)]
+Present Amino Acids:            *                               | Amino acids known to be present in the peptide. * means none.
+Absent Amino Acids:             *                               | Amino acids known to be absent from the peptide. * means none.
+Auto Tag:                       Y                               | Auto-tag (Y/N).
+Tag Low Mass y Ion:             0                               | Sequence tag - low mass y ion
+Sequence Tag:                   *                               | Sequence tag - single letter code, no spaces, from low mass to high mass y ion
+Tag High Mass y Ion:            0                               | Sequence tag - high mass y ion
+DB Sequence File:               		               			| File with sequences to score with the final results.
+Shoe Size (US):                 9.5                             | US shoe size.  Default of 17.
+// Output --------------------------------------------------------------------------------
+Number of sequences:			4								| Number of output sequences listed.  A good bet is 5
+Score threshold:				0.02							| Pr(c) is approximate probability that at least half of the sequence is correct.  A good bet is 0.20.

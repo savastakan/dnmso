@@ -1,0 +1,104 @@
+
+PepNovo v1.03 - de Novo peptide sequencing.
+All rights reserved to the Regents of the University of California.
+
+Citations:
+- Frank, A. and Pevzner, P. "PepNovo: De Novo Peptide Sequencing via Probabilistic Network Modeling", Analytical Chemistry 77:964-973, 2005.
+- Frank, A., Tanner, S., Bafna, V. and Pevzner, P. "Peptide sequence tags for fast database search in mass-spectrometry", J. Proteome Res. 2005 Jul-Aug;4(4):1287-95.
+
+Please send comments and bug reports to Ari Frank (arf@cs.ucsd.edu).
+
+File 1: WC41_FT_5FTMS2.793.793.3.dta
+
+Start	Sequence
+-----	--------
+0.00	VSGHCYFNAANLPDGVGSDYR
+
+Mass	AA	Probability:
+----	--	-----------
+0.00	V	0.390
+99.16	S	0.110
+186.09	G	0.155
+243.22	H	0.040
+381.21	C	0.003
+541.26	Y	0.003
+704.33	F	0.021
+851.41	N	0.068
+965.44	A	0.182
+1036.46	A	0.040
+1107.52	N	0.110
+1221.56	L	0.043
+1334.16	P	0.078
+1431.22	D	0.104
+1546.73	G	0.128
+1603.81	V	0.742
+1702.82	G	0.735
+1759.84	S	0.119
+1846.87	D	0.153
+1961.09	Y	0.323
+2124.00	R	0.736
+
+File 2: cyto112406.1079.1079.1.dta
+
+Start	Sequence
+-----	--------
+0.00	TGPNLHGLM+16GR
+
+Mass	AA	Probability:
+----	--	-----------
+0.00	T	0.521
+101.21	G	0.546
+158.18	P	0.229
+255.23	N	0.190
+369.23	L	0.921
+482.26	H	0.964
+619.34	G	0.968
+676.37	L	0.606
+789.35	M+16	0.354
+936.37	G	0.425
+993.35	R	0.924
+
+File 3: cyto112706_061127110758.420.420.2.dta
+
+Start	Sequence
+-----	--------
+0.00	KTGAGAPGM+16SYTDANK
+
+Mass	AA	Probability:
+----	--	-----------
+0.00	K	0.787
+128.06	T	0.722
+229.07	G	0.742
+285.95	A	0.971
+357.03	G	0.985
+414.10	A	0.989
+485.06	P	0.827
+582.07	G	0.770
+639.25	M+16	0.893
+786.26	S	0.894
+873.11	Y	0.938
+1036.30	T	0.921
+1137.34	D	0.900
+1252.44	A	0.983
+1323.52	N	0.903
+1437.61	K	0.991
+
+File 4: cyto112706.671.671.1.dta
+
+Start	Sequence
+-----	--------
+0.00	RGRLHGLM+16GN
+
+Mass	AA	Probability:
+----	--	-----------
+0.00	R	0.738
+155.94	G	0.230
+212.96	R	0.186
+369.07	L	0.626
+482.17	H	0.946
+619.04	G	0.962
+675.98	L	0.741
+789.39	M+16	0.472
+936.30	G	0.564
+993.32	N	0.855
+

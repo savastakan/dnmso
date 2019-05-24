@@ -1,0 +1,31 @@
+LutefiskXP v1.0.4
+Copyright 1996-1904 Richard S. Johnson
+
+Run Date: Fri Jul 27 15:50:54 2012
+ Filename: Qtof_ELVISLIVESK.dta
+ Molecular Weight: 1228.73  Molecular Weight Tolerance:  0.30  Fragment Ion Tolerance:  0.30
+ Ion Offset:  0.00  Charge State:  2   Centroided or Pre-processed Data 
+ Tryptic Digest       Tryptic QTOF Fragmentation Pattern 
+ Cysteine residue mass:  160.03  Switch from monoisotopic to average mass at 5000 
+ Ions per window: 6.0  Extension Threshold: 0.15  Extension Number:  6
+ Gaps:  1 Peak Width:  0.8 Data Threshold:  0.01 (1) Ions per residue: 6.0
+ Amino acids known to be present: *
+ Amino acids known to be absent: *
+
+ C-terminal mass: 17.0027
+ N-terminal mass:  1.0078
+ N-terminal Tag Mass:    0.00 C-terminal Tag Mass:    0.00 Sequence Tag: *0
+ Edman data is not available.    AutoTag ON
+
+
+
+ 
+ 
+ 
+ Sequence                                              Rank  Pr(c)   PevzScr  Quality IntScr X-corr
+ELVLSLLVESK                                              1   0.990   0.718    0.800   0.953  0.786
+AGNVLSLLVESK                                             2   0.990   0.629    0.800   0.948  0.743
+ELVLSLL[244.0]AK                                         3   0.943   0.672    0.634   0.876  0.752
+ELVLSLL[216.0]VK                                         4   0.934   0.641    0.634   0.876  0.728
+
+Search time:  0:00:00

@@ -1,0 +1,25 @@
+A        71.0371         71.08   71             /Ala - Single letter code, monoisotopic, average, nominal masses
+R       156.1011        156.19  156             /Arg
+N       114.0429        114.10  114             /Asn
+D       115.0269        115.09  115             /Asp
+C       103.0092        103.14  103             /Cys
+E       129.0426        129.12  129             /Glu
+Q       128.0586        128.13  128             /Gln
+G        57.0215         57.05   57             /Gly
+H       137.0589        137.14  137             /His
+I       113.0841        113.16  113             /Ile and later used for oxidized Met, although B is its single letter code in the output
+L       113.0841        113.16  113             /Leu is used to represent Leu and Ile
+K       128.0950        128.17  128             /Lys
+M       131.0405        131.20  131             /Met
+F       147.0684        147.18  147             /Phe
+P        97.0528         97.12   97             /Pro
+S        87.0320         87.08   87             /Ser
+T       101.0477        101.11  101             /Thr
+W       186.0793        186.21  186             /Trp
+Y       163.0633        163.17  163             /Tyr
+V        99.0684         99.13   99             /Val
+J         0.0         0.0         0             /Modified amino acid: ICRAP-D0 (188.062, 188.251)
+O         0.0         0.0     0         /Modified amino acid: ICRAP-D5 (193.093, 193.281)
+U         0.0         0.0     0         /Modified amino acid: phospho-Ser (166.9983)
+X         0.0             0.0     0             /Modified amino acid: phospho-Thr (181.0140)
+Z         0.0             0.0     0             /Modified amino acid: phospho-Tyr (243.0296)

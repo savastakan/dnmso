@@ -1,0 +1,229 @@
+format-version: 1.2
+ontology: dnmso
+property_value: defaultLanguage "en" xsd:string
+property_value: http://www.iyte.edu.tr/dnmso "DNMSO Ontology" xsd:string
+
+[Term]
+id: DNMSO:000010
+name: software
+property_value: hasSettings DNMSO:000011
+property_value: hasSoftwareName "Example Program" xsd:string
+property_value: hasSoftwareVersion "1.0" xsd:string
+
+[Term]
+id: DNMSO:000011
+name: settings
+property_value: hasSetting DNMSO:000012
+
+[Term]
+id: DNMSO:000012
+name: setting
+property_value: hasSettingName "Setting" xsd:string
+property_value: hasSettingValue "1" xsd:string
+
+[Term]
+id: DNMSO:000014
+name: scores
+
+[Term]
+id: DNMSO:000008
+name: modAminoAcid
+property_value: hasAverageMass "12.5" xsd:double
+property_value: hasCharacter "S" xsd:string
+property_value: hasMonoIsotopicMass "15.4" xsd:double
+
+[Term]
+id: DNMSO:000007
+name: modification
+property_value: hasMass "12.5" xsd:double
+property_value: hasModAminoAcid DNMSO:000008
+property_value: hasName "ExampleModification" xsd:string
+
+[Term]
+id: DNMSO:000006
+name: modifications
+property_value: hasModification DNMSO:000007
+
+[Term]
+id: DNMSO:000005
+name:  spectrum
+property_value: hasCsv "34.41,1;27.0,1;234.03,1;46.06,1;345.11,1;56.20,1;567.22,1;12.31,1;234.35,1;45.38,1;564.4,1" xsd:string
+property_value: hasFileName "example.data" xsd:string
+property_value: hasPrecursorIntensity "62.5" xsd:double
+property_value: hasPrecursorMZ "12.0" xsd:double
+property_value: hasScanId "4" xsd:string
+
+[Term]
+id: DNMSO:000009
+name: predictions
+property_value: hasPrediction DNMSO:000013
+property_value: hasSoftware DNMSO:000010
+
+[Term]
+id: DNMSO:000029
+name: proof
+property_value: hasIntensity "1.0" xsd:double
+property_value: hasMz "678.22" xsd:double
+property_value: hasPosition "1" xsd:integer
+
+[Term]
+id: DNMSO:000027
+name: proof
+property_value: hasIntensity "1.0" xsd:double
+property_value: hasMz "15.35" xsd:double
+property_value: hasPosition "2" xsd:integer
+
+[Term]
+id: DNMSO:000028
+name: modifiedAminoAcid
+property_value: hasConfidence "0.84" xsd:double
+property_value: hasModificationName "ExampleModification" xsd:string
+property_value: hasPosition "3" xsd:integer
+property_value: hasProof DNMSO:000029
+property_value: hasProof DNMSO:000030
+
+[Term]
+id: DNMSO:000030
+name: proof
+property_value: hasIntensity "1.0" xsd:double
+property_value: hasMz "15.35" xsd:double
+property_value: hasPosition "1" xsd:integer
+
+[Term]
+id: DNMSO:000015
+name: sources
+property_value: hasMerge "true" xsd:boolean
+property_value: hasSource DNMSO:000016
+property_value: hasSource DNMSO:000017
+
+[Term]
+id: DNMSO:000013
+name: prediction
+property_value: hasAssumedCharge "1" xsd:double
+property_value: hasScores DNMSO:000014
+property_value: hasSequence DNMSO:000021
+property_value: hasSources DNMSO:000015
+property_value: hasSources DNMSO:000018
+
+[Term]
+id: DNMSO:000017
+name: source
+property_value: hasFileName "example.data" xsd:string
+property_value: hasScanId "2" xsd:string
+
+[Term]
+id: DNMSO:000016
+name: source
+property_value: hasFileName "example.data" xsd:string
+property_value: hasScanId "1" xsd:string
+
+[Term]
+id: DNMSO:000019
+name: source
+property_value: hasFileName "example.data" xsd:string
+property_value: hasScanId "3" xsd:string
+
+[Term]
+id: DNMSO:000018
+name: sources
+property_value: hasMerge "false" xsd:boolean
+property_value: hasSource DNMSO:000019
+property_value: hasSource DNMSO:000020
+
+[Term]
+id: DNMSO:000001
+name: spectra
+property_value: hasSpectrum DNMSO:000002
+property_value: hasSpectrum DNMSO:000003
+property_value: hasSpectrum DNMSO:000004
+property_value: hasSpectrum DNMSO:000005
+
+[Term]
+id: DNMSO:000020
+name: source
+property_value: hasFileName "example.data" xsd:string
+property_value: hasScanId "4" xsd:string
+
+[Term]
+id: DNMSO:000002
+name:  spectrum
+property_value: hasCsv "878.41,1;1.0,1;88.03,1;159.06,1;290.11,1;374.20,1;486.22,1;570.31,1;701.35,1;772.38,1;859.4,1" xsd:string
+property_value: hasFileName "example.data" xsd:string
+property_value: hasPrecursorIntensity "42.5" xsd:double
+property_value: hasPrecursorMZ "5.0" xsd:double
+property_value: hasScanId "1" xsd:string
+
+[Term]
+id: DNMSO:000003
+name:  spectrum
+property_value: hasCsv "912.41,1;22.0,1;12.03,1;132.06,1;142.11,1;23.20,1;456.22,1;45.31,1;567.35,1;132.38,1;789.4,1" xsd:string
+property_value: hasFileName "example.data" xsd:string
+property_value: hasPrecursorIntensity "123.5" xsd:double
+property_value: hasPrecursorMZ "3.0" xsd:double
+property_value: hasScanId "2" xsd:string
+
+[Term]
+id: DNMSO:000021
+name: sequence
+property_value: hasCalculatedMass "134.7" xsd:double
+property_value: hasConfidence "0.789" xsd:double
+property_value: hasSequence "KLS" xsd:string
+property_value: hasSequenceElement DNMSO:000022
+property_value: hasSequenceElement DNMSO:000025
+property_value: hasSequenceElement DNMSO:000028
+
+[Term]
+id: DNMSO:000004
+name:  spectrum
+property_value: hasCsv "12.41,1;34.0,1;5.03,1;124.06,1;34.11,1;56.20,1;678.22,1;45.31,1;15.35,1;345.38,1;345.4,1" xsd:string
+property_value: hasFileName "example.data" xsd:string
+property_value: hasPrecursorIntensity "75.5" xsd:double
+property_value: hasPrecursorMZ "8.0" xsd:double
+property_value: hasScanId "3" xsd:string
+
+[Term]
+id: DNMSO:000022
+name: aminoAcid
+property_value: hasCharacter "K" xsd:string
+property_value: hasConfidence "0.54" xsd:double
+property_value: hasPosition "1" xsd:integer
+property_value: hasProof DNMSO:000023
+property_value: hasProof DNMSO:000024
+
+[Term]
+id: DNMSO:000023
+name: proof
+property_value: hasIntensity "1.0" xsd:double
+property_value: hasMz "34.41" xsd:double
+property_value: hasPosition "3" xsd:integer
+
+[Term]
+id: DNMSO:000024
+name: proof
+property_value: hasIntensity "1.0" xsd:double
+property_value: hasMz "234.03" xsd:double
+property_value: hasPosition "3" xsd:integer
+
+[Term]
+id: DNMSO:000025
+name: gap
+property_value: hasConfidence "0.54" xsd:double
+property_value: hasPosition "2" xsd:integer
+property_value: hasProof DNMSO:000026
+property_value: hasProof DNMSO:000027
+property_value: hasValue "345.11" xsd:double
+
+[Term]
+id: DNMSO:000000
+name: dnmso
+property_value: hasModifications DNMSO:000006
+property_value: hasPredictions DNMSO:000009
+property_value: hasSpectra DNMSO:000001
+
+[Term]
+id: DNMSO:000026
+name: proof
+property_value: hasIntensity "1.0" xsd:double
+property_value: hasMz "678.22" xsd:double
+property_value: hasPosition "2" xsd:integer
+

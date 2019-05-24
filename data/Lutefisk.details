@@ -1,0 +1,16 @@
+4	9	9		/  b ion values for nodes of type general, triple quad tryptic, and ion trap tryptic
+2	0	0		/  a ion values          
+0	0	0		/  c ion values              Note:  The sum of the ion values must be less
+0	0	0		/  d ion values              than 30 (memory issues).
+2	1	1		/  b-17 or b-18 ion values
+2	0	0		/  a-17 or a-18 ion values
+4	9	9		/  y ion values
+0	0	0		/  y-2 ion values
+2	1	1		/  y-17 or y-18 ion values
+0	0	0		/  x ion values
+0	0	0		/  z+1 ion values
+0	0	0		/  w ion values
+0	0	0		/  v ion values
+0	0	0		/  b-OH ion values
+0	0	0		/  b-OH-17 ion values
+
