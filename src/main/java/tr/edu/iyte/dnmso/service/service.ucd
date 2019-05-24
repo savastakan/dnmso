@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" name="service" size="1415,1427" id="tr.edu.iyte.dnmso.service" metadata="uml2-1.0" initialized="true" zoom="1.5" tag="1000" key="32303037303533312D3130303020646E6D736F2F7374">
+  <children xsi:type="editmodel:ClassEditModel" name="PredicitonFactory" location="374,75" size="154,103" id="tr.edu.iyte.dnmso.service/PredicitonFactory" runTimeClassModel="getService(Ljava.lang.String;),getDNMSOService(),PredicitonFactory()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="119,54">
+      <children xsi:type="editmodel:MethodEditModel" name="PredicitonFactory" id="tr.edu.iyte.dnmso.service/PredicitonFactory#PredicitonFactory()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getDNMSOService" id="tr.edu.iyte.dnmso.service/PredicitonFactory#getDNMSOService()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getService" id="tr.edu.iyte.dnmso.service/PredicitonFactory#getService(Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:EnumerationEditModel" name="ServiceTag" location="60,90" size="168,179" id="tr.edu.iyte.dnmso.service/ServiceTag" runTimeClassModel="OUTPUT%,DNMSO%,SPECTRA_FILE_PATH%,COMMAND%,NUMBER_OF_PREDICTION%,PREDICTION_FILE_PATH%,SPECTRUM_INDEX%">
+    <children xsi:type="editmodel:CompartmentEditModel" size="145,126">
+      <children xsi:type="editmodel:EnumerationLiteralEditModel" name="COMMAND" id="tr.edu.iyte.dnmso.service/ServiceTag#COMMAND%"/>
+      <children xsi:type="editmodel:EnumerationLiteralEditModel" name="SPECTRUM_INDEX" id="tr.edu.iyte.dnmso.service/ServiceTag#SPECTRUM_INDEX%"/>
+      <children xsi:type="editmodel:EnumerationLiteralEditModel" name="SPECTRA_FILE_PATH" id="tr.edu.iyte.dnmso.service/ServiceTag#SPECTRA_FILE_PATH%"/>
+      <children xsi:type="editmodel:EnumerationLiteralEditModel" name="DNMSO" id="tr.edu.iyte.dnmso.service/ServiceTag#DNMSO%"/>
+      <children xsi:type="editmodel:EnumerationLiteralEditModel" name="PREDICTION_FILE_PATH" id="tr.edu.iyte.dnmso.service/ServiceTag#PREDICTION_FILE_PATH%"/>
+      <children xsi:type="editmodel:EnumerationLiteralEditModel" name="NUMBER_OF_PREDICTION" id="tr.edu.iyte.dnmso.service/ServiceTag#NUMBER_OF_PREDICTION%"/>
+      <children xsi:type="editmodel:EnumerationLiteralEditModel" name="OUTPUT" id="tr.edu.iyte.dnmso.service/ServiceTag#OUTPUT%"/>
+    </children>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="SpectraFactory" location="360,195" size="138,85" id="tr.edu.iyte.dnmso.service/SpectraFactory" runTimeClassModel="SpectraFactory(),getSpectra(Ltr.edu.iyte.dnmso.service.AbstractService;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="105,36">
+      <children xsi:type="editmodel:MethodEditModel" name="SpectraFactory" id="tr.edu.iyte.dnmso.service/SpectraFactory#SpectraFactory()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getSpectra" id="tr.edu.iyte.dnmso.service/SpectraFactory#getSpectra(Ltr.edu.iyte.dnmso.service.AbstractService;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="MzXmlService" location="416,406" size="133,103" id="tr.edu.iyte.dnmso.service/MzXmlService" runTimeClassModel="isValid(Ljava.io.File;),run(Ljava.lang.Object;[Ljava.lang.String;),getServiceName()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="109,54">
+      <children xsi:type="editmodel:MethodEditModel" name="getServiceName" id="tr.edu.iyte.dnmso.service/MzXmlService#getServiceName()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="isValid" id="tr.edu.iyte.dnmso.service/MzXmlService#isValid(Ljava.io.File;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="run" id="tr.edu.iyte.dnmso.service/MzXmlService#run(Ljava.lang.Object;[Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="tr.edu.iyte.dnmso.service/AbstractService&lt;-tr.edu.iyte.dnmso.service/MzXmlService" source="//@children.3" target="//@children.7/@sourceConnections.0" targetEnd="//@children.3/@sourceConnections.0/@children.1" sourceEnd="//@children.3/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="66,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="DnmsoOboService" location="227,406" size="159,139" id="tr.edu.iyte.dnmso.service/DnmsoOboService" runTimeClassModel="isValid(Ljava.io.File;),run(Ljava.lang.Object;[Ljava.lang.String;),write(),read(),getServiceName()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="109,90">
+      <children xsi:type="editmodel:MethodEditModel" name="getServiceName" id="tr.edu.iyte.dnmso.service/DnmsoOboService#getServiceName()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="isValid" id="tr.edu.iyte.dnmso.service/DnmsoOboService#isValid(Ljava.io.File;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="read" id="tr.edu.iyte.dnmso.service/DnmsoOboService#read()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="run" id="tr.edu.iyte.dnmso.service/DnmsoOboService#run(Ljava.lang.Object;[Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="write" id="tr.edu.iyte.dnmso.service/DnmsoOboService#write()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="tr.edu.iyte.dnmso.service/AbstractService&lt;-tr.edu.iyte.dnmso.service/DnmsoOboService" source="//@children.4" target="//@children.7/@sourceConnections.0" targetEnd="//@children.4/@sourceConnections.0/@children.1" sourceEnd="//@children.4/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="79,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="DnmlService" location="973,90" size="132,103" id="tr.edu.iyte.dnmso.service/DnmlService" runTimeClassModel="isValid(Ljava.io.File;),run(Ljava.lang.Object;[Ljava.lang.String;),getServiceName()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="109,54">
+      <children xsi:type="editmodel:MethodEditModel" name="getServiceName" id="tr.edu.iyte.dnmso.service/DnmlService#getServiceName()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="isValid" id="tr.edu.iyte.dnmso.service/DnmlService#isValid(Ljava.io.File;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="run" id="tr.edu.iyte.dnmso.service/DnmlService#run(Ljava.lang.Object;[Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="tr.edu.iyte.dnmso.service/AbstractService&lt;-tr.edu.iyte.dnmso.service/DnmlService" source="//@children.5" target="//@children.7/@sourceConnections.0" targetEnd="//@children.5/@sourceConnections.0/@children.1" sourceEnd="//@children.5/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="66,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="DtaService" location="579,406" size="132,121" id="tr.edu.iyte.dnmso.service/DtaService" runTimeClassModel="isValid(Ljava.io.File;),run(Ljava.lang.Object;[Ljava.lang.String;),read(),getServiceName()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="109,72">
+      <children xsi:type="editmodel:MethodEditModel" name="getServiceName" id="tr.edu.iyte.dnmso.service/DtaService#getServiceName()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="isValid" id="tr.edu.iyte.dnmso.service/DtaService#isValid(Ljava.io.File;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="read" id="tr.edu.iyte.dnmso.service/DtaService#read()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="run" id="tr.edu.iyte.dnmso.service/DtaService#run(Ljava.lang.Object;[Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="tr.edu.iyte.dnmso.service/AbstractService&lt;-tr.edu.iyte.dnmso.service/DtaService" source="//@children.6" target="//@children.7/@sourceConnections.0" targetEnd="//@children.6/@sourceConnections.0/@children.1" sourceEnd="//@children.6/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="66,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="PepNovoService" location="45,406" size="147,121" id="tr.edu.iyte.dnmso.service/PepNovoService" runTimeClassModel="isValid(Ljava.io.File;),run(Ljava.lang.Object;[Ljava.lang.String;),read(),getServiceName()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="109,72">
+      <children xsi:type="editmodel:MethodEditModel" name="getServiceName" id="tr.edu.iyte.dnmso.service/PepNovoService#getServiceName()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="isValid" id="tr.edu.iyte.dnmso.service/PepNovoService#isValid(Ljava.io.File;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="read" id="tr.edu.iyte.dnmso.service/PepNovoService#read()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="run" id="tr.edu.iyte.dnmso.service/PepNovoService#run(Ljava.lang.Object;[Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" targetConnections="//@children.4/@sourceConnections.0 //@children.3/@sourceConnections.0 //@children.6/@sourceConnections.0 //@children.9/@sourceConnections.0 //@children.12/@sourceConnections.0 //@children.8/@sourceConnections.0 //@children.5/@sourceConnections.0" autoLocated="true" id="tr.edu.iyte.dnmso.service/AbstractService&lt;-tr.edu.iyte.dnmso.service/PepNovoService" source="//@children.7" target="//@children.10" targetEnd="//@children.7/@sourceConnections.0/@children.1" sourceEnd="//@children.7/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="73,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="106,139" anchorKind="FixedAtEdge"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="LutefiskXPService" location="960,217" size="157,103" id="tr.edu.iyte.dnmso.service/LutefiskXPService" runTimeClassModel="isValid(Ljava.io.File;),run(Ljava.lang.Object;[Ljava.lang.String;),getServiceName()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="109,54">
+      <children xsi:type="editmodel:MethodEditModel" name="getServiceName" id="tr.edu.iyte.dnmso.service/LutefiskXPService#getServiceName()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="isValid" id="tr.edu.iyte.dnmso.service/LutefiskXPService#isValid(Ljava.io.File;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="run" id="tr.edu.iyte.dnmso.service/LutefiskXPService#run(Ljava.lang.Object;[Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="tr.edu.iyte.dnmso.service/AbstractService&lt;-tr.edu.iyte.dnmso.service/LutefiskXPService" source="//@children.8" target="//@children.7/@sourceConnections.0" targetEnd="//@children.8/@sourceConnections.0/@children.1" sourceEnd="//@children.8/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="78,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="PepXMLService" location="741,406" size="143,103" id="tr.edu.iyte.dnmso.service/PepXMLService" runTimeClassModel="isValid(Ljava.io.File;),run(Ljava.lang.Object;[Ljava.lang.String;),getServiceName()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="109,54">
+      <children xsi:type="editmodel:MethodEditModel" name="getServiceName" id="tr.edu.iyte.dnmso.service/PepXMLService#getServiceName()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="isValid" id="tr.edu.iyte.dnmso.service/PepXMLService#isValid(Ljava.io.File;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="run" id="tr.edu.iyte.dnmso.service/PepXMLService#run(Ljava.lang.Object;[Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="tr.edu.iyte.dnmso.service/AbstractService&lt;-tr.edu.iyte.dnmso.service/PepXMLService" source="//@children.9" target="//@children.7/@sourceConnections.0" targetEnd="//@children.9/@sourceConnections.0/@children.1" sourceEnd="//@children.9/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="71,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.7/@sourceConnections.0" name="AbstractService" location="622,217" size="213,139" id="tr.edu.iyte.dnmso.service/AbstractService" runTimeClassModel="container,processSettings(Ljava.lang.Object;[Ljava.lang.String;),getNotFindingSpectrumIds(Ljava.lang.String;Ljava.util.List;),findSpectrum(Ljava.lang.String;Ljava.lang.Integer;),properties">
+    <children xsi:type="editmodel:CompartmentEditModel" size="190,36">
+      <children xsi:type="editmodel:AttributeEditModel" name="container" id="tr.edu.iyte.dnmso.service/AbstractService#container"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="properties" id="tr.edu.iyte.dnmso.service/AbstractService#properties"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="155,54">
+      <children xsi:type="editmodel:MethodEditModel" name="findSpectrum" id="tr.edu.iyte.dnmso.service/AbstractService#findSpectrum(Ljava.lang.String;Ljava.lang.Integer;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getNotFindingSpectrumIds" id="tr.edu.iyte.dnmso.service/AbstractService#getNotFindingSpectrumIds(Ljava.lang.String;Ljava.util.List;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="processSettings" id="tr.edu.iyte.dnmso.service/AbstractService#processSettings(Ljava.lang.Object;[Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="tr.edu.iyte.dnmso.service/Service&lt;-tr.edu.iyte.dnmso.service/AbstractService" source="//@children.10" target="//@children.11" targetEnd="//@children.10/@sourceConnections.0/@children.1" sourceEnd="//@children.10/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="106,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="65,117"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:InterfaceEditModel" targetConnections="//@children.10/@sourceConnections.0" name="Service" location="663,50" size="132,117" id="tr.edu.iyte.dnmso.service/Service" runTimeClassModel="isValid(Ljava.io.File;),run(Ljava.lang.Object;[Ljava.lang.String;),getServiceName()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="109,54">
+      <children xsi:type="editmodel:MethodEditModel" name="getServiceName" id="tr.edu.iyte.dnmso.service/Service#getServiceName()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="isValid" id="tr.edu.iyte.dnmso.service/Service#isValid(Ljava.io.File;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="run" id="tr.edu.iyte.dnmso.service/Service#run(Ljava.lang.Object;[Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="MzMLService" location="914,406" size="132,103" id="tr.edu.iyte.dnmso.service/MzMLService" runTimeClassModel="isValid(Ljava.io.File;),run(Ljava.lang.Object;[Ljava.lang.String;),getServiceName()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="109,54">
+      <children xsi:type="editmodel:MethodEditModel" name="getServiceName" id="tr.edu.iyte.dnmso.service/MzMLService#getServiceName()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="isValid" id="tr.edu.iyte.dnmso.service/MzMLService#isValid(Ljava.io.File;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="run" id="tr.edu.iyte.dnmso.service/MzMLService#run(Ljava.lang.Object;[Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="tr.edu.iyte.dnmso.service/AbstractService&lt;-tr.edu.iyte.dnmso.service/MzMLService" source="//@children.12" target="//@children.7/@sourceConnections.0" targetEnd="//@children.12/@sourceConnections.0/@children.1" sourceEnd="//@children.12/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="66,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" level="-1" showScope="InPackage" properties="wireOptions=1;Product=eUML2"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="15,15" gridOrigin="0,0" rulerUnit="pixel" gridVisibility="false">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" showPopupBars="true" showConnectionHandles="true" attributeSorter="Natural" methodSorter="Natural" showClassStereotype="true" showPackageStereotype="true" showDependencyStereotype="true" showInterfaceStereotype="true" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+</editmodel:ClassDiagramEditModel>
