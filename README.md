@@ -19,3 +19,5 @@ example command for merge : "java -jar dnmso.jar merge file1.mzxml file2.mzml fi
 
 example command for convert : "java -jar dnmso.jar convert file.lut output.dnmso"
 
+
+## more info : http://bioinformatics.iyte.edu.tr/dnml/
