@@ -8,8 +8,14 @@ For the identification and sequencing of proteins, mass spectrometry (MS) has be
 ## USAGE
 
 download and compile dnmso library
+
 start terminal
+
 write command in terminal such as
+
 example command for validatation : "java -jar dnmso.jar validate file.dnmso"
+
 example command for merge : "java -jar dnmso.jar merge file1.mzxml file2.mzml file.lut pepnovo.txt output.dnmso"
+
 example command for convert : "java -jar dnmso.jar convert file.lut output.dnmso"
+
