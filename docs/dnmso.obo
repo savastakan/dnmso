@@ -1,0 +1,221 @@
+format-version: 1.4
+ontology: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso
+
+[Term]
+id: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#AminoAcid
+
+[Term]
+id: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#DNMSO
+property_value: http://www.w3.org/2002/07/owl#propertyDisjointWith http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#hasPeakValue
+
+[Term]
+id: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#Gap
+
+[Term]
+id: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#ModAminoAcid
+
+[Term]
+id: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#Modification
+
+[Term]
+id: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#ModificationElement
+
+[Term]
+id: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#Modifications
+
+[Term]
+id: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#ModifiedAminoAcid
+
+[Term]
+id: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#PeakLink
+disjoint_from: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#PeakValue
+
+[Term]
+id: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#PeakValue
+
+[Term]
+id: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#Prediction
+
+[Term]
+id: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#Predictions
+
+[Term]
+id: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#Proof
+
+[Term]
+id: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#Score
+
+[Term]
+id: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#Sequence
+
+[Term]
+id: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#SequenceElement
+
+[Term]
+id: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#Setting
+
+[Term]
+id: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#Settings
+
+[Term]
+id: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#Software
+
+[Term]
+id: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#Source
+
+[Term]
+id: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#Sources
+
+[Term]
+id: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#Spectra
+
+[Term]
+id: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#Spectrum
+
+[Term]
+id: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#SpectrumData
+
+[Term]
+id: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#Terminal
+
+[Typedef]
+id: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#hasGapProof
+domain: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#Gap
+range: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#Proof
+
+[Typedef]
+id: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#hasModAminoAcidProof
+domain: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#ModAminoAcid
+range: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#Proof
+
+[Typedef]
+id: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#hasModification
+domain: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#Modifications
+range: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#Modification
+
+[Typedef]
+id: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#hasModificationElement
+domain: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#Modification
+range: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#ModificationElement
+
+[Typedef]
+id: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#hasModifications
+domain: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#DNMSO
+range: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#Modifications
+
+[Typedef]
+id: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#hasPeakLink
+property_value: http://www.w3.org/2002/07/owl#propertyDisjointWith http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#hasPeakValue
+domain: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#Proof
+range: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#PeakLink
+
+[Typedef]
+id: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#hasPeakValue
+domain: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#Proof
+range: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#PeakValue
+
+[Typedef]
+id: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#hasPrediction
+domain: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#Predictions
+range: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#Prediction
+
+[Typedef]
+id: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#hasPredictions
+domain: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#DNMSO
+range: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#Predictions
+
+[Typedef]
+id: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#hasProof
+domain: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#SequenceElement
+range: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#Proof
+
+[Typedef]
+id: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#hasScore
+domain: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#Prediction
+range: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#Score
+
+[Typedef]
+id: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#hasSequence
+domain: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#Prediction
+range: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#Sequence
+
+[Typedef]
+id: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#hasSequenceElement
+domain: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#Sequence
+range: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#SequenceElement
+
+[Typedef]
+id: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#hasSetting
+domain: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#Settings
+range: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#Setting
+
+[Typedef]
+id: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#hasSettings
+domain: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#Software
+range: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#Settings
+
+[Typedef]
+id: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#hasSoftware
+domain: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#Predictions
+range: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#Software
+
+[Typedef]
+id: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#hasSource
+domain: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#Sources
+range: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#Source
+
+[Typedef]
+id: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#hasSourceSpectrum
+domain: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#Source
+range: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#Spectrum
+
+[Typedef]
+id: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#hasSources
+domain: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#Prediction
+range: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#Sources
+
+[Typedef]
+id: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#hasSpec
+domain: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#Score
+range: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#Spectrum
+
+[Typedef]
+id: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#hasSpectra
+domain: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#DNMSO
+range: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#Spectra
+
+[Typedef]
+id: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#hasSpectrum
+domain: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#Spectra
+range: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#Spectrum
+
+[Typedef]
+id: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#hasSpectrumData
+domain: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#Spectrum
+range: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#SpectrumData
+
+[Typedef]
+id: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#isAAminoAcid
+domain: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#SequenceElement
+range: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#AminoAcid
+
+[Typedef]
+id: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#isAGap
+domain: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#SequenceElement
+range: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#Gap
+
+[Typedef]
+id: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#isAModAminoAcid
+domain: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#SequenceElement
+range: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#ModAminoAcid
+
+[Typedef]
+id: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#isAModifiedAminoAcid
+property_value: http://www.w3.org/2002/07/owl#propertyDisjointWith http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#isATerminal
+domain: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#ModificationElement
+range: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#ModifiedAminoAcid
+
+[Typedef]
+id: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#isATerminal
+domain: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#ModificationElement
+range: http://www.semanticweb.org/savas/ontologies/2020/3/dnmso#Terminal
