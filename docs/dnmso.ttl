@@ -1,0 +1,418 @@
+# baseURI: https://github.com/savastakan/dnmso
+
+@prefix : <https://github.com/savastakan/dnmso#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://github.com/savastakan/dnmso>
+  a owl:Ontology ;
+.
+:AACharacter
+  a owl:DatatypeProperty ;
+  rdfs:domain :AminoAcid ;
+  rdfs:range xsd:string ;
+.
+:AAConfidence
+  a owl:DatatypeProperty ;
+  rdfs:domain :AminoAcid ;
+  rdfs:range xsd:decimal ;
+.
+:AAPos
+  a owl:DatatypeProperty ;
+  rdfs:domain :AminoAcid ;
+  rdfs:range xsd:integer ;
+.
+:AminoAcid
+  a owl:Class ;
+  rdfs:subClassOf :SequenceElement ;
+.
+:CSV
+  a owl:Class ;
+  rdfs:subClassOf :SpectrumData ;
+.
+:DNMSO
+  a owl:Class ;
+.
+:Gap
+  a owl:Class ;
+  rdfs:subClassOf :SequenceElement ;
+.
+:GapConfidence
+  a owl:DatatypeProperty ;
+  rdfs:domain :Gap ;
+  rdfs:range xsd:decimal ;
+.
+:GapPos
+  a owl:DatatypeProperty ;
+  rdfs:domain :Gap ;
+  rdfs:range xsd:integer ;
+.
+:GapValue
+  a owl:DatatypeProperty ;
+  rdfs:domain :Gap ;
+  rdfs:range xsd:decimal ;
+.
+:Link
+  a owl:Class ;
+  rdfs:subClassOf :SpectrumData ;
+.
+:MAAConfidence
+  a owl:DatatypeProperty ;
+  rdfs:domain :ModAminoAcid ;
+  rdfs:range xsd:decimal ;
+.
+:MAAPos
+  a owl:DatatypeProperty ;
+  rdfs:domain :ModAminoAcid ;
+  rdfs:range xsd:integer ;
+.
+:ModAminoAcid
+  a owl:Class ;
+  rdfs:subClassOf :SequenceElement ;
+.
+:Modification
+  a owl:Class ;
+  rdfs:subClassOf owl:Thing ;
+.
+:ModificationElement
+  a owl:Class ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty :hasModificationElement ;
+    ] ;
+.
+:Modifications
+  a owl:Class ;
+  rdfs:subClassOf owl:Thing ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty :hasModifications ;
+    ] ;
+.
+:ModifiedAminoAcid
+  a owl:Class ;
+  rdfs:subClassOf :ModificationElement ;
+.
+:PeakLink
+  a owl:Class ;
+  rdfs:subClassOf :Proof ;
+.
+:PeakValue
+  a owl:Class ;
+  rdfs:subClassOf :Proof ;
+.
+:Prediction
+  a owl:Class ;
+  rdfs:subClassOf owl:Thing ;
+.
+:Predictions
+  a owl:Class ;
+  rdfs:subClassOf owl:Thing ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty :hasPredictions ;
+    ] ;
+.
+:Proof
+  a owl:Class ;
+.
+:Publication
+  a owl:Class ;
+  rdfs:subClassOf owl:Thing ;
+.
+:Score
+  a owl:Class ;
+.
+:Sequence
+  a owl:Class ;
+.
+:SequenceElement
+  a owl:Class ;
+.
+:Setting
+  a owl:Class ;
+  rdfs:subClassOf owl:Thing ;
+.
+:Settings
+  a owl:Class ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty :hasSettings ;
+    ] ;
+.
+:Software
+  a owl:Class ;
+  rdfs:subClassOf owl:Thing ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty :hasSoftware ;
+    ] ;
+.
+:SoftwareName
+  a owl:DatatypeProperty ;
+  rdfs:domain :Software ;
+.
+:SoftwareVersion
+  a owl:DatatypeProperty ;
+  rdfs:domain :Software ;
+  rdfs:range xsd:string ;
+.
+:Source
+  a owl:Class ;
+.
+:Sources
+  a owl:Class ;
+.
+:Spectra
+  a owl:Class ;
+  rdfs:subClassOf owl:Thing ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty :hasSpectra ;
+    ] ;
+.
+:Spectrum
+  a owl:Class ;
+  rdfs:subClassOf owl:Thing ;
+  rdfs:subClassOf :Source ;
+.
+:SpectrumData
+  a owl:Class ;
+  rdfs:subClassOf owl:Thing ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty :hasSpectrumData ;
+    ] ;
+.
+:Terminal
+  a owl:Class ;
+  rdfs:subClassOf :ModificationElement ;
+.
+:averageMass
+  a owl:DatatypeProperty ;
+  rdfs:domain :ModifiedAminoAcid ;
+  rdfs:range xsd:decimal ;
+.
+:back
+  a owl:DatatypeProperty ;
+  rdfs:domain :Terminal ;
+  rdfs:range xsd:string ;
+.
+:character
+  a owl:DatatypeProperty ;
+  rdfs:domain :ModifiedAminoAcid ;
+  rdfs:range xsd:string ;
+.
+:confidence
+  a owl:DatatypeProperty ;
+  rdfs:domain :Sequence ;
+  rdfs:range xsd:decimal ;
+.
+:data
+  a owl:DatatypeProperty ;
+  rdfs:domain :CSV ;
+  rdfs:range xsd:string ;
+.
+:front
+  a owl:DatatypeProperty ;
+  rdfs:domain :Terminal ;
+.
+:hasAAProof
+  a owl:ObjectProperty ;
+  rdfs:domain :Proof ;
+  rdfs:range :AminoAcid ;
+.
+:hasMod
+  a owl:ObjectProperty ;
+  rdfs:domain :Modification ;
+  rdfs:range :ModAminoAcid ;
+.
+:hasModProof
+  a owl:ObjectProperty ;
+  rdfs:domain :Proof ;
+  rdfs:range :ModAminoAcid ;
+.
+:hasModification
+  a owl:ObjectProperty ;
+  rdfs:domain :Modification ;
+  rdfs:range :Modifications ;
+.
+:hasModificationElement
+  a owl:ObjectProperty ;
+  rdfs:domain :ModificationElement ;
+  rdfs:range :Modification ;
+.
+:hasModifications
+  a owl:ObjectProperty ;
+  rdfs:domain :Modifications ;
+  rdfs:range :DNMSO ;
+.
+:hasPeakLinkSpectrum
+  a owl:ObjectProperty ;
+  rdfs:domain :Spectrum ;
+  rdfs:range :PeakLink ;
+.
+:hasPrediction
+  a owl:ObjectProperty ;
+  rdfs:domain :Prediction ;
+  rdfs:range :Predictions ;
+.
+:hasPredictions
+  a owl:ObjectProperty ;
+  rdfs:domain :Predictions ;
+  rdfs:range :DNMSO ;
+.
+:hasPublication
+  a owl:ObjectProperty ;
+  rdfs:domain :Publication ;
+  rdfs:range :Software ;
+.
+:hasScore
+  a owl:ObjectProperty ;
+  rdfs:domain :Score ;
+  rdfs:range :Prediction ;
+.
+:hasSequence
+  a owl:ObjectProperty ;
+  rdfs:domain :Sequence ;
+  rdfs:range :Prediction ;
+.
+:hasSequenceElement
+  a owl:ObjectProperty ;
+  rdfs:domain :SequenceElement ;
+  rdfs:range :Sequence ;
+.
+:hasSetting
+  a owl:ObjectProperty ;
+  rdfs:domain :Setting ;
+  rdfs:range :Settings ;
+.
+:hasSettings
+  a owl:ObjectProperty ;
+  rdfs:domain :Settings ;
+  rdfs:range :Software ;
+.
+:hasSoftware
+  a owl:ObjectProperty ;
+  rdfs:domain :Software ;
+  rdfs:range :Prediction ;
+.
+:hasSource
+  a owl:ObjectProperty ;
+  rdfs:domain :Source ;
+  rdfs:range :Sources ;
+.
+:hasSources
+  a owl:ObjectProperty ;
+  rdfs:domain :Sources ;
+  rdfs:range :Prediction ;
+.
+:hasSpectra
+  a owl:ObjectProperty ;
+  rdfs:domain :Spectra ;
+  rdfs:range :DNMSO ;
+.
+:hasSpectrum
+  a owl:ObjectProperty ;
+  rdfs:domain :Spectrum ;
+  rdfs:range :Spectra ;
+.
+:hasSpectrumData
+  a owl:ObjectProperty ;
+  rdfs:domain :SpectrumData ;
+  rdfs:range :Spectrum ;
+.
+:intensity
+  a owl:DatatypeProperty ;
+  rdfs:domain :PeakValue ;
+  rdfs:range xsd:decimal ;
+.
+:modificationMass
+  a owl:DatatypeProperty ;
+  rdfs:domain :Modification ;
+  rdfs:range xsd:decimal ;
+.
+:modificationName
+  a owl:DatatypeProperty ;
+  rdfs:domain :Modification ;
+  rdfs:range xsd:string ;
+.
+:monoIsotopicMass
+  a owl:DatatypeProperty ;
+  rdfs:domain :ModifiedAminoAcid ;
+  rdfs:range xsd:decimal ;
+.
+:mz
+  a owl:DatatypeProperty ;
+  rdfs:domain :PeakValue ;
+  rdfs:range xsd:decimal ;
+.
+:name
+  a owl:DatatypeProperty ;
+  rdfs:domain :Setting ;
+  rdfs:range xsd:string ;
+.
+:peakId
+  a owl:DatatypeProperty ;
+  rdfs:domain :PeakLink ;
+.
+:pos
+  a owl:DatatypeProperty ;
+  rdfs:domain :Proof ;
+  rdfs:range xsd:integer ;
+.
+:precursorIntensity
+  a owl:DatatypeProperty ;
+  rdfs:domain :Spectrum ;
+  rdfs:range xsd:decimal ;
+.
+:precursorMZ
+  a owl:DatatypeProperty ;
+  rdfs:domain :Spectrum ;
+  rdfs:range xsd:decimal ;
+.
+:pubUrl
+  a owl:DatatypeProperty ;
+  rdfs:domain :Publication ;
+  rdfs:range xsd:string ;
+.
+:scanId
+  a owl:DatatypeProperty ;
+  rdfs:domain :Spectrum ;
+  rdfs:range xsd:decimal ;
+.
+:sequence
+  a owl:DatatypeProperty ;
+  rdfs:domain :Sequence ;
+  rdfs:range xsd:string ;
+.
+:spectrumId
+  a owl:DatatypeProperty ;
+  rdfs:domain :Spectrum ;
+  rdfs:range xsd:decimal ;
+.
+:url
+  a owl:DatatypeProperty ;
+  rdfs:domain :Link ;
+  rdfs:range xsd:anyURI ;
+.
+:value
+  a owl:DatatypeProperty ;
+  rdfs:domain :Setting ;
+  rdfs:range xsd:string ;
+.
+:version
+  a owl:DatatypeProperty ;
+  rdfs:domain :DNMSO ;
+  rdfs:range xsd:string ;
+.
