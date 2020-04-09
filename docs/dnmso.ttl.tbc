@@ -1,0 +1,101 @@
+# baseURI: null
+
+@prefix composite: <http://www.topbraid.org/2007/05/composite.owl#> .
+@prefix forms: <http://www.topbraid.org/2007/01/forms.owl#> .
+@prefix inference: <http://www.topbraid.org/2007/06/inference.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix visual: <http://topbraid.org/visual#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+[
+  a forms:Form ;
+  forms:parentOf [
+      a forms:Section ;
+      forms:childIndex "0" ;
+      forms:parentOf [
+          a forms:PropertyWidgetGroup ;
+          forms:childIndex "0" ;
+          forms:predicateType owl:AnnotationProperty ;
+        ] ;
+      rdfs:label "Annotations" ;
+    ] ;
+  forms:parentOf [
+      a forms:Section ;
+      forms:childIndex "1" ;
+      forms:parentOf [
+          a forms:PropertyWidget ;
+          forms:childIndex 0 ;
+          forms:predicate rdfs:subClassOf ;
+        ] ;
+      forms:parentOf [
+          a forms:PropertyWidget ;
+          forms:childIndex 1 ;
+          forms:predicate owl:equivalentClass ;
+        ] ;
+      forms:parentOf [
+          a forms:PropertyWidget ;
+          forms:childIndex 2 ;
+          forms:predicate owl:disjointWith ;
+        ] ;
+      forms:parentOf [
+          a forms:PropertyWidget ;
+          forms:childIndex 3 ;
+          forms:hiddenIfNoValue "true" ;
+          forms:predicate owl:complementOf ;
+        ] ;
+      forms:parentOf [
+          a forms:PropertyWidget ;
+          forms:childIndex 4 ;
+          forms:hiddenIfNoValue "true" ;
+          forms:predicate owl:intersectionOf ;
+        ] ;
+      forms:parentOf [
+          a forms:PropertyWidget ;
+          forms:childIndex 5 ;
+          forms:hiddenIfNoValue "true" ;
+          forms:predicate owl:oneOf ;
+        ] ;
+      forms:parentOf [
+          a forms:PropertyWidget ;
+          forms:childIndex 6 ;
+          forms:hiddenIfNoValue "true" ;
+          forms:predicate owl:unionOf ;
+        ] ;
+      forms:parentOf [
+          a forms:PropertyWidget ;
+          forms:childIndex 7 ;
+          forms:hiddenIfNoValue "true" ;
+          forms:predicate owl:disjointUnionOf ;
+        ] ;
+      forms:parentOf [
+          a forms:PropertyWidget ;
+          forms:childIndex 8 ;
+          forms:predicate owl:hasKey ;
+        ] ;
+      forms:parentOf [
+          a forms:PropertyWidget ;
+          forms:childIndex 9 ;
+          forms:hiddenIfNoValue "true" ;
+          forms:predicate [
+              owl:inverseOf <http://www.w3.org/ns/shacl#scopeClass> ;
+            ] ;
+        ] ;
+      rdfs:label "Class Axioms" ;
+    ] ;
+  forms:parentOf [
+      a forms:Section ;
+      forms:childIndex "2" ;
+      forms:collapsed "true" ;
+      forms:parentOf [
+          a forms:PropertyWidgetGroup ;
+          forms:childIndex "0" ;
+          forms:predicateType rdf:Property ;
+        ] ;
+      rdfs:label "Other Properties" ;
+    ] ;
+  forms:subjectType owl:Class ;
+  forms:useDomain "true" ;
+  rdfs:label "Class Form" ;
+].
