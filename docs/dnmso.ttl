@@ -31,13 +31,17 @@
 .
 :CSV
   a owl:Class ;
+  rdfs:label "In case the MS/MS spectrum underlying the de novo prediction is not linked from an mzML file, it can be stored in an instance of DNMSO using comma separated values."@en ;
+  rdfs:label "In case the underlying spectrum that was de novo sequenced is not provided as a mzML link, it can be stored in full in the instance in form of comma separated values." ;
   rdfs:subClassOf :SpectrumData ;
 .
 :DNMSO
   a owl:Class ;
+  rdfs:label "The de novo mass spectrometry sequencing ontology."@en ;
 .
 :Gap
   a owl:Class ;
+  rdfs:label "For de novo sequencing results, it often occurs that some parts of the sequence cannot be supported with much evidence. Instead of storing an arbitrary subsequence, a gap of appropriate m/z range can be inserted in the Sequence."@en ;
   rdfs:subClassOf :SequenceElement ;
 .
 :GapConfidence
