@@ -83,20 +83,10 @@
 .
 :ModificationElement
   a owl:Class ;
-  rdfs:subClassOf [
-      a owl:Restriction ;
-      owl:cardinality "1"^^xsd:nonNegativeInteger ;
-      owl:onProperty :hasModificationElement ;
-    ] ;
 .
 :Modifications
   a owl:Class ;
   rdfs:subClassOf owl:Thing ;
-  rdfs:subClassOf [
-      a owl:Restriction ;
-      owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-      owl:onProperty :hasModifications ;
-    ] ;
 .
 :ModifiedAminoAcid
   a owl:Class ;
@@ -117,11 +107,6 @@
 :Predictions
   a owl:Class ;
   rdfs:subClassOf owl:Thing ;
-  rdfs:subClassOf [
-      a owl:Restriction ;
-      owl:cardinality "1"^^xsd:nonNegativeInteger ;
-      owl:onProperty :hasPredictions ;
-    ] ;
 .
 :Proof
   a owl:Class ;
@@ -145,20 +130,10 @@
 .
 :Settings
   a owl:Class ;
-  rdfs:subClassOf [
-      a owl:Restriction ;
-      owl:cardinality "1"^^xsd:nonNegativeInteger ;
-      owl:onProperty :hasSettings ;
-    ] ;
 .
 :Software
   a owl:Class ;
   rdfs:subClassOf owl:Thing ;
-  rdfs:subClassOf [
-      a owl:Restriction ;
-      owl:cardinality "1"^^xsd:nonNegativeInteger ;
-      owl:onProperty :hasSoftware ;
-    ] ;
 .
 :SoftwareName
   a owl:DatatypeProperty ;
@@ -178,11 +153,6 @@
 :Spectra
   a owl:Class ;
   rdfs:subClassOf owl:Thing ;
-  rdfs:subClassOf [
-      a owl:Restriction ;
-      owl:cardinality "1"^^xsd:nonNegativeInteger ;
-      owl:onProperty :hasSpectra ;
-    ] ;
 .
 :Spectrum
   a owl:Class ;
@@ -192,11 +162,6 @@
 :SpectrumData
   a owl:Class ;
   rdfs:subClassOf owl:Thing ;
-  rdfs:subClassOf [
-      a owl:Restriction ;
-      owl:cardinality "1"^^xsd:nonNegativeInteger ;
-      owl:onProperty :hasSpectrumData ;
-    ] ;
 .
 :Terminal
   a owl:Class ;
@@ -233,108 +198,108 @@
 .
 :hasAAProof
   a owl:ObjectProperty ;
-  rdfs:domain :Proof ;
-  rdfs:range :AminoAcid ;
+  rdfs:domain :AminoAcid ;
+  rdfs:range :Proof ;
 .
 :hasMod
   a owl:ObjectProperty ;
-  rdfs:domain :Modification ;
-  rdfs:range :ModAminoAcid ;
+  rdfs:domain :ModAminoAcid ;
+  rdfs:range :Modification ;
 .
 :hasModProof
   a owl:ObjectProperty ;
-  rdfs:domain :Proof ;
-  rdfs:range :ModAminoAcid ;
+  rdfs:domain :ModAminoAcid ;
+  rdfs:range :Proof ;
 .
 :hasModification
   a owl:ObjectProperty ;
-  rdfs:domain :Modification ;
-  rdfs:range :Modifications ;
+  rdfs:domain :Modifications ;
+  rdfs:range :Modification ;
 .
 :hasModificationElement
   a owl:ObjectProperty ;
-  rdfs:domain :ModificationElement ;
-  rdfs:range :Modification ;
+  rdfs:domain :Modification ;
+  rdfs:range :ModificationElement ;
 .
 :hasModifications
   a owl:ObjectProperty ;
-  rdfs:domain :Modifications ;
-  rdfs:range :DNMSO ;
+  rdfs:domain :DNMSO ;
+  rdfs:range :Modifications ;
 .
 :hasPeakLinkSpectrum
   a owl:ObjectProperty ;
-  rdfs:domain :Spectrum ;
-  rdfs:range :PeakLink ;
+  rdfs:domain :PeakLink ;
+  rdfs:range :Spectrum ;
 .
 :hasPrediction
   a owl:ObjectProperty ;
-  rdfs:domain :Prediction ;
-  rdfs:range :Predictions ;
+  rdfs:domain :Predictions ;
+  rdfs:range :Prediction ;
 .
 :hasPredictions
   a owl:ObjectProperty ;
-  rdfs:domain :Predictions ;
-  rdfs:range :DNMSO ;
+  rdfs:domain :DNMSO ;
+  rdfs:range :Predictions ;
 .
 :hasPublication
   a owl:ObjectProperty ;
-  rdfs:domain :Publication ;
-  rdfs:range :Software ;
+  rdfs:domain :Software ;
+  rdfs:range :Publication ;
 .
 :hasScore
   a owl:ObjectProperty ;
-  rdfs:domain :Score ;
-  rdfs:range :Prediction ;
+  rdfs:domain :Prediction ;
+  rdfs:range :Score ;
 .
 :hasSequence
   a owl:ObjectProperty ;
-  rdfs:domain :Sequence ;
-  rdfs:range :Prediction ;
+  rdfs:domain :Prediction ;
+  rdfs:range :Sequence ;
 .
 :hasSequenceElement
   a owl:ObjectProperty ;
-  rdfs:domain :SequenceElement ;
-  rdfs:range :Sequence ;
+  rdfs:domain :Sequence ;
+  rdfs:range :SequenceElement ;
 .
 :hasSetting
   a owl:ObjectProperty ;
-  rdfs:domain :Setting ;
-  rdfs:range :Settings ;
+  rdfs:domain :Settings ;
+  rdfs:range :Setting ;
 .
 :hasSettings
   a owl:ObjectProperty ;
-  rdfs:domain :Settings ;
-  rdfs:range :Software ;
+  rdfs:domain :Software ;
+  rdfs:range :Settings ;
 .
 :hasSoftware
   a owl:ObjectProperty ;
-  rdfs:domain :Software ;
-  rdfs:range :Prediction ;
+  rdfs:domain :Prediction ;
+  rdfs:range :Software ;
 .
 :hasSource
   a owl:ObjectProperty ;
-  rdfs:domain :Source ;
-  rdfs:range :Sources ;
+  rdfs:domain :Sources ;
+  rdfs:range :Source ;
 .
 :hasSources
   a owl:ObjectProperty ;
-  rdfs:domain :Sources ;
-  rdfs:range :Prediction ;
+  rdfs:domain :Prediction ;
+  rdfs:range :Sources ;
 .
 :hasSpectra
   a owl:ObjectProperty ;
-  rdfs:domain :Spectra ;
-  rdfs:range :DNMSO ;
+  rdfs:domain :DNMSO ;
+  rdfs:range :Spectra ;
 .
 :hasSpectrum
   a owl:ObjectProperty ;
-  rdfs:domain :Spectrum ;
-  rdfs:range :Spectra ;
+  rdfs:domain :Spectra ;
+  rdfs:range :Spectrum ;
 .
 :hasSpectrumData
   a owl:ObjectProperty ;
-  rdfs:domain :SpectrumData ;
-  rdfs:range :Spectrum ;
+  rdfs:domain :Spectrum ;
+  rdfs:range :SpectrumData ;
 .
 :intensity
   a owl:DatatypeProperty ;
