@@ -75,6 +75,7 @@
 .
 :ModAminoAcid
   a owl:Class ;
+  rdfs:label "Amino acids can be modified in various ways. Here a modification is considered to be a change of the mass of the regular amino acid."@en ;
   rdfs:subClassOf :SequenceElement ;
 .
 :Modification
@@ -106,6 +107,7 @@
 .
 :Predictions
   a owl:Class ;
+  rdfs:label "This is a container for Prediction. It is possible that multiple predictions can be made for one underlying spectrum. For example co-fragmentation would lead to several valid sequences. Alternatively, multiple predictions can be made and represented in DNMSO with varying sequences and confidence. Predictions merely groups the Prediction made for a particular mass spectrum."@en ;
   rdfs:subClassOf owl:Thing ;
 .
 :Proof
