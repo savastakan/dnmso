@@ -32,7 +32,6 @@
 :CSV
   a owl:Class ;
   rdfs:label "In case the MS/MS spectrum underlying the de novo prediction is not linked from an mzML file, it can be stored in an instance of DNMSO using comma separated values."@en ;
-  rdfs:label "In case the underlying spectrum that was de novo sequenced is not provided as a mzML link, it can be stored in full in the instance in form of comma separated values." ;
   rdfs:subClassOf :SpectrumData ;
 .
 :DNMSO
@@ -80,17 +79,22 @@
 .
 :Modification
   a owl:Class ;
+  rdfs:label "A Modification is always contained in Modifications and doesn't stand by itself. Modification specifies the modificationMass (decimal) and expects a name for the modification (string).  Exactly one ModificationElement must also be specified."@en ;
   rdfs:subClassOf owl:Thing ;
 .
 :ModificationElement
   a owl:Class ;
+  rdfs:label "The ModificationElement is either of the class ModifiedAminoAcid or Terminal. "@en ;
 .
 :Modifications
   a owl:Class ;
+  rdfs:label "Modifications is a container for Modification so that multiple Modification can be represented in the DNMSO ontology. There are 0 to many Modification in Modifications."@en ;
   rdfs:subClassOf owl:Thing ;
 .
 :ModifiedAminoAcid
   a owl:Class ;
+  rdfs:comment "A ModifiedAminoAcid is an amino acid which either has been found to be modified in the context of an instance of DNMSO or is expected to be found. ModifiedAminoAcids specify an averageMass (decimal), a monoIsotopicMass (decimal) and the one character representation of the amino acid (string) i.e.: G for Glycine. "@en ;
+  rdfs:label "A ModifiedAminoAcid is an amino acid which either has been found to be modified in the context of an instance of DNMSO or is expected to be found. ModifiedAminoAcids specify an averageMass (decimal), a monoIsotopicMass (decimal) and the one character representation of the amino acid (string) i.e.: G for Glycine. "@en ;
   rdfs:subClassOf :ModificationElement ;
 .
 :PeakLink
@@ -167,21 +171,25 @@
 .
 :Terminal
   a owl:Class ;
+  rdfs:label "Terminal refers to the N or C-terminal of the peptide and has two possible values front: N-terminus and back: C-terminus. This is to model modifications which do not locate to a specific amino acid but modify the peptide in general regardless of the N- or C-terminal amino acid."@en ;
   rdfs:subClassOf :ModificationElement ;
 .
 :averageMass
   a owl:DatatypeProperty ;
   rdfs:domain :ModifiedAminoAcid ;
+  rdfs:label "The average mass of an element e.g., an amino acid. Tryptophan: 186.21"@en ;
   rdfs:range xsd:decimal ;
 .
 :back
   a owl:DatatypeProperty ;
   rdfs:domain :Terminal ;
+  rdfs:label "C-terminus of the peptide."@en ;
   rdfs:range xsd:string ;
 .
 :character
   a owl:DatatypeProperty ;
   rdfs:domain :ModifiedAminoAcid ;
+  rdfs:label "The one character representation of an amino acid e.g., W for Tryptophan. This must fit with the actual characters used to represent the amino acids in the Sequence."@en ;
   rdfs:range xsd:string ;
 .
 :confidence
@@ -197,6 +205,7 @@
 :front
   a owl:DatatypeProperty ;
   rdfs:domain :Terminal ;
+  rdfs:label "N-terminus of the peptide."@en ;
 .
 :hasAAProof
   a owl:ObjectProperty ;
@@ -216,16 +225,19 @@
 :hasModification
   a owl:ObjectProperty ;
   rdfs:domain :Modifications ;
+  rdfs:label "The Modifications class (container for Modification) can have particular Modification elements. The relationship is 0 to many."@en ;
   rdfs:range :Modification ;
 .
 :hasModificationElement
   a owl:ObjectProperty ;
   rdfs:domain :Modification ;
+  rdfs:label "A Modification is either to an amino acid side chain or to the n-terminus or c-terminus of the peptide. The ModificationElement specifies this. The relationship is one to one."@en ;
   rdfs:range :ModificationElement ;
 .
 :hasModifications
   a owl:ObjectProperty ;
   rdfs:domain :DNMSO ;
+  rdfs:label "DNMSO lists possible and/or actual modifications to any amino acids (or terminal ones) in the Modifications class. DNMSO root can have modifications. The relationship is 0 to many."@en ;
   rdfs:range :Modifications ;
 .
 :hasPeakLinkSpectrum
@@ -311,16 +323,19 @@
 :modificationMass
   a owl:DatatypeProperty ;
   rdfs:domain :Modification ;
+  rdfs:label "The mass change that would occur due to the modification. E.g.:, phosphorylation introduces a mass shift of +79.99 Dalton. This can also be a negative value, if needed."@en ;
   rdfs:range xsd:decimal ;
 .
 :modificationName
   a owl:DatatypeProperty ;
   rdfs:domain :Modification ;
+  rdfs:label "The name given to a particular modification. E.g., phosphorylation."@en ;
   rdfs:range xsd:string ;
 .
 :monoIsotopicMass
   a owl:DatatypeProperty ;
   rdfs:domain :ModifiedAminoAcid ;
+  rdfs:label "The mono isotopic mass of an element e.g., an amino acid. Tryptophan: 186.08."@en ;
   rdfs:range xsd:decimal ;
 .
 :mz
