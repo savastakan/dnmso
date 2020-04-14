@@ -25,6 +25,11 @@
   rdfs:label "In case the MS/MS spectrum underlying the de novo prediction is not linked from an mzML file, it can be stored in an instance of DNMSO using comma separated values."@en ;
   rdfs:subClassOf :SpectrumData ;
 .
+:Confidence
+  a owl:DatatypeProperty ;
+  rdfs:domain :SequenceElement ;
+  rdfs:range xsd:decimal ;
+.
 :DNMSO
   a owl:Class ;
   rdfs:label "The de novo mass spectrometry sequencing ontology. "@en ;
@@ -64,16 +69,6 @@
   rdfs:label "An url to the file which contains the SpectrumData (mzML, mzXML)."@en ;
   rdfs:subClassOf :SpectrumData ;
 .
-:Confidence
-  a owl:DatatypeProperty ;
-  rdfs:domain :SequenceElement ;
-  rdfs:range xsd:decimal ;
-.
-:Position
-  a owl:DatatypeProperty ;
-  rdfs:domain :SequenceElement ;
-  rdfs:range xsd:integer ;
-.
 :ModAminoAcid
   a owl:Class ;
   rdfs:label "Amino acids can be modified in various ways. Here a modification is considered to be a change of the mass of the regular amino acid."@en ;
@@ -109,9 +104,19 @@
   rdfs:label "PeakValue provides the peak via m/z and intensity values, which supports the SequenceElement."@en ;
   rdfs:subClassOf :Proofs ;
 .
+:Position
+  a owl:DatatypeProperty ;
+  rdfs:domain :SequenceElement ;
+  rdfs:range xsd:integer ;
+.
 :Prediction
   a owl:Class ;
   rdfs:subClassOf owl:Thing ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality 1 ;
+      owl:onProperty :hasSources ;
+    ] ;
 .
 :Predictions
   a owl:Class ;
@@ -160,6 +165,11 @@
 .
 :Sources
   a owl:Class ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:minCardinality 1 ;
+      owl:onProperty :hasSource ;
+    ] ;
 .
 :Spectra
   a owl:Class ;
