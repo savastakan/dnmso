@@ -115,6 +115,11 @@
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:cardinality 1 ;
+      owl:onProperty :hasScores ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality 1 ;
       owl:onProperty :hasSources ;
     ] ;
 .
@@ -133,6 +138,15 @@
 .
 :Score
   a owl:Class ;
+  rdfs:subClassOf owl:Thing ;
+.
+:Scores
+  a owl:Class ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:minCardinality 1 ;
+      owl:onProperty :hasScore ;
+    ] ;
 .
 :Sequence
   a owl:Class ;
@@ -312,8 +326,13 @@
 .
 :hasScore
   a owl:ObjectProperty ;
-  rdfs:domain :Prediction ;
+  rdfs:domain :Scores ;
   rdfs:range :Score ;
+.
+:hasScores
+  a owl:ObjectProperty ;
+  rdfs:domain :Prediction ;
+  rdfs:range :Scores ;
 .
 :hasSequence
   a owl:ObjectProperty ;
@@ -372,6 +391,11 @@
   a owl:DatatypeProperty ;
   rdfs:domain :PeakValue ;
   rdfs:range xsd:decimal ;
+.
+:mainScore
+  a owl:DatatypeProperty ;
+  rdfs:domain :Scores ;
+  rdfs:range xsd:string ;
 .
 :modificationMass
   a owl:DatatypeProperty ;
