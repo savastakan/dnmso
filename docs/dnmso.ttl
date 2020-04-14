@@ -27,6 +27,7 @@
 .
 :AminoAcid
   a owl:Class ;
+  rdfs:label "An AminoAcid is a SequenceElement. It must specify the AACharacter an AAConfidence and the AAPos in the Sequence."@en ;
   rdfs:subClassOf :SequenceElement ;
 .
 :CSV
@@ -80,6 +81,7 @@
 .
 :Link
   a owl:Class ;
+  rdfs:label "An url to the file which contains the SpectrumData (mzML, mzXML)."@en ;
   rdfs:subClassOf :SpectrumData ;
 .
 :MAAConfidence
@@ -119,11 +121,13 @@
 .
 :PeakLink
   a owl:Class ;
-  rdfs:subClassOf :Proof ;
+  rdfs:label "Peak link provides the peak which supports the SequenceElement as a Proof. "@en ;
+  rdfs:subClassOf :Proofs ;
 .
 :PeakValue
   a owl:Class ;
-  rdfs:subClassOf :Proof ;
+  rdfs:label "PeakValue provides the peak via m/z and intensity values, which supports the SequenceElement."@en ;
+  rdfs:subClassOf :Proofs ;
 .
 :Prediction
   a owl:Class ;
@@ -134,8 +138,9 @@
   rdfs:label "This is a container for Prediction. It is possible that multiple predictions can be made for one underlying spectrum. For example co-fragmentation would lead to several valid sequences. Alternatively, multiple predictions can be made and represented in DNMSO with varying sequences and confidence. Predictions merely groups the Prediction made for a particular mass spectrum."@en ;
   rdfs:subClassOf owl:Thing ;
 .
-:Proof
+:Proofs
   a owl:Class ;
+  rdfs:label "A Proof is either a concrete PeakValue or a PeakLink to a Peak in the linked Spectra."@en ;
 .
 :Publication
   a owl:Class ;
@@ -253,7 +258,7 @@
 :data
   a owl:DatatypeProperty ;
   rdfs:domain :CSV ;
-  rdfs:label "string representation of the mass spectrum used for the de novo sequencing event. Format: \"mz, intensity; mz, intensity; ...\"."@en ;
+  rdfs:label "string representation of the mass spectrum used for the de novo sequencing event. Format: \"precursorMZ,precursorIntensity;mz1,intensity1;mz2,intensity2;...;m/zN,intensityN\". Use dots to indicate fractions of m/z (e.g., 123.34 m/z). Intensities are integers (e.g., 1000)."@en ;
   rdfs:range xsd:string ;
 .
 :front
@@ -264,7 +269,7 @@
 :hasAAProof
   a owl:ObjectProperty ;
   rdfs:domain :AminoAcid ;
-  rdfs:range :Proof ;
+  rdfs:range :Proofs ;
 .
 :hasMod
   a owl:ObjectProperty ;
@@ -274,7 +279,7 @@
 :hasModProof
   a owl:ObjectProperty ;
   rdfs:domain :ModAminoAcid ;
-  rdfs:range :Proof ;
+  rdfs:range :Proofs ;
 .
 :hasModification
   a owl:ObjectProperty ;
@@ -412,7 +417,7 @@
 .
 :pos
   a owl:DatatypeProperty ;
-  rdfs:domain :Proof ;
+  rdfs:domain :Proofs ;
   rdfs:range xsd:integer ;
 .
 :precursorIntensity
