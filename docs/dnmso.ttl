@@ -15,16 +15,6 @@
   rdfs:domain :AminoAcid ;
   rdfs:range xsd:string ;
 .
-:AAConfidence
-  a owl:DatatypeProperty ;
-  rdfs:domain :AminoAcid ;
-  rdfs:range xsd:decimal ;
-.
-:AAPos
-  a owl:DatatypeProperty ;
-  rdfs:domain :AminoAcid ;
-  rdfs:range xsd:integer ;
-.
 :AminoAcid
   a owl:Class ;
   rdfs:label "An AminoAcid is a SequenceElement. It must specify the AACharacter an AAConfidence and the AAPos in the Sequence."@en ;
@@ -64,16 +54,6 @@
   rdfs:label "For de novo sequencing results, it often occurs that some parts of the sequence cannot be supported with much evidence. Instead of storing an arbitrary subsequence, a gap of appropriate m/z range can be inserted in the Sequence."@en ;
   rdfs:subClassOf :SequenceElement ;
 .
-:GapConfidence
-  a owl:DatatypeProperty ;
-  rdfs:domain :Gap ;
-  rdfs:range xsd:decimal ;
-.
-:GapPos
-  a owl:DatatypeProperty ;
-  rdfs:domain :Gap ;
-  rdfs:range xsd:integer ;
-.
 :GapValue
   a owl:DatatypeProperty ;
   rdfs:domain :Gap ;
@@ -84,14 +64,14 @@
   rdfs:label "An url to the file which contains the SpectrumData (mzML, mzXML)."@en ;
   rdfs:subClassOf :SpectrumData ;
 .
-:MAAConfidence
+:Confidence
   a owl:DatatypeProperty ;
-  rdfs:domain :ModAminoAcid ;
+  rdfs:domain :SequenceElement ;
   rdfs:range xsd:decimal ;
 .
-:MAAPos
+:Position
   a owl:DatatypeProperty ;
-  rdfs:domain :ModAminoAcid ;
+  rdfs:domain :SequenceElement ;
   rdfs:range xsd:integer ;
 .
 :ModAminoAcid
