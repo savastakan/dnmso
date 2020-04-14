@@ -36,7 +36,27 @@
 .
 :DNMSO
   a owl:Class ;
-  rdfs:label "The de novo mass spectrometry sequencing ontology."@en ;
+  rdfs:label "The de novo mass spectrometry sequencing ontology. "@en ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality 1 ;
+      owl:onProperty :hasPredictions ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality 1 ;
+      owl:onProperty :hasSpectra ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality 1 ;
+      owl:onProperty :version ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:maxCardinality 1 ;
+      owl:onProperty :hasModifications ;
+    ] ;
 .
 :Gap
   a owl:Class ;
@@ -158,15 +178,48 @@
 .
 :Spectra
   a owl:Class ;
+  rdfs:label "Spectra is a container for 1 to many Spectra elements. De novo Sequencing needs at least one Spectrum so it can be performed. Spectra can originate from different sources."@en ;
   rdfs:subClassOf owl:Thing ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:minCardinality 1 ;
+      owl:onProperty :hasSpectrum ;
+    ] ;
 .
 :Spectrum
   a owl:Class ;
+  rdfs:label "A Spectrum needs to specify a few identifying information (precursorIntensity, precursorMZ, scanId, and spectrumId) so that it can be retrieved from a link and in order to be useful in de novo sequencing. A Spectrum can either provide the SpectrumData as a CSV or a Link to another object e.g., an mzML file."@en ;
   rdfs:subClassOf owl:Thing ;
   rdfs:subClassOf :Source ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality 1 ;
+      owl:onProperty :hasSpectrumData ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality 1 ;
+      owl:onProperty :precursorIntensity ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality 1 ;
+      owl:onProperty :precursorMZ ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality 1 ;
+      owl:onProperty :scanId ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality 1 ;
+      owl:onProperty :spectrumId ;
+    ] ;
 .
 :SpectrumData
   a owl:Class ;
+  rdfs:label "SpectrumData can either be a Link to an url (anyURI) e.g., an mzML or mzXML file or the data can be directly stored in a CSV element. The latter may be preferable for data exchange since all data will be contained within the DNMSO instance."@en ;
   rdfs:subClassOf owl:Thing ;
 .
 :Terminal
@@ -200,6 +253,7 @@
 :data
   a owl:DatatypeProperty ;
   rdfs:domain :CSV ;
+  rdfs:label "string representation of the mass spectrum used for the de novo sequencing event. Format: \"mz, intensity; mz, intensity; ...\"."@en ;
   rdfs:range xsd:string ;
 .
 :front
@@ -239,6 +293,7 @@
   rdfs:domain :DNMSO ;
   rdfs:label "DNMSO lists possible and/or actual modifications to any amino acids (or terminal ones) in the Modifications class. DNMSO root can have modifications. The relationship is 0 to many."@en ;
   rdfs:range :Modifications ;
+  owl:incompatibleWith "0 to many relationship. There can be modifications stored but if none were encountered in the de novo sequencing they don't have to be provided in the instance. If Modificatons were found, they must be stored in the Modifications container."@en ;
 .
 :hasPeakLinkSpectrum
   a owl:ObjectProperty ;
@@ -304,16 +359,19 @@
   a owl:ObjectProperty ;
   rdfs:domain :DNMSO ;
   rdfs:range :Spectra ;
+  owl:incompatibleWith "1 to many relationship. Spectra must be accessible whether stored directly in a CSV class or in a Link to a file containing the spectra."@en ;
 .
 :hasSpectrum
   a owl:ObjectProperty ;
   rdfs:domain :Spectra ;
   rdfs:range :Spectrum ;
+  owl:incompatibleWith "The Spectra container contains 1 to many Spectrum elements. For de novo sequencing, at least one spectrum must be given, but multiple spectra could be used to arrive at one de novo sequence."@en ;
 .
 :hasSpectrumData
   a owl:ObjectProperty ;
   rdfs:domain :Spectrum ;
   rdfs:range :SpectrumData ;
+  owl:incompatibleWith "The m/z, intensity data of a Spectrum can either be provided as a CSV or a Link element."@en ;
 .
 :intensity
   a owl:DatatypeProperty ;
@@ -360,11 +418,13 @@
 :precursorIntensity
   a owl:DatatypeProperty ;
   rdfs:domain :Spectrum ;
+  rdfs:label "The intensity (decimal) of the precursor that was fragmented for the MSn spectrum used for sequencing. "@en ;
   rdfs:range xsd:decimal ;
 .
 :precursorMZ
   a owl:DatatypeProperty ;
   rdfs:domain :Spectrum ;
+  rdfs:label "The m/z (decimal) of the precursor that was fragmented for the MSn spectrum used for sequencing. "@en ;
   rdfs:range xsd:decimal ;
 .
 :pubUrl
@@ -375,6 +435,7 @@
 :scanId
   a owl:DatatypeProperty ;
   rdfs:domain :Spectrum ;
+  rdfs:label "A number (decimal) identifying the spectrum within another file (e.g., mzML file). "@en ;
   rdfs:range xsd:decimal ;
 .
 :sequence
@@ -385,11 +446,13 @@
 :spectrumId
   a owl:DatatypeProperty ;
   rdfs:domain :Spectrum ;
+  rdfs:label "A number (decimal) identifying the spectrum within another file (e.g., mzML file). "@en ;
   rdfs:range xsd:decimal ;
 .
 :url
   a owl:DatatypeProperty ;
   rdfs:domain :Link ;
+  rdfs:label "Location (anyURI) of the file containing the Spectrum used in this de novo sequencing event. Must be accessible when analyzing the data."@en ;
   rdfs:range xsd:anyURI ;
 .
 :value
