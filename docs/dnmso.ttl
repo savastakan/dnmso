@@ -415,11 +415,6 @@
   a owl:DatatypeProperty ;
   rdfs:domain :PeakLink ;
 .
-:pos
-  a owl:DatatypeProperty ;
-  rdfs:domain :Proofs ;
-  rdfs:range xsd:integer ;
-.
 :precursorIntensity
   a owl:DatatypeProperty ;
   rdfs:domain :Spectrum ;
