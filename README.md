@@ -38,6 +38,9 @@ targetDNMSO: DNMSO = lutefiskXPService.run(targetDNMSO, lutefiskXPArgs)
 
 #print result
 print(targetDNMSO.getPredictions().get(0).getPrediction().size())
+
+# shutdown JVM.
+shutdownJVM()
 ```
 
 ## USAGE
