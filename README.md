@@ -60,4 +60,4 @@ Merge multiple DNMSO files: "java -jar dnmso.jar merge file1.mzxml file2.mzml fi
 Convert (for example from Lutefisk output to DNMSO): "java -jar dnmso.jar convert file.lut output.dnmso"
 
 
-## More info : http://bioinformatics.iyte.edu.tr/dnml/
+## More info : https://github.com/savastakan/dnml
