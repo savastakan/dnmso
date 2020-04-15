@@ -8,10 +8,11 @@ For the identification and sequencing of proteins, mass spectrometry (MS) has be
 ## Binding dnmso.jar from other Languages
 
 ```python
-# The [jpype](https://jpype.readthedocs.io/) python library was used to run the dnmso library in python.
+# The jpype (https://jpype.readthedocs.io/) python library was used to run the dnmso library in python.
 from jpype import (
     JClass, JArray, getDefaultJVMPath, java, shutdownJVM, startJVM)
 
+# Starting JVM. Here, it is necessary to show the location of the dnmso library
 startJVM(
         getDefaultJVMPath(),
         '-ea',
@@ -19,19 +20,23 @@ startJVM(
         convertStrings=False
     )
 
+# DnmsoFactory, LutefiskXPService and DNMSO classes are created.
 DnmsoFactory: JClass = JClass('domain.DnmsoFactory')
 LutefiskXPService: JClass = JClass('service.LutefiskXPService')
 DNMSO: JClass = JClass('domain.DNMSO')
 
+# dnmsoFActory, targetDNMSO and lutefiskXPService instances are created by using DnmsoFactory, LutefiskXPService
 dnmsoFactory: DnmsoFactory = DnmsoFactory()
 targetDNMSO: DNMSO = dnmsoFactory.createDnmso()
-
 lutefiskXPService: LutefiskXPService = LutefiskXPService()
 
+# create parameters
 lutefiskXPArgs: JArray(java.lang.String) = ["read", "-p", "Qtof_ELVISLIVESK.lut", "-n", "2"]
 
+#read Lutefisk file using lutefiskXPService with parameters
 targetDNMSO: DNMSO = lutefiskXPService.run(targetDNMSO, lutefiskXPArgs)
 
+#print result
 print(targetDNMSO.getPredictions().get(0).getPrediction().size())
 ```
 
