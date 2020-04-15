@@ -7,6 +7,10 @@ For the identification and sequencing of proteins, mass spectrometry (MS) has be
 
 ## Binding dnmso.jar from other Languages
 
+The reference implementation we provide in Java can often be directly used in other programming languages. This binding of libraries can be achieved by first importing dnmso.jar (either download here or build from source) and then calling the methods provided in dnmso.jar. Have a look at the following python code for an example.
+
+### Python Example
+
 ```python
 # The jpype (https://jpype.readthedocs.io/) python library is used to run the dnmso library in python.
 from jpype import (
@@ -45,17 +49,15 @@ shutdownJVM()
 
 ## USAGE
 
-download and compile dnmso library
+Download the dnmso.jar file or compile the dnmso library.
 
-start terminal
+Start terminal or console.
 
-write command in terminal such as
+Validatation: "java -jar dnmso.jar validate file.dnmso"
 
-example command for validatation : "java -jar dnmso.jar validate file.dnmso"
+Merge multiple DNMSO files: "java -jar dnmso.jar merge file1.mzxml file2.mzml file.lut pepnovo.txt output.dnmso"
 
-example command for merge : "java -jar dnmso.jar merge file1.mzxml file2.mzml file.lut pepnovo.txt output.dnmso"
-
-example command for convert : "java -jar dnmso.jar convert file.lut output.dnmso"
+Convert (for example from Lutefisk output to DNMSO): "java -jar dnmso.jar convert file.lut output.dnmso"
 
 
 ## More info : http://bioinformatics.iyte.edu.tr/dnml/
