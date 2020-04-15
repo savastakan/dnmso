@@ -198,7 +198,17 @@
   rdfs:label "The predicted Sequence for the Prediction. The Prediction may have confidence and a sequence. More precisely, it can be modelled as a Sequence of AminoAcids, ModeAminoAcids and Gaps."@en ;
   rdfs:subClassOf [
       a owl:Restriction ;
-      owl:minCardinality 1 ;
+      owl:maxCardinality 1 ;
+      owl:onProperty :hasCTerminalModification ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:maxCardinality 1 ;
+      owl:onProperty :hasNTerminalModification ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:maxCardinality 1 ;
       owl:onProperty :hasSequenceElement ;
     ] ;
 .
@@ -350,6 +360,11 @@
   rdfs:domain :Terminal ;
   rdfs:label "N-terminus of the peptide."@en ;
 .
+:hasCTerminalModification
+  a owl:ObjectProperty ;
+  rdfs:domain :Sequence ;
+  rdfs:range :Terminal ;
+.
 :hasMod
   a owl:ObjectProperty ;
   rdfs:domain :ModAminoAcid ;
@@ -374,6 +389,11 @@
   rdfs:label "DNMSO lists possible and/or actual modifications to any amino acids (or terminal ones) in the Modifications class. DNMSO root can have modifications. The relationship is 0 to many."@en ;
   rdfs:range :Modifications ;
   owl:incompatibleWith "0 to many relationship. There can be modifications stored but if none were encountered in the de novo sequencing they don't have to be provided in the instance. If Modificatons were found, they must be stored in the Modifications container."@en ;
+.
+:hasNTerminalModification
+  a owl:ObjectProperty ;
+  rdfs:domain :Sequence ;
+  rdfs:range :Terminal ;
 .
 :hasPeakLinkSpectrum
   a owl:ObjectProperty ;
