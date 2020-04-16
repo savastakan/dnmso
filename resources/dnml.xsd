@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2013 (x64) (http://www.altova.com) by st (sdss) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+	attributeFormDefault="unqualified">
+	<xs:element name="DNML">
+		<xs:annotation>
+			<xs:documentation>Dnml Xsd File</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Spectra">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element ref="Spectrum" maxOccurs="unbounded"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Predictions" minOccurs="0" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element ref="Prediction" minOccurs="0" maxOccurs="unbounded"/>
+							<xs:element name="Software" minOccurs="0">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="Publication" type="xs:string"
+											minOccurs="0" maxOccurs="unbounded"/>
+										<xs:element name="Settings" minOccurs="0">
+											<xs:complexType>
+												<xs:sequence>
+												<xs:element name="Setting" minOccurs="0"
+												maxOccurs="unbounded">
+												<xs:complexType>
+												<xs:attribute name="name"/>
+												<xs:attribute name="value"/>
+												</xs:complexType>
+												</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+									<xs:attribute name="version" type="xs:string" use="required"/>
+									<xs:attribute name="name" type="xs:string" use="required"/>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+						<xs:attribute name="threshold" type="xs:double"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Modifications" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element ref="Modification" minOccurs="0" maxOccurs="unbounded"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute name="version" type="xs:string" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Modification">
+		<xs:complexType>
+			<xs:choice>
+				<xs:element name="ModAminoAcid">
+					<xs:complexType>
+						<xs:attribute name="character" type="xs:string" use="required"/>
+						<xs:attribute name="monoIsotopicMass" type="xs:double"/>
+						<xs:attribute name="averageMass" type="xs:double"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Terminal">
+					<xs:complexType>
+						<xs:attribute name="front" use="required"/>
+						<xs:attribute name="back" use="required"/>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+			<xs:attribute name="name" type="xs:string" use="required"/>
+			<xs:attribute name="mass" type="xs:double" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Prediction">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Sources" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Source" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:attribute name="scanId" type="xs:string"/>
+									<xs:attribute name="fileName" type="xs:string"/>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+						<xs:attribute name="merge" type="xs:boolean"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Sequence">
+					<xs:complexType>
+						<xs:choice maxOccurs="unbounded">
+							<xs:element ref="AminoAcid"/>
+							<xs:element ref="ModifiedAminoAcid"/>
+							<xs:element name="Gap">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element ref="Proof" minOccurs="0" maxOccurs="unbounded"/>
+										<xs:choice minOccurs="0" maxOccurs="unbounded">
+											<xs:element ref="AminoAcid"/>
+											<xs:element ref="ModifiedAminoAcid"/>
+										</xs:choice>
+									</xs:sequence>
+									<xs:attribute name="value" use="required"/>
+									<xs:attribute name="pos" type="xs:integer" use="required"/>
+									<xs:attribute name="confidence" type="xs:double" use="required"
+									/>
+								</xs:complexType>
+							</xs:element>
+						</xs:choice>
+						<xs:attribute name="sequence" type="xs:string" use="required"/>
+						<xs:attribute name="confidence" type="xs:double" use="required"/>
+						<xs:attribute name="calculatedMass" type="xs:double"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="score" minOccurs="0" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:attribute name="name" type="xs:string"/>
+						<xs:attribute name="value" type="xs:string"/>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute name="assumedCharge" type="xs:integer"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Spectrum">
+		<xs:complexType>
+			<xs:choice>
+				<xs:element name="Link" type="xs:anyURI"/>
+				<xs:element name="Csv" type="xs:string"/>
+			</xs:choice>
+			<xs:attribute name="scanId" type="xs:string"/>
+			<xs:attribute name="fileName" type="xs:string"/>
+			<xs:attribute name="precursorMZ" type="xs:double" use="required"/>
+			<xs:attribute name="precursorIntensity" type="xs:double" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Proof">
+		<xs:complexType>
+			<xs:attribute name="pos" type="xs:integer" use="required"/>
+			<xs:attribute name="mz" type="xs:double" use="required"/>
+			<xs:attribute name="intensity" type="xs:double" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="AminoAcid">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="Proof" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attribute name="character" type="xs:string" use="optional"/>
+			<xs:attribute name="pos" type="xs:integer" use="required"/>
+			<xs:attribute name="confidence" type="xs:double" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ModifiedAminoAcid">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="Proof" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element name="modificationName" type="xs:string"/>
+			</xs:sequence>
+			<xs:attribute name="pos" type="xs:integer" use="required"/>
+			<xs:attribute name="confidence" type="xs:double" use="required"/>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
