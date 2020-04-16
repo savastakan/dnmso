@@ -418,6 +418,11 @@
   rdfs:comment "Terminal refers to the N or C-terminal of the peptide and has two possible values front: N-terminus and back: C-terminus. This is to model modifications which do not locate to a specific amino acid but modify the peptide in general regardless of the N- or C-terminal amino acid. "@en ;
   rdfs:label "Terminal peptide modification. "@en ;
   rdfs:subClassOf :ModificationElement ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality 1 ;
+      owl:onProperty :side ;
+    ] ;
 .
 :averageMass
   a owl:DatatypeProperty ;
