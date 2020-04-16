@@ -745,7 +745,7 @@
   rdfs:comment "The side of the peptide that is modified. False for N-terminal and true for C-terminal."@en ;
   rdfs:domain :Terminal ;
   rdfs:label "N or C-Terminal."@en ;
-  rdfs:range xsd:string ;
+  rdfs:range xsd:boolean ;
 .
 :slAA
   a owl:DatatypeProperty ;
