@@ -1,0 +1,269 @@
+<HTML>
+<HEAD>
+<TITLE>Glossary</TITLE>
+</HEAD>
+<BODY>
+<FONT face="Verdana, Helvetica, sans-serif">
+<P><B>Glossary</B></P>
+<TABLE>
+<TR>
+  <TD><IMG border="0" src="icons/OWLDatatypeProperty.gif" width="16" height="16">&nbsp;<A href="AACharacter.html">AACharacter; single letter amino acid code. </A>&nbsp;&nbsp;-&nbsp;&nbsp;The single letter code representing the AminoAcid e.g., A for Alanine. AACharacter is a member of the AminoAcid class and must be filled.   </TD>
+</TR>
+<TR>
+  <TD><IMG border="0" src="icons/OWLNamedClassPrimitive.gif" width="16" height="16">&nbsp;<A href="ModAminoAcid.html">Amino acid with PTM. </A>&nbsp;&nbsp;-&nbsp;&nbsp;Amino acids can be modified in various ways. Here a modification is considered to be a change of the mass of the regular amino acid. ModAminoAcid is associated with Modification which specifies the particular modification on the amino acid.   </TD>
+</TR>
+<TR>
+  <TD><IMG border="0" src="icons/OWLNamedClassPrimitive.gif" width="16" height="16">&nbsp;<A href="AminoAcid.html">AminoAcid; child class of SequenceElement. </A>&nbsp;&nbsp;-&nbsp;&nbsp;An AminoAcid is a SequenceElement and as such can be part of a Sequence. Filling AACharacter is obligatory. confidence, proof, and position within the sequence are part of the base class (SequenceElement).   </TD>
+</TR>
+<TR>
+  <TD><IMG border="0" src="icons/OWLDatatypeProperty.gif" width="16" height="16">&nbsp;<A href="averageMass.html">averageMass; average mass fo the modified amino acid. </A>&nbsp;&nbsp;-&nbsp;&nbsp;The average mass of the ModifiedAminoAcid. For regular AminoAcid, values are assumed to be known e.g., Tryptophan: 186.21.   </TD>
+</TR>
+<TR>
+  <TD><IMG border="0" src="icons/OWLDatatypeProperty.gif" width="16" height="16">&nbsp;<A href="combinedConfidence.html">combinedConfidence; the combined confidence for the prediction. </A>&nbsp;&nbsp;-&nbsp;&nbsp;The combined confidence for the Sequence Prediction. For backward compatibility. It is encouraged to support each SequenceElement with Proofs so that a confidence can be recalculated.   </TD>
+</TR>
+<TR>
+  <TD><IMG border="0" src="icons/OWLDatatypeProperty.gif" width="16" height="16">&nbsp;<A href="confidence.html">confidence; confidence for the SequenceElement.</A>&nbsp;&nbsp;-&nbsp;&nbsp;The Confidence for the SequenceElement.  </TD>
+</TR>
+<TR>
+  <TD><IMG border="0" src="icons/OWLDatatypeProperty.gif" width="16" height="16">&nbsp;<A href="csvData.html">csvData; spectrum in CSV format. </A>&nbsp;&nbsp;-&nbsp;&nbsp;String representation of the mass spectrum used for the de novo sequencing event. Format: "precursorMZ,precursorIntensity;mz1,intensity1;mz2,intensity2;...;m/zN,intensityN". Use dots to indicate fractions of m/z (e.g., 123.34 m/z). Intensities are integers (e.g., 1000).   </TD>
+</TR>
+<TR>
+  <TD><IMG border="0" src="icons/OWLNamedClassPrimitive.gif" width="16" height="16">&nbsp;<A href="DNMSO.html">DNMSO; de novo ontology root class. </A>&nbsp;&nbsp;-&nbsp;&nbsp;The de novo mass spectrometry sequencing ontology's root class. Modifications can be stored in the instance but if none were encountered are not required. The Predictions container must exist (even if empty). Spectra must exist at least once. The version of DNMSO for the instance has to be specified.   </TD>
+</TR>
+<TR>
+  <TD><IMG border="0" src="icons/OWLNamedClassPrimitive.gif" width="16" height="16">&nbsp;<A href="ModificationElement.html">Either Terminal or ModifiedAminoAcid. </A>&nbsp;&nbsp;-&nbsp;&nbsp;The ModificationElement is either of the class ModifiedAminoAcid or Terminal. Either can replace it.   </TD>
+</TR>
+<TR>
+  <TD><IMG border="0" src="icons/OWLNamedClassPrimitive.gif" width="16" height="16">&nbsp;<A href="Gap.html">Gap; an m/z range that couldn't be assigned an AminoAcid or a ModAminoAcid. </A>&nbsp;&nbsp;-&nbsp;&nbsp;For de novo sequencing results, it often occurs that some parts of the sequence cannot be supported with much evidence. Instead of storing an arbitrary subsequence, a gap of appropriate m/z range can be inserted in the Sequence. The gapValue represents the size of the gap and is obligatory.   </TD>
+</TR>
+<TR>
+  <TD><IMG border="0" src="icons/OWLDatatypeProperty.gif" width="16" height="16">&nbsp;<A href="gapValue.html">gapValue; m/z range without sequence information. </A>&nbsp;&nbsp;-&nbsp;&nbsp;The m/z value for the Gap which couldn't be filled with an AminoAcid or a ModAminoAcid.  </TD>
+</TR>
+<TR>
+  <TD><IMG border="0" src="icons/OWLObjectProperty.gif" width="16" height="16">&nbsp;<A href="hasCTerminalModification.html">hasCTerminalModification; C-terminal modification. </A>&nbsp;&nbsp;-&nbsp;&nbsp;The Sequence has a C-terminal modification or not. Relationship is 0 or 1.   </TD>
+</TR>
+<TR>
+  <TD><IMG border="0" src="icons/OWLObjectProperty.gif" width="16" height="16">&nbsp;<A href="hasMod.html">hasMod; modification of the amino acid. </A>&nbsp;&nbsp;-&nbsp;&nbsp;The particular Modification of the ModAminoAcid as represented by ModifiedAminoAcid. Obligatory.   </TD>
+</TR>
+<TR>
+  <TD><IMG border="0" src="icons/OWLObjectProperty.gif" width="16" height="16">&nbsp;<A href="hasModification.html">hasModification; a particular modification. </A>&nbsp;&nbsp;-&nbsp;&nbsp;The Modifications class (container for Modification) can have particular Modification elements. The relationship is 0 to many.   </TD>
+</TR>
+<TR>
+  <TD><IMG border="0" src="icons/OWLObjectProperty.gif" width="16" height="16">&nbsp;<A href="hasModificationElement.html">hasModificationElement; a particular modification. </A>&nbsp;&nbsp;-&nbsp;&nbsp;A Modification is either to an amino acid side chain (ModifiedAminoAcid) or to the n-terminus or c-terminus of the peptide (Terminal). The ModificationElement specifies this. The relationship is one to one (enforced).   </TD>
+</TR>
+<TR>
+  <TD><IMG border="0" src="icons/OWLObjectProperty.gif" width="16" height="16">&nbsp;<A href="hasModifications.html">hasModifications; whether Modifications are stored in the instance. </A>&nbsp;&nbsp;-&nbsp;&nbsp;DNMSO lists possible and/or actual modifications to any amino acids (or terminal ones) in the Modifications class. DNMSO root can have modifications. The relationship is 0 to many. There can be modifications stored but if none were encountered in the de novo sequencing they don't have to be provided in the instance. If Modificatons were found, they must be stored in the Modifications container.   </TD>
+</TR>
+<TR>
+  <TD><IMG border="0" src="icons/OWLObjectProperty.gif" width="16" height="16">&nbsp;<A href="hasNTerminalModification.html">hasNTerminalModification; whether an N-terminal modification is present. </A>&nbsp;&nbsp;-&nbsp;&nbsp;Specifies whether an N-terminal modification is present and which one. If present must link to Terminal. Relationship 0 or 1.   </TD>
+</TR>
+<TR>
+  <TD><IMG border="0" src="icons/OWLObjectProperty.gif" width="16" height="16">&nbsp;<A href="hasPeakLinkSpectrum.html">hasPeakLinkSpectrum; link to Spectrum containing the peak. </A>&nbsp;&nbsp;-&nbsp;&nbsp;The relationship between PeakLink and Spectrum (1 to 1). The relationship is obligatory.   </TD>
+</TR>
+<TR>
+  <TD><IMG border="0" src="icons/OWLObjectProperty.gif" width="16" height="16">&nbsp;<A href="hasPrediction.html">hasPrediction; relationship between Predictions and Prediction. </A>&nbsp;&nbsp;-&nbsp;&nbsp;The relationship between Predictions and Prediction. A Predictions can have 0 to many Prediction. Predictions is the container allowing to model many Prediction.   </TD>
+</TR>
+<TR>
+  <TD><IMG border="0" src="icons/OWLObjectProperty.gif" width="16" height="16">&nbsp;<A href="hasPredictions.html">hasPredictions; relationship to Predictions container. </A>&nbsp;&nbsp;-&nbsp;&nbsp;The DNMSO class' relationship to the Predictions container (1 to 1).   </TD>
+</TR>
+<TR>
+  <TD><IMG border="0" src="icons/OWLObjectProperty.gif" width="16" height="16">&nbsp;<A href="hasProof.html">hasProof; relationship to a particular Proof. </A>&nbsp;&nbsp;-&nbsp;&nbsp;The relationship between Proofs and Proof. A Proofs can have 0 to many Proof.   </TD>
+</TR>
+<TR>
+  <TD><IMG border="0" src="icons/OWLObjectProperty.gif" width="16" height="16">&nbsp;<A href="hasProofs.html">hasProofs; whether the SequenceElement has any support (Proofs). </A>&nbsp;&nbsp;-&nbsp;&nbsp;The relationship between SequenceElement and Proofs. A SequenceElement has at most one Proofs.   </TD>
+</TR>
+<TR>
+  <TD><IMG border="0" src="icons/OWLObjectProperty.gif" width="16" height="16">&nbsp;<A href="hasPublication.html">hasPublication; whether publications for a Software are gien. </A>&nbsp;&nbsp;-&nbsp;&nbsp;A Software may have associated Publications (0 to many).   </TD>
+</TR>
+<TR>
+  <TD><IMG border="0" src="icons/OWLObjectProperty.gif" width="16" height="16">&nbsp;<A href="hasScore.html">hasScore; relationship between Scores and Score. </A>&nbsp;&nbsp;-&nbsp;&nbsp;The relationship between Scores and Score (1 to many). One Scores can have one or more Score. I.e., one Score must be provided.   </TD>
+</TR>
+<TR>
+  <TD><IMG border="0" src="icons/OWLObjectProperty.gif" width="16" height="16">&nbsp;<A href="hasScores.html">hasScores; relationship between Prediction and Scores. </A>&nbsp;&nbsp;-&nbsp;&nbsp;The relationship between Prediction and Scores (1 to 1). Each Prediction must provide a container with Scores.   </TD>
+</TR>
+<TR>
+  <TD><IMG border="0" src="icons/OWLObjectProperty.gif" width="16" height="16">&nbsp;<A href="hasSequence.html">hasSequence; relationship between Prediction and Sequence. </A>&nbsp;&nbsp;-&nbsp;&nbsp;The relationship between Prediction and Sequence (1 to 1). That is each Prediction must link to a Sequence.   </TD>
+</TR>
+<TR>
+  <TD><IMG border="0" src="icons/OWLObjectProperty.gif" width="16" height="16">&nbsp;<A href="hasSequenceElement.html">hasSequenceElement; whether Sequence contains SequenceElement. </A>&nbsp;&nbsp;-&nbsp;&nbsp;The relationship between SequenceElement and Sequence (0 to many). For backward compatibility Sequence may have no SequenceElments.   </TD>
+</TR>
+<TR>
+  <TD><IMG border="0" src="icons/OWLObjectProperty.gif" width="16" height="16">&nbsp;<A href="hasSetting.html">hasSetting; relationship between SoftwareSettings and SoftwareSetting. </A>&nbsp;&nbsp;-&nbsp;&nbsp;The relationship between SoftwareSettings and SoftwareSetting (0 to many). SoftwareSetting are optional but providing them can be beneficial for follow up analysis.   </TD>
+</TR>
+<TR>
+  <TD><IMG border="0" src="icons/OWLObjectProperty.gif" width="16" height="16">&nbsp;<A href="hasSettings.html">hasSettings; relationship between Software and SoftwareSettings. </A>&nbsp;&nbsp;-&nbsp;&nbsp;The relationship between Software and SoftwareSettings (1 to 1). At least the empty SoftwareSettings container must be associated.   </TD>
+</TR>
+<TR>
+  <TD><IMG border="0" src="icons/OWLObjectProperty.gif" width="16" height="16">&nbsp;<A href="hasSoftware.html">hasSoftware; relationship between Prediction and Software. </A>&nbsp;&nbsp;-&nbsp;&nbsp;The relationship between Prediction and Software. A Prediction needs a software (1:1). If manual Prediction was made, add a Software named manual.   </TD>
+</TR>
+<TR>
+  <TD><IMG border="0" src="icons/OWLObjectProperty.gif" width="16" height="16">&nbsp;<A href="hasSource.html">hasSource; relationship between Sources and Source. </A>&nbsp;&nbsp;-&nbsp;&nbsp;The relationship between Sources and Source (1 to many). A Sources can have one or more Source. At least one Spectrum is needed for de novo predictions.   </TD>
+</TR>
+<TR>
+  <TD><IMG border="0" src="icons/OWLObjectProperty.gif" width="16" height="16">&nbsp;<A href="hasSources.html">hasSources; the relationship between Prediction and Sources. </A>&nbsp;&nbsp;-&nbsp;&nbsp;The relationship between Prediction and Sources ( 1 to 1). A Prediction has exactly one Sources. Sources contains all Spectra used for the de novo prediction.   </TD>
+</TR>
+<TR>
+  <TD><IMG border="0" src="icons/OWLObjectProperty.gif" width="16" height="16">&nbsp;<A href="hasSpectra.html">hasSpectra; the relationship between DNMSO and Spectra. </A>&nbsp;&nbsp;-&nbsp;&nbsp;The relationship between DNMSO and Spectra (1 to many). DNMSO can have one or more Spectra where each Spectra is a file with one or more spectra.   </TD>
+</TR>
+<TR>
+  <TD><IMG border="0" src="icons/OWLObjectProperty.gif" width="16" height="16">&nbsp;<A href="hasSpectrum.html">hasSpectrum; the relationship between Spectra and Spectrum. </A>&nbsp;&nbsp;-&nbsp;&nbsp;The relationship between Spectra and Spectrum. A Spectra can have 0 to many Spectrum. 0 when the instance has no Prediction.   </TD>
+</TR>
+<TR>
+  <TD><IMG border="0" src="icons/OWLObjectProperty.gif" width="16" height="16">&nbsp;<A href="isPublished.html">hasSpectrumData; the relationship between Spectra and Publication. </A>&nbsp;&nbsp;-&nbsp;&nbsp;The relationship between Spectra and Publication (0 to many). This is intended to give reference to the data sources.   </TD>
+</TR>
+<TR>
+  <TD><IMG border="0" src="icons/OWLDatatypeProperty.gif" width="16" height="16">&nbsp;<A href="largerIsBetter.html">largerIsBetter; which score value is better? </A>&nbsp;&nbsp;-&nbsp;&nbsp;Specifies whether the score represents better results when larger (true) or not (false).   </TD>
+</TR>
+<TR>
+  <TD><IMG border="0" src="icons/OWLDatatypeProperty.gif" width="16" height="16">&nbsp;<A href="mainScore.html">mainScore; default score. </A>&nbsp;&nbsp;-&nbsp;&nbsp;Specifies which of the Score is the one that is typically used (default). This must be the same as one of the Score.scoreName in the same Scores container.   </TD>
+</TR>
+<TR>
+  <TD><IMG border="0" src="icons/OWLNamedClassPrimitive.gif" width="16" height="16">&nbsp;<A href="Modification.html">Modification; PTM or general mass change. </A>&nbsp;&nbsp;-&nbsp;&nbsp;Amino acids and peptides can be modified in various ways. A Modification is always contained in Modifications and doesn't stand by itself. Modification specifies the modificationMass (decimal) and expects a name for the modification (string). Exactly one ModificationElement must also be specified. The modificationMass of the modification (mono isotopic assumed) and the modificationName must be provided.    </TD>
+</TR>
+<TR>
+  <TD><IMG border="0" src="icons/OWLNamedClassPrimitive.gif" width="16" height="16">&nbsp;<A href="Modifications.html">ModificationElement; container for possible Modification. </A>&nbsp;&nbsp;-&nbsp;&nbsp;Modifications is a container for possible Modification so that multiple Modification can be represented in the DNMSO ontology. There are 0 to many Modification in Modifications. It would be space efficient to restrict Modifications to the Modification actually occuring in the instance.   </TD>
+</TR>
+<TR>
+  <TD><IMG border="0" src="icons/OWLDatatypeProperty.gif" width="16" height="16">&nbsp;<A href="modificationMass.html">modificationMass; mass of the modification (mono). </A>&nbsp;&nbsp;-&nbsp;&nbsp;The mass change that would occur due to the modification. E.g.:, phosphorylation introduces a mass shift of +79.99 Dalton. This can also be a negative value, if needed. The modification mass is expected to be monoisotopic.   </TD>
+</TR>
+<TR>
+  <TD><IMG border="0" src="icons/OWLDatatypeProperty.gif" width="16" height="16">&nbsp;<A href="modificationName.html">modificationName; name of the modification. </A>&nbsp;&nbsp;-&nbsp;&nbsp;The name given to a particular modification. E.g., phosphorylation.   </TD>
+</TR>
+<TR>
+  <TD><IMG border="0" src="icons/OWLNamedClassPrimitive.gif" width="16" height="16">&nbsp;<A href="ModifiedAminoAcid.html">ModifiedAminoAcid; An amino acid with PTM or other mass change. </A>&nbsp;&nbsp;-&nbsp;&nbsp;A ModifiedAminoAcid is an amino acid which either has been found to be modified in the context of an instance of DNMSO or can be found (while building the predictions). ModifiedAminoAcid must specify an averageMass (decimal), a monoIsotopicMass (decimal) and the one character representation of the amino acid (string) i.e.: G for Glycine.   </TD>
+</TR>
+<TR>
+  <TD><IMG border="0" src="icons/OWLDatatypeProperty.gif" width="16" height="16">&nbsp;<A href="monoIsotopicMass.html">monoIsotopicMass; monoisotopic mass of amino acid. </A>&nbsp;&nbsp;-&nbsp;&nbsp;The mono isotopic mass of an element e.g., an amino acid. For example, Tryptophan has a mass of 186.08 Dalton.   </TD>
+</TR>
+<TR>
+  <TD><IMG border="0" src="icons/OWLDatatypeProperty.gif" width="16" height="16">&nbsp;<A href="peakIntensity.html">peakId; the intensity of a peak. </A>&nbsp;&nbsp;-&nbsp;&nbsp;The intensity of the m/z peak stored concretly in PeakValue.   </TD>
+</TR>
+<TR>
+  <TD><IMG border="0" src="icons/OWLNamedClassPrimitive.gif" width="16" height="16">&nbsp;<A href="PeakLink.html">PeakLink; link to a peak in a spectrum. </A>&nbsp;&nbsp;-&nbsp;&nbsp;Peak link provides the peak which supports the SequenceElement as a Proof. The peakId must be provided and must resolve to a peak within the Spectrum.   </TD>
+</TR>
+<TR>
+  <TD><IMG border="0" src="icons/OWLDatatypeProperty.gif" width="16" height="16">&nbsp;<A href="peakMZ.html">peakMZ; the m/z of a peak. </A>&nbsp;&nbsp;-&nbsp;&nbsp;The mass to charge ratio of the concretely stored PeakValue.   </TD>
+</TR>
+<TR>
+  <TD><IMG border="0" src="icons/OWLNamedClassPrimitive.gif" width="16" height="16">&nbsp;<A href="PeakValue.html">PeakValue; concrete peak value. </A>&nbsp;&nbsp;-&nbsp;&nbsp;PeakValue provides the peak via concrete m/z and intensity values, which supports the SequenceElement. Both peakIntensity and peakMZ have to be provided.   </TD>
+</TR>
+<TR>
+  <TD><IMG border="0" src="icons/OWLDatatypeProperty.gif" width="16" height="16">&nbsp;<A href="peptideSequence.html">peptideSequence; sequence of the peptide. </A>&nbsp;&nbsp;-&nbsp;&nbsp;A String representation of the Sequence as provided by the de novo sequencing tool. This is for backward compatibility. Usage of Sequence with SequenceElements is preferred.   </TD>
+</TR>
+<TR>
+  <TD><IMG border="0" src="icons/OWLDatatypeProperty.gif" width="16" height="16">&nbsp;<A href="positionInSequence.html">positionInSequence; position within Sequence. </A>&nbsp;&nbsp;-&nbsp;&nbsp;The Position of the SequenceElement within the Sequence. One based index so the first SequenceElement in Sequence has an index of 1.   </TD>
+</TR>
+<TR>
+  <TD><IMG border="0" src="icons/OWLDatatypeProperty.gif" width="16" height="16">&nbsp;<A href="precursorIntensity.html">precursorIntensity; ihe intensity of the precursor peak. </A>&nbsp;&nbsp;-&nbsp;&nbsp;The intensity (decimal) of the precursor that was fragmented for the MSn spectrum used for de novo sequencing.   </TD>
+</TR>
+<TR>
+  <TD><IMG border="0" src="icons/OWLDatatypeProperty.gif" width="16" height="16">&nbsp;<A href="precursorMZ.html">precursorMZ; the m/z of the precursor peak. </A>&nbsp;&nbsp;-&nbsp;&nbsp;The m/z (decimal) of the precursor that was fragmented for the MSn spectrum used for de novo sequencing.   </TD>
+</TR>
+<TR>
+  <TD><IMG border="0" src="icons/OWLNamedClassPrimitive.gif" width="16" height="16">&nbsp;<A href="Prediction.html">Prediction; a de novo Prediction. </A>&nbsp;&nbsp;-&nbsp;&nbsp;One Prediction of the Predictions made for the available spectra with the selected software. A Prediction must specify 1 Scores, 1 Sequence, 1 Software and 1 Sources. A Prediction models one prediction by a particular Software for one or more mass spectra leading to one predicted sequence associated with one or more scores by the sequencer. Predictions from multiple de novo sequencing tools can be integrated using SPARQL queries to arrive at an ensemble prediction.   </TD>
+</TR>
+<TR>
+  <TD><IMG border="0" src="icons/OWLNamedClassPrimitive.gif" width="16" height="16">&nbsp;<A href="Predictions.html">Predictions; pontainer for multiple Prediction. </A>&nbsp;&nbsp;-&nbsp;&nbsp;This is a container for Prediction. It is possible that multiple predictions can be made for one underlying spectrum. For example co-fragmentation would lead to several valid sequences. Alternatively, multiple predictions can be made and represented in DNMSO with varying sequences and confidence and scores. Predictions merely groups the Prediction made for one or more mass spectra. A Prediction is not required for the DNMSO instance to be valid.   </TD>
+</TR>
+<TR>
+  <TD><IMG border="0" src="icons/OWLNamedClassPrimitive.gif" width="16" height="16">&nbsp;<A href="Proof.html">Proof; either PeakValue or PeakLink. </A>&nbsp;&nbsp;-&nbsp;&nbsp;A Proof is either a concrete PeakValue or a PeakLink to a Peak in the linked Spectra.   </TD>
+</TR>
+<TR>
+  <TD><IMG border="0" src="icons/OWLNamedClassPrimitive.gif" width="16" height="16">&nbsp;<A href="Proofs.html">Proofs; support for a SequenceElement. </A>&nbsp;&nbsp;-&nbsp;&nbsp;Each SequenceElement can be supported with multiple Proof grouped by Proofs. Hence Proofs is merely a container for Proof. A Proof is not obligatory for the instance to be valid.   </TD>
+</TR>
+<TR>
+  <TD><IMG border="0" src="icons/OWLNamedClassPrimitive.gif" width="16" height="16">&nbsp;<A href="Publication.html">Publication; a journal or similar publication.</A>&nbsp;&nbsp;-&nbsp;&nbsp;A publication for the de novo sequencing software used or for the Spectra used in de novo sequencing.   </TD>
+</TR>
+<TR>
+  <TD><IMG border="0" src="icons/OWLDatatypeProperty.gif" width="16" height="16">&nbsp;<A href="pubUrl.html">pubUrl; the link to a publication. </A>&nbsp;&nbsp;-&nbsp;&nbsp;The direct URL of the Publication or a DOI.   </TD>
+</TR>
+<TR>
+  <TD><IMG border="0" src="icons/OWLDatatypeProperty.gif" width="16" height="16">&nbsp;<A href="scanId.html">scanId; the scan number of the spectrum. </A>&nbsp;&nbsp;-&nbsp;&nbsp;A number identifying the spectrum within another file (e.g., mzML file). Generally, spectra get sequential scan ids during a run. scanID refers to this sequential naming.   </TD>
+</TR>
+<TR>
+  <TD><IMG border="0" src="icons/OWLNamedClassPrimitive.gif" width="16" height="16">&nbsp;<A href="Score.html">Score; one of the Score for the Prediction. </A>&nbsp;&nbsp;-&nbsp;&nbsp;De novo sequencing tools often provide multiple scores, this represents one of them. The scoreName, the actual scoreValue for the Prediction has to be provided. For the Score it needs to be set whether a larger Value is better or not (largerIsBetter).   </TD>
+</TR>
+<TR>
+  <TD><IMG border="0" src="icons/OWLDatatypeProperty.gif" width="16" height="16">&nbsp;<A href="scoreName.html">scoreName; name of the Score. </A>&nbsp;&nbsp;-&nbsp;&nbsp;The name of the Score. E.g.: XCorr fo cross correlation used in some de novo sequencing tools.   </TD>
+</TR>
+<TR>
+  <TD><IMG border="0" src="icons/OWLNamedClassPrimitive.gif" width="16" height="16">&nbsp;<A href="Scores.html">Scores; container for multiple Score. </A>&nbsp;&nbsp;-&nbsp;&nbsp;De novo sequencing tools often provide multiple scores, this is the container for multiple scores. At least one Score has to be provided for the instance to be valid. Also, the name of the Score to be used by default (mainScore) needs to be specified.   </TD>
+</TR>
+<TR>
+  <TD><IMG border="0" src="icons/OWLDatatypeProperty.gif" width="16" height="16">&nbsp;<A href="scoreValue.html">scoreValue; value for the score. </A>&nbsp;&nbsp;-&nbsp;&nbsp;The actual value of the Score.   </TD>
+</TR>
+<TR>
+  <TD><IMG border="0" src="icons/OWLNamedClassPrimitive.gif" width="16" height="16">&nbsp;<A href="Sequence.html">Sequence; the de novo predicted sequence. </A>&nbsp;&nbsp;-&nbsp;&nbsp;The de novo predicted Sequence for the Prediction. The Prediction may have confidence and a sequence. More precisely, it can be modelled as a Sequence of AminoAcids, ModeAminoAcids and Gaps with optional N- and C-terminal modifications. The members of the class: sequence and confidence are optional and intended for backward compatibility. The intention of DNMSO is to model the Sequence as a chain of SequenceElments with support (Proofs). At least 1 SequenceElement is needed for the instance to be valid.   </TD>
+</TR>
+<TR>
+  <TD><IMG border="0" src="icons/OWLNamedClassPrimitive.gif" width="16" height="16">&nbsp;<A href="SequenceElement.html">SequenceElement; an element of the predicted sequence (AminoAcid, ModAminoAcid, Gap). </A>&nbsp;&nbsp;-&nbsp;&nbsp;Each SequenceElement (AminoAcid, ModAminoAcid, Gap) has to specify a confidence and the position within the Sequence (positionInSequence). Proofs are optional. However, the intention of DNMSO is to increase the transparency of de novo prediitons and, therefore, adding support from the spectrum is highly encouraged.   </TD>
+</TR>
+<TR>
+  <TD><IMG border="0" src="icons/OWLDatatypeProperty.gif" width="16" height="16">&nbsp;<A href="side.html">side; N or C-Terminal.</A>&nbsp;&nbsp;-&nbsp;&nbsp;The side of the peptide that is modified. False for N-terminal and true for C-terminal.  </TD>
+</TR>
+<TR>
+  <TD><IMG border="0" src="icons/OWLDatatypeProperty.gif" width="16" height="16">&nbsp;<A href="slAA.html">slAA; single letter amino acid code. </A>&nbsp;&nbsp;-&nbsp;&nbsp;The one character representation of an amino acid e.g., W for Tryptophan. This must fit with the actual characters used to represent the amino acids in the Sequence.   </TD>
+</TR>
+<TR>
+  <TD><IMG border="0" src="icons/OWLNamedClassPrimitive.gif" width="16" height="16">&nbsp;<A href="Software.html">Software; a de novo sequencing software. </A>&nbsp;&nbsp;-&nbsp;&nbsp;The de novo sequencing tool used for de novo sequencing. SoftwareSettings, softwareName, softwareVersion need to be specified. Publications are optional (0 to many).   </TD>
+</TR>
+<TR>
+  <TD><IMG border="0" src="icons/OWLDatatypeProperty.gif" width="16" height="16">&nbsp;<A href="softwareName.html">softwareName; name of the de novo sequencing tool. </A>&nbsp;&nbsp;-&nbsp;&nbsp;The name of the de novo sequencing software used.   </TD>
+</TR>
+<TR>
+  <TD><IMG border="0" src="icons/OWLNamedClassPrimitive.gif" width="16" height="16">&nbsp;<A href="SoftwareSetting.html">SoftwareSetting; one SoftwareSetting (parameter) with value. </A>&nbsp;&nbsp;-&nbsp;&nbsp;A concrete Setting (parameter) for a de novo sequencing Software. softwareSettingName and softwareSettingValue for the Setting need to be specified. This is important when anything but the default values were used for some parameters. But for consistency it would be best to specify all settings.   </TD>
+</TR>
+<TR>
+  <TD><IMG border="0" src="icons/OWLDatatypeProperty.gif" width="16" height="16">&nbsp;<A href="softwareSettingName.html">softwareSettingName; name of the SoftwareSetting (parameter). </A>&nbsp;&nbsp;-&nbsp;&nbsp;The name of the Setting (parameter) for a de novo sequencing Software. Name must be same as provided by the de novo sequencing tool @ the specified Software.softwareVersion.   </TD>
+</TR>
+<TR>
+  <TD><IMG border="0" src="icons/OWLNamedClassPrimitive.gif" width="16" height="16">&nbsp;<A href="SoftwareSettings.html">SoftwareSettings; container for multiple SoftwareSetting (parameters). </A>&nbsp;&nbsp;-&nbsp;&nbsp;Typically, de novo sequencing tools have multiple SoftwareSettings and this is the container for specifying multiple SoftwareSetting. Relationship to SoftwareSetting (0 to many).   </TD>
+</TR>
+<TR>
+  <TD><IMG border="0" src="icons/OWLDatatypeProperty.gif" width="16" height="16">&nbsp;<A href="softwareSettingValue.html">softwareSettingValue; softwareSetting (parameter) value. </A>&nbsp;&nbsp;-&nbsp;&nbsp;The actual value of the Setting (parameter) of the de novo sequencing Software.   </TD>
+</TR>
+<TR>
+  <TD><IMG border="0" src="icons/OWLDatatypeProperty.gif" width="16" height="16">&nbsp;<A href="softwareVersion.html">softwareVersion; version of the de novo sequencing tool. </A>&nbsp;&nbsp;-&nbsp;&nbsp;The version of the de novo sequencing software used.   </TD>
+</TR>
+<TR>
+  <TD><IMG border="0" src="icons/OWLNamedClassPrimitive.gif" width="16" height="16">&nbsp;<A href="Source.html">Source; the data source for de novo prediction. </A>&nbsp;&nbsp;-&nbsp;&nbsp;The data source for the de novo prediction. Currently, this is one Spectrum. Multiple spectra as data source for one Prediciton are contained in Sources.   </TD>
+</TR>
+<TR>
+  <TD><IMG border="0" src="icons/OWLNamedClassPrimitive.gif" width="16" height="16">&nbsp;<A href="Sources.html">Sources; the data sources for the de novo prediction. </A>&nbsp;&nbsp;-&nbsp;&nbsp;Each Prediction needs Sources for the Prediction. It can be multiple Spectrum from different Sources (e.g., mzML files). At least one Source needs to be specified. Here it is possible to include spectra from multiple different fragmentation methods or different MS levels for one prediciton. E.g., ETD and CID fragmentations may be complementary and might improve de novo predictions when used in tandem.   </TD>
+</TR>
+<TR>
+  <TD><IMG border="0" src="icons/OWLNamedClassPrimitive.gif" width="16" height="16">&nbsp;<A href="SpecDataLink.html">SpecDataLink; URL link to MS/MS spectrum. </A>&nbsp;&nbsp;-&nbsp;&nbsp;The SpecDataLink class provides the URL to the file which contains the SpectrumData (e.g., mzML and mzXML). The particular spectrum can be determined by scanID or spectrumID in the Spectrum class.   </TD>
+</TR>
+<TR>
+  <TD><IMG border="0" src="icons/OWLNamedClassPrimitive.gif" width="16" height="16">&nbsp;<A href="Spectra.html">Spectra; a container for Spectrum. </A>&nbsp;&nbsp;-&nbsp;&nbsp;Spectra is a container for 1 to many Spectrum elements. De novo Sequencing needs at least one Spectrum so it can be performed and hence one Spectrum needs to be provided. Spectra can originate from different sources (e.g., mzML files). The concrete link to the file (if external) is provided in Link and/or PeakLink. Publications pertaining to the Spectra collection can be provided.   </TD>
+</TR>
+<TR>
+  <TD><IMG border="0" src="icons/OWLNamedClassPrimitive.gif" width="16" height="16">&nbsp;<A href="Spectrum.html">Spectrum; a mass spectrum for de novo sequencing. </A>&nbsp;&nbsp;-&nbsp;&nbsp;A Spectrum needs to specify a few identifying information (precursorIntensity, precursorMZ, scanId, and spectrumId) so that it can be retrieved from a link and in order to be useful in de novo sequencing. A Spectrum can either provide the SpectrumData as a CSV or a Link to another object e.g., an mzML file. CSV enables the DNMSO file to be self-contained. Linking to mzML files is encouraged.   </TD>
+</TR>
+<TR>
+  <TD><IMG border="0" src="icons/OWLNamedClassPrimitive.gif" width="16" height="16">&nbsp;<A href="CSV.html">SpectrumData; an MS/MS spectrum in CSV format. </A>&nbsp;&nbsp;-&nbsp;&nbsp;In case the MS/MS spectrum underlying the de novo prediction is not linked from an mzML or mzXML file, it can be stored in an instance of DNMSO using comma separated values. This is done in the data member of CSV.   </TD>
+</TR>
+<TR>
+  <TD><IMG border="0" src="icons/OWLNamedClassPrimitive.gif" width="16" height="16">&nbsp;<A href="SpectrumData.html">SpectrumData; CSV or SpecDataLink. </A>&nbsp;&nbsp;-&nbsp;&nbsp;SpectrumData can either be a Link to an url (SpecDataLink) e.g., an mzML or mzXML file or the data can be directly stored in a CSV element. The latter may be preferable for data exchange since all data will be contained within the DNMSO instance.   </TD>
+</TR>
+<TR>
+  <TD><IMG border="0" src="icons/OWLDatatypeProperty.gif" width="16" height="16">&nbsp;<A href="spectrumId.html">spectrumId; the spectrum ID. </A>&nbsp;&nbsp;-&nbsp;&nbsp;A number identifying the spectrum within another file (e.g., mzML file). Apart from the scanNumber, other IDs can be provided. One can must be used here.   </TD>
+</TR>
+<TR>
+  <TD><IMG border="0" src="icons/OWLNamedClassPrimitive.gif" width="16" height="16">&nbsp;<A href="Terminal.html">Terminal; terminal peptide modification. </A>&nbsp;&nbsp;-&nbsp;&nbsp;Terminal refers to the N or C-terminal of the peptide and has two possible values front: N-terminus and back: C-terminus. This is to model modifications which do not locate to a specific amino acid but modify the peptide in general regardless of the N- or C-terminal amino acid.   </TD>
+</TR>
+<TR>
+  <TD><IMG border="0" src="icons/OWLDatatypeProperty.gif" width="16" height="16">&nbsp;<A href="peakId.html">The ID of the peak in the Spectrum. </A>&nbsp;&nbsp;-&nbsp;&nbsp;The id of the peak that is linked as Proof via PeakLink. The ID must exist in SpectrumData. peakID is the 0 based index within SpectrumData.   </TD>
+</TR>
+<TR>
+  <TD><IMG border="0" src="icons/OWLObjectProperty.gif" width="16" height="16">&nbsp;<A href="hasSpectrumData.html">The relationship between Spectrum and SpectrumData. </A>&nbsp;&nbsp;-&nbsp;&nbsp;The relationship between Spectrum and SpectrumData. A Spectrum has exactly one SpectrumData.  </TD>
+</TR>
+<TR>
+  <TD><IMG border="0" src="icons/OWLDatatypeProperty.gif" width="16" height="16">&nbsp;<A href="url.html">url; link to spectra. </A>&nbsp;&nbsp;-&nbsp;&nbsp;Location (anyURI) of the file containing the Spectrum used in this de novo sequencing event. Must be accessible when analyzing the data. Must contain scanNumber and or spectrumID and one peak matching to the index of peakID.   </TD>
+</TR>
+<TR>
+  <TD><IMG border="0" src="icons/OWLDatatypeProperty.gif" width="16" height="16">&nbsp;<A href="version.html">version; the version of DNMSO used for the instance. </A>&nbsp;&nbsp;-&nbsp;&nbsp;The version of DNMSO used for the instance.   </TD>
+</TR>
+</TABLE>
+</BODY>
+</HTML>
