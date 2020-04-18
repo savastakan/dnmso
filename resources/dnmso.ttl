@@ -45,11 +45,6 @@
   rdfs:label "DNMSO; de novo ontology root class. "@en ;
   rdfs:subClassOf [
       a owl:Restriction ;
-      owl:minCardinality 1 ;
-      owl:onProperty :hasPredictions ;
-    ] ;
-  rdfs:subClassOf [
-      a owl:Restriction ;
       owl:cardinality 1 ;
       owl:onProperty :version ;
     ] ;
@@ -57,6 +52,11 @@
       a owl:Restriction ;
       owl:minCardinality 0 ;
       owl:onProperty :hasModifications ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:minCardinality 1 ;
+      owl:onProperty :hasPredictions ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
@@ -94,6 +94,11 @@
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:cardinality 1 ;
+      owl:onProperty :PSI-Mod-Ref ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality 1 ;
       owl:onProperty :hasModificationElement ;
     ] ;
   rdfs:subClassOf [
@@ -106,22 +111,11 @@
       owl:cardinality 1 ;
       owl:onProperty :modificationName ;
     ] ;
-  rdfs:subClassOf [
-      a owl:Restriction ;
-      owl:cardinality 1 ;
-      owl:onProperty :PSI-Mod-Ref ;
-    ] ;
 .
 :ModificationElement
   a owl:Class ;
   rdfs:comment "The ModificationElement is either of the class ModifiedAminoAcid or Terminal. Either can replace it. "@en ;
   rdfs:label "Either Terminal or ModifiedAminoAcid. "@en ;
-.
-:Modifications
-  a owl:Class ;
-  rdfs:comment "Modifications is a container for possible Modification so that multiple Modification can be represented in the DNMSO ontology. There are 0 to many Modification in Modifications. It would be space efficient to restrict Modifications to the Modification actually occuring in the instance. "@en ;
-  rdfs:label "ModificationElement; container for possible Modification. "@en ;
-  rdfs:subClassOf owl:Thing ;
 .
 :ModifiedAminoAcid
   a owl:Class ;
@@ -143,6 +137,13 @@
       owl:cardinality 1 ;
       owl:onProperty :slAA ;
     ] ;
+.
+:PSI-Mod-Ref
+  a owl:DatatypeProperty ;
+  rdfs:comment "The PSI-Mod Ontology contains an abundance of modifications and any modification here should reference the proper PSI-Mod term. "@en ;
+  rdfs:domain :Modification ;
+  rdfs:label "PSI-Mod-Ref; The identifier provided by PSI-Mod. "@en ;
+  rdfs:range xsd:string ;
 .
 :PeakLink
   a owl:Class ;
@@ -207,13 +208,6 @@
   rdfs:comment "A Proof is either a concrete PeakValue or a PeakLink to a Peak in the linked Spectra. Each SequenceElement can be supported with multiple Proof. "@en ;
   rdfs:label "Proof; either PeakValue or PeakLink. "@en ;
 .
-:PSI-Mod-Ref
-  a owl:DatatypeProperty ;
-  rdfs:comment "The PSI-Mod Ontology contains an abundance of modifications and any modification here should reference the proper PSI-Mod term. "@en ;
-  rdfs:domain :Modification ;
-  rdfs:label "PSI-Mod-Ref; The identifier provided by PSI-Mod. "@en ;
-  rdfs:range xsd:string ;
-.
 :Publication
   a owl:Class ;
   rdfs:comment "A publication for the de novo sequencing software used or for the Spectra used in de novo sequencing. "@en ;
@@ -233,17 +227,17 @@
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:cardinality 1 ;
+      owl:onProperty :mainScore ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality 1 ;
       owl:onProperty :scoreName ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:cardinality 1 ;
       owl:onProperty :scoreValue ;
-    ] ;
-  rdfs:subClassOf [
-      a owl:Restriction ;
-      owl:cardinality 1 ;
-      owl:onProperty :mainScore ;
     ] ;
 .
 :Sequence
@@ -293,10 +287,6 @@
   rdfs:subClassOf owl:Thing ;
   rdfs:subClassOf [
       a owl:Restriction ;
-      owl:onProperty :hasSettings ;
-    ] ;
-  rdfs:subClassOf [
-      a owl:Restriction ;
       owl:maxCardinality 1 ;
       owl:onProperty :softwareName ;
     ] ;
@@ -304,6 +294,10 @@
       a owl:Restriction ;
       owl:maxCardinality 1 ;
       owl:onProperty :softwareVersion ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:onProperty :hasSettings ;
     ] ;
 .
 :SoftwareSetting
