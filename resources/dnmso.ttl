@@ -45,7 +45,7 @@
   rdfs:label "DNMSO; de novo ontology root class. "@en ;
   rdfs:subClassOf [
       a owl:Restriction ;
-      owl:cardinality 1 ;
+      owl:minCardinality 1 ;
       owl:onProperty :hasPredictions ;
     ] ;
   rdfs:subClassOf [
@@ -55,7 +55,7 @@
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
-      owl:maxCardinality 1 ;
+      owl:minCardinality 0 ;
       owl:onProperty :hasModifications ;
     ] ;
   rdfs:subClassOf [
@@ -178,7 +178,7 @@
 .
 :Prediction
   a owl:Class ;
-  rdfs:comment "One Prediction of the Predictions made for the available spectra with the selected software. A Prediction must specify 1 Scores, 1 Sequence, 1 Software and 1 Sources. A Prediction models one prediction by a particular Software for one or more mass spectra leading to one predicted sequence associated with one or more scores by the sequencer. Predictions from multiple de novo sequencing tools can be integrated using SPARQL queries to arrive at an ensemble prediction. "@en ;
+  rdfs:comment "One Prediction of the Predictions made for the available spectra with the selected software. A Prediction must specify 1 Scores, 1 Sequence, 1 Software and at least 1 Source. A Prediction models one prediction by a particular Software for one or more mass spectra leading to one predicted sequence associated with one or more scores by the sequencer. Predictions from multiple de novo sequencing tools can be integrated using SPARQL queries to arrive at an ensemble prediction. This is a container for Prediction. It is possible that multiple predictions can be made for one underlying spectrum. For example co-fragmentation would lead to several valid sequences. Alternatively, multiple predictions can be made and represented in DNMSO with varying sequences and confidence and scores. A Prediction is not required for the DNMSO instance to be valid. "@en ;
   rdfs:label "Prediction; a de novo Prediction. "@en ;
   rdfs:subClassOf owl:Thing ;
   rdfs:subClassOf [
@@ -198,26 +198,14 @@
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
-      owl:cardinality 1 ;
+      owl:minCardinality 1 ;
       owl:onProperty :hasSources ;
     ] ;
 .
-:Predictions
-  a owl:Class ;
-  rdfs:comment "This is a container for Prediction. It is possible that multiple predictions can be made for one underlying spectrum. For example co-fragmentation would lead to several valid sequences. Alternatively, multiple predictions can be made and represented in DNMSO with varying sequences and confidence and scores. Predictions merely groups the Prediction made for one or more mass spectra. A Prediction is not required for the DNMSO instance to be valid. "@en ;
-  rdfs:label "Predictions; pontainer for multiple Prediction. "@en ;
-  rdfs:subClassOf owl:Thing ;
-.
 :Proof
   a owl:Class ;
-  rdfs:comment "A Proof is either a concrete PeakValue or a PeakLink to a Peak in the linked Spectra. "@en ;
+  rdfs:comment "A Proof is either a concrete PeakValue or a PeakLink to a Peak in the linked Spectra. Each SequenceElement can be supported with multiple Proof. "@en ;
   rdfs:label "Proof; either PeakValue or PeakLink. "@en ;
-.
-:Proofs
-  a owl:Class ;
-  rdfs:comment "Each SequenceElement can be supported with multiple Proof grouped by Proofs. Hence Proofs is merely a container for Proof. A Proof is not obligatory for the instance to be valid. "@en ;
-  rdfs:label "Proofs; support for a SequenceElement. "@en ;
-  rdfs:subClassOf owl:Thing ;
 .
 :PSI-Mod-Ref
   a owl:DatatypeProperty ;
@@ -252,20 +240,10 @@
       owl:cardinality 1 ;
       owl:onProperty :scoreValue ;
     ] ;
-.
-:Scores
-  a owl:Class ;
-  rdfs:comment "De novo sequencing tools often provide multiple scores, this is the container for multiple scores. At least one Score has to be provided for the instance to be valid. Also, the name of the Score to be used by default (mainScore) needs to be specified. "@en ;
-  rdfs:label "Scores; container for multiple Score. "@en ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:cardinality 1 ;
       owl:onProperty :mainScore ;
-    ] ;
-  rdfs:subClassOf [
-      a owl:Restriction ;
-      owl:minCardinality 1 ;
-      owl:onProperty :hasScore ;
     ] ;
 .
 :Sequence
@@ -315,7 +293,7 @@
   rdfs:subClassOf owl:Thing ;
   rdfs:subClassOf [
       a owl:Restriction ;
-      owl:cardinality 1 ;
+      owl:minCardinality 0 ;
       owl:onProperty :hasSettings ;
     ] ;
   rdfs:subClassOf [
@@ -344,11 +322,6 @@
       owl:maxCardinality 1 ;
       owl:onProperty :softwareSettingValue ;
     ] ;
-.
-:SoftwareSettings
-  a owl:Class ;
-  rdfs:comment "Typically, de novo sequencing tools have multiple SoftwareSettings and this is the container for specifying multiple SoftwareSetting. Relationship to SoftwareSetting (0 to many). "@en ;
-  rdfs:label "SoftwareSettings; container for multiple SoftwareSetting (parameters). "@en ;
 .
 :Source
   a owl:Class ;
@@ -485,13 +458,6 @@
   rdfs:label "hasMod; modification of the amino acid. "@en ;
   rdfs:range :ModifiedAminoAcid ;
 .
-:hasModification
-  a owl:ObjectProperty ;
-  rdfs:comment "The Modifications class (container for Modification) can have particular Modification elements. The relationship is 0 to many. "@en ;
-  rdfs:domain :Modifications ;
-  rdfs:label "hasModification; a particular modification. "@en ;
-  rdfs:range :Modification ;
-.
 :hasModificationElement
   a owl:ObjectProperty ;
   rdfs:comment "A Modification is either to an amino acid side chain (ModifiedAminoAcid) or to the n-terminus or c-terminus of the peptide (Terminal). The ModificationElement specifies this. The relationship is one to one (enforced). "@en ;
@@ -501,10 +467,10 @@
 .
 :hasModifications
   a owl:ObjectProperty ;
-  rdfs:comment "DNMSO lists possible and/or actual modifications to any amino acids (or terminal ones) in the Modifications class. DNMSO root can have modifications. The relationship is 0 to many. There can be modifications stored but if none were encountered in the de novo sequencing they don't have to be provided in the instance. If Modificatons were found, they must be stored in the Modifications container. "@en ;
+  rdfs:comment "DNMSO lists possible and/or actual modifications to any amino acids (or terminal ones) in the Modificationn class. DNMSO root can have modifications. The relationship is 0 to many. There can be modifications stored but if none were encountered in the de novo sequencing they don't have to be provided in the instance. If Modificatons were found, they must be stored as Modification. "@en ;
   rdfs:domain :DNMSO ;
   rdfs:label "hasModifications; whether Modifications are stored in the instance. "@en ;
-  rdfs:range :Modifications ;
+  rdfs:range :Modification ;
 .
 :hasNTerminalModification
   a owl:ObjectProperty ;
@@ -520,33 +486,19 @@
   rdfs:label "hasPeakLinkSpectrum; link to Spectrum containing the peak. "@en ;
   rdfs:range :Spectrum ;
 .
-:hasPrediction
-  a owl:ObjectProperty ;
-  rdfs:comment "The relationship between Predictions and Prediction. A Predictions can have 0 to many Prediction. Predictions is the container allowing to model many Prediction. "@en ;
-  rdfs:domain :Predictions ;
-  rdfs:label "hasPrediction; relationship between Predictions and Prediction. "@en ;
-  rdfs:range :Prediction ;
-.
 :hasPredictions
   a owl:ObjectProperty ;
-  rdfs:comment "The DNMSO class' relationship to the Predictions container (1 to 1). "@en ;
+  rdfs:comment "The DNMSO class' relationship to Prediction (0 to n). "@en ;
   rdfs:domain :DNMSO ;
-  rdfs:label "hasPredictions; relationship to Predictions container. "@en ;
-  rdfs:range :Predictions ;
-.
-:hasProof
-  a owl:ObjectProperty ;
-  rdfs:comment "The relationship between Proofs and Proof. A Proofs can have 0 to many Proof. "@en ;
-  rdfs:domain :Proofs ;
-  rdfs:label "hasProof; relationship to a particular Proof. "@en ;
-  rdfs:range :Proof ;
+  rdfs:label "hasPredictions; relationship to Prediction. "@en ;
+  rdfs:range :Prediction ;
 .
 :hasProofs
   a owl:ObjectProperty ;
-  rdfs:comment "The relationship between SequenceElement and Proofs. A SequenceElement has at most one Proofs. "@en ;
+  rdfs:comment "The relationship between SequenceElement and Proof. A SequenceElement has at most one Proofs. "@en ;
   rdfs:domain :SequenceElement ;
   rdfs:label "hasProofs; whether the SequenceElement has any support (Proofs). "@en ;
-  rdfs:range :Proofs ;
+  rdfs:range :Proof ;
 .
 :hasPublication
   a owl:ObjectProperty ;
@@ -555,19 +507,12 @@
   rdfs:label "hasPublication; whether publications for a Software are gien. "@en ;
   rdfs:range :Publication ;
 .
-:hasScore
-  a owl:ObjectProperty ;
-  rdfs:comment "The relationship between Scores and Score (1 to many). One Scores can have one or more Score. I.e., one Score must be provided. "@en ;
-  rdfs:domain :Scores ;
-  rdfs:label "hasScore; relationship between Scores and Score. "@en ;
-  rdfs:range :Score ;
-.
 :hasScores
   a owl:ObjectProperty ;
-  rdfs:comment "The relationship between Prediction and Scores (1 to 1). Each Prediction must provide a container with Scores. "@en ;
+  rdfs:comment "The relationship between Prediction and Scores (1 to n). Each Prediction must provide at least one Score. "@en ;
   rdfs:domain :Prediction ;
-  rdfs:label "hasScores; relationship between Prediction and Scores. "@en ;
-  rdfs:range :Scores ;
+  rdfs:label "hasScores; relationship between Prediction and Score. "@en ;
+  rdfs:range :Score ;
 .
 :hasSequence
   a owl:ObjectProperty ;
@@ -583,19 +528,12 @@
   rdfs:label "hasSequenceElement; whether Sequence contains SequenceElement. "@en ;
   rdfs:range :SequenceElement ;
 .
-:hasSetting
-  a owl:ObjectProperty ;
-  rdfs:comment "The relationship between SoftwareSettings and SoftwareSetting (0 to many). SoftwareSetting are optional but providing them can be beneficial for follow up analysis. "@en ;
-  rdfs:domain :SoftwareSettings ;
-  rdfs:label "hasSetting; relationship between SoftwareSettings and SoftwareSetting. "@en ;
-  rdfs:range :SoftwareSetting ;
-.
 :hasSettings
   a owl:ObjectProperty ;
-  rdfs:comment "The relationship between Software and SoftwareSettings (1 to 1). At least the empty SoftwareSettings container must be associated. "@en ;
+  rdfs:comment "The relationship between Software and SoftwareSetting (0 to n). SoftwareSetting are optional but providing them can be beneficial for follow up analysis. "@en ;
   rdfs:domain :Software ;
   rdfs:label "hasSettings; relationship between Software and SoftwareSettings. "@en ;
-  rdfs:range :SoftwareSettings ;
+  rdfs:range :SoftwareSetting ;
 .
 :hasSoftware
   a owl:ObjectProperty ;
@@ -604,19 +542,12 @@
   rdfs:label "hasSoftware; relationship between Prediction and Software. "@en ;
   rdfs:range :Software ;
 .
-:hasSource
-  a owl:ObjectProperty ;
-  rdfs:comment "The relationship between Sources and Source (1 to many). A Sources can have one or more Source. At least one Spectrum is needed for de novo predictions. "@en ;
-  rdfs:domain :Sources ;
-  rdfs:label "hasSource; relationship between Sources and Source. "@en ;
-  rdfs:range :Source ;
-.
 :hasSources
   a owl:ObjectProperty ;
-  rdfs:comment "The relationship between Prediction and Sources ( 1 to 1). A Prediction has exactly one Sources. Sources contains all Spectra used for the de novo prediction. "@en ;
+  rdfs:comment "The relationship between Prediction and Source ( 1 to n). A Prediction can have multiple spectra sources e.g., when multiple spectra of different type lead to one de novo prediciton. Each Prediction needs at least one Source for the Prediction. It can be multiple Spectrum from different Sources (e.g., mzML files). At least one Source needs to be specified. Here it is possible to include spectra from multiple different fragmentation methods or different MS levels for one prediciton. E.g., ETD and CID fragmentations may be complementary and might improve de novo predictions when used in tandem.  "@en ;
   rdfs:domain :Prediction ;
   rdfs:label "hasSources; the relationship between Prediction and Sources. "@en ;
-  rdfs:range :Sources ;
+  rdfs:range :Source ;
 .
 :hasSpectra
   a owl:ObjectProperty ;
@@ -655,10 +586,10 @@
 .
 :mainScore
   a owl:DatatypeProperty ;
-  rdfs:comment "Specifies which of the Score is the one that is typically used (default). This must be the same as one of the Score.scoreName in the same Scores container. "@en ;
+  rdfs:comment "Specifies whether of the Score is the one that is typically used (default). "@en ;
   rdfs:domain :Scores ;
   rdfs:label "mainScore; default score. "@en ;
-  rdfs:range xsd:string ;
+  rdfs:range xsd:boolean ;
 .
 :modificationMass
   a owl:DatatypeProperty ;
