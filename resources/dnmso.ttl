@@ -88,7 +88,7 @@
 .
 :Modification
   a owl:Class ;
-  rdfs:comment "Amino acids and peptides can be modified in various ways. A Modification is always contained in Modifications and doesn't stand by itself. Modification specifies the modificationMass (decimal) and expects a name for the modification (string). Exactly one ModificationElement must also be specified. The modificationMass of the modification (mono isotopic assumed) and the modificationName must be provided.  "@en ;
+  rdfs:comment "Amino acids and peptides can be modified in various ways. A Modification is always contained in Modifications and doesn't stand by itself. Modification specifies the modificationMass (decimal) and expects a name for the modification (string). Exactly one ModificationElement must also be specified. The modificationMass of the modification (mono isotopic assumed) and the modificationName must be provided. The reference to the propper PSI-Mod term must also be provided.  "@en ;
   rdfs:label "Modification; PTM or general mass change. "@en ;
   rdfs:subClassOf owl:Thing ;
   rdfs:subClassOf [
@@ -105,6 +105,11 @@
       a owl:Restriction ;
       owl:cardinality 1 ;
       owl:onProperty :modificationName ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality 1 ;
+      owl:onProperty :PSI-Mod-Ref ;
     ] ;
 .
 :ModificationElement
@@ -213,6 +218,13 @@
   rdfs:comment "Each SequenceElement can be supported with multiple Proof grouped by Proofs. Hence Proofs is merely a container for Proof. A Proof is not obligatory for the instance to be valid. "@en ;
   rdfs:label "Proofs; support for a SequenceElement. "@en ;
   rdfs:subClassOf owl:Thing ;
+.
+:PSI-Mod-Ref
+  a owl:DatatypeProperty ;
+  rdfs:comment "The PSI-Mod Ontology contains an abundance of modifications and any modification here should reference the proper PSI-Mod term. "@en ;
+  rdfs:domain :Modification ;
+  rdfs:label "PSI-Mod-Ref; The identifier provided by PSI-Mod. "@en ;
+  rdfs:range xsd:string ;
 .
 :Publication
   a owl:Class ;
