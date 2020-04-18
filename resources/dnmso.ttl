@@ -293,7 +293,6 @@
   rdfs:subClassOf owl:Thing ;
   rdfs:subClassOf [
       a owl:Restriction ;
-      owl:minCardinality 0 ;
       owl:onProperty :hasSettings ;
     ] ;
   rdfs:subClassOf [
@@ -325,18 +324,8 @@
 .
 :Source
   a owl:Class ;
-  rdfs:comment "The data source for the de novo prediction. Currently, this is one Spectrum. Multiple spectra as data source for one Prediciton are contained in Sources. "@en ;
-  rdfs:label "Source; the data source for de novo prediction. "@en ;
-.
-:Sources
-  a owl:Class ;
   rdfs:comment "Each Prediction needs Sources for the Prediction. It can be multiple Spectrum from different Sources (e.g., mzML files). At least one Source needs to be specified. Here it is possible to include spectra from multiple different fragmentation methods or different MS levels for one prediciton. E.g., ETD and CID fragmentations may be complementary and might improve de novo predictions when used in tandem. "@en ;
-  rdfs:label "Sources; the data sources for the de novo prediction. "@en ;
-  rdfs:subClassOf [
-      a owl:Restriction ;
-      owl:minCardinality 1 ;
-      owl:onProperty :hasSource ;
-    ] ;
+  rdfs:label "Source; the data sourcE(s) for de novo prediction. "@en ;
 .
 :SpecDataLink
   a owl:Class ;
@@ -532,7 +521,7 @@
   a owl:ObjectProperty ;
   rdfs:comment "The relationship between Software and SoftwareSetting (0 to n). SoftwareSetting are optional but providing them can be beneficial for follow up analysis. "@en ;
   rdfs:domain :Software ;
-  rdfs:label "hasSettings; relationship between Software and SoftwareSettings. "@en ;
+  rdfs:label "hasSettings; relationship between Software and SoftwareSetting. "@en ;
   rdfs:range :SoftwareSetting ;
 .
 :hasSoftware
@@ -546,7 +535,7 @@
   a owl:ObjectProperty ;
   rdfs:comment "The relationship between Prediction and Source ( 1 to n). A Prediction can have multiple spectra sources e.g., when multiple spectra of different type lead to one de novo prediciton. Each Prediction needs at least one Source for the Prediction. It can be multiple Spectrum from different Sources (e.g., mzML files). At least one Source needs to be specified. Here it is possible to include spectra from multiple different fragmentation methods or different MS levels for one prediciton. E.g., ETD and CID fragmentations may be complementary and might improve de novo predictions when used in tandem.  "@en ;
   rdfs:domain :Prediction ;
-  rdfs:label "hasSources; the relationship between Prediction and Sources. "@en ;
+  rdfs:label "hasSources; the relationship between Prediction and Source. "@en ;
   rdfs:range :Source ;
 .
 :hasSpectra
