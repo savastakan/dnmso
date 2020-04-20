@@ -184,7 +184,7 @@
   rdfs:subClassOf owl:Thing ;
   rdfs:subClassOf [
       a owl:Restriction ;
-      owl:cardinality 1 ;
+      owl:minCardinality 1 ;
       owl:onProperty :hasScores ;
     ] ;
   rdfs:subClassOf [
