@@ -39,6 +39,30 @@
       owl:onProperty :csvData ;
     ] ;
 .
+:CV
+  a owl:Class ;
+  rdfs:subClassOf owl:Thing ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality 1 ;
+      owl:onProperty :cvVersion ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality 1 ;
+      owl:onProperty :fullName ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality 1 ;
+      owl:onProperty :id ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality 1 ;
+      owl:onProperty :uri ;
+    ] ;
+.
 :DNMSO
   a owl:Class ;
   rdfs:comment "The de novo mass spectrometry sequencing ontology's root class. Modifications can be stored in the instance but if none were encountered are not required. The Predictions container must exist (even if empty). Spectra must exist at least once. The version of DNMSO for the instance has to be specified. "@en ;
@@ -104,12 +128,17 @@
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:cardinality 1 ;
-      owl:onProperty :modificationMass ;
+      owl:onProperty :modificationName ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
-      owl:cardinality 1 ;
-      owl:onProperty :modificationName ;
+      owl:maxCardinality 1 ;
+      owl:onProperty :averageModificationMass ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:maxCardinality 1 ;
+      owl:onProperty :monoModificationMass ;
     ] ;
 .
 :ModificationElement
@@ -184,11 +213,6 @@
   rdfs:subClassOf owl:Thing ;
   rdfs:subClassOf [
       a owl:Restriction ;
-      owl:minCardinality 1 ;
-      owl:onProperty :hasScores ;
-    ] ;
-  rdfs:subClassOf [
-      a owl:Restriction ;
       owl:cardinality 1 ;
       owl:onProperty :hasSequence ;
     ] ;
@@ -196,6 +220,11 @@
       a owl:Restriction ;
       owl:cardinality 1 ;
       owl:onProperty :hasSoftware ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:minCardinality 1 ;
+      owl:onProperty :hasScores ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
@@ -399,6 +428,11 @@
   rdfs:label "averageMass; average mass fo the modified amino acid. "@en ;
   rdfs:range xsd:decimal ;
 .
+:averageModificationMass
+  a owl:DatatypeProperty ;
+  rdfs:domain :Modification ;
+  rdfs:range xsd:decimal ;
+.
 :combinedConfidence
   a owl:DatatypeProperty ;
   rdfs:comment "The combined confidence for the Sequence Prediction. For backward compatibility. It is encouraged to support each SequenceElement with Proofs so that a confidence can be recalculated. "@en ;
@@ -418,6 +452,70 @@
   rdfs:comment "String representation of the mass spectrum used for the de novo sequencing event. Format: \"precursorMZ,precursorIntensity;mz1,intensity1;mz2,intensity2;...;m/zN,intensityN\". Use dots to indicate fractions of m/z (e.g., 123.34 m/z). Intensities are integers (e.g., 1000). "@en ;
   rdfs:domain :CSV ;
   rdfs:label "csvData; spectrum in CSV format. "@en ;
+  rdfs:range xsd:string ;
+.
+:cvParam
+  a owl:Class ;
+  rdfs:subClassOf owl:Thing ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality 1 ;
+      owl:onProperty :cvParamName ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality 1 ;
+      owl:onProperty :cvTermAccession ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality 1 ;
+      owl:onProperty :usrValue ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:maxCardinality 1 ;
+      owl:onProperty :unitAccession ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:maxCardinality 1 ;
+      owl:onProperty :unitCVRef ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:maxCardinality 1 ;
+      owl:onProperty :unitName ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:minCardinality 1 ;
+      owl:onProperty :foundIn ;
+    ] ;
+.
+:cvParamName
+  a owl:DatatypeProperty ;
+  rdfs:domain :cvParam ;
+  rdfs:range xsd:string ;
+.
+:cvTermAccession
+  a owl:DatatypeProperty ;
+  rdfs:domain :cvParam ;
+  rdfs:range xsd:string ;
+.
+:cvVersion
+  a owl:DatatypeProperty ;
+  rdfs:domain :CV ;
+  rdfs:range xsd:string ;
+.
+:foundIn
+  a owl:ObjectProperty ;
+  rdfs:domain :cvParam ;
+  rdfs:range :CV ;
+.
+:fullName
+  a owl:DatatypeProperty ;
+  rdfs:domain :CV ;
   rdfs:range xsd:string ;
 .
 :gapValue
@@ -525,6 +623,11 @@
   rdfs:label "hasSoftware; relationship between Prediction and Software. "@en ;
   rdfs:range :Software ;
 .
+:hasSoftwareSettingcvParam
+  a owl:ObjectProperty ;
+  rdfs:domain :SoftwareSetting ;
+  rdfs:range :cvParam ;
+.
 :hasSources
   a owl:ObjectProperty ;
   rdfs:comment "The relationship between Prediction and Source ( 1 to n). A Prediction can have multiple spectra sources e.g., when multiple spectra of different type lead to one de novo prediciton. Each Prediction needs at least one Source for the Prediction. It can be multiple Spectrum from different Sources (e.g., mzML files). At least one Source needs to be specified. Here it is possible to include spectra from multiple different fragmentation methods or different MS levels for one prediciton. E.g., ETD and CID fragmentations may be complementary and might improve de novo predictions when used in tandem.  "@en ;
@@ -553,6 +656,11 @@
   rdfs:label "The relationship between Spectrum and SpectrumData. "@en ;
   rdfs:range :SpectrumData ;
 .
+:id
+  a owl:DatatypeProperty ;
+  rdfs:domain :CV ;
+  rdfs:range xsd:string ;
+.
 :isPublished
   a owl:ObjectProperty ;
   rdfs:comment "The relationship between Spectra and Publication (0 to many). This is intended to give reference to the data sources. "@en ;
@@ -574,13 +682,6 @@
   rdfs:label "mainScore; default score. "@en ;
   rdfs:range xsd:boolean ;
 .
-:modificationMass
-  a owl:DatatypeProperty ;
-  rdfs:comment "The mass change that would occur due to the modification. E.g.:, phosphorylation introduces a mass shift of +79.99 Dalton. This can also be a negative value, if needed. The modification mass is expected to be monoisotopic. "@en ;
-  rdfs:domain :Modification ;
-  rdfs:label "modificationMass; mass of the modification (mono). "@en ;
-  rdfs:range xsd:decimal ;
-.
 :modificationName
   a owl:DatatypeProperty ;
   rdfs:comment "The name given to a particular modification. E.g., phosphorylation. "@en ;
@@ -593,6 +694,11 @@
   rdfs:comment "The mono isotopic mass of an element e.g., an amino acid. For example, Tryptophan has a mass of 186.08 Dalton. "@en ;
   rdfs:domain :ModifiedAminoAcid ;
   rdfs:label "monoIsotopicMass; monoisotopic mass of amino acid. "@en ;
+  rdfs:range xsd:decimal ;
+.
+:monoModificationMass
+  a owl:DatatypeProperty ;
+  rdfs:domain :Modification ;
   rdfs:range xsd:decimal ;
 .
 :peakId
@@ -719,12 +825,42 @@
   rdfs:label "spectrumId; the spectrum ID. "@en ;
   rdfs:range xsd:integer ;
 .
+:unitAccession
+  a owl:DatatypeProperty ;
+  rdfs:domain :cvParam ;
+  rdfs:range xsd:string ;
+.
+:unitCVRef
+  a owl:DatatypeProperty ;
+  rdfs:domain :cvParam ;
+  rdfs:range xsd:string ;
+.
+:unitName
+  a owl:DatatypeProperty ;
+  rdfs:domain :cvParam ;
+  rdfs:range xsd:string ;
+.
+:uri
+  a owl:DatatypeProperty ;
+  rdfs:domain :CV ;
+  rdfs:range xsd:anyURI ;
+.
 :url
   a owl:DatatypeProperty ;
   rdfs:comment "Location (anyURI) of the file containing the Spectrum used in this de novo sequencing event. Must be accessible when analyzing the data. Must contain scanNumber and or spectrumID and one peak matching to the index of peakID. "@en ;
   rdfs:domain :SpecDataLink ;
   rdfs:label "url; link to spectra. "@en ;
   rdfs:range xsd:anyURI ;
+.
+:usesCV
+  a owl:ObjectProperty ;
+  rdfs:domain :DNMSO ;
+  rdfs:range :CV ;
+.
+:usrValue
+  a owl:DatatypeProperty ;
+  rdfs:domain :cvParam ;
+  rdfs:range xsd:string ;
 .
 :version
   a owl:DatatypeProperty ;
