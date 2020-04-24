@@ -251,6 +251,11 @@
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:cardinality 1 ;
+      owl:onProperty :hasScorecvParam ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality 1 ;
       owl:onProperty :largerIsBetter ;
     ] ;
   rdfs:subClassOf [
@@ -314,6 +319,11 @@
   rdfs:comment "The de novo sequencing tool used for de novo sequencing. SoftwareSettings, softwareName, softwareVersion need to be specified. Publications are optional (0 to many). "@en ;
   rdfs:label "Software; a de novo sequencing software. "@en ;
   rdfs:subClassOf owl:Thing ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality 1 ;
+      owl:onProperty :hasSoftwarecvParam ;
+    ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:maxCardinality 1 ;
@@ -588,6 +598,16 @@
   rdfs:label "hasPublication; whether publications for a Software are gien. "@en ;
   rdfs:range :Publication ;
 .
+:hasQualifiercvParam
+  a owl:ObjectProperty ;
+  rdfs:domain :Spectra ;
+  rdfs:range :CV ;
+.
+:hasScorecvParam
+  a owl:ObjectProperty ;
+  rdfs:domain :Score ;
+  rdfs:range :cvParam ;
+.
 :hasScores
   a owl:ObjectProperty ;
   rdfs:comment "The relationship between Prediction and Scores (1 to n). Each Prediction must provide at least one Score. "@en ;
@@ -626,6 +646,11 @@
 :hasSoftwareSettingcvParam
   a owl:ObjectProperty ;
   rdfs:domain :SoftwareSetting ;
+  rdfs:range :cvParam ;
+.
+:hasSoftwarecvParam
+  a owl:ObjectProperty ;
+  rdfs:domain :Software ;
   rdfs:range :cvParam ;
 .
 :hasSources
