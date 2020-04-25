@@ -549,6 +549,11 @@
   rdfs:label "hasMod; modification of the amino acid. "@en ;
   rdfs:range :ModifiedAminoAcid ;
 .
+:hasModcvParam
+  a owl:ObjectProperty ;
+  rdfs:domain :Modification ;
+  rdfs:range :cvParam ;
+.
 :hasModificationElement
   a owl:ObjectProperty ;
   rdfs:comment "A Modification is either to an amino acid side chain (ModifiedAminoAcid) or to the n-terminus or c-terminus of the peptide (Terminal). The ModificationElement specifies this. The relationship is one to one (enforced). "@en ;
