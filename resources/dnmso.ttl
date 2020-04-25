@@ -125,11 +125,6 @@
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:cardinality 1 ;
-      owl:onProperty :hasModificationElement ;
-    ] ;
-  rdfs:subClassOf [
-      a owl:Restriction ;
-      owl:cardinality 1 ;
       owl:onProperty :modificationName ;
     ] ;
   rdfs:subClassOf [
@@ -147,6 +142,11 @@
   a owl:Class ;
   rdfs:comment "The ModificationElement is either of the class ModifiedAminoAcid or Terminal. Either can replace it. "@en ;
   rdfs:label "ModificationElement; Either Terminal or ModifiedAminoAcid. "@en ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality 1 ;
+      owl:onProperty :hasModification ;
+    ] ;
 .
 :ModifiedAminoAcid
   a owl:Class ;
@@ -162,11 +162,6 @@
       a owl:Restriction ;
       owl:cardinality 1 ;
       owl:onProperty :monoIsotopicMass ;
-    ] ;
-  rdfs:subClassOf [
-      a owl:Restriction ;
-      owl:cardinality 1 ;
-      owl:onProperty :slAA ;
     ] ;
 .
 :PSI-Mod-Ref
@@ -436,7 +431,7 @@
 :averageMass
   a owl:DatatypeProperty ;
   rdfs:comment "The average mass of the ModifiedAminoAcid. For regular AminoAcid, values are assumed to be known e.g., Tryptophan: 186.21. "@en ;
-  rdfs:domain :ModifiedAminoAcid ;
+  rdfs:domain :AminoAcid ;
   rdfs:label "averageMass; average mass fo the modified amino acid. "@en ;
   rdfs:range xsd:decimal ;
 .
@@ -551,6 +546,11 @@
   rdfs:label "gapValue; m/z range without sequence information. "@en ;
   rdfs:range xsd:decimal ;
 .
+:hasAA
+  a owl:ObjectProperty ;
+  rdfs:domain :ModifiedAminoAcid ;
+  rdfs:range :AminoAcid ;
+.
 :hasCTerminalModification
   a owl:ObjectProperty ;
   rdfs:comment "The Sequence has a C-terminal modification or not. Relationship is 0 or 1. "@en ;
@@ -572,12 +572,10 @@
   rdfs:label "hasModcvParam; specification of the modification using CV."@en ;
   rdfs:range :cvParam ;
 .
-:hasModificationElement
+:hasModification
   a owl:ObjectProperty ;
-  rdfs:comment "A Modification is either to an amino acid side chain (ModifiedAminoAcid) or to the n-terminus or c-terminus of the peptide (Terminal). The ModificationElement specifies this. The relationship is one to one (enforced). "@en ;
-  rdfs:domain :Modification ;
-  rdfs:label "hasModificationElement; a particular modification. "@en ;
-  rdfs:range :ModificationElement ;
+  rdfs:domain :ModificationElement ;
+  rdfs:range :Modification ;
 .
 :hasModifications
   a owl:ObjectProperty ;
@@ -750,7 +748,7 @@
 :monoIsotopicMass
   a owl:DatatypeProperty ;
   rdfs:comment "The mono isotopic mass of an element e.g., an amino acid. For example, Tryptophan has a mass of 186.08 Dalton. "@en ;
-  rdfs:domain :ModifiedAminoAcid ;
+  rdfs:domain :AminoAcid ;
   rdfs:label "monoIsotopicMass; monoisotopic mass of amino acid. Either monoIsotopicMass or averageModificationMass should be provided. "@en ;
   rdfs:range xsd:decimal ;
 .
@@ -844,13 +842,6 @@
   rdfs:label "side; N or C-Terminal."@en ;
   rdfs:range xsd:boolean ;
 .
-:slAA
-  a owl:DatatypeProperty ;
-  rdfs:comment "The one character representation of an amino acid e.g., W for Tryptophan. This must fit with the actual characters used to represent the amino acids in the Sequence. "@en ;
-  rdfs:domain :ModifiedAminoAcid ;
-  rdfs:label "slAA; single letter amino acid code. "@en ;
-  rdfs:range xsd:string ;
-.
 :softwareName
   a owl:DatatypeProperty ;
   rdfs:comment "The name of the de novo sequencing software used. "@en ;
@@ -882,7 +873,7 @@
   a owl:DatatypeProperty ;
   rdfs:comment "A number identifying the spectrum within another file (e.g., mzML file). Apart from the scanNumber, other IDs can be provided. One can must be used here. "@en ;
   rdfs:domain :Spectrum ;
-  rdfs:label "spectrumId; the spectrum ID. "@en ;
+  rdfs:label "spectrumId; the spectrum ID (unique identifier per DNMSO instance). "@en ;
   rdfs:range xsd:integer ;
 .
 :unitAccession
