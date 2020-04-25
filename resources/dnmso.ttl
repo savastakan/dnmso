@@ -41,6 +41,8 @@
 .
 :CV
   a owl:Class ;
+  rdfs:comment "todo"@en ;
+  rdfs:label "CV; A controlled vocabulary used in the instance of DNMSO."@en ;
   rdfs:subClassOf owl:Thing ;
   rdfs:subClassOf [
       a owl:Restriction ;
@@ -102,7 +104,7 @@
 :ModAminoAcid
   a owl:Class ;
   rdfs:comment "Amino acids can be modified in various ways. Here a modification is considered to be a change of the mass of the regular amino acid. ModAminoAcid is associated with Modification which specifies the particular modification on the amino acid. "@en ;
-  rdfs:label "Amino acid with PTM. "@en ;
+  rdfs:label "ModAminoAcid; Amino acid with PTM. "@en ;
   rdfs:subClassOf :SequenceElement ;
   rdfs:subClassOf [
       a owl:Restriction ;
@@ -144,7 +146,7 @@
 :ModificationElement
   a owl:Class ;
   rdfs:comment "The ModificationElement is either of the class ModifiedAminoAcid or Terminal. Either can replace it. "@en ;
-  rdfs:label "Either Terminal or ModifiedAminoAcid. "@en ;
+  rdfs:label "ModificationElement; Either Terminal or ModifiedAminoAcid. "@en ;
 .
 :ModifiedAminoAcid
   a owl:Class ;
@@ -440,7 +442,9 @@
 .
 :averageModificationMass
   a owl:DatatypeProperty ;
+  rdfs:comment "todo"@en ;
   rdfs:domain :Modification ;
+  rdfs:label "averageModificationMass; The mass of the modifier (average isotope distribution)."@en ;
   rdfs:range xsd:decimal ;
 .
 :combinedConfidence
@@ -466,6 +470,8 @@
 .
 :cvParam
   a owl:Class ;
+  rdfs:comment "todo"@en ;
+  rdfs:label "cvParam; A parameter described via a controlled vocabulary."@en ;
   rdfs:subClassOf owl:Thing ;
   rdfs:subClassOf [
       a owl:Restriction ;
@@ -505,27 +511,37 @@
 .
 :cvParamName
   a owl:DatatypeProperty ;
+  rdfs:comment "todo"@en ;
   rdfs:domain :cvParam ;
+  rdfs:label "cvParamName; The name of the parameter from the CV."@en ;
   rdfs:range xsd:string ;
 .
 :cvTermAccession
   a owl:DatatypeProperty ;
+  rdfs:comment "todo"@en ;
   rdfs:domain :cvParam ;
+  rdfs:label "cvTermAccession; The accession of the parameter from the CV."@en ;
   rdfs:range xsd:string ;
 .
 :cvVersion
   a owl:DatatypeProperty ;
+  rdfs:comment "todo"@en ;
   rdfs:domain :CV ;
+  rdfs:label "cvVersion; The version of the CV used."@en ;
   rdfs:range xsd:string ;
 .
 :foundIn
   a owl:ObjectProperty ;
+  rdfs:comment "todo"@en ;
   rdfs:domain :cvParam ;
+  rdfs:label "foundIn; The association to the source CV. "@en ;
   rdfs:range :CV ;
 .
 :fullName
   a owl:DatatypeProperty ;
+  rdfs:comment "todo"@en ;
   rdfs:domain :CV ;
+  rdfs:label "fullName; The full name of the CV."@en ;
   rdfs:range xsd:string ;
 .
 :gapValue
@@ -551,7 +567,9 @@
 .
 :hasModcvParam
   a owl:ObjectProperty ;
+  rdfs:comment "todo"@en ;
   rdfs:domain :Modification ;
+  rdfs:label "hasModcvParam; specification of the modification using CV."@en ;
   rdfs:range :cvParam ;
 .
 :hasModificationElement
@@ -605,12 +623,16 @@
 .
 :hasQualifiercvParam
   a owl:ObjectProperty ;
+  rdfs:comment "todo"@en ;
   rdfs:domain :Spectra ;
+  rdfs:label "hasQualifiercvParam; Additional info about Spectra using CV."@en ;
   rdfs:range :CV ;
 .
 :hasScorecvParam
   a owl:ObjectProperty ;
+  rdfs:comment "todo"@en ;
   rdfs:domain :Score ;
+  rdfs:label "hasScorecvParam; Score info using CV."@en ;
   rdfs:range :cvParam ;
 .
 :hasScores
@@ -650,12 +672,16 @@
 .
 :hasSoftwareSettingcvParam
   a owl:ObjectProperty ;
+  rdfs:comment "todo"@en ;
   rdfs:domain :SoftwareSetting ;
+  rdfs:label "hasSoftwareSettingcvParam; Additional info about SoftwareSetting using CV. "@en ;
   rdfs:range :cvParam ;
 .
 :hasSoftwarecvParam
   a owl:ObjectProperty ;
+  rdfs:comment "todo"@en ;
   rdfs:domain :Software ;
+  rdfs:label "hasSoftwarecvParam; Sotware specified via CV."@en ;
   rdfs:range :cvParam ;
 .
 :hasSources
@@ -683,12 +709,14 @@
   a owl:ObjectProperty ;
   rdfs:comment "The relationship between Spectrum and SpectrumData. A Spectrum has exactly one SpectrumData."@en ;
   rdfs:domain :Spectrum ;
-  rdfs:label "The relationship between Spectrum and SpectrumData. "@en ;
+  rdfs:label "hasSpectrumData; The relationship between Spectrum and SpectrumData. "@en ;
   rdfs:range :SpectrumData ;
 .
 :id
   a owl:DatatypeProperty ;
+  rdfs:comment "todo"@en ;
   rdfs:domain :CV ;
+  rdfs:label "id; identifier of the controlled vocabulary."@en ;
   rdfs:range xsd:string ;
 .
 :isPublished
@@ -728,14 +756,16 @@
 .
 :monoModificationMass
   a owl:DatatypeProperty ;
+  rdfs:comment "todo"@en ;
   rdfs:domain :Modification ;
+  rdfs:label "monoModificationMass; The mass of the modifier (monoisotopic)."@en ;
   rdfs:range xsd:decimal ;
 .
 :peakId
   a owl:DatatypeProperty ;
   rdfs:comment "The id of the peak that is linked as Proof via PeakLink. The ID must exist in SpectrumData. peakID is the 0 based index within SpectrumData. "@en ;
   rdfs:domain :PeakLink ;
-  rdfs:label "The ID of the peak in the Spectrum. "@en ;
+  rdfs:label "peakID; The ID of the peak in the Spectrum. "@en ;
 .
 :peakIntensity
   a owl:DatatypeProperty ;
@@ -857,22 +887,30 @@
 .
 :unitAccession
   a owl:DatatypeProperty ;
+  rdfs:comment "todo"@en ;
   rdfs:domain :cvParam ;
+  rdfs:label "unitAccession; The accession to the unit used."@en ;
   rdfs:range xsd:string ;
 .
 :unitCVRef
   a owl:DatatypeProperty ;
+  rdfs:comment "todo"@en ;
   rdfs:domain :cvParam ;
+  rdfs:label "unitCVRef; The CV the unit is described."@en ;
   rdfs:range xsd:string ;
 .
 :unitName
   a owl:DatatypeProperty ;
+  rdfs:comment "todo"@en ;
   rdfs:domain :cvParam ;
+  rdfs:label "unitName; The name of the unit."@en ;
   rdfs:range xsd:string ;
 .
 :uri
   a owl:DatatypeProperty ;
+  rdfs:comment "todo"@en ;
   rdfs:domain :CV ;
+  rdfs:label "uri; URI pointing to the CV."@en ;
   rdfs:range xsd:anyURI ;
 .
 :url
@@ -884,12 +922,16 @@
 .
 :usesCV
   a owl:ObjectProperty ;
+  rdfs:comment "todo"@en ;
   rdfs:domain :DNMSO ;
+  rdfs:label "usesCV; One link to the CVs used in the instance."@en ;
   rdfs:range :CV ;
 .
 :usrValue
   a owl:DatatypeProperty ;
+  rdfs:comment "todo"@en ;
   rdfs:domain :cvParam ;
+  rdfs:label "usrValue; the value of the CV term used."@en ;
   rdfs:range xsd:string ;
 .
 :version
