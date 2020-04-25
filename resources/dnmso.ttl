@@ -41,7 +41,7 @@
 .
 :CV
   a owl:Class ;
-  rdfs:comment "todo"@en ;
+  rdfs:comment "Many fields in DNMSO are not using a controlled vocabulary as the field has to develop first. However, the intention is to include CVs and the CV class allows the specification of the CVs used in an instance. The aim is to use PSI-MS."@en ;
   rdfs:label "CV; A controlled vocabulary used in the instance of DNMSO."@en ;
   rdfs:subClassOf owl:Thing ;
   rdfs:subClassOf [
@@ -442,7 +442,7 @@
 .
 :averageModificationMass
   a owl:DatatypeProperty ;
-  rdfs:comment "todo"@en ;
+  rdfs:comment "The modification mass depends on the chemical structure of the modifier and it should be provided with the mass considering average isotopic distriution."@en ;
   rdfs:domain :Modification ;
   rdfs:label "averageModificationMass; The mass of the modifier (average isotope distribution)."@en ;
   rdfs:range xsd:decimal ;
@@ -470,7 +470,7 @@
 .
 :cvParam
   a owl:Class ;
-  rdfs:comment "todo"@en ;
+  rdfs:comment "cvParam allows the specification of information using a CV. The CV used must be specified in DNMSO and linked in cvParam via the foundIn association."@en ;
   rdfs:label "cvParam; A parameter described via a controlled vocabulary."@en ;
   rdfs:subClassOf owl:Thing ;
   rdfs:subClassOf [
@@ -511,35 +511,35 @@
 .
 :cvParamName
   a owl:DatatypeProperty ;
-  rdfs:comment "todo"@en ;
+  rdfs:comment "The name of the cvParam i.e., the term for which the usrValue applies."@en ;
   rdfs:domain :cvParam ;
   rdfs:label "cvParamName; The name of the parameter from the CV."@en ;
   rdfs:range xsd:string ;
 .
 :cvTermAccession
   a owl:DatatypeProperty ;
-  rdfs:comment "todo"@en ;
+  rdfs:comment "The accession of the cvParam in the specified CV."@en ;
   rdfs:domain :cvParam ;
   rdfs:label "cvTermAccession; The accession of the parameter from the CV."@en ;
   rdfs:range xsd:string ;
 .
 :cvVersion
   a owl:DatatypeProperty ;
-  rdfs:comment "todo"@en ;
+  rdfs:comment "The version of the CV used. This must be provided for compatibility."@en ;
   rdfs:domain :CV ;
   rdfs:label "cvVersion; The version of the CV used."@en ;
   rdfs:range xsd:string ;
 .
 :foundIn
   a owl:ObjectProperty ;
-  rdfs:comment "todo"@en ;
+  rdfs:comment "The CV (must be linked in DNMSO, if used) must be referenced in cvParam since multiple CVs can be used even of different version. "@en ;
   rdfs:domain :cvParam ;
   rdfs:label "foundIn; The association to the source CV. "@en ;
   rdfs:range :CV ;
 .
 :fullName
   a owl:DatatypeProperty ;
-  rdfs:comment "todo"@en ;
+  rdfs:comment "The full name of the CV used in the instance. Required. "@en ;
   rdfs:domain :CV ;
   rdfs:label "fullName; The full name of the CV."@en ;
   rdfs:range xsd:string ;
@@ -567,7 +567,7 @@
 .
 :hasModcvParam
   a owl:ObjectProperty ;
-  rdfs:comment "todo"@en ;
+  rdfs:comment "Modifications should be specified using a PSI-Mod-Ref but additional information can be provided using cvParam (0 - many)."@en ;
   rdfs:domain :Modification ;
   rdfs:label "hasModcvParam; specification of the modification using CV."@en ;
   rdfs:range :cvParam ;
@@ -623,14 +623,14 @@
 .
 :hasQualifiercvParam
   a owl:ObjectProperty ;
-  rdfs:comment "todo"@en ;
+  rdfs:comment "Spectra should typically link an mzML file. Any additional information not specified in mzML can be provided as cvParam (0 - many). "@en ;
   rdfs:domain :Spectra ;
   rdfs:label "hasQualifiercvParam; Additional info about Spectra using CV."@en ;
   rdfs:range :CV ;
 .
 :hasScorecvParam
   a owl:ObjectProperty ;
-  rdfs:comment "todo"@en ;
+  rdfs:comment "Software often have multiple scores and the ones specified in a CV can be provided via cvParam (1 - many). The remaining parameters of Score will become deprecated in the future. "@en ;
   rdfs:domain :Score ;
   rdfs:label "hasScorecvParam; Score info using CV."@en ;
   rdfs:range :cvParam ;
@@ -672,14 +672,14 @@
 .
 :hasSoftwareSettingcvParam
   a owl:ObjectProperty ;
-  rdfs:comment "todo"@en ;
+  rdfs:comment "De novo sequencing software may have many settings and the ones available in a CV should be provided as cvParam (0 - many). Others can be provided via softwarSettingName and softwareSettingValue (to be deprecated). "@en ;
   rdfs:domain :SoftwareSetting ;
   rdfs:label "hasSoftwareSettingcvParam; Additional info about SoftwareSetting using CV. "@en ;
   rdfs:range :cvParam ;
 .
 :hasSoftwarecvParam
   a owl:ObjectProperty ;
-  rdfs:comment "todo"@en ;
+  rdfs:comment "Many de novo sequencing tools exist and they should be named using cvParam. If that is not possible then softareName, softwareVersion, and hasPublication can be used (to be deprecated). "@en ;
   rdfs:domain :Software ;
   rdfs:label "hasSoftwarecvParam; Sotware specified via CV."@en ;
   rdfs:range :cvParam ;
@@ -714,7 +714,7 @@
 .
 :id
   a owl:DatatypeProperty ;
-  rdfs:comment "todo"@en ;
+  rdfs:comment "The id of the CV to be referenced where cvParam from the CV are used in an instance. "@en ;
   rdfs:domain :CV ;
   rdfs:label "id; identifier of the controlled vocabulary."@en ;
   rdfs:range xsd:string ;
@@ -751,12 +751,12 @@
   a owl:DatatypeProperty ;
   rdfs:comment "The mono isotopic mass of an element e.g., an amino acid. For example, Tryptophan has a mass of 186.08 Dalton. "@en ;
   rdfs:domain :ModifiedAminoAcid ;
-  rdfs:label "monoIsotopicMass; monoisotopic mass of amino acid. "@en ;
+  rdfs:label "monoIsotopicMass; monoisotopic mass of amino acid. Either monoIsotopicMass or averageModificationMass should be provided. "@en ;
   rdfs:range xsd:decimal ;
 .
 :monoModificationMass
   a owl:DatatypeProperty ;
-  rdfs:comment "todo"@en ;
+  rdfs:comment "The mass of the modification using a monoisotopic distribution. "@en ;
   rdfs:domain :Modification ;
   rdfs:label "monoModificationMass; The mass of the modifier (monoisotopic)."@en ;
   rdfs:range xsd:decimal ;
@@ -887,28 +887,28 @@
 .
 :unitAccession
   a owl:DatatypeProperty ;
-  rdfs:comment "todo"@en ;
+  rdfs:comment "The accession in the CV describing the unit used to specify this cvParam. "@en ;
   rdfs:domain :cvParam ;
   rdfs:label "unitAccession; The accession to the unit used."@en ;
   rdfs:range xsd:string ;
 .
 :unitCVRef
   a owl:DatatypeProperty ;
-  rdfs:comment "todo"@en ;
+  rdfs:comment "The reference to the CV used to describe the unit in this cvParam. "@en ;
   rdfs:domain :cvParam ;
   rdfs:label "unitCVRef; The CV the unit is described."@en ;
   rdfs:range xsd:string ;
 .
 :unitName
   a owl:DatatypeProperty ;
-  rdfs:comment "todo"@en ;
+  rdfs:comment "The name of the unit used to specify the value in this cvParam. "@en ;
   rdfs:domain :cvParam ;
   rdfs:label "unitName; The name of the unit."@en ;
   rdfs:range xsd:string ;
 .
 :uri
   a owl:DatatypeProperty ;
-  rdfs:comment "todo"@en ;
+  rdfs:comment "The URI where the CV specified in CV can be found. "@en ;
   rdfs:domain :CV ;
   rdfs:label "uri; URI pointing to the CV."@en ;
   rdfs:range xsd:anyURI ;
@@ -922,14 +922,14 @@
 .
 :usesCV
   a owl:ObjectProperty ;
-  rdfs:comment "todo"@en ;
+  rdfs:comment "The association between DNMSO specifying all CVs used in the instance (0 - many). "@en ;
   rdfs:domain :DNMSO ;
   rdfs:label "usesCV; One link to the CVs used in the instance."@en ;
   rdfs:range :CV ;
 .
 :usrValue
   a owl:DatatypeProperty ;
-  rdfs:comment "todo"@en ;
+  rdfs:comment "The value of the parameter in this cvParam. "@en ;
   rdfs:domain :cvParam ;
   rdfs:label "usrValue; the value of the CV term used."@en ;
   rdfs:range xsd:string ;
