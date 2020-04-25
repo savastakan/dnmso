@@ -27,6 +27,16 @@
       owl:cardinality 1 ;
       owl:onProperty :AACharacter ;
     ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality 1 ;
+      owl:onProperty :averageMass ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality 1 ;
+      owl:onProperty :monoIsotopicMass ;
+    ] ;
 .
 :CSV
   a owl:Class ;
@@ -153,16 +163,6 @@
   rdfs:comment "A ModifiedAminoAcid is an amino acid which either has been found to be modified in the context of an instance of DNMSO or can be found (while building the predictions). ModifiedAminoAcid must specify an averageMass (decimal), a monoIsotopicMass (decimal) and the one character representation of the amino acid (string) i.e.: G for Glycine. "@en ;
   rdfs:label "ModifiedAminoAcid; An amino acid with PTM or other mass change. "@en ;
   rdfs:subClassOf :ModificationElement ;
-  rdfs:subClassOf [
-      a owl:Restriction ;
-      owl:cardinality 1 ;
-      owl:onProperty :averageMass ;
-    ] ;
-  rdfs:subClassOf [
-      a owl:Restriction ;
-      owl:cardinality 1 ;
-      owl:onProperty :monoIsotopicMass ;
-    ] ;
 .
 :PSI-Mod-Ref
   a owl:DatatypeProperty ;
