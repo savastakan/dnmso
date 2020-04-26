@@ -856,22 +856,7 @@
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:cardinality 1 ;
-      owl:onProperty :AACharacter ;
-    ] ;
-  rdfs:subClassOf [
-      a owl:Restriction ;
-      owl:cardinality 1 ;
-      owl:onProperty :averageMass ;
-    ] ;
-  rdfs:subClassOf [
-      a owl:Restriction ;
-      owl:cardinality 1 ;
       owl:onProperty :isAminoAcid ;
-    ] ;
-  rdfs:subClassOf [
-      a owl:Restriction ;
-      owl:cardinality 1 ;
-      owl:onProperty :monoIsotopicMass ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
