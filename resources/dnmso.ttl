@@ -10,13 +10,6 @@
 <https://github.com/savastakan/dnmso>
   a owl:Ontology ;
 .
-:AACharacter
-  a owl:DatatypeProperty ;
-  rdfs:comment "The single letter code representing the AminoAcid e.g., A for Alanine. AACharacter is a member of the AminoAcid class and must be filled. "@en ;
-  rdfs:domain :seAminoAcid ;
-  rdfs:label "AACharacter; single letter amino acid code. "@en ;
-  rdfs:range xsd:string ;
-.
 :AminoAcid
   a owl:Class ;
   rdfs:comment "Representation of the standard amino acids. The list of amino acids used in the instance should be linked to the DNMSO root. The singleLetterCode must be unique."@en ;
