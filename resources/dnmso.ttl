@@ -38,17 +38,6 @@
       owl:onProperty :monoIsotopicMass ;
     ] ;
 .
-:CSV
-  a owl:Class ;
-  rdfs:comment "In case the MS/MS spectrum underlying the de novo prediction is not linked from an mzML or mzXML file, it can be stored in an instance of DNMSO using comma separated values. This is done in the data member of CSV. "@en ;
-  rdfs:label "SpectrumData; an MS/MS spectrum in CSV format. "@en ;
-  rdfs:subClassOf :SpectrumData ;
-  rdfs:subClassOf [
-      a owl:Restriction ;
-      owl:cardinality 1 ;
-      owl:onProperty :csvData ;
-    ] ;
-.
 :CV
   a owl:Class ;
   rdfs:comment "Many fields in DNMSO are not using a controlled vocabulary as the field has to develop first. However, the intention is to include CVs and the CV class allows the specification of the CVs used in an instance. The aim is to use PSI-MS."@en ;
@@ -163,6 +152,11 @@
   rdfs:comment "A ModifiedAminoAcid is an amino acid which either has been found to be modified in the context of an instance of DNMSO or can be found (while building the predictions). ModifiedAminoAcid must specify an averageMass (decimal), a monoIsotopicMass (decimal) and the one character representation of the amino acid (string) i.e.: G for Glycine. "@en ;
   rdfs:label "ModifiedAminoAcid; An amino acid with PTM or other mass change. "@en ;
   rdfs:subClassOf :ModificationElement ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality 1 ;
+      owl:onProperty :hasAA ;
+    ] ;
 .
 :PSI-Mod-Ref
   a owl:DatatypeProperty ;
@@ -352,22 +346,6 @@
       owl:onProperty :softwareSettingValue ;
     ] ;
 .
-:Source
-  a owl:Class ;
-  rdfs:comment "Each Prediction needs Sources for the Prediction. It can be multiple Spectrum from different Sources (e.g., mzML files). At least one Source needs to be specified. Here it is possible to include spectra from multiple different fragmentation methods or different MS levels for one prediciton. E.g., ETD and CID fragmentations may be complementary and might improve de novo predictions when used in tandem. "@en ;
-  rdfs:label "Source; the data sourcE(s) for de novo prediction. "@en ;
-.
-:SpecDataLink
-  a owl:Class ;
-  rdfs:comment "The SpecDataLink class provides the URL to the file which contains the SpectrumData (e.g., mzML and mzXML). The particular spectrum can be determined by scanID or spectrumID in the Spectrum class. "@en ;
-  rdfs:label "SpecDataLink; URL link to MS/MS spectrum. "@en ;
-  rdfs:subClassOf :SpectrumData ;
-  rdfs:subClassOf [
-      a owl:Restriction ;
-      owl:cardinality 1 ;
-      owl:onProperty :url ;
-    ] ;
-.
 :Spectra
   a owl:Class ;
   rdfs:comment "Spectra is a container for 1 to many Spectrum elements. De novo Sequencing needs at least one Spectrum so it can be performed and hence one Spectrum needs to be provided. Spectra can originate from different sources (e.g., mzML files). The concrete link to the file (if external) is provided in Link and/or PeakLink. Publications pertaining to the Spectra collection can be provided. "@en ;
@@ -375,16 +353,21 @@
   rdfs:subClassOf owl:Thing ;
   rdfs:subClassOf [
       a owl:Restriction ;
-      owl:minCardinality 1 ;
+      owl:cardinality 1 ;
       owl:onProperty :hasSpectrum ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality 1 ;
+      owl:onProperty :url ;
     ] ;
 .
 :Spectrum
   a owl:Class ;
   rdfs:comment "A Spectrum needs to specify a few identifying information (precursorIntensity, precursorMZ, scanId, and spectrumId) so that it can be retrieved from a link and in order to be useful in de novo sequencing. A Spectrum can either provide the SpectrumData as a CSV or a Link to another object e.g., an mzML file. CSV enables the DNMSO file to be self-contained. Linking to mzML files is encouraged. "@en ;
   rdfs:label "Spectrum; a mass spectrum for de novo sequencing. "@en ;
+  rdfs:subClassOf owl:Class ;
   rdfs:subClassOf owl:Thing ;
-  rdfs:subClassOf :Source ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:cardinality 1 ;
@@ -410,12 +393,11 @@
       owl:cardinality 1 ;
       owl:onProperty :spectrumId ;
     ] ;
-.
-:SpectrumData
-  a owl:Class ;
-  rdfs:comment "SpectrumData can either be a Link to an url (SpecDataLink) e.g., an mzML or mzXML file or the data can be directly stored in a CSV element. The latter may be preferable for data exchange since all data will be contained within the DNMSO instance. "@en ;
-  rdfs:label "SpectrumData; CSV or SpecDataLink. "@en ;
-  rdfs:subClassOf owl:Thing ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:maxCardinality 1 ;
+      owl:onProperty :csvData ;
+    ] ;
 .
 :Terminal
   a owl:Class ;
@@ -459,8 +441,8 @@
 :csvData
   a owl:DatatypeProperty ;
   rdfs:comment "String representation of the mass spectrum used for the de novo sequencing event. Format: \"precursorMZ,precursorIntensity;mz1,intensity1;mz2,intensity2;...;m/zN,intensityN\". Use dots to indicate fractions of m/z (e.g., 123.34 m/z). Intensities are integers (e.g., 1000). "@en ;
-  rdfs:domain :CSV ;
-  rdfs:label "csvData; spectrum in CSV format. "@en ;
+  rdfs:domain :Spectrum ;
+  rdfs:label "csvPeakList; spectrum in CSV format."@en ;
   rdfs:range xsd:string ;
 .
 :cvParam
@@ -531,6 +513,11 @@
   rdfs:domain :cvParam ;
   rdfs:label "foundIn; The association to the source CV. "@en ;
   rdfs:range :CV ;
+.
+:foundInSpectra
+  a owl:ObjectProperty ;
+  rdfs:domain :Spectrum ;
+  rdfs:range :Spectra ;
 .
 :fullName
   a owl:DatatypeProperty ;
@@ -624,7 +611,7 @@
   rdfs:comment "Spectra should typically link an mzML file. Any additional information not specified in mzML can be provided as cvParam (0 - many). "@en ;
   rdfs:domain :Spectra ;
   rdfs:label "hasQualifiercvParam; Additional info about Spectra using CV."@en ;
-  rdfs:range :CV ;
+  rdfs:range :cvParam ;
 .
 :hasScorecvParam
   a owl:ObjectProperty ;
@@ -687,7 +674,7 @@
   rdfs:comment "The relationship between Prediction and Source ( 1 to n). A Prediction can have multiple spectra sources e.g., when multiple spectra of different type lead to one de novo prediciton. Each Prediction needs at least one Source for the Prediction. It can be multiple Spectrum from different Sources (e.g., mzML files). At least one Source needs to be specified. Here it is possible to include spectra from multiple different fragmentation methods or different MS levels for one prediciton. E.g., ETD and CID fragmentations may be complementary and might improve de novo predictions when used in tandem.  "@en ;
   rdfs:domain :Prediction ;
   rdfs:label "hasSources; the relationship between Prediction and Source. "@en ;
-  rdfs:range :Source ;
+  rdfs:range :Spectrum ;
 .
 :hasSpectra
   a owl:ObjectProperty ;
@@ -708,7 +695,6 @@
   rdfs:comment "The relationship between Spectrum and SpectrumData. A Spectrum has exactly one SpectrumData."@en ;
   rdfs:domain :Spectrum ;
   rdfs:label "hasSpectrumData; The relationship between Spectrum and SpectrumData. "@en ;
-  rdfs:range :SpectrumData ;
 .
 :id
   a owl:DatatypeProperty ;
@@ -907,7 +893,7 @@
 :url
   a owl:DatatypeProperty ;
   rdfs:comment "Location (anyURI) of the file containing the Spectrum used in this de novo sequencing event. Must be accessible when analyzing the data. Must contain scanNumber and or spectrumID and one peak matching to the index of peakID. "@en ;
-  rdfs:domain :SpecDataLink ;
+  rdfs:domain :Spectra ;
   rdfs:label "url; link to spectra. "@en ;
   rdfs:range xsd:anyURI ;
 .
