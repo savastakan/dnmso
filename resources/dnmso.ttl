@@ -13,19 +13,19 @@
 :AACharacter
   a owl:DatatypeProperty ;
   rdfs:comment "The single letter code representing the AminoAcid e.g., A for Alanine. AACharacter is a member of the AminoAcid class and must be filled. "@en ;
-  rdfs:domain :AminoAcid ;
+  rdfs:domain :seAminoAcid ;
   rdfs:label "AACharacter; single letter amino acid code. "@en ;
   rdfs:range xsd:string ;
 .
 :AminoAcid
   a owl:Class ;
-  rdfs:comment "An AminoAcid is a SequenceElement and as such can be part of a Sequence. Filling AACharacter is obligatory. confidence, proof, and position within the sequence are part of the base class (SequenceElement). "@en ;
-  rdfs:label "AminoAcid; child class of SequenceElement. "@en ;
-  rdfs:subClassOf :SequenceElement ;
+  rdfs:comment "Representation of the standard amino acids. The list of amino acids used in the instance should be linked to the DNMSO root. The singleLetterCode must be unique."@en ;
+  rdfs:label "AminoAcid; Representation of the standard amino acids."@en ;
+  rdfs:subClassOf owl:Thing ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:cardinality 1 ;
-      owl:onProperty :AACharacter ;
+      owl:onProperty :aminoAcidName ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
@@ -36,6 +36,16 @@
       a owl:Restriction ;
       owl:cardinality 1 ;
       owl:onProperty :monoIsotopicMass ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality 1 ;
+      owl:onProperty :singleLetterCode ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality 1 ;
+      owl:onProperty :threeLetterCode ;
     ] ;
 .
 :CV
@@ -100,17 +110,6 @@
       owl:onProperty :gapValue ;
     ] ;
 .
-:ModAminoAcid
-  a owl:Class ;
-  rdfs:comment "Amino acids can be modified in various ways. Here a modification is considered to be a change of the mass of the regular amino acid. ModAminoAcid is associated with Modification which specifies the particular modification on the amino acid. "@en ;
-  rdfs:label "ModAminoAcid; Amino acid with PTM. "@en ;
-  rdfs:subClassOf :SequenceElement ;
-  rdfs:subClassOf [
-      a owl:Restriction ;
-      owl:cardinality 1 ;
-      owl:onProperty :hasMod ;
-    ] ;
-.
 :Modification
   a owl:Class ;
   rdfs:comment "Amino acids and peptides can be modified in various ways. A Modification is always contained in Modifications and doesn't stand by itself. Modification specifies the modificationMass (decimal) and expects a name for the modification (string). Exactly one ModificationElement must also be specified. The modificationMass of the modification (mono isotopic assumed) and the modificationName must be provided. The reference to the propper PSI-Mod term must also be provided.  "@en ;
@@ -120,6 +119,11 @@
       a owl:Restriction ;
       owl:cardinality 1 ;
       owl:onProperty :PSI-Mod-Ref ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality 1 ;
+      owl:onProperty :isTerminalModification ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
@@ -137,25 +141,25 @@
       owl:onProperty :monoModificationMass ;
     ] ;
 .
-:ModificationElement
+:ModifiedAminoAcid
   a owl:Class ;
-  rdfs:comment "The ModificationElement is either of the class ModifiedAminoAcid or Terminal. Either can replace it. "@en ;
-  rdfs:label "ModificationElement; Either Terminal or ModifiedAminoAcid. "@en ;
+  rdfs:comment "A ModifiedAminoAcid is an amino acid which either has been found to be modified in the context of an instance of DNMSO or can be found (while building the predictions). ModifiedAminoAcid must specify an averageMass (decimal), a monoIsotopicMass (decimal) and the one character representation of the amino acid (string) i.e.: G for Glycine. "@en ;
+  rdfs:label "ModifiedAminoAcid; An amino acid with PTM or other mass change. "@en ;
+  rdfs:subClassOf owl:Thing ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:cardinality 1 ;
       owl:onProperty :hasModification ;
     ] ;
-.
-:ModifiedAminoAcid
-  a owl:Class ;
-  rdfs:comment "A ModifiedAminoAcid is an amino acid which either has been found to be modified in the context of an instance of DNMSO or can be found (while building the predictions). ModifiedAminoAcid must specify an averageMass (decimal), a monoIsotopicMass (decimal) and the one character representation of the amino acid (string) i.e.: G for Glycine. "@en ;
-  rdfs:label "ModifiedAminoAcid; An amino acid with PTM or other mass change. "@en ;
-  rdfs:subClassOf :ModificationElement ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:cardinality 1 ;
-      owl:onProperty :hasAA ;
+      owl:onProperty :isBasedOn ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality 1 ;
+      owl:onProperty :modAAid ;
     ] ;
 .
 :PSI-Mod-Ref
@@ -399,16 +403,10 @@
       owl:onProperty :csvData ;
     ] ;
 .
-:Terminal
-  a owl:Class ;
-  rdfs:comment "Terminal refers to the N or C-terminal of the peptide and has two possible values front: N-terminus and back: C-terminus. This is to model modifications which do not locate to a specific amino acid but modify the peptide in general regardless of the N- or C-terminal amino acid. "@en ;
-  rdfs:label "Terminal; terminal peptide modification. "@en ;
-  rdfs:subClassOf :ModificationElement ;
-  rdfs:subClassOf [
-      a owl:Restriction ;
-      owl:cardinality 1 ;
-      owl:onProperty :side ;
-    ] ;
+:aminoAcidName
+  a owl:DatatypeProperty ;
+  rdfs:domain :AminoAcid ;
+  rdfs:range xsd:string ;
 .
 :averageMass
   a owl:DatatypeProperty ;
@@ -533,9 +531,9 @@
   rdfs:label "gapValue; m/z range without sequence information. "@en ;
   rdfs:range xsd:decimal ;
 .
-:hasAA
+:hasAminoAcid
   a owl:ObjectProperty ;
-  rdfs:domain :ModifiedAminoAcid ;
+  rdfs:domain :DNMSO ;
   rdfs:range :AminoAcid ;
 .
 :hasCTerminalModification
@@ -543,14 +541,7 @@
   rdfs:comment "The Sequence has a C-terminal modification or not. Relationship is 0 or 1. "@en ;
   rdfs:domain :Sequence ;
   rdfs:label "hasCTerminalModification; C-terminal modification. "@en ;
-  rdfs:range :Terminal ;
-.
-:hasMod
-  a owl:ObjectProperty ;
-  rdfs:comment "The particular Modification of the ModAminoAcid as represented by ModifiedAminoAcid. Obligatory. "@en ;
-  rdfs:domain :ModAminoAcid ;
-  rdfs:label "hasMod; modification of the amino acid. "@en ;
-  rdfs:range :ModifiedAminoAcid ;
+  rdfs:range :Modification ;
 .
 :hasModcvParam
   a owl:ObjectProperty ;
@@ -561,7 +552,7 @@
 .
 :hasModification
   a owl:ObjectProperty ;
-  rdfs:domain :ModificationElement ;
+  rdfs:domain :ModifiedAminoAcid ;
   rdfs:range :Modification ;
 .
 :hasModifications
@@ -571,12 +562,17 @@
   rdfs:label "hasModifications; whether Modifications are stored in the instance. "@en ;
   rdfs:range :Modification ;
 .
+:hasModifiedAminoAcid
+  a owl:ObjectProperty ;
+  rdfs:domain :DNMSO ;
+  rdfs:range :ModifiedAminoAcid ;
+.
 :hasNTerminalModification
   a owl:ObjectProperty ;
   rdfs:comment "Specifies whether an N-terminal modification is present and which one. If present must link to Terminal. Relationship 0 or 1. "@en ;
   rdfs:domain :Sequence ;
   rdfs:label "hasNTerminalModification; whether an N-terminal modification is present. "@en ;
-  rdfs:range :Terminal ;
+  rdfs:range :Modification ;
 .
 :hasPeakLinkSpectrum
   a owl:ObjectProperty ;
@@ -703,12 +699,34 @@
   rdfs:label "id; identifier of the controlled vocabulary."@en ;
   rdfs:range xsd:string ;
 .
+:isAminoAcid
+  a owl:ObjectProperty ;
+  rdfs:domain :seAminoAcid ;
+  rdfs:range :AminoAcid ;
+.
+:isBasedOn
+  a owl:ObjectProperty ;
+  rdfs:domain :ModifiedAminoAcid ;
+  rdfs:range :AminoAcid ;
+.
+:isModifiedAminoAcid
+  a owl:ObjectProperty ;
+  rdfs:domain :seModAminoAcid ;
+  rdfs:range :ModifiedAminoAcid ;
+.
 :isPublished
   a owl:ObjectProperty ;
   rdfs:comment "The relationship between Spectra and Publication (0 to many). This is intended to give reference to the data sources. "@en ;
   rdfs:domain :Spectra ;
   rdfs:label "hasSpectrumData; the relationship between Spectra and Publication. "@en ;
   rdfs:range :Publication ;
+.
+:isTerminalModification
+  a owl:DatatypeProperty ;
+  rdfs:comment "Whether the modification is N-terminal (-1), to an amino acid (0), or C-terminal (1)."@en ;
+  rdfs:domain :Modification ;
+  rdfs:label "isTerminalModification; whether the modification is terminal."@en ;
+  rdfs:range xsd:integer ;
 .
 :largerIsBetter
   a owl:DatatypeProperty ;
@@ -723,6 +741,15 @@
   rdfs:domain :Scores ;
   rdfs:label "mainScore; default score. "@en ;
   rdfs:range xsd:boolean ;
+.
+:meID
+  a owl:DatatypeProperty ;
+  rdfs:range xsd:string ;
+.
+:modAAid
+  a owl:DatatypeProperty ;
+  rdfs:domain :ModifiedAminoAcid ;
+  rdfs:range xsd:string ;
 .
 :modificationName
   a owl:DatatypeProperty ;
@@ -821,12 +848,58 @@
   rdfs:label "scoreValue; value for the score. "@en ;
   rdfs:range xsd:decimal ;
 .
+:seAminoAcid
+  a owl:Class ;
+  rdfs:comment "An AminoAcid is a SequenceElement and as such can be part of a Sequence. Filling AACharacter is obligatory. confidence, proof, and position within the sequence are part of the base class (SequenceElement). "@en ;
+  rdfs:label "AminoAcid; child class of SequenceElement. "@en ;
+  rdfs:subClassOf :SequenceElement ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality 1 ;
+      owl:onProperty :AACharacter ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality 1 ;
+      owl:onProperty :averageMass ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality 1 ;
+      owl:onProperty :isAminoAcid ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality 1 ;
+      owl:onProperty :monoIsotopicMass ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality 1 ;
+      owl:onProperty :singleLetterCode ;
+    ] ;
+.
+:seModAminoAcid
+  a owl:Class ;
+  rdfs:comment "Amino acids can be modified in various ways. Here a modification is considered to be a change of the mass of the regular amino acid. ModAminoAcid is associated with Modification which specifies the particular modification on the amino acid. "@en ;
+  rdfs:label "ModAminoAcid; Amino acid with PTM. "@en ;
+  rdfs:subClassOf :SequenceElement ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality 1 ;
+      owl:onProperty :isModifiedAminoAcid ;
+    ] ;
+.
 :side
   a owl:DatatypeProperty ;
   rdfs:comment "The side of the peptide that is modified. False for N-terminal and true for C-terminal."@en ;
-  rdfs:domain :Terminal ;
   rdfs:label "side; N or C-Terminal."@en ;
   rdfs:range xsd:boolean ;
+.
+:singleLetterCode
+  a owl:DatatypeProperty ;
+  rdfs:domain :seAminoAcid ;
+  rdfs:range xsd:string ;
 .
 :softwareName
   a owl:DatatypeProperty ;
@@ -861,6 +934,11 @@
   rdfs:domain :Spectrum ;
   rdfs:label "spectrumId; the spectrum ID (unique identifier per DNMSO instance). "@en ;
   rdfs:range xsd:integer ;
+.
+:threeLetterCode
+  a owl:DatatypeProperty ;
+  rdfs:domain :AminoAcid ;
+  rdfs:range xsd:string ;
 .
 :unitAccession
   a owl:DatatypeProperty ;
