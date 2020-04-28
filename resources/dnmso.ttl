@@ -33,11 +33,6 @@
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:cardinality 1 ;
-      owl:onProperty :singleLetterCode ;
-    ] ;
-  rdfs:subClassOf [
-      a owl:Restriction ;
-      owl:cardinality 1 ;
       owl:onProperty :threeLetterCode ;
     ] ;
 .
@@ -399,6 +394,7 @@
 :aminoAcidName
   a owl:DatatypeProperty ;
   rdfs:domain :AminoAcid ;
+  rdfs:label "aminoAcidName; full name of the amino acid (e.g., Glycine)."@en ;
   rdfs:range xsd:string ;
 .
 :averageMass
@@ -505,11 +501,6 @@
   rdfs:label "foundIn; The association to the source CV. "@en ;
   rdfs:range :CV ;
 .
-:foundInSpectra
-  a owl:ObjectProperty ;
-  rdfs:domain :Spectrum ;
-  rdfs:range :Spectra ;
-.
 :fullName
   a owl:DatatypeProperty ;
   rdfs:comment "The full name of the CV used in the instance. Required. "@en ;
@@ -527,6 +518,7 @@
 :hasAminoAcid
   a owl:ObjectProperty ;
   rdfs:domain :DNMSO ;
+  rdfs:label "hasAminoAcid; association between DNMSO and AminoAcid."@en ;
   rdfs:range :AminoAcid ;
 .
 :hasCTerminalModification
@@ -546,18 +538,21 @@
 :hasModification
   a owl:ObjectProperty ;
   rdfs:domain :ModifiedAminoAcid ;
+  rdfs:label "hasModification; The association between ModifiedAminoAcid and Modification."@en ;
   rdfs:range :Modification ;
 .
 :hasModifications
   a owl:ObjectProperty ;
   rdfs:comment "DNMSO lists possible and/or actual modifications to any amino acids (or terminal ones) in the Modificationn class. DNMSO root can have modifications. The relationship is 0 to many. There can be modifications stored but if none were encountered in the de novo sequencing they don't have to be provided in the instance. If Modificatons were found, they must be stored as Modification. "@en ;
   rdfs:domain :DNMSO ;
+  rdfs:label "has modifications"@en ;
   rdfs:label "hasModifications; whether Modifications are stored in the instance. "@en ;
   rdfs:range :Modification ;
 .
 :hasModifiedAminoAcid
   a owl:ObjectProperty ;
   rdfs:domain :DNMSO ;
+  rdfs:label "hasModifiedAminoAcid; the association betwene"@en ;
   rdfs:range :ModifiedAminoAcid ;
 .
 :hasNTerminalModification
@@ -695,16 +690,19 @@
 :isAminoAcid
   a owl:ObjectProperty ;
   rdfs:domain :seAminoAcid ;
+  rdfs:label "isAminoAcid; the association between seAminoAcid and AminoAcid."@en ;
   rdfs:range :AminoAcid ;
 .
 :isBasedOn
   a owl:ObjectProperty ;
   rdfs:domain :ModifiedAminoAcid ;
+  rdfs:label "isBasedOn; the association between ModifiedAminoAcid and AminoAcid."@en ;
   rdfs:range :AminoAcid ;
 .
 :isModifiedAminoAcid
   a owl:ObjectProperty ;
   rdfs:domain :seModAminoAcid ;
+  rdfs:label "seModAminoAcid; the association between seModAminoAcid and ModifiedAminoAcid."@en ;
   rdfs:range :ModifiedAminoAcid ;
 .
 :isPublished
@@ -742,6 +740,7 @@
 :modAAid
   a owl:DatatypeProperty ;
   rdfs:domain :ModifiedAminoAcid ;
+  rdfs:label "modAAid; unique identifier for ModifiedAminoAcid."@en ;
   rdfs:range xsd:string ;
 .
 :modificationName
@@ -851,11 +850,6 @@
       owl:cardinality 1 ;
       owl:onProperty :isAminoAcid ;
     ] ;
-  rdfs:subClassOf [
-      a owl:Restriction ;
-      owl:cardinality 1 ;
-      owl:onProperty :singleLetterCode ;
-    ] ;
 .
 :seModAminoAcid
   a owl:Class ;
@@ -873,11 +867,6 @@
   rdfs:comment "The side of the peptide that is modified. False for N-terminal and true for C-terminal."@en ;
   rdfs:label "side; N or C-Terminal."@en ;
   rdfs:range xsd:boolean ;
-.
-:singleLetterCode
-  a owl:DatatypeProperty ;
-  rdfs:domain :seAminoAcid ;
-  rdfs:range xsd:string ;
 .
 :softwareName
   a owl:DatatypeProperty ;
@@ -916,6 +905,7 @@
 :threeLetterCode
   a owl:DatatypeProperty ;
   rdfs:domain :AminoAcid ;
+  rdfs:label "threeLetterCode; an amino acids abbreviation."@en ;
   rdfs:range xsd:string ;
 .
 :unitAccession
