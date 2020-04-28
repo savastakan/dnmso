@@ -393,6 +393,7 @@
 .
 :aminoAcidName
   a owl:DatatypeProperty ;
+  rdfs:comment "The full name of the amino acid (e.g., Glycine)."@en ;
   rdfs:domain :AminoAcid ;
   rdfs:label "aminoAcidName; full name of the amino acid (e.g., Glycine)."@en ;
   rdfs:range xsd:string ;
@@ -517,13 +518,14 @@
 .
 :hasAminoAcid
   a owl:ObjectProperty ;
+  rdfs:comment "The association between DNMSO and AminoAcid. The intention is that each instance of DNMSO creates all amino acids used therin as AminoAcid objects and links to them from the root."@en ;
   rdfs:domain :DNMSO ;
   rdfs:label "hasAminoAcid; association between DNMSO and AminoAcid."@en ;
   rdfs:range :AminoAcid ;
 .
 :hasCTerminalModification
   a owl:ObjectProperty ;
-  rdfs:comment "The Sequence has a C-terminal modification or not. Relationship is 0 or 1. "@en ;
+  rdfs:comment "has CTerminal modification"@en ;
   rdfs:domain :Sequence ;
   rdfs:label "hasCTerminalModification; C-terminal modification. "@en ;
   rdfs:range :Modification ;
@@ -735,6 +737,7 @@
 .
 :meID
   a owl:DatatypeProperty ;
+  rdfs:label "del"@en ;
   rdfs:range xsd:string ;
 .
 :modAAid
