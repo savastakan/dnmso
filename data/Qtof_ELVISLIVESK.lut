@@ -24,8 +24,8 @@ Run Date: Fri Jul 27 15:50:54 2012
  
  Sequence                                              Rank  Pr(c)   PevzScr  Quality IntScr X-corr
 ELVLSLLVESK                                              1   0.990   0.718    0.800   0.953  0.786
-AGNVLSLLVESK                                             2   0.990   0.629    0.800   0.948  0.743
-ELVLSLL[244.0]AK                                         3   0.943   0.672    0.634   0.876  0.752
+AGNVJSLLVESK                                             2   0.990   0.629    0.800   0.948  0.743
+ELVOSLL[244.0]AK                                         3   0.943   0.672    0.634   0.876  0.752
 ELVLSLL[216.0]VK                                         4   0.934   0.641    0.634   0.876  0.728
 
 Search time:  0:00:00

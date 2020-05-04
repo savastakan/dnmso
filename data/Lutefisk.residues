@@ -18,8 +18,8 @@ T       101.0477        101.11  101             /Thr
 W       186.0793        186.21  186             /Trp
 Y       163.0633        163.17  163             /Tyr
 V        99.0684         99.13   99             /Val
-J         0.0         0.0         0             /Modified amino acid: ICRAP-D0 (188.062, 188.251)
-O         0.0         0.0     0         /Modified amino acid: ICRAP-D5 (193.093, 193.281)
+J         112.34         112.54         112             /Modified amino acid: ICRAP-D0 (188.062, 188.251)
+O         87.66         88.01     87         /Modified amino acid: ICRAP-D5 (193.093, 193.281)
 U         0.0         0.0     0         /Modified amino acid: phospho-Ser (166.9983)
 X         0.0             0.0     0             /Modified amino acid: phospho-Thr (181.0140)
 Z         0.0             0.0     0             /Modified amino acid: phospho-Tyr (243.0296)

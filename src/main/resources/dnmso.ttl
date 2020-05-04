@@ -1,0 +1,821 @@
+# baseURI: https://github.com/savastakan/dnmso
+
+@prefix : <https://github.com/savastakan/dnmso#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://github.com/savastakan/dnmso>
+  a owl:Ontology ;
+.
+:AACharacter
+  a owl:DatatypeProperty ;
+  rdfs:comment "The single letter code representing the AminoAcid e.g., A for Alanine. AACharacter is a member of the AminoAcid class and must be filled. "@en ;
+  rdfs:domain :AminoAcid ;
+  rdfs:label "AACharacter; single letter amino acid code. "@en ;
+  rdfs:range xsd:string ;
+.
+:AminoAcid
+  a owl:Class ;
+  rdfs:comment "An AminoAcid is a SequenceElement and as such can be part of a Sequence. Filling AACharacter is obligatory. confidence, proof, and position within the sequence are part of the base class (SequenceElement). "@en ;
+  rdfs:label "AminoAcid; child class of SequenceElement. "@en ;
+  rdfs:subClassOf :SequenceElement ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality 1 ;
+      owl:onProperty :AACharacter ;
+    ] ;
+.
+:CSV
+  a owl:Class ;
+  rdfs:comment "In case the MS/MS spectrum underlying the de novo prediction is not linked from an mzML or mzXML file, it can be stored in an instance of DNMSO using comma separated values. This is done in the data member of CSV. "@en ;
+  rdfs:label "SpectrumData; an MS/MS spectrum in CSV format. "@en ;
+  rdfs:subClassOf :SpectrumData ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality 1 ;
+      owl:onProperty :csvData ;
+    ] ;
+.
+:DNMSO
+  a owl:Class ;
+  rdfs:comment "The de novo mass spectrometry sequencing ontology's root class. Modifications can be stored in the instance but if none were encountered are not required. The Predictions container must exist (even if empty). Spectra must exist at least once. The version of DNMSO for the instance has to be specified. "@en ;
+  rdfs:label "DNMSO; de novo ontology root class. "@en ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality 1 ;
+      owl:onProperty :hasPredictions ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality 1 ;
+      owl:onProperty :version ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:maxCardinality 1 ;
+      owl:onProperty :hasModifications ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:minCardinality 1 ;
+      owl:onProperty :hasSpectra ;
+    ] ;
+.
+:Gap
+  a owl:Class ;
+  rdfs:comment "For de novo sequencing results, it often occurs that some parts of the sequence cannot be supported with much evidence. Instead of storing an arbitrary subsequence, a gap of appropriate m/z range can be inserted in the Sequence. The gapValue represents the size of the gap and is obligatory. "@en ;
+  rdfs:label "Gap; an m/z range that couldn't be assigned an AminoAcid or a ModAminoAcid. "@en ;
+  rdfs:subClassOf :SequenceElement ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality 1 ;
+      owl:onProperty :gapValue ;
+    ] ;
+.
+:ModAminoAcid
+  a owl:Class ;
+  rdfs:comment "Amino acids can be modified in various ways. Here a modification is considered to be a change of the mass of the regular amino acid. ModAminoAcid is associated with Modification which specifies the particular modification on the amino acid. "@en ;
+  rdfs:label "Amino acid with PTM. "@en ;
+  rdfs:subClassOf :SequenceElement ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality 1 ;
+      owl:onProperty :hasMod ;
+    ] ;
+.
+:Modification
+  a owl:Class ;
+  rdfs:comment "Amino acids and peptides can be modified in various ways. A Modification is always contained in Modifications and doesn't stand by itself. Modification specifies the modificationMass (decimal) and expects a name for the modification (string). Exactly one ModificationElement must also be specified. The modificationMass of the modification (mono isotopic assumed) and the modificationName must be provided. The reference to the propper PSI-Mod term must also be provided.  "@en ;
+  rdfs:label "Modification; PTM or general mass change. "@en ;
+  rdfs:subClassOf owl:Thing ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality 1 ;
+      owl:onProperty :hasModificationElement ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality 1 ;
+      owl:onProperty :modificationMass ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality 1 ;
+      owl:onProperty :modificationName ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality 1 ;
+      owl:onProperty :PSI-Mod-Ref ;
+    ] ;
+.
+:ModificationElement
+  a owl:Class ;
+  rdfs:comment "The ModificationElement is either of the class ModifiedAminoAcid or Terminal. Either can replace it. "@en ;
+  rdfs:label "Either Terminal or ModifiedAminoAcid. "@en ;
+.
+:Modifications
+  a owl:Class ;
+  rdfs:comment "Modifications is a container for possible Modification so that multiple Modification can be represented in the DNMSO ontology. There are 0 to many Modification in Modifications. It would be space efficient to restrict Modifications to the Modification actually occuring in the instance. "@en ;
+  rdfs:label "ModificationElement; container for possible Modification. "@en ;
+  rdfs:subClassOf owl:Thing ;
+.
+:ModifiedAminoAcid
+  a owl:Class ;
+  rdfs:comment "A ModifiedAminoAcid is an amino acid which either has been found to be modified in the context of an instance of DNMSO or can be found (while building the predictions). ModifiedAminoAcid must specify an averageMass (decimal), a monoIsotopicMass (decimal) and the one character representation of the amino acid (string) i.e.: G for Glycine. "@en ;
+  rdfs:label "ModifiedAminoAcid; An amino acid with PTM or other mass change. "@en ;
+  rdfs:subClassOf :ModificationElement ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality 1 ;
+      owl:onProperty :averageMass ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality 1 ;
+      owl:onProperty :monoIsotopicMass ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality 1 ;
+      owl:onProperty :slAA ;
+    ] ;
+.
+:PeakLink
+  a owl:Class ;
+  rdfs:comment "Peak link provides the peak which supports the SequenceElement as a Proof. The peakId must be provided and must resolve to a peak within the Spectrum. "@en ;
+  rdfs:label "PeakLink; link to a peak in a spectrum. "@en ;
+  rdfs:subClassOf :Proof ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality 1 ;
+      owl:onProperty :hasPeakLinkSpectrum ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality 1 ;
+      owl:onProperty :peakId ;
+    ] ;
+.
+:PeakValue
+  a owl:Class ;
+  rdfs:comment "PeakValue provides the peak via concrete m/z and intensity values, which supports the SequenceElement. Both peakIntensity and peakMZ have to be provided. "@en ;
+  rdfs:label "PeakValue; concrete peak value. "@en ;
+  rdfs:subClassOf :Proof ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality 1 ;
+      owl:onProperty :peakIntensity ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality 1 ;
+      owl:onProperty :peakMZ ;
+    ] ;
+.
+:Prediction
+  a owl:Class ;
+  rdfs:comment "One Prediction of the Predictions made for the available spectra with the selected software. A Prediction must specify 1 Scores, 1 Sequence, 1 Software and 1 Sources. A Prediction models one prediction by a particular Software for one or more mass spectra leading to one predicted sequence associated with one or more scores by the sequencer. Predictions from multiple de novo sequencing tools can be integrated using SPARQL queries to arrive at an ensemble prediction. "@en ;
+  rdfs:label "Prediction; a de novo Prediction. "@en ;
+  rdfs:subClassOf owl:Thing ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality 1 ;
+      owl:onProperty :hasScores ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality 1 ;
+      owl:onProperty :hasSequence ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality 1 ;
+      owl:onProperty :hasSoftware ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality 1 ;
+      owl:onProperty :hasSources ;
+    ] ;
+.
+:Predictions
+  a owl:Class ;
+  rdfs:comment "This is a container for Prediction. It is possible that multiple predictions can be made for one underlying spectrum. For example co-fragmentation would lead to several valid sequences. Alternatively, multiple predictions can be made and represented in DNMSO with varying sequences and confidence and scores. Predictions merely groups the Prediction made for one or more mass spectra. A Prediction is not required for the DNMSO instance to be valid. "@en ;
+  rdfs:label "Predictions; pontainer for multiple Prediction. "@en ;
+  rdfs:subClassOf owl:Thing ;
+.
+:Proof
+  a owl:Class ;
+  rdfs:comment "A Proof is either a concrete PeakValue or a PeakLink to a Peak in the linked Spectra. "@en ;
+  rdfs:label "Proof; either PeakValue or PeakLink. "@en ;
+.
+:Proofs
+  a owl:Class ;
+  rdfs:comment "Each SequenceElement can be supported with multiple Proof grouped by Proofs. Hence Proofs is merely a container for Proof. A Proof is not obligatory for the instance to be valid. "@en ;
+  rdfs:label "Proofs; support for a SequenceElement. "@en ;
+  rdfs:subClassOf owl:Thing ;
+.
+:PSI-Mod-Ref
+  a owl:DatatypeProperty ;
+  rdfs:comment "The PSI-Mod Ontology contains an abundance of modifications and any modification here should reference the proper PSI-Mod term. "@en ;
+  rdfs:domain :Modification ;
+  rdfs:label "PSI-Mod-Ref; The identifier provided by PSI-Mod. "@en ;
+  rdfs:range xsd:string ;
+.
+:Publication
+  a owl:Class ;
+  rdfs:comment "A publication for the de novo sequencing software used or for the Spectra used in de novo sequencing. "@en ;
+  rdfs:label "Publication; a journal or similar publication."@en ;
+  rdfs:subClassOf owl:Thing ;
+.
+:Score
+  a owl:Class ;
+  rdfs:comment "De novo sequencing tools often provide multiple scores, this represents one of them. The scoreName, the actual scoreValue for the Prediction has to be provided. For the Score it needs to be set whether a larger Value is better or not (largerIsBetter). "@en ;
+  rdfs:label "Score; one of the Score for the Prediction. "@en ;
+  rdfs:subClassOf owl:Thing ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality 1 ;
+      owl:onProperty :largerIsBetter ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality 1 ;
+      owl:onProperty :scoreName ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality 1 ;
+      owl:onProperty :scoreValue ;
+    ] ;
+.
+:Scores
+  a owl:Class ;
+  rdfs:comment "De novo sequencing tools often provide multiple scores, this is the container for multiple scores. At least one Score has to be provided for the instance to be valid. Also, the name of the Score to be used by default (mainScore) needs to be specified. "@en ;
+  rdfs:label "Scores; container for multiple Score. "@en ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality 1 ;
+      owl:onProperty :mainScore ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:minCardinality 1 ;
+      owl:onProperty :hasScore ;
+    ] ;
+.
+:Sequence
+  a owl:Class ;
+  rdfs:comment "The de novo predicted Sequence for the Prediction. The Prediction may have confidence and a sequence. More precisely, it can be modelled as a Sequence of AminoAcids, ModeAminoAcids and Gaps with optional N- and C-terminal modifications. The members of the class: sequence and confidence are optional and intended for backward compatibility. The intention of DNMSO is to model the Sequence as a chain of SequenceElments with support (Proofs). At least 1 SequenceElement is needed for the instance to be valid. "@en ;
+  rdfs:label "Sequence; the de novo predicted sequence. "@en ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:maxCardinality 1 ;
+      owl:onProperty :hasCTerminalModification ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:maxCardinality 1 ;
+      owl:onProperty :hasNTerminalModification ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:minCardinality 1 ;
+      owl:onProperty :hasSequenceElement ;
+    ] ;
+.
+:SequenceElement
+  a owl:Class ;
+  rdfs:comment "Each SequenceElement (AminoAcid, ModAminoAcid, Gap) has to specify a confidence and the position within the Sequence (positionInSequence). Proofs are optional. However, the intention of DNMSO is to increase the transparency of de novo prediitons and, therefore, adding support from the spectrum is highly encouraged. "@en ;
+  rdfs:label "SequenceElement; an element of the predicted sequence (AminoAcid, ModAminoAcid, Gap). "@en ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:maxCardinality 1 ;
+      owl:onProperty :confidence ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:maxCardinality 1 ;
+      owl:onProperty :hasProofs ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:maxCardinality 1 ;
+      owl:onProperty :positionInSequence ;
+    ] ;
+.
+:Software
+  a owl:Class ;
+  rdfs:comment "The de novo sequencing tool used for de novo sequencing. SoftwareSettings, softwareName, softwareVersion need to be specified. Publications are optional (0 to many). "@en ;
+  rdfs:label "Software; a de novo sequencing software. "@en ;
+  rdfs:subClassOf owl:Thing ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality 1 ;
+      owl:onProperty :hasSettings ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:maxCardinality 1 ;
+      owl:onProperty :softwareName ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:maxCardinality 1 ;
+      owl:onProperty :softwareVersion ;
+    ] ;
+.
+:SoftwareSetting
+  a owl:Class ;
+  rdfs:comment "A concrete Setting (parameter) for a de novo sequencing Software. softwareSettingName and softwareSettingValue for the Setting need to be specified. This is important when anything but the default values were used for some parameters. But for consistency it would be best to specify all settings. "@en ;
+  rdfs:label "SoftwareSetting; one SoftwareSetting (parameter) with value. "@en ;
+  rdfs:subClassOf owl:Thing ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:maxCardinality 1 ;
+      owl:onProperty :softwareSettingName ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:maxCardinality 1 ;
+      owl:onProperty :softwareSettingValue ;
+    ] ;
+.
+:SoftwareSettings
+  a owl:Class ;
+  rdfs:comment "Typically, de novo sequencing tools have multiple SoftwareSettings and this is the container for specifying multiple SoftwareSetting. Relationship to SoftwareSetting (0 to many). "@en ;
+  rdfs:label "SoftwareSettings; container for multiple SoftwareSetting (parameters). "@en ;
+.
+:Source
+  a owl:Class ;
+  rdfs:comment "The data source for the de novo prediction. Currently, this is one Spectrum. Multiple spectra as data source for one Prediciton are contained in Sources. "@en ;
+  rdfs:label "Source; the data source for de novo prediction. "@en ;
+.
+:Sources
+  a owl:Class ;
+  rdfs:comment "Each Prediction needs Sources for the Prediction. It can be multiple Spectrum from different Sources (e.g., mzML files). At least one Source needs to be specified. Here it is possible to include spectra from multiple different fragmentation methods or different MS levels for one prediciton. E.g., ETD and CID fragmentations may be complementary and might improve de novo predictions when used in tandem. "@en ;
+  rdfs:label "Sources; the data sources for the de novo prediction. "@en ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:minCardinality 1 ;
+      owl:onProperty :hasSource ;
+    ] ;
+.
+:SpecDataLink
+  a owl:Class ;
+  rdfs:comment "The SpecDataLink class provides the URL to the file which contains the SpectrumData (e.g., mzML and mzXML). The particular spectrum can be determined by scanID or spectrumID in the Spectrum class. "@en ;
+  rdfs:label "SpecDataLink; URL link to MS/MS spectrum. "@en ;
+  rdfs:subClassOf :SpectrumData ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality 1 ;
+      owl:onProperty :url ;
+    ] ;
+.
+:Spectra
+  a owl:Class ;
+  rdfs:comment "Spectra is a container for 1 to many Spectrum elements. De novo Sequencing needs at least one Spectrum so it can be performed and hence one Spectrum needs to be provided. Spectra can originate from different sources (e.g., mzML files). The concrete link to the file (if external) is provided in Link and/or PeakLink. Publications pertaining to the Spectra collection can be provided. "@en ;
+  rdfs:label "Spectra; a container for Spectrum. "@en ;
+  rdfs:subClassOf owl:Thing ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:minCardinality 1 ;
+      owl:onProperty :hasSpectrum ;
+    ] ;
+.
+:Spectrum
+  a owl:Class ;
+  rdfs:comment "A Spectrum needs to specify a few identifying information (precursorIntensity, precursorMZ, scanId, and spectrumId) so that it can be retrieved from a link and in order to be useful in de novo sequencing. A Spectrum can either provide the SpectrumData as a CSV or a Link to another object e.g., an mzML file. CSV enables the DNMSO file to be self-contained. Linking to mzML files is encouraged. "@en ;
+  rdfs:label "Spectrum; a mass spectrum for de novo sequencing. "@en ;
+  rdfs:subClassOf owl:Thing ;
+  rdfs:subClassOf :Source ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality 1 ;
+      owl:onProperty :hasSpectrumData ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality 1 ;
+      owl:onProperty :precursorIntensity ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality 1 ;
+      owl:onProperty :precursorMZ ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality 1 ;
+      owl:onProperty :scanId ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality 1 ;
+      owl:onProperty :spectrumId ;
+    ] ;
+.
+:SpectrumData
+  a owl:Class ;
+  rdfs:comment "SpectrumData can either be a Link to an url (SpecDataLink) e.g., an mzML or mzXML file or the data can be directly stored in a CSV element. The latter may be preferable for data exchange since all data will be contained within the DNMSO instance. "@en ;
+  rdfs:label "SpectrumData; CSV or SpecDataLink. "@en ;
+  rdfs:subClassOf owl:Thing ;
+.
+:Terminal
+  a owl:Class ;
+  rdfs:comment "Terminal refers to the N or C-terminal of the peptide and has two possible values front: N-terminus and back: C-terminus. This is to model modifications which do not locate to a specific amino acid but modify the peptide in general regardless of the N- or C-terminal amino acid. "@en ;
+  rdfs:label "Terminal; terminal peptide modification. "@en ;
+  rdfs:subClassOf :ModificationElement ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality 1 ;
+      owl:onProperty :side ;
+    ] ;
+.
+:averageMass
+  a owl:DatatypeProperty ;
+  rdfs:comment "The average mass of the ModifiedAminoAcid. For regular AminoAcid, values are assumed to be known e.g., Tryptophan: 186.21. "@en ;
+  rdfs:domain :ModifiedAminoAcid ;
+  rdfs:label "averageMass; average mass fo the modified amino acid. "@en ;
+  rdfs:range xsd:decimal ;
+.
+:combinedConfidence
+  a owl:DatatypeProperty ;
+  rdfs:comment "The combined confidence for the Sequence Prediction. For backward compatibility. It is encouraged to support each SequenceElement with Proofs so that a confidence can be recalculated. "@en ;
+  rdfs:domain :Sequence ;
+  rdfs:label "combinedConfidence; the combined confidence for the prediction. "@en ;
+  rdfs:range xsd:decimal ;
+.
+:confidence
+  a owl:DatatypeProperty ;
+  rdfs:comment "The Confidence for the SequenceElement."@en ;
+  rdfs:domain :SequenceElement ;
+  rdfs:label "confidence; confidence for the SequenceElement."@en ;
+  rdfs:range xsd:decimal ;
+.
+:csvData
+  a owl:DatatypeProperty ;
+  rdfs:comment "String representation of the mass spectrum used for the de novo sequencing event. Format: \"precursorMZ,precursorIntensity;mz1,intensity1;mz2,intensity2;...;m/zN,intensityN\". Use dots to indicate fractions of m/z (e.g., 123.34 m/z). Intensities are integers (e.g., 1000). "@en ;
+  rdfs:domain :CSV ;
+  rdfs:label "csvData; spectrum in CSV format. "@en ;
+  rdfs:range xsd:string ;
+.
+:gapValue
+  a owl:DatatypeProperty ;
+  rdfs:comment "The m/z value for the Gap which couldn't be filled with an AminoAcid or a ModAminoAcid."@en ;
+  rdfs:domain :Gap ;
+  rdfs:label "gapValue; m/z range without sequence information. "@en ;
+  rdfs:range xsd:decimal ;
+.
+:hasCTerminalModification
+  a owl:ObjectProperty ;
+  rdfs:comment "The Sequence has a C-terminal modification or not. Relationship is 0 or 1. "@en ;
+  rdfs:domain :Sequence ;
+  rdfs:label "hasCTerminalModification; C-terminal modification. "@en ;
+  rdfs:range :Terminal ;
+.
+:hasMod
+  a owl:ObjectProperty ;
+  rdfs:comment "The particular Modification of the ModAminoAcid as represented by ModifiedAminoAcid. Obligatory. "@en ;
+  rdfs:domain :ModAminoAcid ;
+  rdfs:label "hasMod; modification of the amino acid. "@en ;
+  rdfs:range :ModifiedAminoAcid ;
+.
+:hasModification
+  a owl:ObjectProperty ;
+  rdfs:comment "The Modifications class (container for Modification) can have particular Modification elements. The relationship is 0 to many. "@en ;
+  rdfs:domain :Modifications ;
+  rdfs:label "hasModification; a particular modification. "@en ;
+  rdfs:range :Modification ;
+.
+:hasModificationElement
+  a owl:ObjectProperty ;
+  rdfs:comment "A Modification is either to an amino acid side chain (ModifiedAminoAcid) or to the n-terminus or c-terminus of the peptide (Terminal). The ModificationElement specifies this. The relationship is one to one (enforced). "@en ;
+  rdfs:domain :Modification ;
+  rdfs:label "hasModificationElement; a particular modification. "@en ;
+  rdfs:range :ModificationElement ;
+.
+:hasModifications
+  a owl:ObjectProperty ;
+  rdfs:comment "DNMSO lists possible and/or actual modifications to any amino acids (or terminal ones) in the Modifications class. DNMSO root can have modifications. The relationship is 0 to many. There can be modifications stored but if none were encountered in the de novo sequencing they don't have to be provided in the instance. If Modificatons were found, they must be stored in the Modifications container. "@en ;
+  rdfs:domain :DNMSO ;
+  rdfs:label "hasModifications; whether Modifications are stored in the instance. "@en ;
+  rdfs:range :Modifications ;
+.
+:hasNTerminalModification
+  a owl:ObjectProperty ;
+  rdfs:comment "Specifies whether an N-terminal modification is present and which one. If present must link to Terminal. Relationship 0 or 1. "@en ;
+  rdfs:domain :Sequence ;
+  rdfs:label "hasNTerminalModification; whether an N-terminal modification is present. "@en ;
+  rdfs:range :Terminal ;
+.
+:hasPeakLinkSpectrum
+  a owl:ObjectProperty ;
+  rdfs:comment "The relationship between PeakLink and Spectrum (1 to 1). The relationship is obligatory. "@en ;
+  rdfs:domain :PeakLink ;
+  rdfs:label "hasPeakLinkSpectrum; link to Spectrum containing the peak. "@en ;
+  rdfs:range :Spectrum ;
+.
+:hasPrediction
+  a owl:ObjectProperty ;
+  rdfs:comment "The relationship between Predictions and Prediction. A Predictions can have 0 to many Prediction. Predictions is the container allowing to model many Prediction. "@en ;
+  rdfs:domain :Predictions ;
+  rdfs:label "hasPrediction; relationship between Predictions and Prediction. "@en ;
+  rdfs:range :Prediction ;
+.
+:hasPredictions
+  a owl:ObjectProperty ;
+  rdfs:comment "The DNMSO class' relationship to the Predictions container (1 to 1). "@en ;
+  rdfs:domain :DNMSO ;
+  rdfs:label "hasPredictions; relationship to Predictions container. "@en ;
+  rdfs:range :Predictions ;
+.
+:hasProof
+  a owl:ObjectProperty ;
+  rdfs:comment "The relationship between Proofs and Proof. A Proofs can have 0 to many Proof. "@en ;
+  rdfs:domain :Proofs ;
+  rdfs:label "hasProof; relationship to a particular Proof. "@en ;
+  rdfs:range :Proof ;
+.
+:hasProofs
+  a owl:ObjectProperty ;
+  rdfs:comment "The relationship between SequenceElement and Proofs. A SequenceElement has at most one Proofs. "@en ;
+  rdfs:domain :SequenceElement ;
+  rdfs:label "hasProofs; whether the SequenceElement has any support (Proofs). "@en ;
+  rdfs:range :Proofs ;
+.
+:hasPublication
+  a owl:ObjectProperty ;
+  rdfs:comment "A Software may have associated Publications (0 to many). "@en ;
+  rdfs:domain :Software ;
+  rdfs:label "hasPublication; whether publications for a Software are gien. "@en ;
+  rdfs:range :Publication ;
+.
+:hasScore
+  a owl:ObjectProperty ;
+  rdfs:comment "The relationship between Scores and Score (1 to many). One Scores can have one or more Score. I.e., one Score must be provided. "@en ;
+  rdfs:domain :Scores ;
+  rdfs:label "hasScore; relationship between Scores and Score. "@en ;
+  rdfs:range :Score ;
+.
+:hasScores
+  a owl:ObjectProperty ;
+  rdfs:comment "The relationship between Prediction and Scores (1 to 1). Each Prediction must provide a container with Scores. "@en ;
+  rdfs:domain :Prediction ;
+  rdfs:label "hasScores; relationship between Prediction and Scores. "@en ;
+  rdfs:range :Scores ;
+.
+:hasSequence
+  a owl:ObjectProperty ;
+  rdfs:comment "The relationship between Prediction and Sequence (1 to 1). That is each Prediction must link to a Sequence. "@en ;
+  rdfs:domain :Prediction ;
+  rdfs:label "hasSequence; relationship between Prediction and Sequence. "@en ;
+  rdfs:range :Sequence ;
+.
+:hasSequenceElement
+  a owl:ObjectProperty ;
+  rdfs:comment "The relationship between SequenceElement and Sequence (0 to many). For backward compatibility Sequence may have no SequenceElments. "@en ;
+  rdfs:domain :Sequence ;
+  rdfs:label "hasSequenceElement; whether Sequence contains SequenceElement. "@en ;
+  rdfs:range :SequenceElement ;
+.
+:hasSetting
+  a owl:ObjectProperty ;
+  rdfs:comment "The relationship between SoftwareSettings and SoftwareSetting (0 to many). SoftwareSetting are optional but providing them can be beneficial for follow up analysis. "@en ;
+  rdfs:domain :SoftwareSettings ;
+  rdfs:label "hasSetting; relationship between SoftwareSettings and SoftwareSetting. "@en ;
+  rdfs:range :SoftwareSetting ;
+.
+:hasSettings
+  a owl:ObjectProperty ;
+  rdfs:comment "The relationship between Software and SoftwareSettings (1 to 1). At least the empty SoftwareSettings container must be associated. "@en ;
+  rdfs:domain :Software ;
+  rdfs:label "hasSettings; relationship between Software and SoftwareSettings. "@en ;
+  rdfs:range :SoftwareSettings ;
+.
+:hasSoftware
+  a owl:ObjectProperty ;
+  rdfs:comment "The relationship between Prediction and Software. A Prediction needs a software (1:1). If manual Prediction was made, add a Software named manual. "@en ;
+  rdfs:domain :Prediction ;
+  rdfs:label "hasSoftware; relationship between Prediction and Software. "@en ;
+  rdfs:range :Software ;
+.
+:hasSource
+  a owl:ObjectProperty ;
+  rdfs:comment "The relationship between Sources and Source (1 to many). A Sources can have one or more Source. At least one Spectrum is needed for de novo predictions. "@en ;
+  rdfs:domain :Sources ;
+  rdfs:label "hasSource; relationship between Sources and Source. "@en ;
+  rdfs:range :Source ;
+.
+:hasSources
+  a owl:ObjectProperty ;
+  rdfs:comment "The relationship between Prediction and Sources ( 1 to 1). A Prediction has exactly one Sources. Sources contains all Spectra used for the de novo prediction. "@en ;
+  rdfs:domain :Prediction ;
+  rdfs:label "hasSources; the relationship between Prediction and Sources. "@en ;
+  rdfs:range :Sources ;
+.
+:hasSpectra
+  a owl:ObjectProperty ;
+  rdfs:comment "The relationship between DNMSO and Spectra (1 to many). DNMSO can have one or more Spectra where each Spectra is a file with one or more spectra. "@en ;
+  rdfs:domain :DNMSO ;
+  rdfs:label "hasSpectra; the relationship between DNMSO and Spectra. "@en ;
+  rdfs:range :Spectra ;
+.
+:hasSpectrum
+  a owl:ObjectProperty ;
+  rdfs:comment "The relationship between Spectra and Spectrum. A Spectra can have 0 to many Spectrum. 0 when the instance has no Prediction. "@en ;
+  rdfs:domain :Spectra ;
+  rdfs:label "hasSpectrum; the relationship between Spectra and Spectrum. "@en ;
+  rdfs:range :Spectrum ;
+.
+:hasSpectrumData
+  a owl:ObjectProperty ;
+  rdfs:comment "The relationship between Spectrum and SpectrumData. A Spectrum has exactly one SpectrumData."@en ;
+  rdfs:domain :Spectrum ;
+  rdfs:label "The relationship between Spectrum and SpectrumData. "@en ;
+  rdfs:range :SpectrumData ;
+.
+:isPublished
+  a owl:ObjectProperty ;
+  rdfs:comment "The relationship between Spectra and Publication (0 to many). This is intended to give reference to the data sources. "@en ;
+  rdfs:domain :Spectra ;
+  rdfs:label "hasSpectrumData; the relationship between Spectra and Publication. "@en ;
+  rdfs:range :Publication ;
+.
+:largerIsBetter
+  a owl:DatatypeProperty ;
+  rdfs:comment "Specifies whether the score represents better results when larger (true) or not (false). "@en ;
+  rdfs:domain :Score ;
+  rdfs:label "largerIsBetter; which score value is better? "@en ;
+  rdfs:range xsd:boolean ;
+.
+:mainScore
+  a owl:DatatypeProperty ;
+  rdfs:comment "Specifies which of the Score is the one that is typically used (default). This must be the same as one of the Score.scoreName in the same Scores container. "@en ;
+  rdfs:domain :Scores ;
+  rdfs:label "mainScore; default score. "@en ;
+  rdfs:range xsd:string ;
+.
+:modificationMass
+  a owl:DatatypeProperty ;
+  rdfs:comment "The mass change that would occur due to the modification. E.g.:, phosphorylation introduces a mass shift of +79.99 Dalton. This can also be a negative value, if needed. The modification mass is expected to be monoisotopic. "@en ;
+  rdfs:domain :Modification ;
+  rdfs:label "modificationMass; mass of the modification (mono). "@en ;
+  rdfs:range xsd:decimal ;
+.
+:modificationName
+  a owl:DatatypeProperty ;
+  rdfs:comment "The name given to a particular modification. E.g., phosphorylation. "@en ;
+  rdfs:domain :Modification ;
+  rdfs:label "modificationName; name of the modification. "@en ;
+  rdfs:range xsd:string ;
+.
+:monoIsotopicMass
+  a owl:DatatypeProperty ;
+  rdfs:comment "The mono isotopic mass of an element e.g., an amino acid. For example, Tryptophan has a mass of 186.08 Dalton. "@en ;
+  rdfs:domain :ModifiedAminoAcid ;
+  rdfs:label "monoIsotopicMass; monoisotopic mass of amino acid. "@en ;
+  rdfs:range xsd:decimal ;
+.
+:peakId
+  a owl:DatatypeProperty ;
+  rdfs:comment "The id of the peak that is linked as Proof via PeakLink. The ID must exist in SpectrumData. peakID is the 0 based index within SpectrumData. "@en ;
+  rdfs:domain :PeakLink ;
+  rdfs:label "The ID of the peak in the Spectrum. "@en ;
+.
+:peakIntensity
+  a owl:DatatypeProperty ;
+  rdfs:comment "The intensity of the m/z peak stored concretly in PeakValue. "@en ;
+  rdfs:domain :PeakValue ;
+  rdfs:label "peakId; the intensity of a peak. "@en ;
+  rdfs:range xsd:decimal ;
+.
+:peakMZ
+  a owl:DatatypeProperty ;
+  rdfs:comment "The mass to charge ratio of the concretely stored PeakValue. "@en ;
+  rdfs:domain :PeakValue ;
+  rdfs:label "peakMZ; the m/z of a peak. "@en ;
+  rdfs:range xsd:decimal ;
+.
+:peptideSequence
+  a owl:DatatypeProperty ;
+  rdfs:comment "A String representation of the Sequence as provided by the de novo sequencing tool. This is for backward compatibility. Usage of Sequence with SequenceElements is preferred. "@en ;
+  rdfs:domain :Sequence ;
+  rdfs:label "peptideSequence; sequence of the peptide. "@en ;
+  rdfs:range xsd:string ;
+.
+:positionInSequence
+  a owl:DatatypeProperty ;
+  rdfs:comment "The Position of the SequenceElement within the Sequence. One based index so the first SequenceElement in Sequence has an index of 1. "@en ;
+  rdfs:domain :SequenceElement ;
+  rdfs:label "positionInSequence; position within Sequence. "@en ;
+  rdfs:range xsd:integer ;
+.
+:precursorIntensity
+  a owl:DatatypeProperty ;
+  rdfs:comment "The intensity (decimal) of the precursor that was fragmented for the MSn spectrum used for de novo sequencing. "@en ;
+  rdfs:domain :Spectrum ;
+  rdfs:label "precursorIntensity; ihe intensity of the precursor peak. "@en ;
+  rdfs:range xsd:decimal ;
+.
+:precursorMZ
+  a owl:DatatypeProperty ;
+  rdfs:comment "The m/z (decimal) of the precursor that was fragmented for the MSn spectrum used for de novo sequencing. "@en ;
+  rdfs:domain :Spectrum ;
+  rdfs:label "precursorMZ; the m/z of the precursor peak. "@en ;
+  rdfs:range xsd:decimal ;
+.
+:pubUrl
+  a owl:DatatypeProperty ;
+  rdfs:comment "The direct URL of the Publication or a DOI. "@en ;
+  rdfs:domain :Publication ;
+  rdfs:label "pubUrl; the link to a publication. "@en ;
+  rdfs:range xsd:string ;
+.
+:scanId
+  a owl:DatatypeProperty ;
+  rdfs:comment "A number identifying the spectrum within another file (e.g., mzML file). Generally, spectra get sequential scan ids during a run. scanID refers to this sequential naming. "@en ;
+  rdfs:domain :Spectrum ;
+  rdfs:label "scanId; the scan number of the spectrum. "@en ;
+  rdfs:range xsd:integer ;
+.
+:scoreName
+  a owl:DatatypeProperty ;
+  rdfs:comment "The name of the Score. E.g.: XCorr fo cross correlation used in some de novo sequencing tools. "@en ;
+  rdfs:domain :Score ;
+  rdfs:label "scoreName; name of the Score. "@en ;
+  rdfs:range xsd:string ;
+.
+:scoreValue
+  a owl:DatatypeProperty ;
+  rdfs:comment "The actual value of the Score. "@en ;
+  rdfs:domain :Score ;
+  rdfs:label "scoreValue; value for the score. "@en ;
+  rdfs:range xsd:decimal ;
+.
+:side
+  a owl:DatatypeProperty ;
+  rdfs:comment "The side of the peptide that is modified. False for N-terminal and true for C-terminal."@en ;
+  rdfs:domain :Terminal ;
+  rdfs:label "side; N or C-Terminal."@en ;
+  rdfs:range xsd:boolean ;
+.
+:slAA
+  a owl:DatatypeProperty ;
+  rdfs:comment "The one character representation of an amino acid e.g., W for Tryptophan. This must fit with the actual characters used to represent the amino acids in the Sequence. "@en ;
+  rdfs:domain :ModifiedAminoAcid ;
+  rdfs:label "slAA; single letter amino acid code. "@en ;
+  rdfs:range xsd:string ;
+.
+:softwareName
+  a owl:DatatypeProperty ;
+  rdfs:comment "The name of the de novo sequencing software used. "@en ;
+  rdfs:domain :Software ;
+  rdfs:label "softwareName; name of the de novo sequencing tool. "@en ;
+.
+:softwareSettingName
+  a owl:DatatypeProperty ;
+  rdfs:comment "The name of the Setting (parameter) for a de novo sequencing Software. Name must be same as provided by the de novo sequencing tool @ the specified Software.softwareVersion. "@en ;
+  rdfs:domain :SoftwareSetting ;
+  rdfs:label "softwareSettingName; name of the SoftwareSetting (parameter). "@en ;
+  rdfs:range xsd:string ;
+.
+:softwareSettingValue
+  a owl:DatatypeProperty ;
+  rdfs:comment "The actual value of the Setting (parameter) of the de novo sequencing Software. "@en ;
+  rdfs:domain :SoftwareSetting ;
+  rdfs:label "softwareSettingValue; softwareSetting (parameter) value. "@en ;
+  rdfs:range xsd:string ;
+.
+:softwareVersion
+  a owl:DatatypeProperty ;
+  rdfs:comment "The version of the de novo sequencing software used. "@en ;
+  rdfs:domain :Software ;
+  rdfs:label "softwareVersion; version of the de novo sequencing tool. "@en ;
+  rdfs:range xsd:string ;
+.
+:spectrumId
+  a owl:DatatypeProperty ;
+  rdfs:comment "A number identifying the spectrum within another file (e.g., mzML file). Apart from the scanNumber, other IDs can be provided. One can must be used here. "@en ;
+  rdfs:domain :Spectrum ;
+  rdfs:label "spectrumId; the spectrum ID. "@en ;
+  rdfs:range xsd:integer ;
+.
+:url
+  a owl:DatatypeProperty ;
+  rdfs:comment "Location (anyURI) of the file containing the Spectrum used in this de novo sequencing event. Must be accessible when analyzing the data. Must contain scanNumber and or spectrumID and one peak matching to the index of peakID. "@en ;
+  rdfs:domain :SpecDataLink ;
+  rdfs:label "url; link to spectra. "@en ;
+  rdfs:range xsd:anyURI ;
+.
+:version
+  a owl:DatatypeProperty ;
+  rdfs:comment "The version of DNMSO used for the instance. "@en ;
+  rdfs:domain :DNMSO ;
+  rdfs:label "version; the version of DNMSO used for the instance. "@en ;
+  rdfs:range xsd:string ;
+.
