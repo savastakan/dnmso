@@ -59,8 +59,6 @@ Start terminal or console.
 
 Validatation: "java -jar dnmso.jar validate file.dnmso"
 
-Merge multiple DNMSO files: "java -jar dnmso.jar merge file1.mzxml file2.mzml file.lut pepnovo.txt output.dnmso"
-
 Convert (for example from Lutefisk output to DNMSO): "java -jar dnmso.jar convert file.lut output.dnmso"
 
 
