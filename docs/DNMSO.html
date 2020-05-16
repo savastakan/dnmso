@@ -27,7 +27,7 @@ Class  [owl:Class]</FONT></TD></TR></TABLE>
 <DD>
 <TABLE><TR><TD VALIGN="TOP">
 <IMG border="0" src="icons/gb.gif" width="16" height="16"></TD><TD><FONT size="-1">
-The de novo mass spectrometry sequencing ontology's root class. Modifications can be stored in the instance but if none were encountered are not required. The Predictions container must exist (even if empty). Spectra must exist at least once. The version of DNMSO for the instance has to be specified. 
+The de novo mass spectrometry sequencing ontology's root class. Modifications are stored in the instance but if none were encountered are not required. At least one Prediction must exist for the instance to be valid (even if empty). Spectra must exist at least once. The version of DNMSO for the instance has to be specified. Controlled vocabularies can be specified. AminoAcids can be specified. The intention is that all unique amino acids used in the instance should be linked to DNMSO. All unique ModifiedAminoAcids and all Modifications used in the instance should be linked to DNMSO. 
 </FONT></TD></TR></TABLE>
 </DD>
 </DL>
@@ -56,20 +56,20 @@ DNMSO; de novo ontology root class.
 </DD>
 <DD>
 <TABLE><TR><TD VALIGN="TOP">
-<IMG border="0" src="icons/OWLMaxCardinality.gif" width="16" height="16"></TD><TD><FONT size="-1">
-<A href="hasModifications.html">hasModifications; whether Modifications are stored in the instance. </A> max 1
+<IMG border="0" src="icons/OWLMinCardinality.gif" width="16" height="16"></TD><TD><FONT size="-1">
+<A href="hasPredictions.html">hasPredictions; relationship to Prediction. </A> min 1
+</FONT></TD></TR></TABLE>
+</DD>
+<DD>
+<TABLE><TR><TD VALIGN="TOP">
+<IMG border="0" src="icons/OWLMinCardinality.gif" width="16" height="16"></TD><TD><FONT size="-1">
+<A href="hasModifications.html">hasModifications; whether Modifications are stored in the instance. </A> min 0
 </FONT></TD></TR></TABLE>
 </DD>
 <DD>
 <TABLE><TR><TD VALIGN="TOP">
 <IMG border="0" src="icons/OWLCardinality.gif" width="16" height="16"></TD><TD><FONT size="-1">
 <A href="version.html">version; the version of DNMSO used for the instance. </A> exactly 1
-</FONT></TD></TR></TABLE>
-</DD>
-<DD>
-<TABLE><TR><TD VALIGN="TOP">
-<IMG border="0" src="icons/OWLCardinality.gif" width="16" height="16"></TD><TD><FONT size="-1">
-<A href="hasPredictions.html">hasPredictions; relationship to Predictions container. </A> exactly 1
 </FONT></TD></TR></TABLE>
 </DD>
 <DD>
@@ -85,7 +85,7 @@ Thing</FONT></TD></TR></TABLE>
 <B>References</B></FONT></TH>
 </TR>
 <TR><TD><FONT size="-1"><UL>
-<LI>as domain (<A href="version.html">version; the version of DNMSO used for the instance. </A>,&nbsp;<A href="hasSpectra.html">hasSpectra; the relationship between DNMSO and Spectra. </A>,&nbsp;<A href="hasPredictions.html">hasPredictions; relationship to Predictions container. </A>,&nbsp;<A href="hasModifications.html">hasModifications; whether Modifications are stored in the instance. </A>)</LI></UL></FONT></TABLE><P>
+<LI>as domain (<A href="version.html">version; the version of DNMSO used for the instance. </A>,&nbsp;<A href="usesCV.html">usesCV; One link to the CVs used in the instance. </A>,&nbsp;<A href="hasSpectra.html">hasSpectra; the relationship between DNMSO and Spectra. </A>,&nbsp;<A href="hasPredictions.html">hasPredictions; relationship to Prediction. </A>,&nbsp;<A href="hasModifiedAminoAcid.html">hasModifiedAminoAcid; the association between ModifiedAminoAcid and DNMSO. </A>,&nbsp;<A href="hasModifications.html">hasModifications; whether Modifications are stored in the instance. </A>,&nbsp;<A href="hasAminoAcid.html">hasAminoAcid; association between DNMSO and AminoAcid.</A>)</LI></UL></FONT></TABLE><P>
 </FONT>
 <P align="right"><FONT size="-1" face="Verdana, Helvetica, sans-serif">Generated with <A href="http://www.topbraidcomposer.com" target="_top">TopBraid Composer</A>
  by <A href="http://www.topquadrant.com" target="_top">TopQuadrant, Inc.</A></P>

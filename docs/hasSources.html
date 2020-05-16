@@ -1,12 +1,12 @@
 <HTML>
 <HEAD>
-<TITLE>'hasSources; the relationship between Prediction and Sources. '</TITLE>
+<TITLE>'hasSources; the relationship between Prediction and Source. '</TITLE>
 </HEAD>
 <BODY>
 <FONT face="Verdana, Helvetica, sans-serif">
 <H2>
 <FONT SIZE="-1">https://github.com/savastakan/dnmso#hasSources</FONT><BR>
-Property 'hasSources; the relationship between Prediction and Sources. '</H2>
+Property 'hasSources; the relationship between Prediction and Source. '</H2>
 <HR>
 <TR BGCOLOR="white">
 <TD>
@@ -26,7 +26,7 @@ ObjectProperty</FONT></TD></TR></TABLE>
 <DD>
 <TABLE><TR><TD VALIGN="TOP">
 <IMG border="0" src="icons/gb.gif" width="16" height="16"></TD><TD><FONT size="-1">
-The relationship between Prediction and Sources ( 1 to 1). A Prediction has exactly one Sources. Sources contains all Spectra used for the de novo prediction. 
+The relationship between Prediction and Spectrum ( 1 to n). A Prediction can have multiple spectra sources e.g., when multiple spectra of different type lead to one de novo prediciton. Each Prediction needs at least one Spectrum for the Prediction. It can be multiple Spectrum from different Spectra (e.g., mzML files). At least one Spectrum needs to be specified. Here it is possible to include spectra from multiple different fragmentation methods or different MS levels for one prediciton. E.g., ETD and CID fragmentations may be complementary and might improve de novo predictions when used in tandem. 
 </FONT></TD></TR></TABLE>
 </DD>
 </DL>
@@ -49,7 +49,7 @@ The relationship between Prediction and Sources ( 1 to 1). A Prediction has exac
 <DD>
 <TABLE><TR><TD VALIGN="TOP">
 <IMG border="0" src="icons/gb.gif" width="16" height="16"></TD><TD><FONT size="-1">
-hasSources; the relationship between Prediction and Sources. 
+hasSources; the relationship between Prediction and Source. 
 </FONT></TD></TR></TABLE>
 </DD>
 </DL>
@@ -61,7 +61,7 @@ hasSources; the relationship between Prediction and Sources.
 <DD>
 <TABLE><TR><TD VALIGN="TOP">
 <IMG border="0" src="icons/OWLNamedClassPrimitive.gif" width="16" height="16"></TD><TD><FONT size="-1">
-<A href="Sources.html">Sources; the data sources for the de novo prediction. </A></FONT></TD></TR></TABLE>
+<A href="Spectrum.html">Spectrum; a mass spectrum for de novo sequencing. </A></FONT></TD></TR></TABLE>
 </DD>
 </DL>
 </TD></TR>

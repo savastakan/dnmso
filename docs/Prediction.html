@@ -27,7 +27,7 @@ Class  [owl:Class]</FONT></TD></TR></TABLE>
 <DD>
 <TABLE><TR><TD VALIGN="TOP">
 <IMG border="0" src="icons/gb.gif" width="16" height="16"></TD><TD><FONT size="-1">
-One Prediction of the Predictions made for the available spectra with the selected software. A Prediction must specify 1 Scores, 1 Sequence, 1 Software and 1 Sources. A Prediction models one prediction by a particular Software for one or more mass spectra leading to one predicted sequence associated with one or more scores by the sequencer. Predictions from multiple de novo sequencing tools can be integrated using SPARQL queries to arrive at an ensemble prediction. 
+One Prediction for the available spectra with the selected software. A Prediction must specify Score (hasScores, 1-n), 1 Sequence (hasSequence), 1 Software (hasSoftware) and at least 1 Spectrum (hasScources). A Prediction models one prediction by a particular Software for one or more mass spectra leading to one predicted sequence associated with one or more scores by the sequencing tool. Predictions from multiple de novo sequencing tools can be integrated using for example SPARQL queries to arrive at an ensemble prediction. It is possible that multiple predictions can be made for one underlying spectrum. For example co-fragmentation would lead to several valid sequences. Alternatively, multiple predictions can be made and represented in DNMSO with varying sequences and confidence and scores. A Prediction is not required for the DNMSO instance to be valid. 
 </FONT></TD></TR></TABLE>
 </DD>
 </DL>
@@ -50,8 +50,14 @@ Prediction; a de novo Prediction.
 <DL>
 <DD>
 <TABLE><TR><TD VALIGN="TOP">
-<IMG border="0" src="icons/OWLCardinality.gif" width="16" height="16"></TD><TD><FONT size="-1">
-<A href="hasSources.html">hasSources; the relationship between Prediction and Sources. </A> exactly 1
+<IMG border="0" src="icons/OWLMinCardinality.gif" width="16" height="16"></TD><TD><FONT size="-1">
+<A href="hasSources.html">hasSources; the relationship between Prediction and Source. </A> min 1
+</FONT></TD></TR></TABLE>
+</DD>
+<DD>
+<TABLE><TR><TD VALIGN="TOP">
+<IMG border="0" src="icons/OWLMinCardinality.gif" width="16" height="16"></TD><TD><FONT size="-1">
+<A href="hasScores.html">hasScores; relationship between Prediction and Score. </A> min 1
 </FONT></TD></TR></TABLE>
 </DD>
 <DD>
@@ -68,12 +74,6 @@ Prediction; a de novo Prediction.
 </DD>
 <DD>
 <TABLE><TR><TD VALIGN="TOP">
-<IMG border="0" src="icons/OWLCardinality.gif" width="16" height="16"></TD><TD><FONT size="-1">
-<A href="hasScores.html">hasScores; relationship between Prediction and Scores. </A> exactly 1
-</FONT></TD></TR></TABLE>
-</DD>
-<DD>
-<TABLE><TR><TD VALIGN="TOP">
 <IMG border="0" src="icons/OWLNamedClassPrimitive.greyed.gif" width="16" height="16"></TD><TD><FONT size="-1">
 Thing</FONT></TD></TR></TABLE>
 </DD>
@@ -85,7 +85,7 @@ Thing</FONT></TD></TR></TABLE>
 <B>References</B></FONT></TH>
 </TR>
 <TR><TD><FONT size="-1"><UL>
-<LI>as domain (<A href="hasSources.html">hasSources; the relationship between Prediction and Sources. </A>,&nbsp;<A href="hasSoftware.html">hasSoftware; relationship between Prediction and Software. </A>,&nbsp;<A href="hasSequence.html">hasSequence; relationship between Prediction and Sequence. </A>,&nbsp;<A href="hasScores.html">hasScores; relationship between Prediction and Scores. </A>)</LI><LI>as range (<A href="hasPrediction.html">hasPrediction; relationship between Predictions and Prediction. </A>)</LI></UL></FONT></TABLE><P>
+<LI>as domain (<A href="hasSources.html">hasSources; the relationship between Prediction and Source. </A>,&nbsp;<A href="hasSoftware.html">hasSoftware; relationship between Prediction and Software. </A>,&nbsp;<A href="hasSequence.html">hasSequence; relationship between Prediction and Sequence. </A>,&nbsp;<A href="hasScores.html">hasScores; relationship between Prediction and Score. </A>)</LI><LI>as range (<A href="hasPredictions.html">hasPredictions; relationship to Prediction. </A>)</LI></UL></FONT></TABLE><P>
 </FONT>
 <P align="right"><FONT size="-1" face="Verdana, Helvetica, sans-serif">Generated with <A href="http://www.topbraidcomposer.com" target="_top">TopBraid Composer</A>
  by <A href="http://www.topquadrant.com" target="_top">TopQuadrant, Inc.</A></P>

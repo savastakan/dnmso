@@ -27,7 +27,7 @@ Class  [owl:Class]</FONT></TD></TR></TABLE>
 <DD>
 <TABLE><TR><TD VALIGN="TOP">
 <IMG border="0" src="icons/gb.gif" width="16" height="16"></TD><TD><FONT size="-1">
-The de novo sequencing tool used for de novo sequencing. SoftwareSettings, softwareName, softwareVersion need to be specified. Publications are optional (0 to many). 
+The de novo sequencing tool used for de novo sequencing. SoftwareSettings, softwareName, softwareVersion need to be specified. Publications are optional (0 to many). Additional information can be provided using cvParam (hasSoftwarecvParam). 
 </FONT></TD></TR></TABLE>
 </DD>
 </DL>
@@ -50,6 +50,12 @@ Software; a de novo sequencing software.
 <DL>
 <DD>
 <TABLE><TR><TD VALIGN="TOP">
+<IMG border="0" src="icons/OWLNamedClassPrimitive.gif" width="16" height="16"></TD><TD><FONT size="-1">
+<A href="@940fb526bf8ff315fae1ea6bc896c1ea">@940fb526bf8ff315fae1ea6bc896c1ea</A>
+</FONT></TD></TR></TABLE>
+</DD>
+<DD>
+<TABLE><TR><TD VALIGN="TOP">
 <IMG border="0" src="icons/OWLMaxCardinality.gif" width="16" height="16"></TD><TD><FONT size="-1">
 <A href="softwareVersion.html">softwareVersion; version of the de novo sequencing tool. </A> max 1
 </FONT></TD></TR></TABLE>
@@ -63,7 +69,7 @@ Software; a de novo sequencing software.
 <DD>
 <TABLE><TR><TD VALIGN="TOP">
 <IMG border="0" src="icons/OWLCardinality.gif" width="16" height="16"></TD><TD><FONT size="-1">
-<A href="hasSettings.html">hasSettings; relationship between Software and SoftwareSettings. </A> exactly 1
+<A href="hasSoftwarecvParam.html">hasSoftwarecvParam; Sotware specified via CV.</A> exactly 1
 </FONT></TD></TR></TABLE>
 </DD>
 <DD>
@@ -79,7 +85,7 @@ Thing</FONT></TD></TR></TABLE>
 <B>References</B></FONT></TH>
 </TR>
 <TR><TD><FONT size="-1"><UL>
-<LI>as domain (<A href="softwareVersion.html">softwareVersion; version of the de novo sequencing tool. </A>,&nbsp;<A href="softwareName.html">softwareName; name of the de novo sequencing tool. </A>,&nbsp;<A href="hasSettings.html">hasSettings; relationship between Software and SoftwareSettings. </A>,&nbsp;<A href="hasPublication.html">hasPublication; whether publications for a Software are gien. </A>)</LI><LI>as range (<A href="hasSoftware.html">hasSoftware; relationship between Prediction and Software. </A>)</LI></UL></FONT></TABLE><P>
+<LI>as domain (<A href="softwareVersion.html">softwareVersion; version of the de novo sequencing tool. </A>,&nbsp;<A href="softwareName.html">softwareName; name of the de novo sequencing tool. </A>,&nbsp;<A href="hasSoftwarecvParam.html">hasSoftwarecvParam; Sotware specified via CV.</A>,&nbsp;<A href="hasSettings.html">hasSettings; relationship between Software and SoftwareSetting. </A>,&nbsp;<A href="hasPublication.html">hasPublication; whether publications for a Software are gien. </A>)</LI><LI>as range (<A href="hasSoftware.html">hasSoftware; relationship between Prediction and Software. </A>)</LI></UL></FONT></TABLE><P>
 </FONT>
 <P align="right"><FONT size="-1" face="Verdana, Helvetica, sans-serif">Generated with <A href="http://www.topbraidcomposer.com" target="_top">TopBraid Composer</A>
  by <A href="http://www.topquadrant.com" target="_top">TopQuadrant, Inc.</A></P>

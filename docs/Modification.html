@@ -27,7 +27,7 @@ Class  [owl:Class]</FONT></TD></TR></TABLE>
 <DD>
 <TABLE><TR><TD VALIGN="TOP">
 <IMG border="0" src="icons/gb.gif" width="16" height="16"></TD><TD><FONT size="-1">
-Amino acids and peptides can be modified in various ways. A Modification is always contained in Modifications and doesn't stand by itself. Modification specifies the modificationMass (decimal) and expects a name for the modification (string). Exactly one ModificationElement must also be specified. The modificationMass of the modification (mono isotopic assumed) and the modificationName must be provided.  
+Amino acids and peptides can be modified in various ways. A Modification used in the instance must be linked to DNMSO. Modification specifies the modificationMass (average and monoisotopic) and expects a name for the modification (string). Exactly one ModificationElement must also be specified. The modificationMass of the modification (mono isotopic assumed) and the modificationName must be provided. The reference to the propper PSI-Mod term must also be provided. The type of modification (terminal or amino acid) needs to be specified. Additional information can be provided as cvParam. 
 </FONT></TD></TR></TABLE>
 </DD>
 </DL>
@@ -50,6 +50,18 @@ Modification; PTM or general mass change.
 <DL>
 <DD>
 <TABLE><TR><TD VALIGN="TOP">
+<IMG border="0" src="icons/OWLMaxCardinality.gif" width="16" height="16"></TD><TD><FONT size="-1">
+<A href="monoModificationMass.html">monoModificationMass; The mass of the modifier (monoisotopic).</A> max 1
+</FONT></TD></TR></TABLE>
+</DD>
+<DD>
+<TABLE><TR><TD VALIGN="TOP">
+<IMG border="0" src="icons/OWLMaxCardinality.gif" width="16" height="16"></TD><TD><FONT size="-1">
+<A href="averageModificationMass.html">averageModificationMass; The mass of the modifier (average isotope distribution).</A> max 1
+</FONT></TD></TR></TABLE>
+</DD>
+<DD>
+<TABLE><TR><TD VALIGN="TOP">
 <IMG border="0" src="icons/OWLCardinality.gif" width="16" height="16"></TD><TD><FONT size="-1">
 <A href="modificationName.html">modificationName; name of the modification. </A> exactly 1
 </FONT></TD></TR></TABLE>
@@ -57,13 +69,13 @@ Modification; PTM or general mass change.
 <DD>
 <TABLE><TR><TD VALIGN="TOP">
 <IMG border="0" src="icons/OWLCardinality.gif" width="16" height="16"></TD><TD><FONT size="-1">
-<A href="modificationMass.html">modificationMass; mass of the modification (mono). </A> exactly 1
+<A href="isTerminalModification.html">isTerminalModification; whether the modification is terminal.</A> exactly 1
 </FONT></TD></TR></TABLE>
 </DD>
 <DD>
 <TABLE><TR><TD VALIGN="TOP">
 <IMG border="0" src="icons/OWLCardinality.gif" width="16" height="16"></TD><TD><FONT size="-1">
-<A href="hasModificationElement.html">hasModificationElement; a particular modification. </A> exactly 1
+<A href="PSI-Mod-Ref.html">PSI-Mod-Ref; The identifier provided by PSI-Mod. </A> exactly 1
 </FONT></TD></TR></TABLE>
 </DD>
 <DD>
@@ -79,7 +91,7 @@ Thing</FONT></TD></TR></TABLE>
 <B>References</B></FONT></TH>
 </TR>
 <TR><TD><FONT size="-1"><UL>
-<LI>as domain (<A href="modificationName.html">modificationName; name of the modification. </A>,&nbsp;<A href="modificationMass.html">modificationMass; mass of the modification (mono). </A>,&nbsp;<A href="hasModificationElement.html">hasModificationElement; a particular modification. </A>)</LI><LI>as range (<A href="hasModification.html">hasModification; a particular modification. </A>)</LI></UL></FONT></TABLE><P>
+<LI>as domain (<A href="hasModcvParam.html">hasModcvParam; specification of the modification using CV.</A>,&nbsp;<A href="modificationName.html">modificationName; name of the modification. </A>,&nbsp;<A href="monoModificationMass.html">monoModificationMass; The mass of the modifier (monoisotopic).</A>,&nbsp;<A href="isTerminalModification.html">isTerminalModification; whether the modification is terminal.</A>,&nbsp;<A href="PSI-Mod-Ref.html">PSI-Mod-Ref; The identifier provided by PSI-Mod. </A>,&nbsp;<A href="averageModificationMass.html">averageModificationMass; The mass of the modifier (average isotope distribution).</A>)</LI><LI>as range (<A href="hasNTerminalModification.html">hasNTerminalModification; whether an N-terminal modification is present. </A>,&nbsp;<A href="hasModification.html">hasModification; The association between ModifiedAminoAcid and Modification. </A>,&nbsp;<A href="hasCTerminalModification.html">hasCTerminalModification; C-terminal modification. Associates with Modification where the modifier etc. can be found. </A>,&nbsp;<A href="hasModifications.html">hasModifications; whether Modifications are stored in the instance. </A>)</LI></UL></FONT></TABLE><P>
 </FONT>
 <P align="right"><FONT size="-1" face="Verdana, Helvetica, sans-serif">Generated with <A href="http://www.topbraidcomposer.com" target="_top">TopBraid Composer</A>
  by <A href="http://www.topquadrant.com" target="_top">TopQuadrant, Inc.</A></P>

@@ -1,12 +1,12 @@
 <HTML>
 <HEAD>
-<TITLE>'AminoAcid; child class of SequenceElement. '</TITLE>
+<TITLE>'AminoAcid; Representation of the standard amino acids.'</TITLE>
 </HEAD>
 <BODY>
 <FONT face="Verdana, Helvetica, sans-serif">
 <H2>
 <FONT SIZE="-1">https://github.com/savastakan/dnmso#AminoAcid</FONT><BR>
-Class 'AminoAcid; child class of SequenceElement. '</H2>
+Class 'AminoAcid; Representation of the standard amino acids.'</H2>
 <CENTER><IMG border="0" src="diagrams/AminoAcid.jpg"></CENTER><P>
 <HR>
 <TR BGCOLOR="white">
@@ -27,7 +27,7 @@ Class  [owl:Class]</FONT></TD></TR></TABLE>
 <DD>
 <TABLE><TR><TD VALIGN="TOP">
 <IMG border="0" src="icons/gb.gif" width="16" height="16"></TD><TD><FONT size="-1">
-An AminoAcid is a SequenceElement and as such can be part of a Sequence. Filling AACharacter is obligatory. confidence, proof, and position within the sequence are part of the base class (SequenceElement). 
+Representation of the standard amino acids. The list of amino acids used in the instance should be linked to the DNMSO root using hasAminoAcid. The singleLetterCode must be unique for the scope of the instance. 
 </FONT></TD></TR></TABLE>
 </DD>
 </DL>
@@ -39,7 +39,7 @@ An AminoAcid is a SequenceElement and as such can be part of a Sequence. Filling
 <DD>
 <TABLE><TR><TD VALIGN="TOP">
 <IMG border="0" src="icons/gb.gif" width="16" height="16"></TD><TD><FONT size="-1">
-AminoAcid; child class of SequenceElement. 
+AminoAcid; Representation of the standard amino acids.
 </FONT></TD></TR></TABLE>
 </DD>
 </DL>
@@ -51,13 +51,31 @@ AminoAcid; child class of SequenceElement.
 <DD>
 <TABLE><TR><TD VALIGN="TOP">
 <IMG border="0" src="icons/OWLCardinality.gif" width="16" height="16"></TD><TD><FONT size="-1">
-<A href="AACharacter.html">AACharacter; single letter amino acid code. </A> exactly 1
+<A href="threeLetterCode.html">threeLetterCode; an amino acids abbreviation.</A> exactly 1
 </FONT></TD></TR></TABLE>
 </DD>
 <DD>
 <TABLE><TR><TD VALIGN="TOP">
-<IMG border="0" src="icons/OWLNamedClassPrimitive.gif" width="16" height="16"></TD><TD><FONT size="-1">
-<A href="SequenceElement.html">SequenceElement; an element of the predicted sequence (AminoAcid, ModAminoAcid, Gap). </A></FONT></TD></TR></TABLE>
+<IMG border="0" src="icons/OWLCardinality.gif" width="16" height="16"></TD><TD><FONT size="-1">
+<A href="monoIsotopicMass.html">monoIsotopicMass; monoisotopic mass of amino acid. Either monoIsotopicMass or averageModificationMass should be provided. </A> exactly 1
+</FONT></TD></TR></TABLE>
+</DD>
+<DD>
+<TABLE><TR><TD VALIGN="TOP">
+<IMG border="0" src="icons/OWLCardinality.gif" width="16" height="16"></TD><TD><FONT size="-1">
+<A href="averageMass.html">averageMass; average mass fo the modified amino acid. </A> exactly 1
+</FONT></TD></TR></TABLE>
+</DD>
+<DD>
+<TABLE><TR><TD VALIGN="TOP">
+<IMG border="0" src="icons/OWLCardinality.gif" width="16" height="16"></TD><TD><FONT size="-1">
+<A href="aminoAcidName.html">aminoAcidName; full name of the amino acid (e.g., Glycine).</A> exactly 1
+</FONT></TD></TR></TABLE>
+</DD>
+<DD>
+<TABLE><TR><TD VALIGN="TOP">
+<IMG border="0" src="icons/OWLNamedClassPrimitive.greyed.gif" width="16" height="16"></TD><TD><FONT size="-1">
+Thing</FONT></TD></TR></TABLE>
 </DD>
 </DL>
 </TD></TR>
@@ -67,7 +85,7 @@ AminoAcid; child class of SequenceElement.
 <B>References</B></FONT></TH>
 </TR>
 <TR><TD><FONT size="-1"><UL>
-<LI>as domain (<A href="AACharacter.html">AACharacter; single letter amino acid code. </A>)</LI></UL></FONT></TABLE><P>
+<LI>as domain (<A href="threeLetterCode.html">threeLetterCode; an amino acids abbreviation.</A>,&nbsp;<A href="monoIsotopicMass.html">monoIsotopicMass; monoisotopic mass of amino acid. Either monoIsotopicMass or averageModificationMass should be provided. </A>,&nbsp;<A href="averageMass.html">averageMass; average mass fo the modified amino acid. </A>,&nbsp;<A href="aminoAcidName.html">aminoAcidName; full name of the amino acid (e.g., Glycine).</A>)</LI><LI>as range (<A href="isBasedOn.html">isBasedOn; the association between ModifiedAminoAcid and AminoAcid. </A>,&nbsp;<A href="isAminoAcid.html">isAminoAcid; the association between seAminoAcid and AminoAcid. </A>,&nbsp;<A href="hasAminoAcid.html">hasAminoAcid; association between DNMSO and AminoAcid.</A>)</LI></UL></FONT></TABLE><P>
 </FONT>
 <P align="right"><FONT size="-1" face="Verdana, Helvetica, sans-serif">Generated with <A href="http://www.topbraidcomposer.com" target="_top">TopBraid Composer</A>
  by <A href="http://www.topquadrant.com" target="_top">TopQuadrant, Inc.</A></P>

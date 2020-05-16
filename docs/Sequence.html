@@ -27,7 +27,7 @@ Class  [owl:Class]</FONT></TD></TR></TABLE>
 <DD>
 <TABLE><TR><TD VALIGN="TOP">
 <IMG border="0" src="icons/gb.gif" width="16" height="16"></TD><TD><FONT size="-1">
-The de novo predicted Sequence for the Prediction. The Prediction may have confidence and a sequence. More precisely, it can be modelled as a Sequence of AminoAcids, ModeAminoAcids and Gaps with optional N- and C-terminal modifications. The members of the class: sequence and confidence are optional and intended for backward compatibility. The intention of DNMSO is to model the Sequence as a chain of SequenceElments with support (Proofs). At least 1 SequenceElement is needed for the instance to be valid. 
+The de novo predicted Sequence for the Prediction. The Prediction may have confidence and a sequence. More precisely, it can be modelled as a Sequence of AminoAcids, ModifiedAminoAcids and Gaps with optional N- and C-terminal modifications. The members of the class: sequence and confidence are optional and intended for backward compatibility. The intention of DNMSO is to model the Sequence as a chain of SequenceElments with support (Proof). At least 1 SequenceElement is needed for the instance to be valid. 
 </FONT></TD></TR></TABLE>
 </DD>
 </DL>
@@ -50,8 +50,8 @@ Sequence; the de novo predicted sequence.
 <DL>
 <DD>
 <TABLE><TR><TD VALIGN="TOP">
-<IMG border="0" src="icons/OWLMinCardinality.gif" width="16" height="16"></TD><TD><FONT size="-1">
-<A href="hasSequenceElement.html">hasSequenceElement; whether Sequence contains SequenceElement. </A> min 1
+<IMG border="0" src="icons/OWLNamedClassPrimitive.gif" width="16" height="16"></TD><TD><FONT size="-1">
+<A href="@f278d92a22f1316300ac89f46006af80">@f278d92a22f1316300ac89f46006af80</A>
 </FONT></TD></TR></TABLE>
 </DD>
 <DD>
@@ -63,7 +63,7 @@ Sequence; the de novo predicted sequence.
 <DD>
 <TABLE><TR><TD VALIGN="TOP">
 <IMG border="0" src="icons/OWLMaxCardinality.gif" width="16" height="16"></TD><TD><FONT size="-1">
-<A href="hasCTerminalModification.html">hasCTerminalModification; C-terminal modification. </A> max 1
+<A href="hasCTerminalModification.html">hasCTerminalModification; C-terminal modification. Associates with Modification where the modifier etc. can be found. </A> max 1
 </FONT></TD></TR></TABLE>
 </DD>
 <DD>
@@ -79,7 +79,7 @@ Thing</FONT></TD></TR></TABLE>
 <B>References</B></FONT></TH>
 </TR>
 <TR><TD><FONT size="-1"><UL>
-<LI>as domain (<A href="peptideSequence.html">peptideSequence; sequence of the peptide. </A>,&nbsp;<A href="hasSequenceElement.html">hasSequenceElement; whether Sequence contains SequenceElement. </A>,&nbsp;<A href="hasNTerminalModification.html">hasNTerminalModification; whether an N-terminal modification is present. </A>,&nbsp;<A href="hasCTerminalModification.html">hasCTerminalModification; C-terminal modification. </A>,&nbsp;<A href="combinedConfidence.html">combinedConfidence; the combined confidence for the prediction. </A>)</LI><LI>as range (<A href="hasSequence.html">hasSequence; relationship between Prediction and Sequence. </A>)</LI></UL></FONT></TABLE><P>
+<LI>as domain (<A href="peptideSequence.html">peptideSequence; sequence of the peptide. </A>,&nbsp;<A href="hasSequenceElement.html">hasSequenceElement; whether Sequence contains SequenceElement. </A>,&nbsp;<A href="hasNTerminalModification.html">hasNTerminalModification; whether an N-terminal modification is present. </A>,&nbsp;<A href="hasCTerminalModification.html">hasCTerminalModification; C-terminal modification. Associates with Modification where the modifier etc. can be found. </A>,&nbsp;<A href="combinedConfidence.html">combinedConfidence; the combined confidence for the prediction. </A>)</LI><LI>as range (<A href="hasSequence.html">hasSequence; relationship between Prediction and Sequence. </A>)</LI></UL></FONT></TABLE><P>
 </FONT>
 <P align="right"><FONT size="-1" face="Verdana, Helvetica, sans-serif">Generated with <A href="http://www.topbraidcomposer.com" target="_top">TopBraid Composer</A>
  by <A href="http://www.topquadrant.com" target="_top">TopQuadrant, Inc.</A></P>

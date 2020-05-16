@@ -1,0 +1,111 @@
+<HTML>
+<HEAD>
+<TITLE>'cvParam; A parameter described via a controlled vocabulary.'</TITLE>
+</HEAD>
+<BODY>
+<FONT face="Verdana, Helvetica, sans-serif">
+<H2>
+<FONT SIZE="-1">https://github.com/savastakan/dnmso#cvParam</FONT><BR>
+Class 'cvParam; A parameter described via a controlled vocabulary.'</H2>
+<CENTER><IMG border="0" src="diagrams/cvParam.jpg"></CENTER><P>
+<HR>
+<TR BGCOLOR="white">
+<TD>
+<B><FONT size="-1">type</FONT></B>
+<DL>
+<DD>
+<TABLE><TR><TD VALIGN="TOP">
+<IMG border="0" src="icons/RDFSClass.greyed.gif" width="16" height="16"></TD><TD><FONT size="-1">
+Class  [owl:Class]</FONT></TD></TR></TABLE>
+</DD>
+</DL>
+</TD></TR>
+<TR BGCOLOR="white">
+<TD>
+<B><FONT size="-1">comment</FONT></B>
+<DL>
+<DD>
+<TABLE><TR><TD VALIGN="TOP">
+<IMG border="0" src="icons/gb.gif" width="16" height="16"></TD><TD><FONT size="-1">
+cvParam allows the specification of information using a CV. The CV used must be specified in DNMSO and linked in cvParam via the foundIn association. Some parameters are required (cvParamName, cvTermAccession, usrValue) and some are optional (unitAccession, unitCVRef, unitName). 
+</FONT></TD></TR></TABLE>
+</DD>
+</DL>
+</TD></TR>
+<TR BGCOLOR="white">
+<TD>
+<B><FONT size="-1">label</FONT></B>
+<DL>
+<DD>
+<TABLE><TR><TD VALIGN="TOP">
+<IMG border="0" src="icons/gb.gif" width="16" height="16"></TD><TD><FONT size="-1">
+cvParam; A parameter described via a controlled vocabulary.
+</FONT></TD></TR></TABLE>
+</DD>
+</DL>
+</TD></TR>
+<TR BGCOLOR="white">
+<TD>
+<B><FONT size="-1">subClassOf</FONT></B>
+<DL>
+<DD>
+<TABLE><TR><TD VALIGN="TOP">
+<IMG border="0" src="icons/OWLMaxCardinality.gif" width="16" height="16"></TD><TD><FONT size="-1">
+<A href="unitCVRef.html">unitCVRef; The CV the unit is described.</A> max 1
+</FONT></TD></TR></TABLE>
+</DD>
+<DD>
+<TABLE><TR><TD VALIGN="TOP">
+<IMG border="0" src="icons/OWLCardinality.gif" width="16" height="16"></TD><TD><FONT size="-1">
+<A href="cvParamName.html">cvParamName; The name of the parameter from the CV.</A> exactly 1
+</FONT></TD></TR></TABLE>
+</DD>
+<DD>
+<TABLE><TR><TD VALIGN="TOP">
+<IMG border="0" src="icons/OWLMaxCardinality.gif" width="16" height="16"></TD><TD><FONT size="-1">
+<A href="unitAccession.html">unitAccession; The accession to the unit used.</A> max 1
+</FONT></TD></TR></TABLE>
+</DD>
+<DD>
+<TABLE><TR><TD VALIGN="TOP">
+<IMG border="0" src="icons/OWLNamedClassPrimitive.greyed.gif" width="16" height="16"></TD><TD><FONT size="-1">
+Thing</FONT></TD></TR></TABLE>
+</DD>
+<DD>
+<TABLE><TR><TD VALIGN="TOP">
+<IMG border="0" src="icons/OWLCardinality.gif" width="16" height="16"></TD><TD><FONT size="-1">
+<A href="usrValue.html">usrValue; the value of the CV term used.</A> exactly 1
+</FONT></TD></TR></TABLE>
+</DD>
+<DD>
+<TABLE><TR><TD VALIGN="TOP">
+<IMG border="0" src="icons/OWLMinCardinality.gif" width="16" height="16"></TD><TD><FONT size="-1">
+<A href="foundIn.html">foundIn; The association to the source CV. </A> min 1
+</FONT></TD></TR></TABLE>
+</DD>
+<DD>
+<TABLE><TR><TD VALIGN="TOP">
+<IMG border="0" src="icons/OWLMaxCardinality.gif" width="16" height="16"></TD><TD><FONT size="-1">
+<A href="unitName.html">unitName; The name of the unit.</A> max 1
+</FONT></TD></TR></TABLE>
+</DD>
+<DD>
+<TABLE><TR><TD VALIGN="TOP">
+<IMG border="0" src="icons/OWLCardinality.gif" width="16" height="16"></TD><TD><FONT size="-1">
+<A href="cvTermAccession.html">cvTermAccession; The accession of the parameter from the CV.</A> exactly 1
+</FONT></TD></TR></TABLE>
+</DD>
+</DL>
+</TD></TR>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+1">
+<B>References</B></FONT></TH>
+</TR>
+<TR><TD><FONT size="-1"><UL>
+<LI>as domain (<A href="unitCVRef.html">unitCVRef; The CV the unit is described.</A>,&nbsp;<A href="foundIn.html">foundIn; The association to the source CV. </A>,&nbsp;<A href="usrValue.html">usrValue; the value of the CV term used.</A>,&nbsp;<A href="unitAccession.html">unitAccession; The accession to the unit used.</A>,&nbsp;<A href="cvParamName.html">cvParamName; The name of the parameter from the CV.</A>,&nbsp;<A href="cvTermAccession.html">cvTermAccession; The accession of the parameter from the CV.</A>,&nbsp;<A href="unitName.html">unitName; The name of the unit.</A>)</LI><LI>as range (<A href="hasScorecvParam.html">hasScorecvParam; Score info using CV.</A>,&nbsp;<A href="hasModcvParam.html">hasModcvParam; specification of the modification using CV.</A>,&nbsp;<A href="hasSoftwareSettingcvParam.html">hasSoftwareSettingcvParam; Additional info about SoftwareSetting using CV. </A>,&nbsp;<A href="hasSoftwarecvParam.html">hasSoftwarecvParam; Sotware specified via CV.</A>,&nbsp;<A href="hasQualifiercvParam.html">hasQualifiercvParam; Additional info about Spectra using CV.</A>)</LI></UL></FONT></TABLE><P>
+</FONT>
+<P align="right"><FONT size="-1" face="Verdana, Helvetica, sans-serif">Generated with <A href="http://www.topbraidcomposer.com" target="_top">TopBraid Composer</A>
+ by <A href="http://www.topquadrant.com" target="_top">TopQuadrant, Inc.</A></P>
+</BODY>
+</HTML>

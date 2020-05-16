@@ -27,7 +27,7 @@ Class  [owl:Class]</FONT></TD></TR></TABLE>
 <DD>
 <TABLE><TR><TD VALIGN="TOP">
 <IMG border="0" src="icons/gb.gif" width="16" height="16"></TD><TD><FONT size="-1">
-Spectra is a container for 1 to many Spectrum elements. De novo Sequencing needs at least one Spectrum so it can be performed and hence one Spectrum needs to be provided. Spectra can originate from different sources (e.g., mzML files). The concrete link to the file (if external) is provided in Link and/or PeakLink. Publications pertaining to the Spectra collection can be provided. 
+Spectra is a container for 1 to many Spectrum elements (e.g., mgf, mzML, ..). De novo Sequencing needs at least one Spectrum so it can be performed and hence one Spectrum needs to be provided. Spectra can originate from different sources (e.g., mzML files). The concrete link to the file (if external) is provided in Link and/or PeakLink. Publications pertaining to the Spectra collection can be provided (isPublished; 0-n). Additional information can be provided via cvParam (hasQualifiercvParam). 
 </FONT></TD></TR></TABLE>
 </DD>
 </DL>
@@ -50,8 +50,14 @@ Spectra; a container for Spectrum.
 <DL>
 <DD>
 <TABLE><TR><TD VALIGN="TOP">
-<IMG border="0" src="icons/OWLMinCardinality.gif" width="16" height="16"></TD><TD><FONT size="-1">
-<A href="hasSpectrum.html">hasSpectrum; the relationship between Spectra and Spectrum. </A> min 1
+<IMG border="0" src="icons/OWLCardinality.gif" width="16" height="16"></TD><TD><FONT size="-1">
+<A href="url.html">url; link to spectra. </A> exactly 1
+</FONT></TD></TR></TABLE>
+</DD>
+<DD>
+<TABLE><TR><TD VALIGN="TOP">
+<IMG border="0" src="icons/OWLCardinality.gif" width="16" height="16"></TD><TD><FONT size="-1">
+<A href="hasSpectrum.html">hasSpectrum; the relationship between Spectra and Spectrum. </A> exactly 1
 </FONT></TD></TR></TABLE>
 </DD>
 <DD>
@@ -67,7 +73,7 @@ Thing</FONT></TD></TR></TABLE>
 <B>References</B></FONT></TH>
 </TR>
 <TR><TD><FONT size="-1"><UL>
-<LI>as domain (<A href="isPublished.html">hasSpectrumData; the relationship between Spectra and Publication. </A>,&nbsp;<A href="hasSpectrum.html">hasSpectrum; the relationship between Spectra and Spectrum. </A>)</LI><LI>as range (<A href="hasSpectra.html">hasSpectra; the relationship between DNMSO and Spectra. </A>)</LI></UL></FONT></TABLE><P>
+<LI>as domain (<A href="url.html">url; link to spectra. </A>,&nbsp;<A href="isPublished.html">hasSpectrumData; the relationship between Spectra and Publication. </A>,&nbsp;<A href="hasSpectrum.html">hasSpectrum; the relationship between Spectra and Spectrum. </A>,&nbsp;<A href="hasQualifiercvParam.html">hasQualifiercvParam; Additional info about Spectra using CV.</A>)</LI><LI>as range (<A href="hasSpectra.html">hasSpectra; the relationship between DNMSO and Spectra. </A>)</LI></UL></FONT></TABLE><P>
 </FONT>
 <P align="right"><FONT size="-1" face="Verdana, Helvetica, sans-serif">Generated with <A href="http://www.topbraidcomposer.com" target="_top">TopBraid Composer</A>
  by <A href="http://www.topquadrant.com" target="_top">TopQuadrant, Inc.</A></P>

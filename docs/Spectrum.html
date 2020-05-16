@@ -56,7 +56,7 @@ Thing</FONT></TD></TR></TABLE>
 <DD>
 <TABLE><TR><TD VALIGN="TOP">
 <IMG border="0" src="icons/OWLCardinality.gif" width="16" height="16"></TD><TD><FONT size="-1">
-<A href="precursorIntensity.html">precursorIntensity; ihe intensity of the precursor peak. </A> exactly 1
+<A href="scanId.html">scanId; the scan number of the spectrum. </A> exactly 1
 </FONT></TD></TR></TABLE>
 </DD>
 <DD>
@@ -67,25 +67,25 @@ Thing</FONT></TD></TR></TABLE>
 </DD>
 <DD>
 <TABLE><TR><TD VALIGN="TOP">
-<IMG border="0" src="icons/OWLNamedClassPrimitive.gif" width="16" height="16"></TD><TD><FONT size="-1">
-<A href="Source.html">Source; the data source for de novo prediction. </A></FONT></TD></TR></TABLE>
+<IMG border="0" src="icons/RDFSClass.greyed.gif" width="16" height="16"></TD><TD><FONT size="-1">
+Class  [owl:Class]</FONT></TD></TR></TABLE>
 </DD>
 <DD>
 <TABLE><TR><TD VALIGN="TOP">
 <IMG border="0" src="icons/OWLCardinality.gif" width="16" height="16"></TD><TD><FONT size="-1">
-<A href="hasSpectrumData.html">The relationship between Spectrum and SpectrumData. </A> exactly 1
+<A href="precursorIntensity.html">precursorIntensity; ihe intensity of the precursor peak. </A> exactly 1
+</FONT></TD></TR></TABLE>
+</DD>
+<DD>
+<TABLE><TR><TD VALIGN="TOP">
+<IMG border="0" src="icons/OWLMaxCardinality.gif" width="16" height="16"></TD><TD><FONT size="-1">
+<A href="csvData.html">csvPeakList; spectrum in CSV format.</A> max 1
 </FONT></TD></TR></TABLE>
 </DD>
 <DD>
 <TABLE><TR><TD VALIGN="TOP">
 <IMG border="0" src="icons/OWLCardinality.gif" width="16" height="16"></TD><TD><FONT size="-1">
-<A href="scanId.html">scanId; the scan number of the spectrum. </A> exactly 1
-</FONT></TD></TR></TABLE>
-</DD>
-<DD>
-<TABLE><TR><TD VALIGN="TOP">
-<IMG border="0" src="icons/OWLCardinality.gif" width="16" height="16"></TD><TD><FONT size="-1">
-<A href="spectrumId.html">spectrumId; the spectrum ID. </A> exactly 1
+<A href="spectrumId.html">spectrumId; the spectrum ID (unique identifier per DNMSO instance). </A> exactly 1
 </FONT></TD></TR></TABLE>
 </DD>
 </DL>
@@ -96,7 +96,7 @@ Thing</FONT></TD></TR></TABLE>
 <B>References</B></FONT></TH>
 </TR>
 <TR><TD><FONT size="-1"><UL>
-<LI>as domain (<A href="spectrumId.html">spectrumId; the spectrum ID. </A>,&nbsp;<A href="scanId.html">scanId; the scan number of the spectrum. </A>,&nbsp;<A href="precursorMZ.html">precursorMZ; the m/z of the precursor peak. </A>,&nbsp;<A href="precursorIntensity.html">precursorIntensity; ihe intensity of the precursor peak. </A>,&nbsp;<A href="hasSpectrumData.html">The relationship between Spectrum and SpectrumData. </A>)</LI><LI>as range (<A href="hasSpectrum.html">hasSpectrum; the relationship between Spectra and Spectrum. </A>,&nbsp;<A href="hasPeakLinkSpectrum.html">hasPeakLinkSpectrum; link to Spectrum containing the peak. </A>)</LI></UL></FONT></TABLE><P>
+<LI>as domain (<A href="spectrumId.html">spectrumId; the spectrum ID (unique identifier per DNMSO instance). </A>,&nbsp;<A href="scanId.html">scanId; the scan number of the spectrum. </A>,&nbsp;<A href="precursorMZ.html">precursorMZ; the m/z of the precursor peak. </A>,&nbsp;<A href="precursorIntensity.html">precursorIntensity; ihe intensity of the precursor peak. </A>,&nbsp;<A href="csvData.html">csvPeakList; spectrum in CSV format.</A>)</LI><LI>as range (<A href="hasSpectrum.html">hasSpectrum; the relationship between Spectra and Spectrum. </A>,&nbsp;<A href="hasSources.html">hasSources; the relationship between Prediction and Source. </A>,&nbsp;<A href="hasPeakLinkSpectrum.html">hasPeakLinkSpectrum; link to Spectrum containing the peak. </A>)</LI></UL></FONT></TABLE><P>
 </FONT>
 <P align="right"><FONT size="-1" face="Verdana, Helvetica, sans-serif">Generated with <A href="http://www.topbraidcomposer.com" target="_top">TopBraid Composer</A>
  by <A href="http://www.topquadrant.com" target="_top">TopQuadrant, Inc.</A></P>

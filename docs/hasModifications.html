@@ -26,7 +26,7 @@ ObjectProperty</FONT></TD></TR></TABLE>
 <DD>
 <TABLE><TR><TD VALIGN="TOP">
 <IMG border="0" src="icons/gb.gif" width="16" height="16"></TD><TD><FONT size="-1">
-DNMSO lists possible and/or actual modifications to any amino acids (or terminal ones) in the Modifications class. DNMSO root can have modifications. The relationship is 0 to many. There can be modifications stored but if none were encountered in the de novo sequencing they don't have to be provided in the instance. If Modificatons were found, they must be stored in the Modifications container. 
+DNMSO lists possible and/or actual modifications to any amino acids (or terminal ones) in the Modificationn class. DNMSO root can have modifications. The relationship is 0 to many. There can be modifications stored but if none were encountered in the de novo sequencing they don't have to be provided in the instance. If Modificatons were found, they must be stored as Modification and linked to DNMSO via this association. 
 </FONT></TD></TR></TABLE>
 </DD>
 </DL>
@@ -52,6 +52,12 @@ DNMSO lists possible and/or actual modifications to any amino acids (or terminal
 hasModifications; whether Modifications are stored in the instance. 
 </FONT></TD></TR></TABLE>
 </DD>
+<DD>
+<TABLE><TR><TD VALIGN="TOP">
+<IMG border="0" src="icons/gb.gif" width="16" height="16"></TD><TD><FONT size="-1">
+has modifications
+</FONT></TD></TR></TABLE>
+</DD>
 </DL>
 </TD></TR>
 <TR BGCOLOR="white">
@@ -61,7 +67,7 @@ hasModifications; whether Modifications are stored in the instance.
 <DD>
 <TABLE><TR><TD VALIGN="TOP">
 <IMG border="0" src="icons/OWLNamedClassPrimitive.gif" width="16" height="16"></TD><TD><FONT size="-1">
-<A href="Modifications.html">ModificationElement; container for possible Modification. </A></FONT></TD></TR></TABLE>
+<A href="Modification.html">Modification; PTM or general mass change. </A></FONT></TD></TR></TABLE>
 </DD>
 </DL>
 </TD></TR>

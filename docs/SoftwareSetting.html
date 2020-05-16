@@ -27,7 +27,7 @@ Class  [owl:Class]</FONT></TD></TR></TABLE>
 <DD>
 <TABLE><TR><TD VALIGN="TOP">
 <IMG border="0" src="icons/gb.gif" width="16" height="16"></TD><TD><FONT size="-1">
-A concrete Setting (parameter) for a de novo sequencing Software. softwareSettingName and softwareSettingValue for the Setting need to be specified. This is important when anything but the default values were used for some parameters. But for consistency it would be best to specify all settings. 
+A concrete SoftwareSetting (parameter) for a de novo sequencing Software. softwareSettingName and softwareSettingValue for the Setting can to be specified. This is important when anything but the default values were used for some parameters. But for consistency it would be best to specify all settings. The intention is to use a CV in the future and so the use of cvParam (hasSoftwareSettingcvParam) is highly encouraged. 
 </FONT></TD></TR></TABLE>
 </DD>
 </DL>
@@ -73,7 +73,7 @@ Thing</FONT></TD></TR></TABLE>
 <B>References</B></FONT></TH>
 </TR>
 <TR><TD><FONT size="-1"><UL>
-<LI>as domain (<A href="softwareSettingValue.html">softwareSettingValue; softwareSetting (parameter) value. </A>,&nbsp;<A href="softwareSettingName.html">softwareSettingName; name of the SoftwareSetting (parameter). </A>)</LI><LI>as range (<A href="hasSetting.html">hasSetting; relationship between SoftwareSettings and SoftwareSetting. </A>)</LI></UL></FONT></TABLE><P>
+<LI>as domain (<A href="softwareSettingValue.html">softwareSettingValue; softwareSetting (parameter) value. </A>,&nbsp;<A href="softwareSettingName.html">softwareSettingName; name of the SoftwareSetting (parameter). </A>,&nbsp;<A href="hasSoftwareSettingcvParam.html">hasSoftwareSettingcvParam; Additional info about SoftwareSetting using CV. </A>)</LI><LI>as range (<A href="hasSettings.html">hasSettings; relationship between Software and SoftwareSetting. </A>)</LI></UL></FONT></TABLE><P>
 </FONT>
 <P align="right"><FONT size="-1" face="Verdana, Helvetica, sans-serif">Generated with <A href="http://www.topbraidcomposer.com" target="_top">TopBraid Composer</A>
  by <A href="http://www.topquadrant.com" target="_top">TopQuadrant, Inc.</A></P>
