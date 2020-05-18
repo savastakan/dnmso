@@ -1,11 +1,14 @@
+ 
 <HTML>
 <HEAD>
-<TITLE>https://github.com/savastakan/dnmso</TITLE>
+<TITLE>'DNMSO; de novo ontology root class. '</TITLE>
 </HEAD>
 <BODY>
 <FONT face="Verdana, Helvetica, sans-serif">
 <H2>
-Ontology https://github.com/savastakan/dnmso</H2>
+<FONT SIZE="-1">https://github.com/savastakan/dnmso#DNMSO</FONT><BR>
+Class 'DNMSO; de novo ontology root class. '</H2>
+<CENTER><IMG border="0" src="diagrams/DNMSO.jpg"></CENTER><P>
 <HR>
 <TR BGCOLOR="white">
 <TD>
@@ -14,10 +17,76 @@ Ontology https://github.com/savastakan/dnmso</H2>
 <DD>
 <TABLE><TR><TD VALIGN="TOP">
 <IMG border="0" src="icons/RDFSClass.greyed.gif" width="16" height="16"></TD><TD><FONT size="-1">
-Ontology</FONT></TD></TR></TABLE>
+Class  [owl:Class]</FONT></TD></TR></TABLE>
 </DD>
 </DL>
 </TD></TR>
+<TR BGCOLOR="white">
+<TD>
+<B><FONT size="-1">comment</FONT></B>
+<DL>
+<DD>
+<TABLE><TR><TD VALIGN="TOP">
+<IMG border="0" src="icons/gb.gif" width="16" height="16"></TD><TD><FONT size="-1">
+The de novo mass spectrometry sequencing ontology's root class. Modifications are stored in the instance but if none were encountered are not required. At least one Prediction must exist for the instance to be valid (even if empty). Spectra must exist at least once. The version of DNMSO for the instance has to be specified. Controlled vocabularies can be specified. AminoAcids can be specified. The intention is that all unique amino acids used in the instance should be linked to DNMSO. All unique ModifiedAminoAcids and all Modifications used in the instance should be linked to DNMSO. 
+</FONT></TD></TR></TABLE>
+</DD>
+</DL>
+</TD></TR>
+<TR BGCOLOR="white">
+<TD>
+<B><FONT size="-1">label</FONT></B>
+<DL>
+<DD>
+<TABLE><TR><TD VALIGN="TOP">
+<IMG border="0" src="icons/gb.gif" width="16" height="16"></TD><TD><FONT size="-1">
+DNMSO; de novo ontology root class. 
+</FONT></TD></TR></TABLE>
+</DD>
+</DL>
+</TD></TR>
+<TR BGCOLOR="white">
+<TD>
+<B><FONT size="-1">subClassOf</FONT></B>
+<DL>
+<DD>
+<TABLE><TR><TD VALIGN="TOP">
+<IMG border="0" src="icons/OWLMinCardinality.gif" width="16" height="16"></TD><TD><FONT size="-1">
+<A href="hasSpectra.html">hasSpectra; the relationship between DNMSO and Spectra. </A> min 1
+</FONT></TD></TR></TABLE>
+</DD>
+<DD>
+<TABLE><TR><TD VALIGN="TOP">
+<IMG border="0" src="icons/OWLMinCardinality.gif" width="16" height="16"></TD><TD><FONT size="-1">
+<A href="hasPredictions.html">hasPredictions; relationship to Prediction. </A> min 1
+</FONT></TD></TR></TABLE>
+</DD>
+<DD>
+<TABLE><TR><TD VALIGN="TOP">
+<IMG border="0" src="icons/OWLMinCardinality.gif" width="16" height="16"></TD><TD><FONT size="-1">
+<A href="hasModifications.html">hasModifications; whether Modifications are stored in the instance. </A> min 0
+</FONT></TD></TR></TABLE>
+</DD>
+<DD>
+<TABLE><TR><TD VALIGN="TOP">
+<IMG border="0" src="icons/OWLCardinality.gif" width="16" height="16"></TD><TD><FONT size="-1">
+<A href="version.html">version; the version of DNMSO used for the instance. </A> exactly 1
+</FONT></TD></TR></TABLE>
+</DD>
+<DD>
+<TABLE><TR><TD VALIGN="TOP">
+<IMG border="0" src="icons/OWLNamedClassPrimitive.greyed.gif" width="16" height="16"></TD><TD><FONT size="-1">
+Thing</FONT></TD></TR></TABLE>
+</DD>
+</DL>
+</TD></TR>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+1">
+<B>References</B></FONT></TH>
+</TR>
+<TR><TD><FONT size="-1"><UL>
+<LI>as domain (<A href="version.html">version; the version of DNMSO used for the instance. </A>,&nbsp;<A href="usesCV.html">usesCV; One link to the CVs used in the instance. </A>,&nbsp;<A href="hasSpectra.html">hasSpectra; the relationship between DNMSO and Spectra. </A>,&nbsp;<A href="hasPredictions.html">hasPredictions; relationship to Prediction. </A>,&nbsp;<A href="hasModifiedAminoAcid.html">hasModifiedAminoAcid; the association between ModifiedAminoAcid and DNMSO. </A>,&nbsp;<A href="hasModifications.html">hasModifications; whether Modifications are stored in the instance. </A>,&nbsp;<A href="hasAminoAcid.html">hasAminoAcid; association between DNMSO and AminoAcid.</A>)</LI></UL></FONT></TABLE><P>
 </FONT>
 <P align="right"><FONT size="-1" face="Verdana, Helvetica, sans-serif">Generated with <A href="http://www.topbraidcomposer.com" target="_top">TopBraid Composer</A>
  by <A href="http://www.topquadrant.com" target="_top">TopQuadrant, Inc.</A></P>
