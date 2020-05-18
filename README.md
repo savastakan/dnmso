@@ -7,7 +7,7 @@ For the identification and sequencing of proteins, mass spectrometry (MS) has be
 
 ![DNMSO class graph](DNMSO-ClassGraph.jpg)
 
-If you want to learn more about DNMSO ontology, click [here](https://savastakan.github.io/dnmso/DNMSO.html).
+If you want to learn more about DNMSO ontology, click [here](https://savastakan.github.io/dnmso/).
 
 ## Binding dnmso.jar from other Languages
 
