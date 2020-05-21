@@ -287,12 +287,12 @@
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
-      owl:onProperty :hasProofs ;
+      owl:maxCardinality 1 ;
+      owl:onProperty :positionInSequence ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
-      owl:maxCardinality 1 ;
-      owl:onProperty :positionInSequence ;
+      owl:onProperty :hasProofs ;
     ] ;
 .
 :Software
