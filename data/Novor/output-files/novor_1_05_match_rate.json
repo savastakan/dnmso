@@ -1,0 +1,6008 @@
+[
+    {
+        "scanNum": "0",
+        "novorPeptide": "ATNYNAGDR",
+        "expectedPeptide": "ATNYNAGDR",
+        "success": 1
+    },
+    {
+        "scanNum": "1",
+        "novorPeptide": "GDNYPYPR",
+        "expectedPeptide": "ATNYNAGDR",
+        "success": 0
+    },
+    {
+        "scanNum": "2",
+        "novorPeptide": "TANYNAGDR",
+        "expectedPeptide": "ATNYNAGDR",
+        "success": 0
+    },
+    {
+        "scanNum": "3",
+        "novorPeptide": "ATNYNAGDR",
+        "expectedPeptide": "ATNYNAGDR",
+        "success": 1
+    },
+    {
+        "scanNum": "4",
+        "novorPeptide": "ATNYNAGDR",
+        "expectedPeptide": "ATNYNAGDR",
+        "success": 1
+    },
+    {
+        "scanNum": "5",
+        "novorPeptide": "GNDYM(O)LPR",
+        "expectedPeptide": "ATNYNAGDR",
+        "success": 0
+    },
+    {
+        "scanNum": "6",
+        "novorPeptide": "ATNYNAGDR",
+        "expectedPeptide": "ATNYNAGDR",
+        "success": 1
+    },
+    {
+        "scanNum": "7",
+        "novorPeptide": "ATNYNAGDR",
+        "expectedPeptide": "ATNYNAGDR",
+        "success": 1
+    },
+    {
+        "scanNum": "8",
+        "novorPeptide": "ATNYAGC(Cam)PK",
+        "expectedPeptide": "ATNYNAGDR",
+        "success": 0
+    },
+    {
+        "scanNum": "9",
+        "novorPeptide": "GDNYYPPR",
+        "expectedPeptide": "ATNYNAGDR",
+        "success": 0
+    },
+    {
+        "scanNum": "10",
+        "novorPeptide": "ATNYNGADR",
+        "expectedPeptide": "ATNYNAGDR",
+        "success": 0
+    },
+    {
+        "scanNum": "11",
+        "novorPeptide": "EGTMM(O)ELR",
+        "expectedPeptide": "ATNYNAGDR",
+        "success": 0
+    },
+    {
+        "scanNum": "12",
+        "novorPeptide": "SVHAHC(Cam)DR",
+        "expectedPeptide": "ATNYNAGDR",
+        "success": 0
+    },
+    {
+        "scanNum": "13",
+        "novorPeptide": "EGHAHQM(O)R",
+        "expectedPeptide": "ATNYNAGDR",
+        "success": 0
+    },
+    {
+        "scanNum": "14",
+        "novorPeptide": "HADAGHAM(O)R",
+        "expectedPeptide": "ATNYNAGDR",
+        "success": 0
+    },
+    {
+        "scanNum": "15",
+        "novorPeptide": "C(Cam)PHHRM(O)K",
+        "expectedPeptide": "ATNYNAGDR",
+        "success": 0
+    },
+    {
+        "scanNum": "16",
+        "novorPeptide": "HWAGEEPR",
+        "expectedPeptide": "ATNYNAGDR",
+        "success": 0
+    },
+    {
+        "scanNum": "17",
+        "novorPeptide": "ATDYNKDR",
+        "expectedPeptide": "ATNYNAGDR",
+        "success": 0
+    },
+    {
+        "scanNum": "18",
+        "novorPeptide": "HWAHGSMR",
+        "expectedPeptide": "ATNYNAGDR",
+        "success": 0
+    },
+    {
+        "scanNum": "19",
+        "novorPeptide": "QGDDDDC(Cam)R",
+        "expectedPeptide": "ATNYNAGDR",
+        "success": 0
+    },
+    {
+        "scanNum": "20",
+        "novorPeptide": "ASMKGM(O)WR",
+        "expectedPeptide": "ATNYNAGDR",
+        "success": 0
+    },
+    {
+        "scanNum": "21",
+        "novorPeptide": "ASMEFELR",
+        "expectedPeptide": "ATNYNAGDR",
+        "success": 0
+    },
+    {
+        "scanNum": "22",
+        "novorPeptide": "SAMDM(O)RKK",
+        "expectedPeptide": "ATNYNAGDR",
+        "success": 0
+    },
+    {
+        "scanNum": "23",
+        "novorPeptide": "ASMEFGGRK",
+        "expectedPeptide": "ATNYNAGDR",
+        "success": 0
+    },
+    {
+        "scanNum": "24",
+        "novorPeptide": "GTEYFTHK",
+        "expectedPeptide": "ATNYNAGDR",
+        "success": 0
+    },
+    {
+        "scanNum": "25",
+        "novorPeptide": "ASMAGFGWR",
+        "expectedPeptide": "ATNYNAGDR",
+        "success": 0
+    },
+    {
+        "scanNum": "26",
+        "novorPeptide": "ASMC(Cam)LTTAK",
+        "expectedPeptide": "ATNYNAGDR",
+        "success": 0
+    },
+    {
+        "scanNum": "27",
+        "novorPeptide": "ASMAFGKDR",
+        "expectedPeptide": "ATNYNAGDR",
+        "success": 0
+    },
+    {
+        "scanNum": "28",
+        "novorPeptide": "VMGYNAATR",
+        "expectedPeptide": "ATNYNAGDR",
+        "success": 0
+    },
+    {
+        "scanNum": "29",
+        "novorPeptide": "KSKAKKRHHMK",
+        "expectedPeptide": "HGTVVLTALGGILK",
+        "success": 0
+    },
+    {
+        "scanNum": "30",
+        "novorPeptide": "HGTVVLTALGRVR",
+        "expectedPeptide": "HGTVVLTALGGILK",
+        "success": 0
+    },
+    {
+        "scanNum": "31",
+        "novorPeptide": "HGTVVLRMPKLK",
+        "expectedPeptide": "HGTVVLTALGGILK",
+        "success": 0
+    },
+    {
+        "scanNum": "32",
+        "novorPeptide": "HGTVVLTALGGLLK",
+        "expectedPeptide": "HGTVVLTALGGILK",
+        "success": 0
+    },
+    {
+        "scanNum": "33",
+        "novorPeptide": "HGTVVLATLGGLLK",
+        "expectedPeptide": "HGTVVLTALGGILK",
+        "success": 0
+    },
+    {
+        "scanNum": "34",
+        "novorPeptide": "HGTVVLTALGGLLK",
+        "expectedPeptide": "HGTVVLTALGGILK",
+        "success": 0
+    },
+    {
+        "scanNum": "35",
+        "novorPeptide": "NPGPKLTALNLLK",
+        "expectedPeptide": "HGTVVLTALGGILK",
+        "success": 0
+    },
+    {
+        "scanNum": "36",
+        "novorPeptide": "HGVTLVTALGGLLK",
+        "expectedPeptide": "HGTVVLTALGGILK",
+        "success": 0
+    },
+    {
+        "scanNum": "37",
+        "novorPeptide": "HGTVVLATLGGLLK",
+        "expectedPeptide": "HGTVVLTALGGILK",
+        "success": 0
+    },
+    {
+        "scanNum": "38",
+        "novorPeptide": "HGTVVLLKPRMK",
+        "expectedPeptide": "HGTVVLTALGGILK",
+        "success": 0
+    },
+    {
+        "scanNum": "39",
+        "novorPeptide": "YVKSETALKVLK",
+        "expectedPeptide": "HGTVVLTALGGILK",
+        "success": 0
+    },
+    {
+        "scanNum": "40",
+        "novorPeptide": "HGTVVLTALNLLK",
+        "expectedPeptide": "HGTVVLTALGGILK",
+        "success": 0
+    },
+    {
+        "scanNum": "41",
+        "novorPeptide": "HGVVTLVWGGLLK",
+        "expectedPeptide": "HGTVVLTALGGILK",
+        "success": 0
+    },
+    {
+        "scanNum": "42",
+        "novorPeptide": "HGTVVLREARLK",
+        "expectedPeptide": "HGTVVLTALGGILK",
+        "success": 0
+    },
+    {
+        "scanNum": "43",
+        "novorPeptide": "HGTVVLPVKGMLK",
+        "expectedPeptide": "HGTVVLTALGGILK",
+        "success": 0
+    },
+    {
+        "scanNum": "44",
+        "novorPeptide": "HGTVVLVWGGLLK",
+        "expectedPeptide": "HGTVVLTALGGILK",
+        "success": 0
+    },
+    {
+        "scanNum": "45",
+        "novorPeptide": "HGTVVLRMPKLK",
+        "expectedPeptide": "HGTVVLTALGGILK",
+        "success": 0
+    },
+    {
+        "scanNum": "46",
+        "novorPeptide": "HGTVVLTALGGLLK",
+        "expectedPeptide": "HGTVVLTALGGILK",
+        "success": 0
+    },
+    {
+        "scanNum": "47",
+        "novorPeptide": "HGTVLVTALLNLK",
+        "expectedPeptide": "HGTVVLTALGGILK",
+        "success": 0
+    },
+    {
+        "scanNum": "48",
+        "novorPeptide": "VPVVVLHKNVM(O)K",
+        "expectedPeptide": "HGTVVLTALGGILK",
+        "success": 0
+    },
+    {
+        "scanNum": "49",
+        "novorPeptide": "HGTVVLRLGWLK",
+        "expectedPeptide": "HGTVVLTALGGILK",
+        "success": 0
+    },
+    {
+        "scanNum": "50",
+        "novorPeptide": "LPALVLHPFMLK",
+        "expectedPeptide": "HGTVVLTALGGILK",
+        "success": 0
+    },
+    {
+        "scanNum": "51",
+        "novorPeptide": "LVGDAASVSEEM(O)R",
+        "expectedPeptide": "HGTVVLTALGGILK",
+        "success": 0
+    },
+    {
+        "scanNum": "52",
+        "novorPeptide": "APKVVLVANGGLNK",
+        "expectedPeptide": "HGTVVLTALGGILK",
+        "success": 0
+    },
+    {
+        "scanNum": "53",
+        "novorPeptide": "HGTVVLWTPKLK",
+        "expectedPeptide": "HGTVVLTALGGILK",
+        "success": 0
+    },
+    {
+        "scanNum": "54",
+        "novorPeptide": "HGTVVLTALGGLLK",
+        "expectedPeptide": "HGTVVLTALGGILK",
+        "success": 0
+    },
+    {
+        "scanNum": "55",
+        "novorPeptide": "PPTVVLKHKTMK",
+        "expectedPeptide": "HGTVVLTALGGILK",
+        "success": 0
+    },
+    {
+        "scanNum": "56",
+        "novorPeptide": "HGTVVLVGEVKLK",
+        "expectedPeptide": "HGTVVLTALGGILK",
+        "success": 0
+    },
+    {
+        "scanNum": "57",
+        "novorPeptide": "APKVVLNGLGGLNK",
+        "expectedPeptide": "HGTVVLTALGGILK",
+        "success": 0
+    },
+    {
+        "scanNum": "58",
+        "novorPeptide": "FLLDGYALKVLK",
+        "expectedPeptide": "HGTVVLTALGGILK",
+        "success": 0
+    },
+    {
+        "scanNum": "59",
+        "novorPeptide": "QATTPHAADRYMKQR",
+        "expectedPeptide": "ISQAVHAAHAEINEAGR",
+        "success": 0
+    },
+    {
+        "scanNum": "60",
+        "novorPeptide": "LSQSSREAANARC(Cam)PVK",
+        "expectedPeptide": "ISQAVHAAHAEINEAGR",
+        "success": 0
+    },
+    {
+        "scanNum": "61",
+        "novorPeptide": "TQVAVHAAEC(Cam)AHVPQR",
+        "expectedPeptide": "ISQAVHAAHAEINEAGR",
+        "success": 0
+    },
+    {
+        "scanNum": "62",
+        "novorPeptide": "MVVAVHAGWKNHPSNK",
+        "expectedPeptide": "ISQAVHAAHAEINEAGR",
+        "success": 0
+    },
+    {
+        "scanNum": "63",
+        "novorPeptide": "KAEAVHAAHAENLPC(Cam)R",
+        "expectedPeptide": "ISQAVHAAHAEINEAGR",
+        "success": 0
+    },
+    {
+        "scanNum": "64",
+        "novorPeptide": "SSQAYVAAWWVPPVGR",
+        "expectedPeptide": "ISQAVHAAHAEINEAGR",
+        "success": 0
+    },
+    {
+        "scanNum": "65",
+        "novorPeptide": "M(O)RPVHAASMAAPPSHAK",
+        "expectedPeptide": "ISQAVHAAHAEINEAGR",
+        "success": 0
+    },
+    {
+        "scanNum": "66",
+        "novorPeptide": "LSQAVHAMQTADM(O)RAK",
+        "expectedPeptide": "ISQAVHAAHAEINEAGR",
+        "success": 0
+    },
+    {
+        "scanNum": "67",
+        "novorPeptide": "C(Cam)AAPVHAASVWYSRAK",
+        "expectedPeptide": "ISQAVHAAHAEINEAGR",
+        "success": 0
+    },
+    {
+        "scanNum": "68",
+        "novorPeptide": "LSQAVHAAHAERC(Cam)APR",
+        "expectedPeptide": "ISQAVHAAHAEINEAGR",
+        "success": 0
+    },
+    {
+        "scanNum": "69",
+        "novorPeptide": "LSKAVHHAAAMC(Cam)RGHK",
+        "expectedPeptide": "ISQAVHAAHAEINEAGR",
+        "success": 0
+    },
+    {
+        "scanNum": "70",
+        "novorPeptide": "DATPNHAAWHLWAAGR",
+        "expectedPeptide": "ISQAVHAAHAEINEAGR",
+        "success": 0
+    },
+    {
+        "scanNum": "71",
+        "novorPeptide": "LSTLMLEAWADSLAPR",
+        "expectedPeptide": "ISQAVHAAHAEINEAGR",
+        "success": 0
+    },
+    {
+        "scanNum": "72",
+        "novorPeptide": "RYEPNVRAELPGGC(Cam)R",
+        "expectedPeptide": "ISQAVHAAHAEINEAGR",
+        "success": 0
+    },
+    {
+        "scanNum": "73",
+        "novorPeptide": "LSQELHAHAELHHPR",
+        "expectedPeptide": "ISQAVHAAHAEINEAGR",
+        "success": 0
+    },
+    {
+        "scanNum": "74",
+        "novorPeptide": "LLTAVHHSHAAM(O)DRAK",
+        "expectedPeptide": "ISQAVHAAHAEINEAGR",
+        "success": 0
+    },
+    {
+        "scanNum": "75",
+        "novorPeptide": "SSKENLQKAELNEAGR",
+        "expectedPeptide": "ISQAVHAAHAEINEAGR",
+        "success": 0
+    },
+    {
+        "scanNum": "76",
+        "novorPeptide": "AKEAVHAAHAELNPC(Cam)R",
+        "expectedPeptide": "ISQAVHAAHAEINEAGR",
+        "success": 0
+    },
+    {
+        "scanNum": "77",
+        "novorPeptide": "SLTEDLEAGEALSNGLR",
+        "expectedPeptide": "ISQAVHAAHAEINEAGR",
+        "success": 0
+    },
+    {
+        "scanNum": "78",
+        "novorPeptide": "TPESGYAAHAENLSGLR",
+        "expectedPeptide": "ISQAVHAAHAEINEAGR",
+        "success": 0
+    },
+    {
+        "scanNum": "79",
+        "novorPeptide": "LVLAMMKQAELPNC(Cam)R",
+        "expectedPeptide": "ISQAVHAAHAEINEAGR",
+        "success": 0
+    },
+    {
+        "scanNum": "80",
+        "novorPeptide": "LSQAVHSHHAARFSAR",
+        "expectedPeptide": "ISQAVHAAHAEINEAGR",
+        "success": 0
+    },
+    {
+        "scanNum": "81",
+        "novorPeptide": "LSQAVPEFLGTSYYAK",
+        "expectedPeptide": "ISQAVHAAHAEINEAGR",
+        "success": 0
+    },
+    {
+        "scanNum": "82",
+        "novorPeptide": "SKSPVHAAHADTTAPQR",
+        "expectedPeptide": "ISQAVHAAHAEINEAGR",
+        "success": 0
+    },
+    {
+        "scanNum": "83",
+        "novorPeptide": "AEKAVC(Cam)KKAEAANNNR",
+        "expectedPeptide": "ISQAVHAAHAEINEAGR",
+        "success": 0
+    },
+    {
+        "scanNum": "84",
+        "novorPeptide": "SGC(Cam)PVHAAGFVYKVAGR",
+        "expectedPeptide": "ISQAVHAAHAEINEAGR",
+        "success": 0
+    },
+    {
+        "scanNum": "85",
+        "novorPeptide": "LSGAAPGPQHAVDDTLPK",
+        "expectedPeptide": "ISQAVHAAHAEINEAGR",
+        "success": 0
+    },
+    {
+        "scanNum": "86",
+        "novorPeptide": "KAEAVHAAHAELHDFK",
+        "expectedPeptide": "ISQAVHAAHAEINEAGR",
+        "success": 0
+    },
+    {
+        "scanNum": "87",
+        "novorPeptide": "NLEPLNM(O)KTAADRQR",
+        "expectedPeptide": "ISQAVHAAHAEINEAGR",
+        "success": 0
+    },
+    {
+        "scanNum": "88",
+        "novorPeptide": "QAMTNNKAGAELSNGLR",
+        "expectedPeptide": "ISQAVHAAHAEINEAGR",
+        "success": 0
+    },
+    {
+        "scanNum": "89",
+        "novorPeptide": "HLVDEGGGALPLK",
+        "expectedPeptide": "HLVDEPQNLIK",
+        "success": 0
+    },
+    {
+        "scanNum": "90",
+        "novorPeptide": "HLVDETGVNGHK",
+        "expectedPeptide": "HLVDEPQNLIK",
+        "success": 0
+    },
+    {
+        "scanNum": "91",
+        "novorPeptide": "HNVDEKLPLNK",
+        "expectedPeptide": "HLVDEPQNLIK",
+        "success": 0
+    },
+    {
+        "scanNum": "92",
+        "novorPeptide": "HNVDWRVRPK",
+        "expectedPeptide": "HLVDEPQNLIK",
+        "success": 0
+    },
+    {
+        "scanNum": "93",
+        "novorPeptide": "HLVDPNGQGKLK",
+        "expectedPeptide": "HLVDEPQNLIK",
+        "success": 0
+    },
+    {
+        "scanNum": "94",
+        "novorPeptide": "HLLTERM(O)VYK",
+        "expectedPeptide": "HLVDEPQNLIK",
+        "success": 0
+    },
+    {
+        "scanNum": "95",
+        "novorPeptide": "HLVLMSTLYTK",
+        "expectedPeptide": "HLVDEPQNLIK",
+        "success": 0
+    },
+    {
+        "scanNum": "96",
+        "novorPeptide": "HLVDEGARPALK",
+        "expectedPeptide": "HLVDEPQNLIK",
+        "success": 0
+    },
+    {
+        "scanNum": "97",
+        "novorPeptide": "HLVDEGGGAPLLK",
+        "expectedPeptide": "HLVDEPQNLIK",
+        "success": 0
+    },
+    {
+        "scanNum": "98",
+        "novorPeptide": "HNVDEKLPLNK",
+        "expectedPeptide": "HLVDEPQNLIK",
+        "success": 0
+    },
+    {
+        "scanNum": "99",
+        "novorPeptide": "HLVDPLGSGPVSK",
+        "expectedPeptide": "HLVDEPQNLIK",
+        "success": 0
+    },
+    {
+        "scanNum": "100",
+        "novorPeptide": "HLVDETKAPPAK",
+        "expectedPeptide": "HLVDEPQNLIK",
+        "success": 0
+    },
+    {
+        "scanNum": "101",
+        "novorPeptide": "HLVDETGLMYK",
+        "expectedPeptide": "HLVDEPQNLIK",
+        "success": 0
+    },
+    {
+        "scanNum": "102",
+        "novorPeptide": "HNVFRPPPTNK",
+        "expectedPeptide": "HLVDEPQNLIK",
+        "success": 0
+    },
+    {
+        "scanNum": "103",
+        "novorPeptide": "VVRDPQGLM(O)M(O)K",
+        "expectedPeptide": "HLVDEPQNLIK",
+        "success": 0
+    },
+    {
+        "scanNum": "104",
+        "novorPeptide": "HLVDEPQNLLK",
+        "expectedPeptide": "HLVDEPQNLIK",
+        "success": 0
+    },
+    {
+        "scanNum": "105",
+        "novorPeptide": "GPPVDEAAPGRLK",
+        "expectedPeptide": "HLVDEPQNLIK",
+        "success": 0
+    },
+    {
+        "scanNum": "106",
+        "novorPeptide": "HLVPLAPLC(Cam)TGK",
+        "expectedPeptide": "HLVDEPQNLIK",
+        "success": 0
+    },
+    {
+        "scanNum": "107",
+        "novorPeptide": "HLVDEPQNLLK",
+        "expectedPeptide": "HLVDEPQNLIK",
+        "success": 0
+    },
+    {
+        "scanNum": "108",
+        "novorPeptide": "HLVDKC(Cam)RHLK",
+        "expectedPeptide": "HLVDEPQNLIK",
+        "success": 0
+    },
+    {
+        "scanNum": "109",
+        "novorPeptide": "GPPVDWLLPANK",
+        "expectedPeptide": "HLVDEPQNLIK",
+        "success": 0
+    },
+    {
+        "scanNum": "110",
+        "novorPeptide": "HLVDETGLFM(O)K",
+        "expectedPeptide": "HLVDEPQNLIK",
+        "success": 0
+    },
+    {
+        "scanNum": "111",
+        "novorPeptide": "VVRDPQGLM(O)M(O)K",
+        "expectedPeptide": "HLVDEPQNLIK",
+        "success": 0
+    },
+    {
+        "scanNum": "112",
+        "novorPeptide": "M(O)FLWELPLLK",
+        "expectedPeptide": "HLVDEPQNLIK",
+        "success": 0
+    },
+    {
+        "scanNum": "113",
+        "novorPeptide": "VVRDPQGMFEK",
+        "expectedPeptide": "HLVDEPQNLIK",
+        "success": 0
+    },
+    {
+        "scanNum": "114",
+        "novorPeptide": "GPPVNYHGPQLK",
+        "expectedPeptide": "HLVDEPQNLIK",
+        "success": 0
+    },
+    {
+        "scanNum": "115",
+        "novorPeptide": "MKLGKGPNTTMK",
+        "expectedPeptide": "HLVDEPQNLIK",
+        "success": 0
+    },
+    {
+        "scanNum": "116",
+        "novorPeptide": "HLVFGGMC(Cam)KEK",
+        "expectedPeptide": "HLVDEPQNLIK",
+        "success": 0
+    },
+    {
+        "scanNum": "117",
+        "novorPeptide": "YLLGFPKPENK",
+        "expectedPeptide": "HLVDEPQNLIK",
+        "success": 0
+    },
+    {
+        "scanNum": "118",
+        "novorPeptide": "HDVDEGPLLKGK",
+        "expectedPeptide": "HLVDEPQNLIK",
+        "success": 0
+    },
+    {
+        "scanNum": "119",
+        "novorPeptide": "FPPDLTEFAK",
+        "expectedPeptide": "LVNELTEFAK",
+        "success": 0
+    },
+    {
+        "scanNum": "120",
+        "novorPeptide": "LVNFGAATDKK",
+        "expectedPeptide": "LVNELTEFAK",
+        "success": 0
+    },
+    {
+        "scanNum": "121",
+        "novorPeptide": "LVNELHDPVK",
+        "expectedPeptide": "LVNELTEFAK",
+        "success": 0
+    },
+    {
+        "scanNum": "122",
+        "novorPeptide": "LVNELHDPVK",
+        "expectedPeptide": "LVNELTEFAK",
+        "success": 0
+    },
+    {
+        "scanNum": "123",
+        "novorPeptide": "LVNELTEFAK",
+        "expectedPeptide": "LVNELTEFAK",
+        "success": 1
+    },
+    {
+        "scanNum": "124",
+        "novorPeptide": "LVNELTEFAK",
+        "expectedPeptide": "LVNELTEFAK",
+        "success": 1
+    },
+    {
+        "scanNum": "125",
+        "novorPeptide": "LVNELTEFAK",
+        "expectedPeptide": "LVNELTEFAK",
+        "success": 1
+    },
+    {
+        "scanNum": "126",
+        "novorPeptide": "LVNELYLDGK",
+        "expectedPeptide": "LVNELTEFAK",
+        "success": 0
+    },
+    {
+        "scanNum": "127",
+        "novorPeptide": "LVDELTEFAK",
+        "expectedPeptide": "LVNELTEFAK",
+        "success": 0
+    },
+    {
+        "scanNum": "128",
+        "novorPeptide": "LVNELRYEK",
+        "expectedPeptide": "LVNELTEFAK",
+        "success": 0
+    },
+    {
+        "scanNum": "129",
+        "novorPeptide": "NVNELSVVYK",
+        "expectedPeptide": "LVNELTEFAK",
+        "success": 0
+    },
+    {
+        "scanNum": "130",
+        "novorPeptide": "LVGVSFGYPPK",
+        "expectedPeptide": "LVNELTEFAK",
+        "success": 0
+    },
+    {
+        "scanNum": "131",
+        "novorPeptide": "LVNELAFTEK",
+        "expectedPeptide": "LVNELTEFAK",
+        "success": 0
+    },
+    {
+        "scanNum": "132",
+        "novorPeptide": "LVNKGTGEFAK",
+        "expectedPeptide": "LVNELTEFAK",
+        "success": 0
+    },
+    {
+        "scanNum": "133",
+        "novorPeptide": "LVNEMLVM(O)AK",
+        "expectedPeptide": "LVNELTEFAK",
+        "success": 0
+    },
+    {
+        "scanNum": "134",
+        "novorPeptide": "LVNELTEFAK",
+        "expectedPeptide": "LVNELTEFAK",
+        "success": 1
+    },
+    {
+        "scanNum": "135",
+        "novorPeptide": "LVNEYVWLK",
+        "expectedPeptide": "LVNELTEFAK",
+        "success": 0
+    },
+    {
+        "scanNum": "136",
+        "novorPeptide": "LVNELYREK",
+        "expectedPeptide": "LVNELTEFAK",
+        "success": 0
+    },
+    {
+        "scanNum": "137",
+        "novorPeptide": "LVNEPMPHVK",
+        "expectedPeptide": "LVNELTEFAK",
+        "success": 0
+    },
+    {
+        "scanNum": "138",
+        "novorPeptide": "LVNEVHDPLK",
+        "expectedPeptide": "LVNELTEFAK",
+        "success": 0
+    },
+    {
+        "scanNum": "139",
+        "novorPeptide": "EPVKGSAHLPK",
+        "expectedPeptide": "LVNELTEFAK",
+        "success": 0
+    },
+    {
+        "scanNum": "140",
+        "novorPeptide": "PGTKMLFAGLK",
+        "expectedPeptide": "LVNELTEFAK",
+        "success": 0
+    },
+    {
+        "scanNum": "141",
+        "novorPeptide": "NPNGETGKFAK",
+        "expectedPeptide": "LVNELTEFAK",
+        "success": 0
+    },
+    {
+        "scanNum": "142",
+        "novorPeptide": "LVNELYWVK",
+        "expectedPeptide": "LVNELTEFAK",
+        "success": 0
+    },
+    {
+        "scanNum": "143",
+        "novorPeptide": "LVNEPFVFAK",
+        "expectedPeptide": "LVNELTEFAK",
+        "success": 0
+    },
+    {
+        "scanNum": "144",
+        "novorPeptide": "LVNEFPVM(O)AK",
+        "expectedPeptide": "LVNELTEFAK",
+        "success": 0
+    },
+    {
+        "scanNum": "145",
+        "novorPeptide": "LVNDLVTMMK",
+        "expectedPeptide": "LVNELTEFAK",
+        "success": 0
+    },
+    {
+        "scanNum": "146",
+        "novorPeptide": "LPDELTEFAK",
+        "expectedPeptide": "LVNELTEFAK",
+        "success": 0
+    },
+    {
+        "scanNum": "147",
+        "novorPeptide": "LPDELTEFAK",
+        "expectedPeptide": "LVNELTEFAK",
+        "success": 0
+    },
+    {
+        "scanNum": "148",
+        "novorPeptide": "LPDLGLSSPHK",
+        "expectedPeptide": "LVNELTEFAK",
+        "success": 0
+    },
+    {
+        "scanNum": "149",
+        "novorPeptide": "NPPASGLETTEER",
+        "expectedPeptide": "STDYGIFQINSR",
+        "success": 0
+    },
+    {
+        "scanNum": "150",
+        "novorPeptide": "STDYGLFQLGDGK",
+        "expectedPeptide": "STDYGIFQINSR",
+        "success": 0
+    },
+    {
+        "scanNum": "151",
+        "novorPeptide": "STDYGLM(O)KLNSR",
+        "expectedPeptide": "STDYGIFQINSR",
+        "success": 0
+    },
+    {
+        "scanNum": "152",
+        "novorPeptide": "M(O)MTSGLFKLNSR",
+        "expectedPeptide": "STDYGIFQINSR",
+        "success": 0
+    },
+    {
+        "scanNum": "153",
+        "novorPeptide": "M(O)GVYGLFQVSQR",
+        "expectedPeptide": "STDYGIFQINSR",
+        "success": 0
+    },
+    {
+        "scanNum": "154",
+        "novorPeptide": "STDYGLFQLNSR",
+        "expectedPeptide": "STDYGIFQINSR",
+        "success": 0
+    },
+    {
+        "scanNum": "155",
+        "novorPeptide": "DYTSGLM(O)KLNSR",
+        "expectedPeptide": "STDYGIFQINSR",
+        "success": 0
+    },
+    {
+        "scanNum": "156",
+        "novorPeptide": "AHGNSGLFQLNSR",
+        "expectedPeptide": "STDYGIFQINSR",
+        "success": 0
+    },
+    {
+        "scanNum": "157",
+        "novorPeptide": "TSDYGLM(O)KLNDK",
+        "expectedPeptide": "STDYGIFQINSR",
+        "success": 0
+    },
+    {
+        "scanNum": "158",
+        "novorPeptide": "FGVYGLM(O)QLNDK",
+        "expectedPeptide": "STDYGIFQINSR",
+        "success": 0
+    },
+    {
+        "scanNum": "159",
+        "novorPeptide": "ESTVVLWMHGGGK",
+        "expectedPeptide": "STDYGIFQINSR",
+        "success": 0
+    },
+    {
+        "scanNum": "160",
+        "novorPeptide": "FMTSGLM(O)KLGDGK",
+        "expectedPeptide": "STDYGIFQINSR",
+        "success": 0
+    },
+    {
+        "scanNum": "161",
+        "novorPeptide": "STDYGLM(O)KLNSR",
+        "expectedPeptide": "STDYGIFQINSR",
+        "success": 0
+    },
+    {
+        "scanNum": "162",
+        "novorPeptide": "SESFWKM(O)VKDK",
+        "expectedPeptide": "STDYGIFQINSR",
+        "success": 0
+    },
+    {
+        "scanNum": "163",
+        "novorPeptide": "ESSYGLFQLNDK",
+        "expectedPeptide": "STDYGIFQINSR",
+        "success": 0
+    },
+    {
+        "scanNum": "164",
+        "novorPeptide": "HGGQSGLFQWQR",
+        "expectedPeptide": "STDYGIFQINSR",
+        "success": 0
+    },
+    {
+        "scanNum": "165",
+        "novorPeptide": "SQSYGLFKLDGGK",
+        "expectedPeptide": "STDYGIFQINSR",
+        "success": 0
+    },
+    {
+        "scanNum": "166",
+        "novorPeptide": "ESTYRFQLNDK",
+        "expectedPeptide": "STDYGIFQINSR",
+        "success": 0
+    },
+    {
+        "scanNum": "167",
+        "novorPeptide": "FGGNTC(Cam)KGVSVFK",
+        "expectedPeptide": "STDYGIFQINSR",
+        "success": 0
+    },
+    {
+        "scanNum": "168",
+        "novorPeptide": "FLDTC(Cam)KFLNDK",
+        "expectedPeptide": "STDYGIFQINSR",
+        "success": 0
+    },
+    {
+        "scanNum": "169",
+        "novorPeptide": "TSDYGLFGPKMGK",
+        "expectedPeptide": "STDYGIFQINSR",
+        "success": 0
+    },
+    {
+        "scanNum": "170",
+        "novorPeptide": "WDYGLM(O)KLNDK",
+        "expectedPeptide": "STDYGIFQINSR",
+        "success": 0
+    },
+    {
+        "scanNum": "171",
+        "novorPeptide": "AAHVSGLWDC(Cam)RK",
+        "expectedPeptide": "STDYGIFQINSR",
+        "success": 0
+    },
+    {
+        "scanNum": "172",
+        "novorPeptide": "AMVYGLFQLNDK",
+        "expectedPeptide": "STDYGIFQINSR",
+        "success": 0
+    },
+    {
+        "scanNum": "173",
+        "novorPeptide": "FGGNFNM(O)KLNSR",
+        "expectedPeptide": "STDYGIFQINSR",
+        "success": 0
+    },
+    {
+        "scanNum": "174",
+        "novorPeptide": "SHRSGLYGQGDPK",
+        "expectedPeptide": "STDYGIFQINSR",
+        "success": 0
+    },
+    {
+        "scanNum": "175",
+        "novorPeptide": "M(O)MTSGLFKLGDGK",
+        "expectedPeptide": "STDYGIFQINSR",
+        "success": 0
+    },
+    {
+        "scanNum": "176",
+        "novorPeptide": "YNVSGNFKLNDK",
+        "expectedPeptide": "STDYGIFQINSR",
+        "success": 0
+    },
+    {
+        "scanNum": "177",
+        "novorPeptide": "AMVYGLGVSM(O)NLK",
+        "expectedPeptide": "STDYGIFQINSR",
+        "success": 0
+    },
+    {
+        "scanNum": "178",
+        "novorPeptide": "LYTSGLGMKM(O)PGK",
+        "expectedPeptide": "STDYGIFQINSR",
+        "success": 0
+    },
+    {
+        "scanNum": "179",
+        "novorPeptide": "LNEPLNFETAANEAR",
+        "expectedPeptide": "GGLEPINFQTAADQAR",
+        "success": 0
+    },
+    {
+        "scanNum": "180",
+        "novorPeptide": "NLEPLNFETAADQAR",
+        "expectedPeptide": "GGLEPINFQTAADQAR",
+        "success": 0
+    },
+    {
+        "scanNum": "181",
+        "novorPeptide": "PKMPLM(O)NQM(O)PMPLK",
+        "expectedPeptide": "GGLEPINFQTAADQAR",
+        "success": 0
+    },
+    {
+        "scanNum": "182",
+        "novorPeptide": "REAPLNFLGNSDQAR",
+        "expectedPeptide": "GGLEPINFQTAADQAR",
+        "success": 0
+    },
+    {
+        "scanNum": "183",
+        "novorPeptide": "FAHPNDM(O)GATAADKVK",
+        "expectedPeptide": "GGLEPINFQTAADQAR",
+        "success": 0
+    },
+    {
+        "scanNum": "184",
+        "novorPeptide": "NLEDLPYAAAAWQAR",
+        "expectedPeptide": "GGLEPINFQTAADQAR",
+        "success": 0
+    },
+    {
+        "scanNum": "185",
+        "novorPeptide": "GDALPLLM(O)WDADKAR",
+        "expectedPeptide": "GGLEPINFQTAADQAR",
+        "success": 0
+    },
+    {
+        "scanNum": "186",
+        "novorPeptide": "LDEPLLQLGDSHHSK",
+        "expectedPeptide": "GGLEPINFQTAADQAR",
+        "success": 0
+    },
+    {
+        "scanNum": "187",
+        "novorPeptide": "LLFYEHGGLHDPYK",
+        "expectedPeptide": "GGLEPINFQTAADQAR",
+        "success": 0
+    },
+    {
+        "scanNum": "188",
+        "novorPeptide": "LMAHLDRVWLMM(O)R",
+        "expectedPeptide": "GGLEPINFQTAADQAR",
+        "success": 0
+    },
+    {
+        "scanNum": "189",
+        "novorPeptide": "NGNAPLNLEM(O)ERASR",
+        "expectedPeptide": "GGLEPINFQTAADQAR",
+        "success": 0
+    },
+    {
+        "scanNum": "190",
+        "novorPeptide": "ELLPLNM(O)C(Cam)PNDKAR",
+        "expectedPeptide": "GGLEPINFQTAADQAR",
+        "success": 0
+    },
+    {
+        "scanNum": "191",
+        "novorPeptide": "RAEDLM(O)NAGGPGKEVK",
+        "expectedPeptide": "GGLEPINFQTAADQAR",
+        "success": 0
+    },
+    {
+        "scanNum": "192",
+        "novorPeptide": "TGSKPLFDPPGMRER",
+        "expectedPeptide": "GGLEPINFQTAADQAR",
+        "success": 0
+    },
+    {
+        "scanNum": "193",
+        "novorPeptide": "NLEPLNFQTAADEAR",
+        "expectedPeptide": "GGLEPINFQTAADQAR",
+        "success": 0
+    },
+    {
+        "scanNum": "194",
+        "novorPeptide": "PTGTPLNPM(O)M(O)EVGRR",
+        "expectedPeptide": "GGLEPINFQTAADQAR",
+        "success": 0
+    },
+    {
+        "scanNum": "195",
+        "novorPeptide": "QTEPLWGYFPNPLK",
+        "expectedPeptide": "GGLEPINFQTAADQAR",
+        "success": 0
+    },
+    {
+        "scanNum": "196",
+        "novorPeptide": "AGPMPLNFGATAADKAR",
+        "expectedPeptide": "GGLEPINFQTAADQAR",
+        "success": 0
+    },
+    {
+        "scanNum": "197",
+        "novorPeptide": "DNEPLNFKTAADQVK",
+        "expectedPeptide": "GGLEPINFQTAADQAR",
+        "success": 0
+    },
+    {
+        "scanNum": "198",
+        "novorPeptide": "DNEPLNFQTAADKAR",
+        "expectedPeptide": "GGLEPINFQTAADQAR",
+        "success": 0
+    },
+    {
+        "scanNum": "199",
+        "novorPeptide": "TYGKGTHVYDNVAHK",
+        "expectedPeptide": "GGLEPINFQTAADQAR",
+        "success": 0
+    },
+    {
+        "scanNum": "200",
+        "novorPeptide": "LDKPNDFKTAANEAR",
+        "expectedPeptide": "GGLEPINFQTAADQAR",
+        "success": 0
+    },
+    {
+        "scanNum": "201",
+        "novorPeptide": "QTQPLDM(O)GNKDSLAR",
+        "expectedPeptide": "GGLEPINFQTAADQAR",
+        "success": 0
+    },
+    {
+        "scanNum": "202",
+        "novorPeptide": "MNENLPFKGDANPLK",
+        "expectedPeptide": "GGLEPINFQTAADQAR",
+        "success": 0
+    },
+    {
+        "scanNum": "203",
+        "novorPeptide": "LLEGRNLDLSSWMR",
+        "expectedPeptide": "GGLEPINFQTAADQAR",
+        "success": 0
+    },
+    {
+        "scanNum": "204",
+        "novorPeptide": "RSLTKNC(Cam)YLSGSM(O)R",
+        "expectedPeptide": "GGLEPINFQTAADQAR",
+        "success": 0
+    },
+    {
+        "scanNum": "205",
+        "novorPeptide": "LMNPLLM(O)QNLM(O)PSR",
+        "expectedPeptide": "GGLEPINFQTAADQAR",
+        "success": 0
+    },
+    {
+        "scanNum": "206",
+        "novorPeptide": "LDEPNNFHPGLPALR",
+        "expectedPeptide": "GGLEPINFQTAADQAR",
+        "success": 0
+    },
+    {
+        "scanNum": "207",
+        "novorPeptide": "GGDEPLNM(O)KVAADKTK",
+        "expectedPeptide": "GGLEPINFQTAADQAR",
+        "success": 0
+    },
+    {
+        "scanNum": "208",
+        "novorPeptide": "SSALPLNM(O)GAQLDQTK",
+        "expectedPeptide": "GGLEPINFQTAADQAR",
+        "success": 0
+    },
+    {
+        "scanNum": "209",
+        "novorPeptide": "VQEDEAARWASVSEEM(O)R",
+        "expectedPeptide": "EVVGSAEAGVDAASVSEEFR",
+        "success": 0
+    },
+    {
+        "scanNum": "210",
+        "novorPeptide": "PPKGVPPARYWYEM(O)M(O)R",
+        "expectedPeptide": "EVVGSAEAGVDAASVSEEFR",
+        "success": 0
+    },
+    {
+        "scanNum": "211",
+        "novorPeptide": "QPPEKSMLSSASVSATSM(O)R",
+        "expectedPeptide": "EVVGSAEAGVDAASVSEEFR",
+        "success": 0
+    },
+    {
+        "scanNum": "212",
+        "novorPeptide": "VPGMLSSAGVWAADSEYLR",
+        "expectedPeptide": "EVVGSAEAGVDAASVSEEFR",
+        "success": 0
+    },
+    {
+        "scanNum": "213",
+        "novorPeptide": "MPVDTKARPC(Cam)WGNPHDK",
+        "expectedPeptide": "EVVGSAEAGVDAASVSEEFR",
+        "success": 0
+    },
+    {
+        "scanNum": "214",
+        "novorPeptide": "NNELAGGSRSVASVAC(Cam)SMAK",
+        "expectedPeptide": "EVVGSAEAGVDAASVSEEFR",
+        "success": 0
+    },
+    {
+        "scanNum": "215",
+        "novorPeptide": "PMVGSAM(O)AYRLC(Cam)GFMFR",
+        "expectedPeptide": "EVVGSAEAGVDAASVSEEFR",
+        "success": 0
+    },
+    {
+        "scanNum": "216",
+        "novorPeptide": "LLTGSAEAGVQESVSEEM(O)R",
+        "expectedPeptide": "EVVGSAEAGVDAASVSEEFR",
+        "success": 0
+    },
+    {
+        "scanNum": "217",
+        "novorPeptide": "TQVGSAQAGVMVDVSEEM(O)R",
+        "expectedPeptide": "EVVGSAEAGVDAASVSEEFR",
+        "success": 0
+    },
+    {
+        "scanNum": "218",
+        "novorPeptide": "KVTGSAEARDAASVSEEFR",
+        "expectedPeptide": "EVVGSAEAGVDAASVSEEFR",
+        "success": 0
+    },
+    {
+        "scanNum": "219",
+        "novorPeptide": "NPEEGFAGVFC(Cam)KMASPNR",
+        "expectedPeptide": "EVVGSAEAGVDAASVSEEFR",
+        "success": 0
+    },
+    {
+        "scanNum": "220",
+        "novorPeptide": "GGGPEGSGSDVPLVQEASGPGR",
+        "expectedPeptide": "EVVGSAEAGVDAASVSEEFR",
+        "success": 0
+    },
+    {
+        "scanNum": "221",
+        "novorPeptide": "YYGSAEARC(Cam)HERPLNGK",
+        "expectedPeptide": "EVVGSAEAGVDAASVSEEFR",
+        "success": 0
+    },
+    {
+        "scanNum": "222",
+        "novorPeptide": "RVPNNWSVGFSGEEEFR",
+        "expectedPeptide": "EVVGSAEAGVDAASVSEEFR",
+        "success": 0
+    },
+    {
+        "scanNum": "223",
+        "novorPeptide": "DDVGSAEAGVWASVPNDHGK",
+        "expectedPeptide": "EVVGSAEAGVDAASVSEEFR",
+        "success": 0
+    },
+    {
+        "scanNum": "224",
+        "novorPeptide": "NLVGSAEARDAASVSEEM(O)R",
+        "expectedPeptide": "EVVGSAEAGVDAASVSEEFR",
+        "success": 0
+    },
+    {
+        "scanNum": "225",
+        "novorPeptide": "C(Cam)C(Cam)GFFAGATLASVAKFSSK",
+        "expectedPeptide": "EVVGSAEAGVDAASVSEEFR",
+        "success": 0
+    },
+    {
+        "scanNum": "226",
+        "novorPeptide": "YYGASEARPVSDRSMYR",
+        "expectedPeptide": "EVVGSAEAGVDAASVSEEFR",
+        "success": 0
+    },
+    {
+        "scanNum": "227",
+        "novorPeptide": "TKVSGAEARNGSKGSVC(Cam)M(O)R",
+        "expectedPeptide": "EVVGSAEAGVDAASVSEEFR",
+        "success": 0
+    },
+    {
+        "scanNum": "228",
+        "novorPeptide": "WEQTELLAPPC(Cam)LPPGM(O)R",
+        "expectedPeptide": "EVVGSAEAGVDAASVSEEFR",
+        "success": 0
+    },
+    {
+        "scanNum": "229",
+        "novorPeptide": "GHEVPPGARAALSSTC(Cam)DGTK",
+        "expectedPeptide": "EVVGSAEAGVDAASVSEEFR",
+        "success": 0
+    },
+    {
+        "scanNum": "230",
+        "novorPeptide": "LSETGGAAGGVC(Cam)MFWKALR",
+        "expectedPeptide": "EVVGSAEAGVDAASVSEEFR",
+        "success": 0
+    },
+    {
+        "scanNum": "231",
+        "novorPeptide": "DPDSADAAGVQESVPVARPK",
+        "expectedPeptide": "EVVGSAEAGVDAASVSEEFR",
+        "success": 0
+    },
+    {
+        "scanNum": "232",
+        "novorPeptide": "KTVSGAEAGVPDRMC(Cam)GGYR",
+        "expectedPeptide": "EVVGSAEAGVDAASVSEEFR",
+        "success": 0
+    },
+    {
+        "scanNum": "233",
+        "novorPeptide": "DNVGSAEKVPNRM(O)KYMR",
+        "expectedPeptide": "EVVGSAEAGVDAASVSEEFR",
+        "success": 0
+    },
+    {
+        "scanNum": "234",
+        "novorPeptide": "WHEEYRPLPEEAPETK",
+        "expectedPeptide": "EVVGSAEAGVDAASVSEEFR",
+        "success": 0
+    },
+    {
+        "scanNum": "235",
+        "novorPeptide": "RM(O)FESVKTTFGEEEFR",
+        "expectedPeptide": "EVVGSAEAGVDAASVSEEFR",
+        "success": 0
+    },
+    {
+        "scanNum": "236",
+        "novorPeptide": "VFGYLDSVGM(O)ASLTTEFR",
+        "expectedPeptide": "EVVGSAEAGVDAASVSEEFR",
+        "success": 0
+    },
+    {
+        "scanNum": "237",
+        "novorPeptide": "NNVPLMMVNLGGWESYGK",
+        "expectedPeptide": "EVVGSAEAGVDAASVSEEFR",
+        "success": 0
+    },
+    {
+        "scanNum": "238",
+        "novorPeptide": "TPESEEAGVPNVQQADSPR",
+        "expectedPeptide": "EVVGSAEAGVDAASVSEEFR",
+        "success": 0
+    },
+    {
+        "scanNum": "239",
+        "novorPeptide": "AGPPEPPVGVVC(Cam)C(Cam)FAAASPK",
+        "expectedPeptide": "EVVGSAEAGVDAASVSEEFR",
+        "success": 0
+    },
+    {
+        "scanNum": "240",
+        "novorPeptide": "QGTAFYVRDSNGR",
+        "expectedPeptide": "TGQAPGFTYTDANK",
+        "success": 0
+    },
+    {
+        "scanNum": "241",
+        "novorPeptide": "TGKAPGM(O)LDENGHK",
+        "expectedPeptide": "TGQAPGFTYTDANK",
+        "success": 0
+    },
+    {
+        "scanNum": "242",
+        "novorPeptide": "TNAAPGM(O)VPSGGGNPK",
+        "expectedPeptide": "TGQAPGFTYTDANK",
+        "success": 0
+    },
+    {
+        "scanNum": "243",
+        "novorPeptide": "QGTAPGM(O)ATGPQPGGK",
+        "expectedPeptide": "TGQAPGFTYTDANK",
+        "success": 0
+    },
+    {
+        "scanNum": "244",
+        "novorPeptide": "TWAPGM(O)TYTWNK",
+        "expectedPeptide": "TGQAPGFTYTDANK",
+        "success": 0
+    },
+    {
+        "scanNum": "245",
+        "novorPeptide": "SAKAMHWNPWDK",
+        "expectedPeptide": "TGQAPGFTYTDANK",
+        "success": 0
+    },
+    {
+        "scanNum": "246",
+        "novorPeptide": "ASQAPGHYPTEGQK",
+        "expectedPeptide": "TGQAPGFTYTDANK",
+        "success": 0
+    },
+    {
+        "scanNum": "247",
+        "novorPeptide": "TDAAPGHYATEPNK",
+        "expectedPeptide": "TGQAPGFTYTDANK",
+        "success": 0
+    },
+    {
+        "scanNum": "248",
+        "novorPeptide": "TGQAPGSGRGM(O)PPNK",
+        "expectedPeptide": "TGQAPGFTYTDANK",
+        "success": 0
+    },
+    {
+        "scanNum": "249",
+        "novorPeptide": "GSAAAPM(O)GKWWHR",
+        "expectedPeptide": "TGQAPGFTYTDANK",
+        "success": 0
+    },
+    {
+        "scanNum": "250",
+        "novorPeptide": "ASQAPEGVM(O)HWNK",
+        "expectedPeptide": "TGQAPGFTYTDANK",
+        "success": 0
+    },
+    {
+        "scanNum": "251",
+        "novorPeptide": "ESAAPGWC(Cam)PVELR",
+        "expectedPeptide": "TGQAPGFTYTDANK",
+        "success": 0
+    },
+    {
+        "scanNum": "252",
+        "novorPeptide": "ANTVKGSWADFM(O)K",
+        "expectedPeptide": "TGQAPGFTYTDANK",
+        "success": 0
+    },
+    {
+        "scanNum": "253",
+        "novorPeptide": "SKAAPGSQC(Cam)EPPNK",
+        "expectedPeptide": "TGQAPGFTYTDANK",
+        "success": 0
+    },
+    {
+        "scanNum": "254",
+        "novorPeptide": "MRAAC(Cam)MYRGNNK",
+        "expectedPeptide": "TGQAPGFTYTDANK",
+        "success": 0
+    },
+    {
+        "scanNum": "255",
+        "novorPeptide": "ASKAPHRRLC(Cam)M(O)K",
+        "expectedPeptide": "TGQAPGFTYTDANK",
+        "success": 0
+    },
+    {
+        "scanNum": "256",
+        "novorPeptide": "TGAGADFSAAYTPNK",
+        "expectedPeptide": "TGQAPGFTYTDANK",
+        "success": 0
+    },
+    {
+        "scanNum": "257",
+        "novorPeptide": "AQSAPEGVM(O)HWNK",
+        "expectedPeptide": "TGQAPGFTYTDANK",
+        "success": 0
+    },
+    {
+        "scanNum": "258",
+        "novorPeptide": "VLYPM(O)TNYDPNK",
+        "expectedPeptide": "TGQAPGFTYTDANK",
+        "success": 0
+    },
+    {
+        "scanNum": "259",
+        "novorPeptide": "TWAELWGYC(Cam)TGK",
+        "expectedPeptide": "TGQAPGFTYTDANK",
+        "success": 0
+    },
+    {
+        "scanNum": "260",
+        "novorPeptide": "DYVAKFENDALGK",
+        "expectedPeptide": "TGQAPGFTYTDANK",
+        "success": 0
+    },
+    {
+        "scanNum": "261",
+        "novorPeptide": "LDGAGGKGGQEVLLR",
+        "expectedPeptide": "TGQAPGFTYTDANK",
+        "success": 0
+    },
+    {
+        "scanNum": "262",
+        "novorPeptide": "DYPPYADVSC(Cam)RK",
+        "expectedPeptide": "TGQAPGFTYTDANK",
+        "success": 0
+    },
+    {
+        "scanNum": "263",
+        "novorPeptide": "ASQAAETVMHSPNK",
+        "expectedPeptide": "TGQAPGFTYTDANK",
+        "success": 0
+    },
+    {
+        "scanNum": "264",
+        "novorPeptide": "KASDQHQDGETVR",
+        "expectedPeptide": "TGQAPGFTYTDANK",
+        "success": 0
+    },
+    {
+        "scanNum": "265",
+        "novorPeptide": "SAAGAPGEDGTQAPNK",
+        "expectedPeptide": "TGQAPGFTYTDANK",
+        "success": 0
+    },
+    {
+        "scanNum": "266",
+        "novorPeptide": "ASTEVVLWVKALR",
+        "expectedPeptide": "TGQAPGFTYTDANK",
+        "success": 0
+    },
+    {
+        "scanNum": "267",
+        "novorPeptide": "SKAVVSSQSLLKPK",
+        "expectedPeptide": "TGQAPGFTYTDANK",
+        "success": 0
+    },
+    {
+        "scanNum": "268",
+        "novorPeptide": "DYVAKM(O)EAASALGK",
+        "expectedPeptide": "TGQAPGFTYTDANK",
+        "success": 0
+    },
+    {
+        "scanNum": "269",
+        "novorPeptide": "LSSAPHSGMGASKNK",
+        "expectedPeptide": "TGQAPGFTYTDANK",
+        "success": 0
+    },
+    {
+        "scanNum": "270",
+        "novorPeptide": "KVLTVGRMHPKLK",
+        "expectedPeptide": "KHGTVVLTALGGILK",
+        "success": 0
+    },
+    {
+        "scanNum": "271",
+        "novorPeptide": "SGHLKKAANLVKLK",
+        "expectedPeptide": "KHGTVVLTALGGILK",
+        "success": 0
+    },
+    {
+        "scanNum": "272",
+        "novorPeptide": "SPVGTPTPVALLVKK",
+        "expectedPeptide": "KHGTVVLTALGGILK",
+        "success": 0
+    },
+    {
+        "scanNum": "273",
+        "novorPeptide": "KPPTVVKYYRKK",
+        "expectedPeptide": "KHGTVVLTALGGILK",
+        "success": 0
+    },
+    {
+        "scanNum": "274",
+        "novorPeptide": "KPKAVVLDSVLPNK",
+        "expectedPeptide": "KHGTVVLTALGGILK",
+        "success": 0
+    },
+    {
+        "scanNum": "275",
+        "novorPeptide": "SVPGTVVKKAAKGHK",
+        "expectedPeptide": "KHGTVVLTALGGILK",
+        "success": 0
+    },
+    {
+        "scanNum": "276",
+        "novorPeptide": "EPVVVVMPGLVKLK",
+        "expectedPeptide": "KHGTVVLTALGGILK",
+        "success": 0
+    },
+    {
+        "scanNum": "277",
+        "novorPeptide": "KHGTVVFGPPKVLK",
+        "expectedPeptide": "KHGTVVLTALGGILK",
+        "success": 0
+    },
+    {
+        "scanNum": "278",
+        "novorPeptide": "EPPTVVGVKLNVKK",
+        "expectedPeptide": "KHGTVVLTALGGILK",
+        "success": 0
+    },
+    {
+        "scanNum": "279",
+        "novorPeptide": "KHMPKLTALNLLK",
+        "expectedPeptide": "KHGTVVLTALGGILK",
+        "success": 0
+    },
+    {
+        "scanNum": "280",
+        "novorPeptide": "KPAHALAFALGGLLK",
+        "expectedPeptide": "KHGTVVLTALGGILK",
+        "success": 0
+    },
+    {
+        "scanNum": "281",
+        "novorPeptide": "LLPTVVLERGVALK",
+        "expectedPeptide": "KHGTVVLTALGGILK",
+        "success": 0
+    },
+    {
+        "scanNum": "282",
+        "novorPeptide": "LLLTVGKC(Cam)KPLHK",
+        "expectedPeptide": "KHGTVVLTALGGILK",
+        "success": 0
+    },
+    {
+        "scanNum": "283",
+        "novorPeptide": "FLYVLVTALGGLLK",
+        "expectedPeptide": "KHGTVVLTALGGILK",
+        "success": 0
+    },
+    {
+        "scanNum": "284",
+        "novorPeptide": "KPPTVVLHLVYLK",
+        "expectedPeptide": "KHGTVVLTALGGILK",
+        "success": 0
+    },
+    {
+        "scanNum": "285",
+        "novorPeptide": "YLKKTTTALGGLLK",
+        "expectedPeptide": "KHGTVVLTALGGILK",
+        "success": 0
+    },
+    {
+        "scanNum": "286",
+        "novorPeptide": "QLKAVVMLPPGLLK",
+        "expectedPeptide": "KHGTVVLTALGGILK",
+        "success": 0
+    },
+    {
+        "scanNum": "287",
+        "novorPeptide": "MKLGGLAVHLGGLLK",
+        "expectedPeptide": "KHGTVVLTALGGILK",
+        "success": 0
+    },
+    {
+        "scanNum": "288",
+        "novorPeptide": "YLLDLSMALGVRR",
+        "expectedPeptide": "KHGTVVLTALGGILK",
+        "success": 0
+    },
+    {
+        "scanNum": "289",
+        "novorPeptide": "LGHVKLSTALGGLLK",
+        "expectedPeptide": "KHGTVVLTALGGILK",
+        "success": 0
+    },
+    {
+        "scanNum": "290",
+        "novorPeptide": "KMLNLAHVLGGLLK",
+        "expectedPeptide": "KHGTVVLTALGGILK",
+        "success": 0
+    },
+    {
+        "scanNum": "291",
+        "novorPeptide": "QHQPSGQVTADPSR",
+        "expectedPeptide": "KHGTVVLTALGGILK",
+        "success": 0
+    },
+    {
+        "scanNum": "292",
+        "novorPeptide": "KMLGGLVHALGGLLK",
+        "expectedPeptide": "KHGTVVLTALGGILK",
+        "success": 0
+    },
+    {
+        "scanNum": "293",
+        "novorPeptide": "YNLGLGGTMLGVRR",
+        "expectedPeptide": "KHGTVVLTALGGILK",
+        "success": 0
+    },
+    {
+        "scanNum": "294",
+        "novorPeptide": "MKLGGLHVALGGLLK",
+        "expectedPeptide": "KHGTVVLTALGGILK",
+        "success": 0
+    },
+    {
+        "scanNum": "295",
+        "novorPeptide": "AATPLPALTALGAVLK",
+        "expectedPeptide": "KHGTVVLTALGGILK",
+        "success": 0
+    },
+    {
+        "scanNum": "296",
+        "novorPeptide": "EPPTVVGKKVGRLK",
+        "expectedPeptide": "KHGTVVLTALGGILK",
+        "success": 0
+    },
+    {
+        "scanNum": "297",
+        "novorPeptide": "KLKFTAFALGGLLK",
+        "expectedPeptide": "KHGTVVLTALGGILK",
+        "success": 0
+    },
+    {
+        "scanNum": "298",
+        "novorPeptide": "YLVFLVTALGGLLK",
+        "expectedPeptide": "KHGTVVLTALGGILK",
+        "success": 0
+    },
+    {
+        "scanNum": "299",
+        "novorPeptide": "MKLGLGAHVLGLLGK",
+        "expectedPeptide": "KHGTVVLTALGGILK",
+        "success": 0
+    },
+    {
+        "scanNum": "300",
+        "novorPeptide": "FSGSC(Cam)PADRFMTK",
+        "expectedPeptide": "HPGDFGADAQGAMTK",
+        "success": 0
+    },
+    {
+        "scanNum": "301",
+        "novorPeptide": "HPGDFGNEPGHDPK",
+        "expectedPeptide": "HPGDFGADAQGAMTK",
+        "success": 0
+    },
+    {
+        "scanNum": "302",
+        "novorPeptide": "HGGGVM(O)GAYEPPTSK",
+        "expectedPeptide": "HPGDFGADAQGAMTK",
+        "success": 0
+    },
+    {
+        "scanNum": "303",
+        "novorPeptide": "HPGDFNEAQGSDTK",
+        "expectedPeptide": "HPGDFGADAQGAMTK",
+        "success": 0
+    },
+    {
+        "scanNum": "304",
+        "novorPeptide": "HPGDM(O)QDAEYPVK",
+        "expectedPeptide": "HPGDFGADAQGAMTK",
+        "success": 0
+    },
+    {
+        "scanNum": "305",
+        "novorPeptide": "DMAGDSEDAGPRPGK",
+        "expectedPeptide": "HPGDFGADAQGAMTK",
+        "success": 0
+    },
+    {
+        "scanNum": "306",
+        "novorPeptide": "HPGDFQDAEGAMTK",
+        "expectedPeptide": "HPGDFGADAQGAMTK",
+        "success": 0
+    },
+    {
+        "scanNum": "307",
+        "novorPeptide": "HPGDKTAM(O)C(Cam)MPDK",
+        "expectedPeptide": "HPGDFGADAQGAMTK",
+        "success": 0
+    },
+    {
+        "scanNum": "308",
+        "novorPeptide": "HPGDFEWWWDK",
+        "expectedPeptide": "HPGDFGADAQGAMTK",
+        "success": 0
+    },
+    {
+        "scanNum": "309",
+        "novorPeptide": "HPGDFGAWEQMTK",
+        "expectedPeptide": "HPGDFGADAQGAMTK",
+        "success": 0
+    },
+    {
+        "scanNum": "310",
+        "novorPeptide": "HPGDHKWNDPGDK",
+        "expectedPeptide": "HPGDFGADAQGAMTK",
+        "success": 0
+    },
+    {
+        "scanNum": "311",
+        "novorPeptide": "HPGDEREGSDLYK",
+        "expectedPeptide": "HPGDFGADAQGAMTK",
+        "success": 0
+    },
+    {
+        "scanNum": "312",
+        "novorPeptide": "HPM(O)GDGYLPPSC(Cam)R",
+        "expectedPeptide": "HPGDFGADAQGAMTK",
+        "success": 0
+    },
+    {
+        "scanNum": "313",
+        "novorPeptide": "SC(Cam)MLVDYQQMTK",
+        "expectedPeptide": "HPGDFGADAQGAMTK",
+        "success": 0
+    },
+    {
+        "scanNum": "314",
+        "novorPeptide": "HPGDFGLYPENEK",
+        "expectedPeptide": "HPGDFGADAQGAMTK",
+        "success": 0
+    },
+    {
+        "scanNum": "315",
+        "novorPeptide": "EYDM(O)VSGSGLHHR",
+        "expectedPeptide": "HPGDFGADAQGAMTK",
+        "success": 0
+    },
+    {
+        "scanNum": "316",
+        "novorPeptide": "HPGDFVSEWDADK",
+        "expectedPeptide": "HPGDFGADAQGAMTK",
+        "success": 0
+    },
+    {
+        "scanNum": "317",
+        "novorPeptide": "HPYALTNSGGDEDK",
+        "expectedPeptide": "HPGDFGADAQGAMTK",
+        "success": 0
+    },
+    {
+        "scanNum": "318",
+        "novorPeptide": "YAGDFVSWTDADR",
+        "expectedPeptide": "HPGDFGADAQGAMTK",
+        "success": 0
+    },
+    {
+        "scanNum": "319",
+        "novorPeptide": "HPATGPGM(O)M(O)SM(O)LPK",
+        "expectedPeptide": "HPGDFGADAQGAMTK",
+        "success": 0
+    },
+    {
+        "scanNum": "320",
+        "novorPeptide": "HPVHYADAGTMM(O)R",
+        "expectedPeptide": "HPGDFGADAQGAMTK",
+        "success": 0
+    },
+    {
+        "scanNum": "321",
+        "novorPeptide": "HPGDM(O)KEHDKHR",
+        "expectedPeptide": "HPGDFGADAQGAMTK",
+        "success": 0
+    },
+    {
+        "scanNum": "322",
+        "novorPeptide": "HPGDM(O)AM(O)RPAM(O)LK",
+        "expectedPeptide": "HPGDFGADAQGAMTK",
+        "success": 0
+    },
+    {
+        "scanNum": "323",
+        "novorPeptide": "HPGDM(O)GADAEVFLK",
+        "expectedPeptide": "HPGDFGADAQGAMTK",
+        "success": 0
+    },
+    {
+        "scanNum": "324",
+        "novorPeptide": "C(Cam)SMTLLDSFDWK",
+        "expectedPeptide": "HPGDFGADAQGAMTK",
+        "success": 0
+    },
+    {
+        "scanNum": "325",
+        "novorPeptide": "HPGDM(O)VAAETRM(O)R",
+        "expectedPeptide": "HPGDFGADAQGAMTK",
+        "success": 0
+    },
+    {
+        "scanNum": "326",
+        "novorPeptide": "HPGPLNHNDNMEK",
+        "expectedPeptide": "HPGDFGADAQGAMTK",
+        "success": 0
+    },
+    {
+        "scanNum": "327",
+        "novorPeptide": "HPGDFQEVGSHHR",
+        "expectedPeptide": "HPGDFGADAQGAMTK",
+        "success": 0
+    },
+    {
+        "scanNum": "328",
+        "novorPeptide": "HPGDDC(Cam)DKAKMTK",
+        "expectedPeptide": "HPGDFGADAQGAMTK",
+        "success": 0
+    },
+    {
+        "scanNum": "329",
+        "novorPeptide": "HPGDVEWKSC(Cam)C(Cam)K",
+        "expectedPeptide": "HPGDFGADAQGAMTK",
+        "success": 0
+    },
+    {
+        "scanNum": "330",
+        "novorPeptide": "FMVAKYNDPEGK",
+        "expectedPeptide": "DYVAQFEASALGK",
+        "success": 0
+    },
+    {
+        "scanNum": "331",
+        "novorPeptide": "M(O)MVAKM(O)EASALGK",
+        "expectedPeptide": "DYVAQFEASALGK",
+        "success": 0
+    },
+    {
+        "scanNum": "332",
+        "novorPeptide": "YNNGKFEASALGK",
+        "expectedPeptide": "DYVAQFEASALGK",
+        "success": 0
+    },
+    {
+        "scanNum": "333",
+        "novorPeptide": "FGSSSGLWQM(O)VGK",
+        "expectedPeptide": "DYVAQFEASALGK",
+        "success": 0
+    },
+    {
+        "scanNum": "334",
+        "novorPeptide": "DYVAQFVQLMGK",
+        "expectedPeptide": "DYVAQFEASALGK",
+        "success": 0
+    },
+    {
+        "scanNum": "335",
+        "novorPeptide": "SDVYTC(Cam)LVTRGK",
+        "expectedPeptide": "DYVAQFEASALGK",
+        "success": 0
+    },
+    {
+        "scanNum": "336",
+        "novorPeptide": "SDGVYLGMQAVMK",
+        "expectedPeptide": "DYVAQFEASALGK",
+        "success": 0
+    },
+    {
+        "scanNum": "337",
+        "novorPeptide": "ALLVLGLWTVKGK",
+        "expectedPeptide": "DYVAQFEASALGK",
+        "success": 0
+    },
+    {
+        "scanNum": "338",
+        "novorPeptide": "AAHVSGLWKDMGK",
+        "expectedPeptide": "DYVAQFEASALGK",
+        "success": 0
+    },
+    {
+        "scanNum": "339",
+        "novorPeptide": "AAHVSGLNSNMNGK",
+        "expectedPeptide": "DYVAQFEASALGK",
+        "success": 0
+    },
+    {
+        "scanNum": "340",
+        "novorPeptide": "DYVAEFWTALGK",
+        "expectedPeptide": "DYVAQFEASALGK",
+        "success": 0
+    },
+    {
+        "scanNum": "341",
+        "novorPeptide": "NYKPLPKPKKGK",
+        "expectedPeptide": "DYVAQFEASALGK",
+        "success": 0
+    },
+    {
+        "scanNum": "342",
+        "novorPeptide": "VSDYGLVSEASSGK",
+        "expectedPeptide": "DYVAQFEASALGK",
+        "success": 0
+    },
+    {
+        "scanNum": "343",
+        "novorPeptide": "YDVAKMDTSALGK",
+        "expectedPeptide": "DYVAQFEASALGK",
+        "success": 0
+    },
+    {
+        "scanNum": "344",
+        "novorPeptide": "SPLVLGLSVTVKGK",
+        "expectedPeptide": "DYVAQFEASALGK",
+        "success": 0
+    },
+    {
+        "scanNum": "345",
+        "novorPeptide": "AMVYGLEPYPMK",
+        "expectedPeptide": "DYVAQFEASALGK",
+        "success": 0
+    },
+    {
+        "scanNum": "346",
+        "novorPeptide": "ATSNLEERGYMK",
+        "expectedPeptide": "DYVAQFEASALGK",
+        "success": 0
+    },
+    {
+        "scanNum": "347",
+        "novorPeptide": "TPVVLGLSVTVKGK",
+        "expectedPeptide": "DYVAQFEASALGK",
+        "success": 0
+    },
+    {
+        "scanNum": "348",
+        "novorPeptide": "FMVSGSRGKSGTGK",
+        "expectedPeptide": "DYVAQFEASALGK",
+        "success": 0
+    },
+    {
+        "scanNum": "349",
+        "novorPeptide": "FGSTGPATFRC(Cam)AK",
+        "expectedPeptide": "DYVAQFEASALGK",
+        "success": 0
+    },
+    {
+        "scanNum": "350",
+        "novorPeptide": "NYVAPPVLLVKGK",
+        "expectedPeptide": "DYVAQFEASALGK",
+        "success": 0
+    },
+    {
+        "scanNum": "351",
+        "novorPeptide": "SDVYGLSWRMGK",
+        "expectedPeptide": "DYVAQFEASALGK",
+        "success": 0
+    },
+    {
+        "scanNum": "352",
+        "novorPeptide": "YNVAEGM(O)MLLNK",
+        "expectedPeptide": "DYVAQFEASALGK",
+        "success": 0
+    },
+    {
+        "scanNum": "353",
+        "novorPeptide": "FTKAKSFKKKGK",
+        "expectedPeptide": "DYVAQFEASALGK",
+        "success": 0
+    },
+    {
+        "scanNum": "354",
+        "novorPeptide": "WDYGLFQLNDK",
+        "expectedPeptide": "DYVAQFEASALGK",
+        "success": 0
+    },
+    {
+        "scanNum": "355",
+        "novorPeptide": "MVLAAQYK",
+        "expectedPeptide": "NDIAAKYK",
+        "success": 0
+    },
+    {
+        "scanNum": "356",
+        "novorPeptide": "NDLAAKYK",
+        "expectedPeptide": "NDIAAKYK",
+        "success": 0
+    },
+    {
+        "scanNum": "357",
+        "novorPeptide": "NDLAPAPPK",
+        "expectedPeptide": "NDIAAKYK",
+        "success": 0
+    },
+    {
+        "scanNum": "358",
+        "novorPeptide": "NDLAAKYK",
+        "expectedPeptide": "NDIAAKYK",
+        "success": 0
+    },
+    {
+        "scanNum": "359",
+        "novorPeptide": "AASLAM(O)KSK",
+        "expectedPeptide": "NDIAAKYK",
+        "success": 0
+    },
+    {
+        "scanNum": "360",
+        "novorPeptide": "NDLAHPKK",
+        "expectedPeptide": "NDIAAKYK",
+        "success": 0
+    },
+    {
+        "scanNum": "361",
+        "novorPeptide": "NDLAKAYK",
+        "expectedPeptide": "NDIAAKYK",
+        "success": 0
+    },
+    {
+        "scanNum": "362",
+        "novorPeptide": "NDLAKYAK",
+        "expectedPeptide": "NDIAAKYK",
+        "success": 0
+    },
+    {
+        "scanNum": "363",
+        "novorPeptide": "ETLRNYK",
+        "expectedPeptide": "NDIAAKYK",
+        "success": 0
+    },
+    {
+        "scanNum": "364",
+        "novorPeptide": "MVLAAQYK",
+        "expectedPeptide": "NDIAAKYK",
+        "success": 0
+    },
+    {
+        "scanNum": "365",
+        "novorPeptide": "NTKYELR",
+        "expectedPeptide": "NDIAAKYK",
+        "success": 0
+    },
+    {
+        "scanNum": "366",
+        "novorPeptide": "AASLAAAGYK",
+        "expectedPeptide": "NDIAAKYK",
+        "success": 0
+    },
+    {
+        "scanNum": "367",
+        "novorPeptide": "VYLTTTPK",
+        "expectedPeptide": "NDIAAKYK",
+        "success": 0
+    },
+    {
+        "scanNum": "368",
+        "novorPeptide": "NDLAAKYK",
+        "expectedPeptide": "NDIAAKYK",
+        "success": 0
+    },
+    {
+        "scanNum": "369",
+        "novorPeptide": "ETLAAKYK",
+        "expectedPeptide": "NDIAAKYK",
+        "success": 0
+    },
+    {
+        "scanNum": "370",
+        "novorPeptide": "MVLAPGHAK",
+        "expectedPeptide": "NDIAAKYK",
+        "success": 0
+    },
+    {
+        "scanNum": "371",
+        "novorPeptide": "MVLAM(O)SKK",
+        "expectedPeptide": "NDIAAKYK",
+        "success": 0
+    },
+    {
+        "scanNum": "372",
+        "novorPeptide": "FDAARKSK",
+        "expectedPeptide": "NDIAAKYK",
+        "success": 0
+    },
+    {
+        "scanNum": "373",
+        "novorPeptide": "NDLAAMC(Cam)K",
+        "expectedPeptide": "NDIAAKYK",
+        "success": 0
+    },
+    {
+        "scanNum": "374",
+        "novorPeptide": "DDLAKAYK",
+        "expectedPeptide": "NDIAAKYK",
+        "success": 0
+    },
+    {
+        "scanNum": "375",
+        "novorPeptide": "NDLAPPPAK",
+        "expectedPeptide": "NDIAAKYK",
+        "success": 0
+    },
+    {
+        "scanNum": "376",
+        "novorPeptide": "DDLAAKYK",
+        "expectedPeptide": "NDIAAKYK",
+        "success": 0
+    },
+    {
+        "scanNum": "377",
+        "novorPeptide": "NDLAPPPAK",
+        "expectedPeptide": "NDIAAKYK",
+        "success": 0
+    },
+    {
+        "scanNum": "378",
+        "novorPeptide": "NDLAAPPPK",
+        "expectedPeptide": "NDIAAKYK",
+        "success": 0
+    },
+    {
+        "scanNum": "379",
+        "novorPeptide": "DDLAAKYK",
+        "expectedPeptide": "NDIAAKYK",
+        "success": 0
+    },
+    {
+        "scanNum": "380",
+        "novorPeptide": "DDLAAKYK",
+        "expectedPeptide": "NDIAAKYK",
+        "success": 0
+    },
+    {
+        "scanNum": "381",
+        "novorPeptide": "DDLAAKYK",
+        "expectedPeptide": "NDIAAKYK",
+        "success": 0
+    },
+    {
+        "scanNum": "382",
+        "novorPeptide": "LGNGSHLPK",
+        "expectedPeptide": "NDIAAKYK",
+        "success": 0
+    },
+    {
+        "scanNum": "383",
+        "novorPeptide": "LWEKAFK",
+        "expectedPeptide": "NDIAAKYK",
+        "success": 0
+    },
+    {
+        "scanNum": "384",
+        "novorPeptide": "VYLPM(O)RK",
+        "expectedPeptide": "NDIAAKYK",
+        "success": 0
+    },
+    {
+        "scanNum": "385",
+        "novorPeptide": "TPVSEKVTK",
+        "expectedPeptide": "TPVSEKVTK",
+        "success": 1
+    },
+    {
+        "scanNum": "386",
+        "novorPeptide": "TPVSEKVTK",
+        "expectedPeptide": "TPVSEKVTK",
+        "success": 1
+    },
+    {
+        "scanNum": "387",
+        "novorPeptide": "TPVSEKVTK",
+        "expectedPeptide": "TPVSEKVTK",
+        "success": 1
+    },
+    {
+        "scanNum": "388",
+        "novorPeptide": "TPVSGPRFK",
+        "expectedPeptide": "TPVSEKVTK",
+        "success": 0
+    },
+    {
+        "scanNum": "389",
+        "novorPeptide": "VVVSAADVTK",
+        "expectedPeptide": "TPVSEKVTK",
+        "success": 0
+    },
+    {
+        "scanNum": "390",
+        "novorPeptide": "TPVSGRPFK",
+        "expectedPeptide": "TPVSEKVTK",
+        "success": 0
+    },
+    {
+        "scanNum": "391",
+        "novorPeptide": "TPVSATALTK",
+        "expectedPeptide": "TPVSEKVTK",
+        "success": 0
+    },
+    {
+        "scanNum": "392",
+        "novorPeptide": "TPVSEKVTK",
+        "expectedPeptide": "TPVSEKVTK",
+        "success": 1
+    },
+    {
+        "scanNum": "393",
+        "novorPeptide": "TPVQPYRK",
+        "expectedPeptide": "TPVSEKVTK",
+        "success": 0
+    },
+    {
+        "scanNum": "394",
+        "novorPeptide": "TPVSTRVTK",
+        "expectedPeptide": "TPVSEKVTK",
+        "success": 0
+    },
+    {
+        "scanNum": "395",
+        "novorPeptide": "QKKFYFK",
+        "expectedPeptide": "TPVSEKVTK",
+        "success": 0
+    },
+    {
+        "scanNum": "396",
+        "novorPeptide": "TLRATAVEK",
+        "expectedPeptide": "TPVSEKVTK",
+        "success": 0
+    },
+    {
+        "scanNum": "397",
+        "novorPeptide": "VVVSRSADR",
+        "expectedPeptide": "TPVSEKVTK",
+        "success": 0
+    },
+    {
+        "scanNum": "398",
+        "novorPeptide": "VPPYARGTK",
+        "expectedPeptide": "TPVSEKVTK",
+        "success": 0
+    },
+    {
+        "scanNum": "399",
+        "novorPeptide": "VVVPHYFK",
+        "expectedPeptide": "TPVSEKVTK",
+        "success": 0
+    },
+    {
+        "scanNum": "400",
+        "novorPeptide": "TPVSEKVTK",
+        "expectedPeptide": "TPVSEKVTK",
+        "success": 1
+    },
+    {
+        "scanNum": "401",
+        "novorPeptide": "QNKAVPGFK",
+        "expectedPeptide": "TPVSEKVTK",
+        "success": 0
+    },
+    {
+        "scanNum": "402",
+        "novorPeptide": "TPLLRNM(O)K",
+        "expectedPeptide": "TPVSEKVTK",
+        "success": 0
+    },
+    {
+        "scanNum": "403",
+        "novorPeptide": "VVVSC(Cam)GVLR",
+        "expectedPeptide": "TPVSEKVTK",
+        "success": 0
+    },
+    {
+        "scanNum": "404",
+        "novorPeptide": "TPVSEKVTK",
+        "expectedPeptide": "TPVSEKVTK",
+        "success": 1
+    },
+    {
+        "scanNum": "405",
+        "novorPeptide": "TPVSEKVTK",
+        "expectedPeptide": "TPVSEKVTK",
+        "success": 1
+    },
+    {
+        "scanNum": "406",
+        "novorPeptide": "VPPYTRQK",
+        "expectedPeptide": "TPVSEKVTK",
+        "success": 0
+    },
+    {
+        "scanNum": "407",
+        "novorPeptide": "TPVVFVNGR",
+        "expectedPeptide": "TPVSEKVTK",
+        "success": 0
+    },
+    {
+        "scanNum": "408",
+        "novorPeptide": "VVVSC(Cam)GLVR",
+        "expectedPeptide": "TPVSEKVTK",
+        "success": 0
+    },
+    {
+        "scanNum": "409",
+        "novorPeptide": "TPVDTKVTK",
+        "expectedPeptide": "TPVSEKVTK",
+        "success": 0
+    },
+    {
+        "scanNum": "410",
+        "novorPeptide": "VVVSEEKAK",
+        "expectedPeptide": "TPVSEKVTK",
+        "success": 0
+    },
+    {
+        "scanNum": "411",
+        "novorPeptide": "VVVSESGRR",
+        "expectedPeptide": "TPVSEKVTK",
+        "success": 0
+    },
+    {
+        "scanNum": "412",
+        "novorPeptide": "VVVSEQVTK",
+        "expectedPeptide": "TPVSEKVTK",
+        "success": 0
+    },
+    {
+        "scanNum": "413",
+        "novorPeptide": "VVWC(Cam)VVVK",
+        "expectedPeptide": "TPVSEKVTK",
+        "success": 0
+    },
+    {
+        "scanNum": "414",
+        "novorPeptide": "VVVSEEKAK",
+        "expectedPeptide": "TPVSEKVTK",
+        "success": 0
+    },
+    {
+        "scanNum": "415",
+        "novorPeptide": "SKEWTSSNVMEER",
+        "expectedPeptide": "LTEWTSSNVMEER",
+        "success": 0
+    },
+    {
+        "scanNum": "416",
+        "novorPeptide": "GREPMM(O)YHNKM(O)R",
+        "expectedPeptide": "LTEWTSSNVMEER",
+        "success": 0
+    },
+    {
+        "scanNum": "417",
+        "novorPeptide": "LVMWTSHYMEER",
+        "expectedPeptide": "LTEWTSSNVMEER",
+        "success": 0
+    },
+    {
+        "scanNum": "418",
+        "novorPeptide": "SKEWTSSNVMEER",
+        "expectedPeptide": "LTEWTSSNVMEER",
+        "success": 0
+    },
+    {
+        "scanNum": "419",
+        "novorPeptide": "TLEWTSDGKMEER",
+        "expectedPeptide": "LTEWTSSNVMEER",
+        "success": 0
+    },
+    {
+        "scanNum": "420",
+        "novorPeptide": "MVLGETSSNVMEER",
+        "expectedPeptide": "LTEWTSSNVMEER",
+        "success": 0
+    },
+    {
+        "scanNum": "421",
+        "novorPeptide": "LTEWTSDHPPDAGR",
+        "expectedPeptide": "LTEWTSSNVMEER",
+        "success": 0
+    },
+    {
+        "scanNum": "422",
+        "novorPeptide": "NAHAHTC(Cam)KVMEER",
+        "expectedPeptide": "LTEWTSSNVMEER",
+        "success": 0
+    },
+    {
+        "scanNum": "423",
+        "novorPeptide": "TKDDATSNPAM(O)MER",
+        "expectedPeptide": "LTEWTSSNVMEER",
+        "success": 0
+    },
+    {
+        "scanNum": "424",
+        "novorPeptide": "LTEWTSSNVMEER",
+        "expectedPeptide": "LTEWTSSNVMEER",
+        "success": 1
+    },
+    {
+        "scanNum": "425",
+        "novorPeptide": "LVMWTSQDMQTLK",
+        "expectedPeptide": "LTEWTSSNVMEER",
+        "success": 0
+    },
+    {
+        "scanNum": "426",
+        "novorPeptide": "EVLNMAASVSEEFR",
+        "expectedPeptide": "LTEWTSSNVMEER",
+        "success": 0
+    },
+    {
+        "scanNum": "427",
+        "novorPeptide": "APSSWTSSNVMEER",
+        "expectedPeptide": "LTEWTSSNVMEER",
+        "success": 0
+    },
+    {
+        "scanNum": "428",
+        "novorPeptide": "GREWTSSNVMEER",
+        "expectedPeptide": "LTEWTSSNVMEER",
+        "success": 0
+    },
+    {
+        "scanNum": "429",
+        "novorPeptide": "VNEWTSFPGMQER",
+        "expectedPeptide": "LTEWTSSNVMEER",
+        "success": 0
+    },
+    {
+        "scanNum": "430",
+        "novorPeptide": "LVM(O)RDSQDGLM(O)RK",
+        "expectedPeptide": "LTEWTSSNVMEER",
+        "success": 0
+    },
+    {
+        "scanNum": "431",
+        "novorPeptide": "SQEWTSNAVFEER",
+        "expectedPeptide": "LTEWTSSNVMEER",
+        "success": 0
+    },
+    {
+        "scanNum": "432",
+        "novorPeptide": "LTAFPTSYEFM(O)MK",
+        "expectedPeptide": "LTEWTSSNVMEER",
+        "success": 0
+    },
+    {
+        "scanNum": "433",
+        "novorPeptide": "SEEWTSQSTLEMR",
+        "expectedPeptide": "LTEWTSSNVMEER",
+        "success": 0
+    },
+    {
+        "scanNum": "434",
+        "novorPeptide": "NTEWTSEAVNFKR",
+        "expectedPeptide": "LTEWTSSNVMEER",
+        "success": 0
+    },
+    {
+        "scanNum": "435",
+        "novorPeptide": "LVESSDSKDGLM(O)RK",
+        "expectedPeptide": "LTEWTSSNVMEER",
+        "success": 0
+    },
+    {
+        "scanNum": "436",
+        "novorPeptide": "QSQSAQSM(O)PGMERK",
+        "expectedPeptide": "LTEWTSSNVMEER",
+        "success": 0
+    },
+    {
+        "scanNum": "437",
+        "novorPeptide": "LTEASESKDGMERK",
+        "expectedPeptide": "LTEWTSSNVMEER",
+        "success": 0
+    },
+    {
+        "scanNum": "438",
+        "novorPeptide": "WRWTSVM(O)M(O)APQR",
+        "expectedPeptide": "LTEWTSSNVMEER",
+        "success": 0
+    },
+    {
+        "scanNum": "439",
+        "novorPeptide": "LTEWTSKDGMERK",
+        "expectedPeptide": "LTEWTSSNVMEER",
+        "success": 0
+    },
+    {
+        "scanNum": "440",
+        "novorPeptide": "LTEWTSM(O)HFERK",
+        "expectedPeptide": "LTEWTSSNVMEER",
+        "success": 0
+    },
+    {
+        "scanNum": "441",
+        "novorPeptide": "LVEC(Cam)ESKDGMTLAK",
+        "expectedPeptide": "LTEWTSSNVMEER",
+        "success": 0
+    },
+    {
+        "scanNum": "442",
+        "novorPeptide": "LTEWTSSNVMERK",
+        "expectedPeptide": "LTEWTSSNVMEER",
+        "success": 0
+    },
+    {
+        "scanNum": "443",
+        "novorPeptide": "LTEGTKSEDGMEKR",
+        "expectedPeptide": "LTEWTSSNVMEER",
+        "success": 0
+    },
+    {
+        "scanNum": "444",
+        "novorPeptide": "KSM(O)PATSQASGTDASK",
+        "expectedPeptide": "LTEWTSSNVMEER",
+        "success": 0
+    },
+    {
+        "scanNum": "445",
+        "novorPeptide": "HKTGNPLHGLGFR",
+        "expectedPeptide": "HKTGPNLHGLFGR",
+        "success": 0
+    },
+    {
+        "scanNum": "446",
+        "novorPeptide": "HKTGPNLHGLMTK",
+        "expectedPeptide": "HKTGPNLHGLFGR",
+        "success": 0
+    },
+    {
+        "scanNum": "447",
+        "novorPeptide": "HKAC(Cam)FRHPPKR",
+        "expectedPeptide": "HKTGPNLHGLFGR",
+        "success": 0
+    },
+    {
+        "scanNum": "448",
+        "novorPeptide": "HKRVNLHGMWR",
+        "expectedPeptide": "HKTGPNLHGLFGR",
+        "success": 0
+    },
+    {
+        "scanNum": "449",
+        "novorPeptide": "HQTLRLHAVM(O)GR",
+        "expectedPeptide": "HKTGPNLHGLFGR",
+        "success": 0
+    },
+    {
+        "scanNum": "450",
+        "novorPeptide": "HKRVNLHSGMVR",
+        "expectedPeptide": "HKTGPNLHGLFGR",
+        "success": 0
+    },
+    {
+        "scanNum": "451",
+        "novorPeptide": "HKTGPNLHAVMTK",
+        "expectedPeptide": "HKTGPNLHGLFGR",
+        "success": 0
+    },
+    {
+        "scanNum": "452",
+        "novorPeptide": "HKTGPNLHAPPHK",
+        "expectedPeptide": "HKTGPNLHGLFGR",
+        "success": 0
+    },
+    {
+        "scanNum": "453",
+        "novorPeptide": "HKTGPNLHM(O)AALK",
+        "expectedPeptide": "HKTGPNLHGLFGR",
+        "success": 0
+    },
+    {
+        "scanNum": "454",
+        "novorPeptide": "RPNPAAAAHFAVGR",
+        "expectedPeptide": "HKTGPNLHGLFGR",
+        "success": 0
+    },
+    {
+        "scanNum": "455",
+        "novorPeptide": "HGALLGQHQLGFR",
+        "expectedPeptide": "HKTGPNLHGLFGR",
+        "success": 0
+    },
+    {
+        "scanNum": "456",
+        "novorPeptide": "HQLLGKAGHLM(O)GR",
+        "expectedPeptide": "HKTGPNLHGLFGR",
+        "success": 0
+    },
+    {
+        "scanNum": "457",
+        "novorPeptide": "YLELTKHGLGM(O)R",
+        "expectedPeptide": "HKTGPNLHGLFGR",
+        "success": 0
+    },
+    {
+        "scanNum": "458",
+        "novorPeptide": "HGALLGKHQLM(O)GR",
+        "expectedPeptide": "HKTGPNLHGLFGR",
+        "success": 0
+    },
+    {
+        "scanNum": "459",
+        "novorPeptide": "GLHALGKQLHM(O)GR",
+        "expectedPeptide": "HKTGPNLHGLFGR",
+        "success": 0
+    },
+    {
+        "scanNum": "460",
+        "novorPeptide": "HAGLLGKAGHLM(O)GR",
+        "expectedPeptide": "HKTGPNLHGLFGR",
+        "success": 0
+    },
+    {
+        "scanNum": "461",
+        "novorPeptide": "HGALLGQHAGLGFR",
+        "expectedPeptide": "HKTGPNLHGLFGR",
+        "success": 0
+    },
+    {
+        "scanNum": "462",
+        "novorPeptide": "PPALLGQHQLM(O)GR",
+        "expectedPeptide": "HKTGPNLHGLFGR",
+        "success": 0
+    },
+    {
+        "scanNum": "463",
+        "novorPeptide": "KHASPRAGHLFGR",
+        "expectedPeptide": "HKTGPNLHGLFGR",
+        "success": 0
+    },
+    {
+        "scanNum": "464",
+        "novorPeptide": "YTNLGKAGHLFGR",
+        "expectedPeptide": "HKTGPNLHGLFGR",
+        "success": 0
+    },
+    {
+        "scanNum": "465",
+        "novorPeptide": "HKVVVANTSVDHK",
+        "expectedPeptide": "HKTGPNLHGLFGR",
+        "success": 0
+    },
+    {
+        "scanNum": "466",
+        "novorPeptide": "HKTGPVKHARFR",
+        "expectedPeptide": "HKTGPNLHGLFGR",
+        "success": 0
+    },
+    {
+        "scanNum": "467",
+        "novorPeptide": "HKTGPNLHLAAM(O)K",
+        "expectedPeptide": "HKTGPNLHGLFGR",
+        "success": 0
+    },
+    {
+        "scanNum": "468",
+        "novorPeptide": "KHTTAFHLEPPR",
+        "expectedPeptide": "HKTGPNLHGLFGR",
+        "success": 0
+    },
+    {
+        "scanNum": "469",
+        "novorPeptide": "HKTGPKVHSADTR",
+        "expectedPeptide": "HKTGPNLHGLFGR",
+        "success": 0
+    },
+    {
+        "scanNum": "470",
+        "novorPeptide": "HKAWPKHMLTGK",
+        "expectedPeptide": "HKTGPNLHGLFGR",
+        "success": 0
+    },
+    {
+        "scanNum": "471",
+        "novorPeptide": "HKTPGNLTGFPHK",
+        "expectedPeptide": "HKTGPNLHGLFGR",
+        "success": 0
+    },
+    {
+        "scanNum": "472",
+        "novorPeptide": "HKTPATLHSTSVR",
+        "expectedPeptide": "HKTGPNLHGLFGR",
+        "success": 0
+    },
+    {
+        "scanNum": "473",
+        "novorPeptide": "GPAAAKRERTM(O)TK",
+        "expectedPeptide": "HKTGPNLHGLFGR",
+        "success": 0
+    },
+    {
+        "scanNum": "474",
+        "novorPeptide": "HKTGPNLHNFLR",
+        "expectedPeptide": "HKTGPNLHGLFGR",
+        "success": 0
+    },
+    {
+        "scanNum": "475",
+        "novorPeptide": "QLLDSWVESQTDGLLR",
+        "expectedPeptide": "ELINSWVESQTNGIIR",
+        "success": 0
+    },
+    {
+        "scanNum": "476",
+        "novorPeptide": "LPYAKTQSQVAPRMNR",
+        "expectedPeptide": "ELINSWVESQTNGIIR",
+        "success": 0
+    },
+    {
+        "scanNum": "477",
+        "novorPeptide": "LM(O)LNRVGPVLEWPYR",
+        "expectedPeptide": "ELINSWVESQTNGIIR",
+        "success": 0
+    },
+    {
+        "scanNum": "478",
+        "novorPeptide": "SSPEGNTNTEVVSGVLLR",
+        "expectedPeptide": "ELINSWVESQTNGIIR",
+        "success": 0
+    },
+    {
+        "scanNum": "479",
+        "novorPeptide": "ELMNRVVESQTNGLLR",
+        "expectedPeptide": "ELINSWVESQTNGIIR",
+        "success": 0
+    },
+    {
+        "scanNum": "480",
+        "novorPeptide": "ELLNSWGTASQTNGLLR",
+        "expectedPeptide": "ELINSWVESQTNGIIR",
+        "success": 0
+    },
+    {
+        "scanNum": "481",
+        "novorPeptide": "LFNPGDVPMSKTNGLLR",
+        "expectedPeptide": "ELINSWVESQTNGIIR",
+        "success": 0
+    },
+    {
+        "scanNum": "482",
+        "novorPeptide": "RTTESDGSHSKVKGTLR",
+        "expectedPeptide": "ELINSWVESQTNGIIR",
+        "success": 0
+    },
+    {
+        "scanNum": "483",
+        "novorPeptide": "SVLGNSWVESQTNGLLR",
+        "expectedPeptide": "ELINSWVESQTNGIIR",
+        "success": 0
+    },
+    {
+        "scanNum": "484",
+        "novorPeptide": "NQMAKTQSEVGRELLR",
+        "expectedPeptide": "ELINSWVESQTNGIIR",
+        "success": 0
+    },
+    {
+        "scanNum": "485",
+        "novorPeptide": "NQLGC(Cam)AVVDTQTEVGLR",
+        "expectedPeptide": "ELINSWVESQTNGIIR",
+        "success": 0
+    },
+    {
+        "scanNum": "486",
+        "novorPeptide": "WTLGNTAGEEPM(O)RLLR",
+        "expectedPeptide": "ELINSWVESQTNGIIR",
+        "success": 0
+    },
+    {
+        "scanNum": "487",
+        "novorPeptide": "GMVTAPWVC(Cam)LASQGLLR",
+        "expectedPeptide": "ELINSWVESQTNGIIR",
+        "success": 0
+    },
+    {
+        "scanNum": "488",
+        "novorPeptide": "LC(Cam)VLLGWESGNGPSTLR",
+        "expectedPeptide": "ELINSWVESQTNGIIR",
+        "success": 0
+    },
+    {
+        "scanNum": "489",
+        "novorPeptide": "TSPPSSWVHHVGPKQSK",
+        "expectedPeptide": "ELINSWVESQTNGIIR",
+        "success": 0
+    },
+    {
+        "scanNum": "490",
+        "novorPeptide": "FYFVWVKSENSALLR",
+        "expectedPeptide": "ELINSWVESQTNGIIR",
+        "success": 0
+    },
+    {
+        "scanNum": "491",
+        "novorPeptide": "LVGSNSDAVKSTFEHLR",
+        "expectedPeptide": "ELINSWVESQTNGIIR",
+        "success": 0
+    },
+    {
+        "scanNum": "492",
+        "novorPeptide": "VLC(Cam)TVTQSEPALC(Cam)LLR",
+        "expectedPeptide": "ELINSWVESQTNGIIR",
+        "success": 0
+    },
+    {
+        "scanNum": "493",
+        "novorPeptide": "SSNRKNGVESQTRQLR",
+        "expectedPeptide": "ELINSWVESQTNGIIR",
+        "success": 0
+    },
+    {
+        "scanNum": "494",
+        "novorPeptide": "YVHLC(Cam)ESQGLLTKRR",
+        "expectedPeptide": "ELINSWVESQTNGIIR",
+        "success": 0
+    },
+    {
+        "scanNum": "495",
+        "novorPeptide": "SSLNGVNATSSVATLGNLR",
+        "expectedPeptide": "ELINSWVESQTNGIIR",
+        "success": 0
+    },
+    {
+        "scanNum": "496",
+        "novorPeptide": "TRTVNGNGTYKSYNKR",
+        "expectedPeptide": "ELINSWVESQTNGIIR",
+        "success": 0
+    },
+    {
+        "scanNum": "497",
+        "novorPeptide": "C(Cam)VPNSPSVESKTNGLLR",
+        "expectedPeptide": "ELINSWVESQTNGIIR",
+        "success": 0
+    },
+    {
+        "scanNum": "498",
+        "novorPeptide": "RAKDQNTASSDLTALLR",
+        "expectedPeptide": "ELINSWVESQTNGIIR",
+        "success": 0
+    },
+    {
+        "scanNum": "499",
+        "novorPeptide": "KDLNSWVESETLGNLR",
+        "expectedPeptide": "ELINSWVESQTNGIIR",
+        "success": 0
+    },
+    {
+        "scanNum": "500",
+        "novorPeptide": "LLFPSWVSEGATFSYR",
+        "expectedPeptide": "ELINSWVESQTNGIIR",
+        "success": 0
+    },
+    {
+        "scanNum": "501",
+        "novorPeptide": "QMPLSGQVPM(O)VGVVLMR",
+        "expectedPeptide": "ELINSWVESQTNGIIR",
+        "success": 0
+    },
+    {
+        "scanNum": "502",
+        "novorPeptide": "SAQLASEPDGC(Cam)WGPNLR",
+        "expectedPeptide": "ELINSWVESQTNGIIR",
+        "success": 0
+    },
+    {
+        "scanNum": "503",
+        "novorPeptide": "LGMDGYR",
+        "expectedPeptide": "LGMDGYR",
+        "success": 1
+    },
+    {
+        "scanNum": "504",
+        "novorPeptide": "LGMDGYR",
+        "expectedPeptide": "LGMDGYR",
+        "success": 1
+    },
+    {
+        "scanNum": "505",
+        "novorPeptide": "LGMDGYR",
+        "expectedPeptide": "LGMDGYR",
+        "success": 1
+    },
+    {
+        "scanNum": "506",
+        "novorPeptide": "LGMDGYR",
+        "expectedPeptide": "LGMDGYR",
+        "success": 1
+    },
+    {
+        "scanNum": "507",
+        "novorPeptide": "LGMDGYR",
+        "expectedPeptide": "LGMDGYR",
+        "success": 1
+    },
+    {
+        "scanNum": "508",
+        "novorPeptide": "LGMDGYR",
+        "expectedPeptide": "LGMDGYR",
+        "success": 1
+    },
+    {
+        "scanNum": "509",
+        "novorPeptide": "LGMDGYR",
+        "expectedPeptide": "LGMDGYR",
+        "success": 1
+    },
+    {
+        "scanNum": "510",
+        "novorPeptide": "LGMDGYR",
+        "expectedPeptide": "LGMDGYR",
+        "success": 1
+    },
+    {
+        "scanNum": "511",
+        "novorPeptide": "LGMDGYR",
+        "expectedPeptide": "LGMDGYR",
+        "success": 1
+    },
+    {
+        "scanNum": "512",
+        "novorPeptide": "LGMDGYR",
+        "expectedPeptide": "LGMDGYR",
+        "success": 1
+    },
+    {
+        "scanNum": "513",
+        "novorPeptide": "LGMDGYR",
+        "expectedPeptide": "LGMDGYR",
+        "success": 1
+    },
+    {
+        "scanNum": "514",
+        "novorPeptide": "LGMDGYR",
+        "expectedPeptide": "LGMDGYR",
+        "success": 1
+    },
+    {
+        "scanNum": "515",
+        "novorPeptide": "LGMDYGR",
+        "expectedPeptide": "LGMDGYR",
+        "success": 0
+    },
+    {
+        "scanNum": "516",
+        "novorPeptide": "LGMDGYR",
+        "expectedPeptide": "LGMDGYR",
+        "success": 1
+    },
+    {
+        "scanNum": "517",
+        "novorPeptide": "LGMDYGR",
+        "expectedPeptide": "LGMDGYR",
+        "success": 0
+    },
+    {
+        "scanNum": "518",
+        "novorPeptide": "LGMDGYR",
+        "expectedPeptide": "LGMDGYR",
+        "success": 1
+    },
+    {
+        "scanNum": "519",
+        "novorPeptide": "LGMDGYR",
+        "expectedPeptide": "LGMDGYR",
+        "success": 1
+    },
+    {
+        "scanNum": "520",
+        "novorPeptide": "LGMDGYR",
+        "expectedPeptide": "LGMDGYR",
+        "success": 1
+    },
+    {
+        "scanNum": "521",
+        "novorPeptide": "LGMDGYR",
+        "expectedPeptide": "LGMDGYR",
+        "success": 1
+    },
+    {
+        "scanNum": "522",
+        "novorPeptide": "NGMHEPK",
+        "expectedPeptide": "LGMDGYR",
+        "success": 0
+    },
+    {
+        "scanNum": "523",
+        "novorPeptide": "LGMDYGR",
+        "expectedPeptide": "LGMDGYR",
+        "success": 0
+    },
+    {
+        "scanNum": "524",
+        "novorPeptide": "LGMTMMK",
+        "expectedPeptide": "LGMDGYR",
+        "success": 0
+    },
+    {
+        "scanNum": "525",
+        "novorPeptide": "NGKQPLR",
+        "expectedPeptide": "LGMDGYR",
+        "success": 0
+    },
+    {
+        "scanNum": "526",
+        "novorPeptide": "LGMYDGR",
+        "expectedPeptide": "LGMDGYR",
+        "success": 0
+    },
+    {
+        "scanNum": "527",
+        "novorPeptide": "LGMSTM(O)R",
+        "expectedPeptide": "LGMDGYR",
+        "success": 0
+    },
+    {
+        "scanNum": "528",
+        "novorPeptide": "LGMEM(O)SK",
+        "expectedPeptide": "LGMDGYR",
+        "success": 0
+    },
+    {
+        "scanNum": "529",
+        "novorPeptide": "LGMDYGR",
+        "expectedPeptide": "LGMDGYR",
+        "success": 0
+    },
+    {
+        "scanNum": "530",
+        "novorPeptide": "NGLFFSK",
+        "expectedPeptide": "LGMDGYR",
+        "success": 0
+    },
+    {
+        "scanNum": "531",
+        "novorPeptide": "LTEWTSSNVTMDLGR",
+        "expectedPeptide": "LTEWTSSNVMEERK",
+        "success": 0
+    },
+    {
+        "scanNum": "532",
+        "novorPeptide": "LTEGETSSRGMESLGR",
+        "expectedPeptide": "LTEWTSSNVMEERK",
+        "success": 0
+    },
+    {
+        "scanNum": "533",
+        "novorPeptide": "LTEWTSSNC(Cam)SGPSRK",
+        "expectedPeptide": "LTEWTSSNVMEERK",
+        "success": 0
+    },
+    {
+        "scanNum": "534",
+        "novorPeptide": "LVMWTC(Cam)EC(Cam)TPATLK",
+        "expectedPeptide": "LTEWTSSNVMEERK",
+        "success": 0
+    },
+    {
+        "scanNum": "535",
+        "novorPeptide": "LVMWTSNWTGATSQK",
+        "expectedPeptide": "LTEWTSSNVMEERK",
+        "success": 0
+    },
+    {
+        "scanNum": "536",
+        "novorPeptide": "LTEWTSSTEELASQK",
+        "expectedPeptide": "LTEWTSSNVMEERK",
+        "success": 0
+    },
+    {
+        "scanNum": "537",
+        "novorPeptide": "LTEWTSSRGMHYNK",
+        "expectedPeptide": "LTEWTSSNVMEERK",
+        "success": 0
+    },
+    {
+        "scanNum": "538",
+        "novorPeptide": "LC(Cam)SAPM(O)DSGTPKSSKK",
+        "expectedPeptide": "LTEWTSSNVMEERK",
+        "success": 0
+    },
+    {
+        "scanNum": "539",
+        "novorPeptide": "LPMSTTC(Cam)NLLTESDK",
+        "expectedPeptide": "LTEWTSSNVMEERK",
+        "success": 0
+    },
+    {
+        "scanNum": "540",
+        "novorPeptide": "LTEWTSSRGMESTPK",
+        "expectedPeptide": "LTEWTSSNVMEERK",
+        "success": 0
+    },
+    {
+        "scanNum": "541",
+        "novorPeptide": "LTEGEYLVLMHDYK",
+        "expectedPeptide": "LTEWTSSNVMEERK",
+        "success": 0
+    },
+    {
+        "scanNum": "542",
+        "novorPeptide": "LTEWTHFLSM(O)M(O)PGK",
+        "expectedPeptide": "LTEWTSSNVMEERK",
+        "success": 0
+    },
+    {
+        "scanNum": "543",
+        "novorPeptide": "NVNGC(Cam)DGTHERQPVK",
+        "expectedPeptide": "LTEWTSSNVMEERK",
+        "success": 0
+    },
+    {
+        "scanNum": "544",
+        "novorPeptide": "LTEGTENPALFFGGEK",
+        "expectedPeptide": "LTEWTSSNVMEERK",
+        "success": 0
+    },
+    {
+        "scanNum": "545",
+        "novorPeptide": "GGTM(O)QGAASSVTREKSK",
+        "expectedPeptide": "LTEWTSSNVMEERK",
+        "success": 0
+    },
+    {
+        "scanNum": "546",
+        "novorPeptide": "TPC(Cam)GNTPRSGSYSLGR",
+        "expectedPeptide": "LTEWTSSNVMEERK",
+        "success": 0
+    },
+    {
+        "scanNum": "547",
+        "novorPeptide": "LTESVTEFHDPNPPK",
+        "expectedPeptide": "LTEWTSSNVMEERK",
+        "success": 0
+    },
+    {
+        "scanNum": "548",
+        "novorPeptide": "LTEWVC(Cam)MTKGMTPR",
+        "expectedPeptide": "LTEWTSSNVMEERK",
+        "success": 0
+    },
+    {
+        "scanNum": "549",
+        "novorPeptide": "LTEWTSDKGC(Cam)QTQR",
+        "expectedPeptide": "LTEWTSSNVMEERK",
+        "success": 0
+    },
+    {
+        "scanNum": "550",
+        "novorPeptide": "LTLC(Cam)NSC(Cam)LSGATERK",
+        "expectedPeptide": "LTEWTSSNVMEERK",
+        "success": 0
+    },
+    {
+        "scanNum": "551",
+        "novorPeptide": "DVKFTEKDGSGDSNGR",
+        "expectedPeptide": "LTEWTSSNVMEERK",
+        "success": 0
+    },
+    {
+        "scanNum": "552",
+        "novorPeptide": "LTQSGPTDNNQPPGQR",
+        "expectedPeptide": "LTEWTSSNVMEERK",
+        "success": 0
+    },
+    {
+        "scanNum": "553",
+        "novorPeptide": "LTEWTTMYDARAPR",
+        "expectedPeptide": "LTEWTSSNVMEERK",
+        "success": 0
+    },
+    {
+        "scanNum": "554",
+        "novorPeptide": "VLMDYPSRTPYDPR",
+        "expectedPeptide": "LTEWTSSNVMEERK",
+        "success": 0
+    },
+    {
+        "scanNum": "555",
+        "novorPeptide": "LTEPM(O)SVFAENQSSR",
+        "expectedPeptide": "LTEWTSSNVMEERK",
+        "success": 0
+    },
+    {
+        "scanNum": "556",
+        "novorPeptide": "LTEWNM(O)QVPFTDGR",
+        "expectedPeptide": "LTEWTSSNVMEERK",
+        "success": 0
+    },
+    {
+        "scanNum": "557",
+        "novorPeptide": "LTPSEEGPGGTELTGHK",
+        "expectedPeptide": "LTEWTSSNVMEERK",
+        "success": 0
+    },
+    {
+        "scanNum": "558",
+        "novorPeptide": "LTM(O)EEQGRMTEGVGR",
+        "expectedPeptide": "LTEWTSSNVMEERK",
+        "success": 0
+    },
+    {
+        "scanNum": "559",
+        "novorPeptide": "LTEADYTLENQASQK",
+        "expectedPeptide": "LTEWTSSNVMEERK",
+        "success": 0
+    },
+    {
+        "scanNum": "560",
+        "novorPeptide": "LTEWVSFMSVEEPR",
+        "expectedPeptide": "LTEWTSSNVMEERK",
+        "success": 0
+    },
+    {
+        "scanNum": "561",
+        "novorPeptide": "KPHGHPPPYDK",
+        "expectedPeptide": "LFTGHPETLEK",
+        "success": 0
+    },
+    {
+        "scanNum": "562",
+        "novorPeptide": "FNTGHPKKSEK",
+        "expectedPeptide": "LFTGHPETLEK",
+        "success": 0
+    },
+    {
+        "scanNum": "563",
+        "novorPeptide": "LM(O)TGMPHVLEK",
+        "expectedPeptide": "LFTGHPETLEK",
+        "success": 0
+    },
+    {
+        "scanNum": "564",
+        "novorPeptide": "LFTGHPLGSSAGK",
+        "expectedPeptide": "LFTGHPETLEK",
+        "success": 0
+    },
+    {
+        "scanNum": "565",
+        "novorPeptide": "FLTGHVPVC(Cam)NK",
+        "expectedPeptide": "LFTGHPETLEK",
+        "success": 0
+    },
+    {
+        "scanNum": "566",
+        "novorPeptide": "M(O)NTGHPKKTDK",
+        "expectedPeptide": "LFTGHPETLEK",
+        "success": 0
+    },
+    {
+        "scanNum": "567",
+        "novorPeptide": "FLTGHFKYMK",
+        "expectedPeptide": "LFTGHPETLEK",
+        "success": 0
+    },
+    {
+        "scanNum": "568",
+        "novorPeptide": "LFTGHPEVLMK",
+        "expectedPeptide": "LFTGHPETLEK",
+        "success": 0
+    },
+    {
+        "scanNum": "569",
+        "novorPeptide": "FLTGHGGLGREK",
+        "expectedPeptide": "LFTGHPETLEK",
+        "success": 0
+    },
+    {
+        "scanNum": "570",
+        "novorPeptide": "LFTGHPVMQNK",
+        "expectedPeptide": "LFTGHPETLEK",
+        "success": 0
+    },
+    {
+        "scanNum": "571",
+        "novorPeptide": "MKM(O)VPDFFLK",
+        "expectedPeptide": "LFTGHPETLEK",
+        "success": 0
+    },
+    {
+        "scanNum": "572",
+        "novorPeptide": "FELTFPFWGK",
+        "expectedPeptide": "LFTGHPETLEK",
+        "success": 0
+    },
+    {
+        "scanNum": "573",
+        "novorPeptide": "LM(O)TPPPLSGTNK",
+        "expectedPeptide": "LFTGHPETLEK",
+        "success": 0
+    },
+    {
+        "scanNum": "574",
+        "novorPeptide": "LFTGHPLVEMK",
+        "expectedPeptide": "LFTGHPETLEK",
+        "success": 0
+    },
+    {
+        "scanNum": "575",
+        "novorPeptide": "YDTGHLLPVEK",
+        "expectedPeptide": "LFTGHPETLEK",
+        "success": 0
+    },
+    {
+        "scanNum": "576",
+        "novorPeptide": "LFTGHPLPMMK",
+        "expectedPeptide": "LFTGHPETLEK",
+        "success": 0
+    },
+    {
+        "scanNum": "577",
+        "novorPeptide": "LFTGHPEKTNK",
+        "expectedPeptide": "LFTGHPETLEK",
+        "success": 0
+    },
+    {
+        "scanNum": "578",
+        "novorPeptide": "LFTGHPLPDFK",
+        "expectedPeptide": "LFTGHPETLEK",
+        "success": 0
+    },
+    {
+        "scanNum": "579",
+        "novorPeptide": "LFTGHPGVTTNK",
+        "expectedPeptide": "LFTGHPETLEK",
+        "success": 0
+    },
+    {
+        "scanNum": "580",
+        "novorPeptide": "LM(O)TPPPLVEMK",
+        "expectedPeptide": "LFTGHPETLEK",
+        "success": 0
+    },
+    {
+        "scanNum": "581",
+        "novorPeptide": "MQTPPYFLFK",
+        "expectedPeptide": "LFTGHPETLEK",
+        "success": 0
+    },
+    {
+        "scanNum": "582",
+        "novorPeptide": "MKFFDLTLEK",
+        "expectedPeptide": "LFTGHPETLEK",
+        "success": 0
+    },
+    {
+        "scanNum": "583",
+        "novorPeptide": "HRMFEQKAPK",
+        "expectedPeptide": "LFTGHPETLEK",
+        "success": 0
+    },
+    {
+        "scanNum": "584",
+        "novorPeptide": "MHRMLGHVYK",
+        "expectedPeptide": "LFTGHPETLEK",
+        "success": 0
+    },
+    {
+        "scanNum": "585",
+        "novorPeptide": "YDVAKM(O)ESALK",
+        "expectedPeptide": "LFTGHPETLEK",
+        "success": 0
+    },
+    {
+        "scanNum": "586",
+        "novorPeptide": "LFTPPC(Cam)GPPASK",
+        "expectedPeptide": "LFTGHPETLEK",
+        "success": 0
+    },
+    {
+        "scanNum": "587",
+        "novorPeptide": "LFSGDFVVPYK",
+        "expectedPeptide": "LFTGHPETLEK",
+        "success": 0
+    },
+    {
+        "scanNum": "588",
+        "novorPeptide": "M(O)NASHPLVLM(O)K",
+        "expectedPeptide": "LFTGHPETLEK",
+        "success": 0
+    },
+    {
+        "scanNum": "589",
+        "novorPeptide": "LHPHAPLAC(Cam)AGK",
+        "expectedPeptide": "LFTGHPETLEK",
+        "success": 0
+    },
+    {
+        "scanNum": "590",
+        "novorPeptide": "LFTHGC(Cam)GAPALK",
+        "expectedPeptide": "LFTGHPETLEK",
+        "success": 0
+    },
+    {
+        "scanNum": "591",
+        "novorPeptide": "VASMASEKMK",
+        "expectedPeptide": "VASMASEKMK",
+        "success": 1
+    },
+    {
+        "scanNum": "592",
+        "novorPeptide": "VASMASKEMK",
+        "expectedPeptide": "VASMASEKMK",
+        "success": 0
+    },
+    {
+        "scanNum": "593",
+        "novorPeptide": "VASMAYAAAAR",
+        "expectedPeptide": "VASMASEKMK",
+        "success": 0
+    },
+    {
+        "scanNum": "594",
+        "novorPeptide": "VASMAESKMK",
+        "expectedPeptide": "VASMASEKMK",
+        "success": 0
+    },
+    {
+        "scanNum": "595",
+        "novorPeptide": "VASMASEKMK",
+        "expectedPeptide": "VASMASEKMK",
+        "success": 1
+    },
+    {
+        "scanNum": "596",
+        "novorPeptide": "VAYSGTPQMK",
+        "expectedPeptide": "VASMASEKMK",
+        "success": 0
+    },
+    {
+        "scanNum": "597",
+        "novorPeptide": "VASMASEKMK",
+        "expectedPeptide": "VASMASEKMK",
+        "success": 1
+    },
+    {
+        "scanNum": "598",
+        "novorPeptide": "VASMAYAVNR",
+        "expectedPeptide": "VASMASEKMK",
+        "success": 0
+    },
+    {
+        "scanNum": "599",
+        "novorPeptide": "VASMASEKMK",
+        "expectedPeptide": "VASMASEKMK",
+        "success": 1
+    },
+    {
+        "scanNum": "600",
+        "novorPeptide": "VASMASEKMK",
+        "expectedPeptide": "VASMASEKMK",
+        "success": 1
+    },
+    {
+        "scanNum": "601",
+        "novorPeptide": "VASMASKEMK",
+        "expectedPeptide": "VASMASEKMK",
+        "success": 0
+    },
+    {
+        "scanNum": "602",
+        "novorPeptide": "VASMASEKMK",
+        "expectedPeptide": "VASMASEKMK",
+        "success": 1
+    },
+    {
+        "scanNum": "603",
+        "novorPeptide": "VASMASEKMK",
+        "expectedPeptide": "VASMASEKMK",
+        "success": 1
+    },
+    {
+        "scanNum": "604",
+        "novorPeptide": "VASMASEKMK",
+        "expectedPeptide": "VASMASEKMK",
+        "success": 1
+    },
+    {
+        "scanNum": "605",
+        "novorPeptide": "VASMNGDLFK",
+        "expectedPeptide": "VASMASEKMK",
+        "success": 0
+    },
+    {
+        "scanNum": "606",
+        "novorPeptide": "VQAC(Cam)YANKK",
+        "expectedPeptide": "VASMASEKMK",
+        "success": 0
+    },
+    {
+        "scanNum": "607",
+        "novorPeptide": "VASMAGSLSMK",
+        "expectedPeptide": "VASMASEKMK",
+        "success": 0
+    },
+    {
+        "scanNum": "608",
+        "novorPeptide": "VASMAVNDFK",
+        "expectedPeptide": "VASMASEKMK",
+        "success": 0
+    },
+    {
+        "scanNum": "609",
+        "novorPeptide": "VASSNTEFAR",
+        "expectedPeptide": "VASMASEKMK",
+        "success": 0
+    },
+    {
+        "scanNum": "610",
+        "novorPeptide": "GNSMAPHLQK",
+        "expectedPeptide": "VASMASEKMK",
+        "success": 0
+    },
+    {
+        "scanNum": "611",
+        "novorPeptide": "VASMAESKMK",
+        "expectedPeptide": "VASMASEKMK",
+        "success": 0
+    },
+    {
+        "scanNum": "612",
+        "novorPeptide": "VASMASM(O)LQK",
+        "expectedPeptide": "VASMASEKMK",
+        "success": 0
+    },
+    {
+        "scanNum": "613",
+        "novorPeptide": "VASMATDMKK",
+        "expectedPeptide": "VASMASEKMK",
+        "success": 0
+    },
+    {
+        "scanNum": "614",
+        "novorPeptide": "VASMASEKMK",
+        "expectedPeptide": "VASMASEKMK",
+        "success": 1
+    },
+    {
+        "scanNum": "615",
+        "novorPeptide": "VASMASFAAAR",
+        "expectedPeptide": "VASMASEKMK",
+        "success": 0
+    },
+    {
+        "scanNum": "616",
+        "novorPeptide": "VASMASEKMK",
+        "expectedPeptide": "VASMASEKMK",
+        "success": 1
+    },
+    {
+        "scanNum": "617",
+        "novorPeptide": "C(Cam)PMLPPNPR",
+        "expectedPeptide": "VASMASEKMK",
+        "success": 0
+    },
+    {
+        "scanNum": "618",
+        "novorPeptide": "VASMASGSFPK",
+        "expectedPeptide": "VASMASEKMK",
+        "success": 0
+    },
+    {
+        "scanNum": "619",
+        "novorPeptide": "VPVYYGPMR",
+        "expectedPeptide": "VASMASEKMK",
+        "success": 0
+    },
+    {
+        "scanNum": "620",
+        "novorPeptide": "VASMASASVMK",
+        "expectedPeptide": "VASMASEKMK",
+        "success": 0
+    },
+    {
+        "scanNum": "621",
+        "novorPeptide": "MLFALGKK",
+        "expectedPeptide": "MIFAGIKK",
+        "success": 0
+    },
+    {
+        "scanNum": "622",
+        "novorPeptide": "MLM(O)KLKK",
+        "expectedPeptide": "MIFAGIKK",
+        "success": 0
+    },
+    {
+        "scanNum": "623",
+        "novorPeptide": "MLFALGKK",
+        "expectedPeptide": "MIFAGIKK",
+        "success": 0
+    },
+    {
+        "scanNum": "624",
+        "novorPeptide": "MLM(O)KLKK",
+        "expectedPeptide": "MIFAGIKK",
+        "success": 0
+    },
+    {
+        "scanNum": "625",
+        "novorPeptide": "MLFALGKK",
+        "expectedPeptide": "MIFAGIKK",
+        "success": 0
+    },
+    {
+        "scanNum": "626",
+        "novorPeptide": "MLFALGKK",
+        "expectedPeptide": "MIFAGIKK",
+        "success": 0
+    },
+    {
+        "scanNum": "627",
+        "novorPeptide": "MLFALGKK",
+        "expectedPeptide": "MIFAGIKK",
+        "success": 0
+    },
+    {
+        "scanNum": "628",
+        "novorPeptide": "MLM(O)KLKK",
+        "expectedPeptide": "MIFAGIKK",
+        "success": 0
+    },
+    {
+        "scanNum": "629",
+        "novorPeptide": "MLM(O)KLKK",
+        "expectedPeptide": "MIFAGIKK",
+        "success": 0
+    },
+    {
+        "scanNum": "630",
+        "novorPeptide": "MLM(O)KLKK",
+        "expectedPeptide": "MIFAGIKK",
+        "success": 0
+    },
+    {
+        "scanNum": "631",
+        "novorPeptide": "MLM(O)ALGKK",
+        "expectedPeptide": "MIFAGIKK",
+        "success": 0
+    },
+    {
+        "scanNum": "632",
+        "novorPeptide": "MLFALGKK",
+        "expectedPeptide": "MIFAGIKK",
+        "success": 0
+    },
+    {
+        "scanNum": "633",
+        "novorPeptide": "MLFKGALK",
+        "expectedPeptide": "MIFAGIKK",
+        "success": 0
+    },
+    {
+        "scanNum": "634",
+        "novorPeptide": "MLFALGKK",
+        "expectedPeptide": "MIFAGIKK",
+        "success": 0
+    },
+    {
+        "scanNum": "635",
+        "novorPeptide": "FHHKLVK",
+        "expectedPeptide": "MIFAGIKK",
+        "success": 0
+    },
+    {
+        "scanNum": "636",
+        "novorPeptide": "MLFALGKK",
+        "expectedPeptide": "MIFAGIKK",
+        "success": 0
+    },
+    {
+        "scanNum": "637",
+        "novorPeptide": "MLFAVKAK",
+        "expectedPeptide": "MIFAGIKK",
+        "success": 0
+    },
+    {
+        "scanNum": "638",
+        "novorPeptide": "MLM(O)KLKK",
+        "expectedPeptide": "MIFAGIKK",
+        "success": 0
+    },
+    {
+        "scanNum": "639",
+        "novorPeptide": "MLFALGKK",
+        "expectedPeptide": "MIFAGIKK",
+        "success": 0
+    },
+    {
+        "scanNum": "640",
+        "novorPeptide": "MLM(O)KLQK",
+        "expectedPeptide": "MIFAGIKK",
+        "success": 0
+    },
+    {
+        "scanNum": "641",
+        "novorPeptide": "MLFAGKLK",
+        "expectedPeptide": "MIFAGIKK",
+        "success": 0
+    },
+    {
+        "scanNum": "642",
+        "novorPeptide": "MLFAGLKK",
+        "expectedPeptide": "MIFAGIKK",
+        "success": 0
+    },
+    {
+        "scanNum": "643",
+        "novorPeptide": "MLFQLKK",
+        "expectedPeptide": "MIFAGIKK",
+        "success": 0
+    },
+    {
+        "scanNum": "644",
+        "novorPeptide": "QDFKLQK",
+        "expectedPeptide": "MIFAGIKK",
+        "success": 0
+    },
+    {
+        "scanNum": "645",
+        "novorPeptide": "MLM(O)KKLK",
+        "expectedPeptide": "MIFAGIKK",
+        "success": 0
+    },
+    {
+        "scanNum": "646",
+        "novorPeptide": "LMFALGKK",
+        "expectedPeptide": "MIFAGIKK",
+        "success": 0
+    },
+    {
+        "scanNum": "647",
+        "novorPeptide": "MLM(O)KLKK",
+        "expectedPeptide": "MIFAGIKK",
+        "success": 0
+    },
+    {
+        "scanNum": "648",
+        "novorPeptide": "MLFAGLKK",
+        "expectedPeptide": "MIFAGIKK",
+        "success": 0
+    },
+    {
+        "scanNum": "649",
+        "novorPeptide": "MLFALGKK",
+        "expectedPeptide": "MIFAGIKK",
+        "success": 0
+    },
+    {
+        "scanNum": "650",
+        "novorPeptide": "MLFALGKK",
+        "expectedPeptide": "MIFAGIKK",
+        "success": 0
+    },
+    {
+        "scanNum": "651",
+        "novorPeptide": "SELAHRFK",
+        "expectedPeptide": "SEIAHRFK",
+        "success": 0
+    },
+    {
+        "scanNum": "652",
+        "novorPeptide": "KSNAHRFK",
+        "expectedPeptide": "SEIAHRFK",
+        "success": 0
+    },
+    {
+        "scanNum": "653",
+        "novorPeptide": "SELAHRFK",
+        "expectedPeptide": "SEIAHRFK",
+        "success": 0
+    },
+    {
+        "scanNum": "654",
+        "novorPeptide": "SELAHRFK",
+        "expectedPeptide": "SEIAHRFK",
+        "success": 0
+    },
+    {
+        "scanNum": "655",
+        "novorPeptide": "KSGGAHRFK",
+        "expectedPeptide": "SEIAHRFK",
+        "success": 0
+    },
+    {
+        "scanNum": "656",
+        "novorPeptide": "SELAHRFK",
+        "expectedPeptide": "SEIAHRFK",
+        "success": 0
+    },
+    {
+        "scanNum": "657",
+        "novorPeptide": "QSNAGVNAVK",
+        "expectedPeptide": "SEIAHRFK",
+        "success": 0
+    },
+    {
+        "scanNum": "658",
+        "novorPeptide": "KSNAHRFK",
+        "expectedPeptide": "SEIAHRFK",
+        "success": 0
+    },
+    {
+        "scanNum": "659",
+        "novorPeptide": "SELAHRFK",
+        "expectedPeptide": "SEIAHRFK",
+        "success": 0
+    },
+    {
+        "scanNum": "660",
+        "novorPeptide": "KSNAHRFK",
+        "expectedPeptide": "SEIAHRFK",
+        "success": 0
+    },
+    {
+        "scanNum": "661",
+        "novorPeptide": "SELAHRFK",
+        "expectedPeptide": "SEIAHRFK",
+        "success": 0
+    },
+    {
+        "scanNum": "662",
+        "novorPeptide": "SELAHRFK",
+        "expectedPeptide": "SEIAHRFK",
+        "success": 0
+    },
+    {
+        "scanNum": "663",
+        "novorPeptide": "KSNAHRFK",
+        "expectedPeptide": "SEIAHRFK",
+        "success": 0
+    },
+    {
+        "scanNum": "664",
+        "novorPeptide": "KSNAHRFK",
+        "expectedPeptide": "SEIAHRFK",
+        "success": 0
+    },
+    {
+        "scanNum": "665",
+        "novorPeptide": "SELAHRFK",
+        "expectedPeptide": "SEIAHRFK",
+        "success": 0
+    },
+    {
+        "scanNum": "666",
+        "novorPeptide": "SELAHRFK",
+        "expectedPeptide": "SEIAHRFK",
+        "success": 0
+    },
+    {
+        "scanNum": "667",
+        "novorPeptide": "KSNAHRFK",
+        "expectedPeptide": "SEIAHRFK",
+        "success": 0
+    },
+    {
+        "scanNum": "668",
+        "novorPeptide": "SELAHRFK",
+        "expectedPeptide": "SEIAHRFK",
+        "success": 0
+    },
+    {
+        "scanNum": "669",
+        "novorPeptide": "SELAGELLR",
+        "expectedPeptide": "SEIAHRFK",
+        "success": 0
+    },
+    {
+        "scanNum": "670",
+        "novorPeptide": "KSNAHRFK",
+        "expectedPeptide": "SEIAHRFK",
+        "success": 0
+    },
+    {
+        "scanNum": "671",
+        "novorPeptide": "SEQLAAAVAK",
+        "expectedPeptide": "SEIAHRFK",
+        "success": 0
+    },
+    {
+        "scanNum": "672",
+        "novorPeptide": "SELAHRFK",
+        "expectedPeptide": "SEIAHRFK",
+        "success": 0
+    },
+    {
+        "scanNum": "673",
+        "novorPeptide": "SELAGHVFK",
+        "expectedPeptide": "SEIAHRFK",
+        "success": 0
+    },
+    {
+        "scanNum": "674",
+        "novorPeptide": "SEQLAARGR",
+        "expectedPeptide": "SEIAHRFK",
+        "success": 0
+    },
+    {
+        "scanNum": "675",
+        "novorPeptide": "QAPSKKSNK",
+        "expectedPeptide": "SEIAHRFK",
+        "success": 0
+    },
+    {
+        "scanNum": "676",
+        "novorPeptide": "TPVYRPGAK",
+        "expectedPeptide": "SEIAHRFK",
+        "success": 0
+    },
+    {
+        "scanNum": "677",
+        "novorPeptide": "SEKLAGSPAK",
+        "expectedPeptide": "SEIAHRFK",
+        "success": 0
+    },
+    {
+        "scanNum": "678",
+        "novorPeptide": "SELAGAPKSK",
+        "expectedPeptide": "SEIAHRFK",
+        "success": 0
+    },
+    {
+        "scanNum": "679",
+        "novorPeptide": "SEQLVHFK",
+        "expectedPeptide": "SEIAHRFK",
+        "success": 0
+    },
+    {
+        "scanNum": "680",
+        "novorPeptide": "KSNAHFRK",
+        "expectedPeptide": "SEIAHRFK",
+        "success": 0
+    },
+    {
+        "scanNum": "681",
+        "novorPeptide": "TKLC(Cam)C(Cam)LK",
+        "expectedPeptide": "AEFVEVTK",
+        "success": 0
+    },
+    {
+        "scanNum": "682",
+        "novorPeptide": "M(O)LFVRNK",
+        "expectedPeptide": "AEFVEVTK",
+        "success": 0
+    },
+    {
+        "scanNum": "683",
+        "novorPeptide": "AEFVTDLK",
+        "expectedPeptide": "AEFVEVTK",
+        "success": 0
+    },
+    {
+        "scanNum": "684",
+        "novorPeptide": "AGTLVNGYK",
+        "expectedPeptide": "AEFVEVTK",
+        "success": 0
+    },
+    {
+        "scanNum": "685",
+        "novorPeptide": "KTLC(Cam)C(Cam)LK",
+        "expectedPeptide": "AEFVEVTK",
+        "success": 0
+    },
+    {
+        "scanNum": "686",
+        "novorPeptide": "TVFMPSLK",
+        "expectedPeptide": "AEFVEVTK",
+        "success": 0
+    },
+    {
+        "scanNum": "687",
+        "novorPeptide": "AEFVESLK",
+        "expectedPeptide": "AEFVEVTK",
+        "success": 0
+    },
+    {
+        "scanNum": "688",
+        "novorPeptide": "APPVAGPGEK",
+        "expectedPeptide": "AEFVEVTK",
+        "success": 0
+    },
+    {
+        "scanNum": "689",
+        "novorPeptide": "AEFEVSLK",
+        "expectedPeptide": "AEFVEVTK",
+        "success": 0
+    },
+    {
+        "scanNum": "690",
+        "novorPeptide": "SLFEEGLK",
+        "expectedPeptide": "AEFVEVTK",
+        "success": 0
+    },
+    {
+        "scanNum": "691",
+        "novorPeptide": "KTLC(Cam)C(Cam)LK",
+        "expectedPeptide": "AEFVEVTK",
+        "success": 0
+    },
+    {
+        "scanNum": "692",
+        "novorPeptide": "M(O)LFAGLKK",
+        "expectedPeptide": "AEFVEVTK",
+        "success": 0
+    },
+    {
+        "scanNum": "693",
+        "novorPeptide": "AGHVWPQK",
+        "expectedPeptide": "AEFVEVTK",
+        "success": 0
+    },
+    {
+        "scanNum": "694",
+        "novorPeptide": "AGMFQGALK",
+        "expectedPeptide": "AEFVEVTK",
+        "success": 0
+    },
+    {
+        "scanNum": "695",
+        "novorPeptide": "LWEAKFK",
+        "expectedPeptide": "AEFVEVTK",
+        "success": 0
+    },
+    {
+        "scanNum": "696",
+        "novorPeptide": "TVFMTVPK",
+        "expectedPeptide": "AEFVEVTK",
+        "success": 0
+    },
+    {
+        "scanNum": "697",
+        "novorPeptide": "FLFQLQK",
+        "expectedPeptide": "AEFVEVTK",
+        "success": 0
+    },
+    {
+        "scanNum": "698",
+        "novorPeptide": "AEFEVSLK",
+        "expectedPeptide": "AEFVEVTK",
+        "success": 0
+    },
+    {
+        "scanNum": "699",
+        "novorPeptide": "TVFMPSLK",
+        "expectedPeptide": "AEFVEVTK",
+        "success": 0
+    },
+    {
+        "scanNum": "700",
+        "novorPeptide": "AASLASSSTK",
+        "expectedPeptide": "AEFVEVTK",
+        "success": 0
+    },
+    {
+        "scanNum": "701",
+        "novorPeptide": "DELLAYLK",
+        "expectedPeptide": "EDLIAYLK",
+        "success": 0
+    },
+    {
+        "scanNum": "702",
+        "novorPeptide": "DELLAYLK",
+        "expectedPeptide": "EDLIAYLK",
+        "success": 0
+    },
+    {
+        "scanNum": "703",
+        "novorPeptide": "EDLGFKKK",
+        "expectedPeptide": "EDLIAYLK",
+        "success": 0
+    },
+    {
+        "scanNum": "704",
+        "novorPeptide": "DELLAYLK",
+        "expectedPeptide": "EDLIAYLK",
+        "success": 0
+    },
+    {
+        "scanNum": "705",
+        "novorPeptide": "EDLLAYLK",
+        "expectedPeptide": "EDLIAYLK",
+        "success": 0
+    },
+    {
+        "scanNum": "706",
+        "novorPeptide": "DELLAYLK",
+        "expectedPeptide": "EDLIAYLK",
+        "success": 0
+    },
+    {
+        "scanNum": "707",
+        "novorPeptide": "DELLAYLK",
+        "expectedPeptide": "EDLIAYLK",
+        "success": 0
+    },
+    {
+        "scanNum": "708",
+        "novorPeptide": "DELLSLFK",
+        "expectedPeptide": "EDLIAYLK",
+        "success": 0
+    },
+    {
+        "scanNum": "709",
+        "novorPeptide": "EDLLHPLK",
+        "expectedPeptide": "EDLIAYLK",
+        "success": 0
+    },
+    {
+        "scanNum": "710",
+        "novorPeptide": "DELLAYLK",
+        "expectedPeptide": "EDLIAYLK",
+        "success": 0
+    },
+    {
+        "scanNum": "711",
+        "novorPeptide": "DELLAYLK",
+        "expectedPeptide": "EDLIAYLK",
+        "success": 0
+    },
+    {
+        "scanNum": "712",
+        "novorPeptide": "LAQSAAYLK",
+        "expectedPeptide": "EDLIAYLK",
+        "success": 0
+    },
+    {
+        "scanNum": "713",
+        "novorPeptide": "PFGMSGKLK",
+        "expectedPeptide": "EDLIAYLK",
+        "success": 0
+    },
+    {
+        "scanNum": "714",
+        "novorPeptide": "MFVAASLVK",
+        "expectedPeptide": "EDLIAYLK",
+        "success": 0
+    },
+    {
+        "scanNum": "715",
+        "novorPeptide": "EDLLAYLK",
+        "expectedPeptide": "EDLIAYLK",
+        "success": 0
+    },
+    {
+        "scanNum": "716",
+        "novorPeptide": "YDKGLLQK",
+        "expectedPeptide": "EDLIAYLK",
+        "success": 0
+    },
+    {
+        "scanNum": "717",
+        "novorPeptide": "NYTRVRR",
+        "expectedPeptide": "EDLIAYLK",
+        "success": 0
+    },
+    {
+        "scanNum": "718",
+        "novorPeptide": "DKNLAYLK",
+        "expectedPeptide": "EDLIAYLK",
+        "success": 0
+    },
+    {
+        "scanNum": "719",
+        "novorPeptide": "M(O)PNFKLAK",
+        "expectedPeptide": "EDLIAYLK",
+        "success": 0
+    },
+    {
+        "scanNum": "720",
+        "novorPeptide": "AM(O)RRRMK",
+        "expectedPeptide": "EDLIAYLK",
+        "success": 0
+    },
+    {
+        "scanNum": "721",
+        "novorPeptide": "MGDVEKGK",
+        "expectedPeptide": "MGDVEKGK",
+        "success": 1
+    },
+    {
+        "scanNum": "722",
+        "novorPeptide": "MGDVEKGK",
+        "expectedPeptide": "MGDVEKGK",
+        "success": 1
+    },
+    {
+        "scanNum": "723",
+        "novorPeptide": "MGDVEKGK",
+        "expectedPeptide": "MGDVEKGK",
+        "success": 1
+    },
+    {
+        "scanNum": "724",
+        "novorPeptide": "MGDVEKGK",
+        "expectedPeptide": "MGDVEKGK",
+        "success": 1
+    },
+    {
+        "scanNum": "725",
+        "novorPeptide": "MGDVGKEK",
+        "expectedPeptide": "MGDVEKGK",
+        "success": 0
+    },
+    {
+        "scanNum": "726",
+        "novorPeptide": "MGDVEKGK",
+        "expectedPeptide": "MGDVEKGK",
+        "success": 1
+    },
+    {
+        "scanNum": "727",
+        "novorPeptide": "MGDVEKGK",
+        "expectedPeptide": "MGDVEKGK",
+        "success": 1
+    },
+    {
+        "scanNum": "728",
+        "novorPeptide": "MGDVKGEK",
+        "expectedPeptide": "MGDVEKGK",
+        "success": 0
+    },
+    {
+        "scanNum": "729",
+        "novorPeptide": "MGDVEKGK",
+        "expectedPeptide": "MGDVEKGK",
+        "success": 1
+    },
+    {
+        "scanNum": "730",
+        "novorPeptide": "MGDVEKGK",
+        "expectedPeptide": "MGDVEKGK",
+        "success": 1
+    },
+    {
+        "scanNum": "731",
+        "novorPeptide": "MGDSVARK",
+        "expectedPeptide": "MGDVEKGK",
+        "success": 0
+    },
+    {
+        "scanNum": "732",
+        "novorPeptide": "MGDVEKGK",
+        "expectedPeptide": "MGDVEKGK",
+        "success": 1
+    },
+    {
+        "scanNum": "733",
+        "novorPeptide": "MGDVKGEK",
+        "expectedPeptide": "MGDVEKGK",
+        "success": 0
+    },
+    {
+        "scanNum": "734",
+        "novorPeptide": "MGDLDKGK",
+        "expectedPeptide": "MGDVEKGK",
+        "success": 0
+    },
+    {
+        "scanNum": "735",
+        "novorPeptide": "GMDVGKEK",
+        "expectedPeptide": "MGDVEKGK",
+        "success": 0
+    },
+    {
+        "scanNum": "736",
+        "novorPeptide": "MGDVAKSR",
+        "expectedPeptide": "MGDVEKGK",
+        "success": 0
+    },
+    {
+        "scanNum": "737",
+        "novorPeptide": "MGPHFFK",
+        "expectedPeptide": "MGDVEKGK",
+        "success": 0
+    },
+    {
+        "scanNum": "738",
+        "novorPeptide": "MGDVKGEK",
+        "expectedPeptide": "MGDVEKGK",
+        "success": 0
+    },
+    {
+        "scanNum": "739",
+        "novorPeptide": "GMSPMRGK",
+        "expectedPeptide": "MGDVEKGK",
+        "success": 0
+    },
+    {
+        "scanNum": "740",
+        "novorPeptide": "MGDVRTGK",
+        "expectedPeptide": "MGDVEKGK",
+        "success": 0
+    },
+    {
+        "scanNum": "741",
+        "novorPeptide": "EFPGTKFLLKMK",
+        "expectedPeptide": "YIPGTKMIFAGIK",
+        "success": 0
+    },
+    {
+        "scanNum": "742",
+        "novorPeptide": "YLPKASMLAFLGK",
+        "expectedPeptide": "YIPGTKMIFAGIK",
+        "success": 0
+    },
+    {
+        "scanNum": "743",
+        "novorPeptide": "YLLSGKELAFLGK",
+        "expectedPeptide": "YIPGTKMIFAGIK",
+        "success": 0
+    },
+    {
+        "scanNum": "744",
+        "novorPeptide": "EM(O)PGTKLPPVLLK",
+        "expectedPeptide": "YIPGTKMIFAGIK",
+        "success": 0
+    },
+    {
+        "scanNum": "745",
+        "novorPeptide": "YLPKASEDLKFK",
+        "expectedPeptide": "YIPGTKMIFAGIK",
+        "success": 0
+    },
+    {
+        "scanNum": "746",
+        "novorPeptide": "YLPGPPSVPAAELK",
+        "expectedPeptide": "YIPGTKMIFAGIK",
+        "success": 0
+    },
+    {
+        "scanNum": "747",
+        "novorPeptide": "YLALAKAFLDEGK",
+        "expectedPeptide": "YIPGTKMIFAGIK",
+        "success": 0
+    },
+    {
+        "scanNum": "748",
+        "novorPeptide": "YLEEKGALM(O)KLK",
+        "expectedPeptide": "YIPGTKMIFAGIK",
+        "success": 0
+    },
+    {
+        "scanNum": "749",
+        "novorPeptide": "YLVVKGMLKTMR",
+        "expectedPeptide": "YIPGTKMIFAGIK",
+        "success": 0
+    },
+    {
+        "scanNum": "750",
+        "novorPeptide": "YLVSSTLGFPGLGK",
+        "expectedPeptide": "YIPGTKMIFAGIK",
+        "success": 0
+    },
+    {
+        "scanNum": "751",
+        "novorPeptide": "YLPGTKMLFLAGK",
+        "expectedPeptide": "YIPGTKMIFAGIK",
+        "success": 0
+    },
+    {
+        "scanNum": "752",
+        "novorPeptide": "FLNGTKSRLYLK",
+        "expectedPeptide": "YIPGTKMIFAGIK",
+        "success": 0
+    },
+    {
+        "scanNum": "753",
+        "novorPeptide": "FEPLPPGQSARLK",
+        "expectedPeptide": "YIPGTKMIFAGIK",
+        "success": 0
+    },
+    {
+        "scanNum": "754",
+        "novorPeptide": "LYPTGKSRLFEK",
+        "expectedPeptide": "YIPGTKMIFAGIK",
+        "success": 0
+    },
+    {
+        "scanNum": "755",
+        "novorPeptide": "YLPGTKPFLAGFK",
+        "expectedPeptide": "YIPGTKMIFAGIK",
+        "success": 0
+    },
+    {
+        "scanNum": "756",
+        "novorPeptide": "YLKALAADGLFEK",
+        "expectedPeptide": "YIPGTKMIFAGIK",
+        "success": 0
+    },
+    {
+        "scanNum": "757",
+        "novorPeptide": "FEPGTKTVRYLK",
+        "expectedPeptide": "YIPGTKMIFAGIK",
+        "success": 0
+    },
+    {
+        "scanNum": "758",
+        "novorPeptide": "FKVTKGSVAPFMK",
+        "expectedPeptide": "YIPGTKMIFAGIK",
+        "success": 0
+    },
+    {
+        "scanNum": "759",
+        "novorPeptide": "YLPGTKKDLYLK",
+        "expectedPeptide": "YIPGTKMIFAGIK",
+        "success": 0
+    },
+    {
+        "scanNum": "760",
+        "novorPeptide": "YLPKASMLFALGK",
+        "expectedPeptide": "YIPGTKMIFAGIK",
+        "success": 0
+    },
+    {
+        "scanNum": "761",
+        "novorPeptide": "LLLPLAPTSKPFLKGK",
+        "expectedPeptide": "ALIVLGLVLLSVTVQGK",
+        "success": 0
+    },
+    {
+        "scanNum": "762",
+        "novorPeptide": "ALLVLVAVLQPPLHLK",
+        "expectedPeptide": "ALIVLGLVLLSVTVQGK",
+        "success": 0
+    },
+    {
+        "scanNum": "763",
+        "novorPeptide": "ALLVLPATLPPKPHKK",
+        "expectedPeptide": "ALIVLGLVLLSVTVQGK",
+        "success": 0
+    },
+    {
+        "scanNum": "764",
+        "novorPeptide": "ALLVLRLFALQGPRR",
+        "expectedPeptide": "ALIVLGLVLLSVTVQGK",
+        "success": 0
+    },
+    {
+        "scanNum": "765",
+        "novorPeptide": "ALLVPNKPGPKPKHVK",
+        "expectedPeptide": "ALIVLGLVLLSVTVQGK",
+        "success": 0
+    },
+    {
+        "scanNum": "766",
+        "novorPeptide": "ALLVLYASLLLRHLK",
+        "expectedPeptide": "ALIVLGLVLLSVTVQGK",
+        "success": 0
+    },
+    {
+        "scanNum": "767",
+        "novorPeptide": "GLLWKSM(O)K",
+        "expectedPeptide": "GLWEKAFK",
+        "success": 0
+    },
+    {
+        "scanNum": "768",
+        "novorPeptide": "GLWEKAFK",
+        "expectedPeptide": "GLWEKAFK",
+        "success": 1
+    },
+    {
+        "scanNum": "769",
+        "novorPeptide": "GLLTGKDM(O)K",
+        "expectedPeptide": "GLWEKAFK",
+        "success": 0
+    },
+    {
+        "scanNum": "770",
+        "novorPeptide": "GLMMSKALK",
+        "expectedPeptide": "GLWEKAFK",
+        "success": 0
+    },
+    {
+        "scanNum": "771",
+        "novorPeptide": "GLWEKAFK",
+        "expectedPeptide": "GLWEKAFK",
+        "success": 1
+    },
+    {
+        "scanNum": "772",
+        "novorPeptide": "GLWEKAFK",
+        "expectedPeptide": "GLWEKAFK",
+        "success": 1
+    },
+    {
+        "scanNum": "773",
+        "novorPeptide": "GLWGYRVK",
+        "expectedPeptide": "GLWEKAFK",
+        "success": 0
+    },
+    {
+        "scanNum": "774",
+        "novorPeptide": "GLWEKAFK",
+        "expectedPeptide": "GLWEKAFK",
+        "success": 1
+    },
+    {
+        "scanNum": "775",
+        "novorPeptide": "GLLNMRFK",
+        "expectedPeptide": "GLWEKAFK",
+        "success": 0
+    },
+    {
+        "scanNum": "776",
+        "novorPeptide": "GLWEKAFK",
+        "expectedPeptide": "GLWEKAFK",
+        "success": 1
+    },
+    {
+        "scanNum": "777",
+        "novorPeptide": "GLWFSALGK",
+        "expectedPeptide": "GLWEKAFK",
+        "success": 0
+    },
+    {
+        "scanNum": "778",
+        "novorPeptide": "FLPFKAEK",
+        "expectedPeptide": "GLWEKAFK",
+        "success": 0
+    },
+    {
+        "scanNum": "779",
+        "novorPeptide": "AVMSPAKFK",
+        "expectedPeptide": "GLWEKAFK",
+        "success": 0
+    },
+    {
+        "scanNum": "780",
+        "novorPeptide": "GLWGLSAFK",
+        "expectedPeptide": "GLWEKAFK",
+        "success": 0
+    },
+    {
+        "scanNum": "781",
+        "novorPeptide": "GLWGGTLFK",
+        "expectedPeptide": "GLWEKAFK",
+        "success": 0
+    },
+    {
+        "scanNum": "782",
+        "novorPeptide": "GLWKSLM(O)K",
+        "expectedPeptide": "GLWEKAFK",
+        "success": 0
+    },
+    {
+        "scanNum": "783",
+        "novorPeptide": "GNWPAPPLK",
+        "expectedPeptide": "GLWEKAFK",
+        "success": 0
+    },
+    {
+        "scanNum": "784",
+        "novorPeptide": "GLSMAPKFK",
+        "expectedPeptide": "GLWEKAFK",
+        "success": 0
+    },
+    {
+        "scanNum": "785",
+        "novorPeptide": "AVLGGMRFK",
+        "expectedPeptide": "GLWEKAFK",
+        "success": 0
+    },
+    {
+        "scanNum": "786",
+        "novorPeptide": "GLWTGVAFK",
+        "expectedPeptide": "GLWEKAFK",
+        "success": 0
+    },
+    {
+        "scanNum": "787",
+        "novorPeptide": "ATEEQLK",
+        "expectedPeptide": "ATEEQLK",
+        "success": 1
+    },
+    {
+        "scanNum": "788",
+        "novorPeptide": "ATEEQLK",
+        "expectedPeptide": "ATEEQLK",
+        "success": 1
+    },
+    {
+        "scanNum": "789",
+        "novorPeptide": "ATEQELK",
+        "expectedPeptide": "ATEEQLK",
+        "success": 0
+    },
+    {
+        "scanNum": "790",
+        "novorPeptide": "ATEEQLK",
+        "expectedPeptide": "ATEEQLK",
+        "success": 1
+    },
+    {
+        "scanNum": "791",
+        "novorPeptide": "ATEEQLK",
+        "expectedPeptide": "ATEEQLK",
+        "success": 1
+    },
+    {
+        "scanNum": "792",
+        "novorPeptide": "ATEQELK",
+        "expectedPeptide": "ATEEQLK",
+        "success": 0
+    },
+    {
+        "scanNum": "793",
+        "novorPeptide": "ATEQELK",
+        "expectedPeptide": "ATEEQLK",
+        "success": 0
+    },
+    {
+        "scanNum": "794",
+        "novorPeptide": "ATELAGEK",
+        "expectedPeptide": "ATEEQLK",
+        "success": 0
+    },
+    {
+        "scanNum": "795",
+        "novorPeptide": "ATEQELK",
+        "expectedPeptide": "ATEEQLK",
+        "success": 0
+    },
+    {
+        "scanNum": "796",
+        "novorPeptide": "ATEEQLK",
+        "expectedPeptide": "ATEEQLK",
+        "success": 1
+    },
+    {
+        "scanNum": "797",
+        "novorPeptide": "ATEEQLK",
+        "expectedPeptide": "ATEEQLK",
+        "success": 1
+    },
+    {
+        "scanNum": "798",
+        "novorPeptide": "ATEEQLK",
+        "expectedPeptide": "ATEEQLK",
+        "success": 1
+    },
+    {
+        "scanNum": "799",
+        "novorPeptide": "ATEQELK",
+        "expectedPeptide": "ATEEQLK",
+        "success": 0
+    },
+    {
+        "scanNum": "800",
+        "novorPeptide": "ATEGEALK",
+        "expectedPeptide": "ATEEQLK",
+        "success": 0
+    },
+    {
+        "scanNum": "801",
+        "novorPeptide": "ATEQELK",
+        "expectedPeptide": "ATEEQLK",
+        "success": 0
+    },
+    {
+        "scanNum": "802",
+        "novorPeptide": "ATEQELK",
+        "expectedPeptide": "ATEEQLK",
+        "success": 0
+    },
+    {
+        "scanNum": "803",
+        "novorPeptide": "ATEEAGLK",
+        "expectedPeptide": "ATEEQLK",
+        "success": 0
+    },
+    {
+        "scanNum": "804",
+        "novorPeptide": "ATEQELK",
+        "expectedPeptide": "ATEEQLK",
+        "success": 0
+    },
+    {
+        "scanNum": "805",
+        "novorPeptide": "ATEEQLK",
+        "expectedPeptide": "ATEEQLK",
+        "success": 1
+    },
+    {
+        "scanNum": "806",
+        "novorPeptide": "ATEEQLK",
+        "expectedPeptide": "ATEEQLK",
+        "success": 1
+    },
+    {
+        "scanNum": "807",
+        "novorPeptide": "VVRTNPPTR",
+        "expectedPeptide": "VVRDPQGIR",
+        "success": 0
+    },
+    {
+        "scanNum": "808",
+        "novorPeptide": "VDGTPPKGLR",
+        "expectedPeptide": "VVRDPQGIR",
+        "success": 0
+    },
+    {
+        "scanNum": "809",
+        "novorPeptide": "VVRDPQGLR",
+        "expectedPeptide": "VVRDPQGIR",
+        "success": 0
+    },
+    {
+        "scanNum": "810",
+        "novorPeptide": "VVRTYFVR",
+        "expectedPeptide": "VVRDPQGIR",
+        "success": 0
+    },
+    {
+        "scanNum": "811",
+        "novorPeptide": "VDKLKSGHR",
+        "expectedPeptide": "VVRDPQGIR",
+        "success": 0
+    },
+    {
+        "scanNum": "812",
+        "novorPeptide": "VVRTNVSHK",
+        "expectedPeptide": "VVRDPQGIR",
+        "success": 0
+    },
+    {
+        "scanNum": "813",
+        "novorPeptide": "VVWANVVPR",
+        "expectedPeptide": "VVRDPQGIR",
+        "success": 0
+    },
+    {
+        "scanNum": "814",
+        "novorPeptide": "VVRDPQGLR",
+        "expectedPeptide": "VVRDPQGIR",
+        "success": 0
+    },
+    {
+        "scanNum": "815",
+        "novorPeptide": "SKEFFLLR",
+        "expectedPeptide": "VVRDPQGIR",
+        "success": 0
+    },
+    {
+        "scanNum": "816",
+        "novorPeptide": "VRVTNPTPR",
+        "expectedPeptide": "VVRDPQGIR",
+        "success": 0
+    },
+    {
+        "scanNum": "817",
+        "novorPeptide": "RMGPPRGLR",
+        "expectedPeptide": "VVRDPQGIR",
+        "success": 0
+    },
+    {
+        "scanNum": "818",
+        "novorPeptide": "VVDRPQGLR",
+        "expectedPeptide": "VVRDPQGIR",
+        "success": 0
+    },
+    {
+        "scanNum": "819",
+        "novorPeptide": "VVRTNPPTR",
+        "expectedPeptide": "VVRDPQGIR",
+        "success": 0
+    },
+    {
+        "scanNum": "820",
+        "novorPeptide": "TDAAPLPSLR",
+        "expectedPeptide": "VVRDPQGIR",
+        "success": 0
+    },
+    {
+        "scanNum": "821",
+        "novorPeptide": "VVVGNTPTPR",
+        "expectedPeptide": "VVRDPQGIR",
+        "success": 0
+    },
+    {
+        "scanNum": "822",
+        "novorPeptide": "VVRTNPPTR",
+        "expectedPeptide": "VVRDPQGIR",
+        "success": 0
+    },
+    {
+        "scanNum": "823",
+        "novorPeptide": "QSAVSPVVPR",
+        "expectedPeptide": "VVRDPQGIR",
+        "success": 0
+    },
+    {
+        "scanNum": "824",
+        "novorPeptide": "VVRTNPTPR",
+        "expectedPeptide": "VVRDPQGIR",
+        "success": 0
+    },
+    {
+        "scanNum": "825",
+        "novorPeptide": "VVRTNPPEK",
+        "expectedPeptide": "VVRDPQGIR",
+        "success": 0
+    },
+    {
+        "scanNum": "826",
+        "novorPeptide": "VDLKQTHAK",
+        "expectedPeptide": "VVRDPQGIR",
+        "success": 0
+    },
+    {
+        "scanNum": "827",
+        "novorPeptide": "QTALVELLK",
+        "expectedPeptide": "QTALVELLK",
+        "success": 1
+    },
+    {
+        "scanNum": "828",
+        "novorPeptide": "KTPSQLGRK",
+        "expectedPeptide": "QTALVELLK",
+        "success": 0
+    },
+    {
+        "scanNum": "829",
+        "novorPeptide": "KTALVGQVAK",
+        "expectedPeptide": "QTALVELLK",
+        "success": 0
+    },
+    {
+        "scanNum": "830",
+        "novorPeptide": "QTALVELLK",
+        "expectedPeptide": "QTALVELLK",
+        "success": 1
+    },
+    {
+        "scanNum": "831",
+        "novorPeptide": "QTALVELLK",
+        "expectedPeptide": "QTALVELLK",
+        "success": 1
+    },
+    {
+        "scanNum": "832",
+        "novorPeptide": "QTALVELLK",
+        "expectedPeptide": "QTALVELLK",
+        "success": 1
+    },
+    {
+        "scanNum": "833",
+        "novorPeptide": "TKSAGRLPGK",
+        "expectedPeptide": "QTALVELLK",
+        "success": 0
+    },
+    {
+        "scanNum": "834",
+        "novorPeptide": "QTRSKLPGK",
+        "expectedPeptide": "QTALVELLK",
+        "success": 0
+    },
+    {
+        "scanNum": "835",
+        "novorPeptide": "YHLPKKTK",
+        "expectedPeptide": "QTALVELLK",
+        "success": 0
+    },
+    {
+        "scanNum": "836",
+        "novorPeptide": "QTALVELLK",
+        "expectedPeptide": "QTALVELLK",
+        "success": 1
+    },
+    {
+        "scanNum": "837",
+        "novorPeptide": "QTALVGLGKK",
+        "expectedPeptide": "QTALVELLK",
+        "success": 0
+    },
+    {
+        "scanNum": "838",
+        "novorPeptide": "YHRKRVR",
+        "expectedPeptide": "QTALVELLK",
+        "success": 0
+    },
+    {
+        "scanNum": "839",
+        "novorPeptide": "KTALFVHAK",
+        "expectedPeptide": "QTALVELLK",
+        "success": 0
+    },
+    {
+        "scanNum": "840",
+        "novorPeptide": "DNALKLRGK",
+        "expectedPeptide": "QTALVELLK",
+        "success": 0
+    },
+    {
+        "scanNum": "841",
+        "novorPeptide": "KTATAKLPGK",
+        "expectedPeptide": "QTALVELLK",
+        "success": 0
+    },
+    {
+        "scanNum": "842",
+        "novorPeptide": "TKPKQREK",
+        "expectedPeptide": "QTALVELLK",
+        "success": 0
+    },
+    {
+        "scanNum": "843",
+        "novorPeptide": "QTALQVRAK",
+        "expectedPeptide": "QTALVELLK",
+        "success": 0
+    },
+    {
+        "scanNum": "844",
+        "novorPeptide": "YHRKVRR",
+        "expectedPeptide": "QTALVELLK",
+        "success": 0
+    },
+    {
+        "scanNum": "845",
+        "novorPeptide": "KTALHFVAK",
+        "expectedPeptide": "QTALVELLK",
+        "success": 0
+    },
+    {
+        "scanNum": "846",
+        "novorPeptide": "KTNSLRPAK",
+        "expectedPeptide": "QTALVELLK",
+        "success": 0
+    },
+    {
+        "scanNum": "847",
+        "novorPeptide": "YWC(Cam)NDGK",
+        "expectedPeptide": "YWCNDGK",
+        "success": 0
+    },
+    {
+        "scanNum": "848",
+        "novorPeptide": "YWC(Cam)NDGK",
+        "expectedPeptide": "YWCNDGK",
+        "success": 0
+    },
+    {
+        "scanNum": "849",
+        "novorPeptide": "YGDSSNDGK",
+        "expectedPeptide": "YWCNDGK",
+        "success": 0
+    },
+    {
+        "scanNum": "850",
+        "novorPeptide": "YGEEEMGK",
+        "expectedPeptide": "YWCNDGK",
+        "success": 0
+    },
+    {
+        "scanNum": "851",
+        "novorPeptide": "YWC(Cam)NDGK",
+        "expectedPeptide": "YWCNDGK",
+        "success": 0
+    },
+    {
+        "scanNum": "852",
+        "novorPeptide": "YGEEEMGK",
+        "expectedPeptide": "YWCNDGK",
+        "success": 0
+    },
+    {
+        "scanNum": "853",
+        "novorPeptide": "YWC(Cam)NDGK",
+        "expectedPeptide": "YWCNDGK",
+        "success": 0
+    },
+    {
+        "scanNum": "854",
+        "novorPeptide": "M(O)TTC(Cam)NDGK",
+        "expectedPeptide": "YWCNDGK",
+        "success": 0
+    },
+    {
+        "scanNum": "855",
+        "novorPeptide": "YWC(Cam)GGDGK",
+        "expectedPeptide": "YWCNDGK",
+        "success": 0
+    },
+    {
+        "scanNum": "856",
+        "novorPeptide": "YWC(Cam)EER",
+        "expectedPeptide": "YWCNDGK",
+        "success": 0
+    },
+    {
+        "scanNum": "857",
+        "novorPeptide": "WESGYNTR",
+        "expectedPeptide": "WESGYNTR",
+        "success": 1
+    },
+    {
+        "scanNum": "858",
+        "novorPeptide": "WEPYMMR",
+        "expectedPeptide": "WESGYNTR",
+        "success": 0
+    },
+    {
+        "scanNum": "859",
+        "novorPeptide": "WESGYNTR",
+        "expectedPeptide": "WESGYNTR",
+        "success": 1
+    },
+    {
+        "scanNum": "860",
+        "novorPeptide": "WESGYNEK",
+        "expectedPeptide": "WESGYNTR",
+        "success": 0
+    },
+    {
+        "scanNum": "861",
+        "novorPeptide": "WESGYNTR",
+        "expectedPeptide": "WESGYNTR",
+        "success": 1
+    },
+    {
+        "scanNum": "862",
+        "novorPeptide": "WESGYWGK",
+        "expectedPeptide": "WESGYNTR",
+        "success": 0
+    },
+    {
+        "scanNum": "863",
+        "novorPeptide": "WESGYNEK",
+        "expectedPeptide": "WESGYNTR",
+        "success": 0
+    },
+    {
+        "scanNum": "864",
+        "novorPeptide": "WESGYWGK",
+        "expectedPeptide": "WESGYNTR",
+        "success": 0
+    },
+    {
+        "scanNum": "865",
+        "novorPeptide": "WESGYNTR",
+        "expectedPeptide": "WESGYNTR",
+        "success": 1
+    },
+    {
+        "scanNum": "866",
+        "novorPeptide": "WESGYNTR",
+        "expectedPeptide": "WESGYNTR",
+        "success": 1
+    },
+    {
+        "scanNum": "867",
+        "novorPeptide": "LTTSGM(O)AC(Cam)R",
+        "expectedPeptide": "WESGYNTR",
+        "success": 0
+    },
+    {
+        "scanNum": "868",
+        "novorPeptide": "GQFGAKFEK",
+        "expectedPeptide": "WESGYNTR",
+        "success": 0
+    },
+    {
+        "scanNum": "869",
+        "novorPeptide": "KWSGYNTR",
+        "expectedPeptide": "WESGYNTR",
+        "success": 0
+    },
+    {
+        "scanNum": "870",
+        "novorPeptide": "WESYGWGK",
+        "expectedPeptide": "WESGYNTR",
+        "success": 0
+    },
+    {
+        "scanNum": "871",
+        "novorPeptide": "VYLVGMPK",
+        "expectedPeptide": "VYLPRMK",
+        "success": 0
+    },
+    {
+        "scanNum": "872",
+        "novorPeptide": "VYLGVMPK",
+        "expectedPeptide": "VYLPRMK",
+        "success": 0
+    },
+    {
+        "scanNum": "873",
+        "novorPeptide": "VYLPRMK",
+        "expectedPeptide": "VYLPRMK",
+        "success": 1
+    },
+    {
+        "scanNum": "874",
+        "novorPeptide": "VYLVGMPK",
+        "expectedPeptide": "VYLPRMK",
+        "success": 0
+    },
+    {
+        "scanNum": "875",
+        "novorPeptide": "VYLGVMPK",
+        "expectedPeptide": "VYLPRMK",
+        "success": 0
+    },
+    {
+        "scanNum": "876",
+        "novorPeptide": "VYLRMPK",
+        "expectedPeptide": "VYLPRMK",
+        "success": 0
+    },
+    {
+        "scanNum": "877",
+        "novorPeptide": "VYLPRMK",
+        "expectedPeptide": "VYLPRMK",
+        "success": 1
+    },
+    {
+        "scanNum": "878",
+        "novorPeptide": "VYLAALEK",
+        "expectedPeptide": "VYLPRMK",
+        "success": 0
+    },
+    {
+        "scanNum": "879",
+        "novorPeptide": "VYLPRMK",
+        "expectedPeptide": "VYLPRMK",
+        "success": 1
+    },
+    {
+        "scanNum": "880",
+        "novorPeptide": "VAYGAAAKR",
+        "expectedPeptide": "VYLPRMK",
+        "success": 0
+    },
+    {
+        "scanNum": "881",
+        "novorPeptide": "VYLPRMK",
+        "expectedPeptide": "VYLPRMK",
+        "success": 1
+    },
+    {
+        "scanNum": "882",
+        "novorPeptide": "VYLPRMK",
+        "expectedPeptide": "VYLPRMK",
+        "success": 1
+    },
+    {
+        "scanNum": "883",
+        "novorPeptide": "VYLVGMPK",
+        "expectedPeptide": "VYLPRMK",
+        "success": 0
+    },
+    {
+        "scanNum": "884",
+        "novorPeptide": "VYKAAAGAR",
+        "expectedPeptide": "VYLPRMK",
+        "success": 0
+    },
+    {
+        "scanNum": "885",
+        "novorPeptide": "VYLSLSPK",
+        "expectedPeptide": "VYLPRMK",
+        "success": 0
+    },
+    {
+        "scanNum": "886",
+        "novorPeptide": "VYLMGVPK",
+        "expectedPeptide": "VYLPRMK",
+        "success": 0
+    },
+    {
+        "scanNum": "887",
+        "novorPeptide": "VYLPRMK",
+        "expectedPeptide": "VYLPRMK",
+        "success": 1
+    },
+    {
+        "scanNum": "888",
+        "novorPeptide": "VYLSLSPK",
+        "expectedPeptide": "VYLPRMK",
+        "success": 0
+    },
+    {
+        "scanNum": "889",
+        "novorPeptide": "VYLPRMK",
+        "expectedPeptide": "VYLPRMK",
+        "success": 1
+    },
+    {
+        "scanNum": "890",
+        "novorPeptide": "VYLAALEK",
+        "expectedPeptide": "VYLPRMK",
+        "success": 0
+    },
+    {
+        "scanNum": "891",
+        "novorPeptide": "GLSKVWK",
+        "expectedPeptide": "SLGKVGTR",
+        "success": 0
+    },
+    {
+        "scanNum": "892",
+        "novorPeptide": "GLSKVWK",
+        "expectedPeptide": "SLGKVGTR",
+        "success": 0
+    },
+    {
+        "scanNum": "893",
+        "novorPeptide": "KEKVGTR",
+        "expectedPeptide": "SLGKVGTR",
+        "success": 0
+    },
+    {
+        "scanNum": "894",
+        "novorPeptide": "GLSKVWK",
+        "expectedPeptide": "SLGKVGTR",
+        "success": 0
+    },
+    {
+        "scanNum": "895",
+        "novorPeptide": "AQTKLEK",
+        "expectedPeptide": "SLGKVGTR",
+        "success": 0
+    },
+    {
+        "scanNum": "896",
+        "novorPeptide": "SLGKVWK",
+        "expectedPeptide": "SLGKVGTR",
+        "success": 0
+    },
+    {
+        "scanNum": "897",
+        "novorPeptide": "GLSKREK",
+        "expectedPeptide": "SLGKVGTR",
+        "success": 0
+    },
+    {
+        "scanNum": "898",
+        "novorPeptide": "GNKSKRK",
+        "expectedPeptide": "SLGKVGTR",
+        "success": 0
+    },
+    {
+        "scanNum": "899",
+        "novorPeptide": "SLGKVWK",
+        "expectedPeptide": "SLGKVGTR",
+        "success": 0
+    },
+    {
+        "scanNum": "900",
+        "novorPeptide": "SLGKVGEK",
+        "expectedPeptide": "SLGKVGTR",
+        "success": 0
+    },
+    {
+        "scanNum": "901",
+        "novorPeptide": "SGGGQVWK",
+        "expectedPeptide": "SLGKVGTR",
+        "success": 0
+    },
+    {
+        "scanNum": "902",
+        "novorPeptide": "ATEGEALK",
+        "expectedPeptide": "SLGKVGTR",
+        "success": 0
+    },
+    {
+        "scanNum": "903",
+        "novorPeptide": "ATEAEGLK",
+        "expectedPeptide": "SLGKVGTR",
+        "success": 0
+    },
+    {
+        "scanNum": "904",
+        "novorPeptide": "ATEEQLK",
+        "expectedPeptide": "SLGKVGTR",
+        "success": 0
+    },
+    {
+        "scanNum": "905",
+        "novorPeptide": "ATEEQLK",
+        "expectedPeptide": "SLGKVGTR",
+        "success": 0
+    },
+    {
+        "scanNum": "906",
+        "novorPeptide": "ATEEQLK",
+        "expectedPeptide": "SLGKVGTR",
+        "success": 0
+    },
+    {
+        "scanNum": "907",
+        "novorPeptide": "QQVQEGK",
+        "expectedPeptide": "SLGKVGTR",
+        "success": 0
+    },
+    {
+        "scanNum": "908",
+        "novorPeptide": "ATEEQLK",
+        "expectedPeptide": "SLGKVGTR",
+        "success": 0
+    },
+    {
+        "scanNum": "909",
+        "novorPeptide": "ATEEQLK",
+        "expectedPeptide": "SLGKVGTR",
+        "success": 0
+    },
+    {
+        "scanNum": "910",
+        "novorPeptide": "SLGKVGTR",
+        "expectedPeptide": "SLGKVGTR",
+        "success": 1
+    },
+    {
+        "scanNum": "911",
+        "novorPeptide": "QYVQGC(Cam)R",
+        "expectedPeptide": "QYVQGCGV",
+        "success": 0
+    },
+    {
+        "scanNum": "912",
+        "novorPeptide": "QYVQGC(Cam)R",
+        "expectedPeptide": "QYVQGCGV",
+        "success": 0
+    },
+    {
+        "scanNum": "913",
+        "novorPeptide": "VYEPSC(Cam)R",
+        "expectedPeptide": "QYVQGCGV",
+        "success": 0
+    },
+    {
+        "scanNum": "914",
+        "novorPeptide": "DYLPSC(Cam)R",
+        "expectedPeptide": "QYVQGCGV",
+        "success": 0
+    },
+    {
+        "scanNum": "915",
+        "novorPeptide": "VYEPSC(Cam)R",
+        "expectedPeptide": "QYVQGCGV",
+        "success": 0
+    },
+    {
+        "scanNum": "916",
+        "novorPeptide": "SGFVQGC(Cam)R",
+        "expectedPeptide": "QYVQGCGV",
+        "success": 0
+    },
+    {
+        "scanNum": "917",
+        "novorPeptide": "VYEPSC(Cam)R",
+        "expectedPeptide": "QYVQGCGV",
+        "success": 0
+    },
+    {
+        "scanNum": "918",
+        "novorPeptide": "EFLEGC(Cam)R",
+        "expectedPeptide": "QYVQGCGV",
+        "success": 0
+    },
+    {
+        "scanNum": "919",
+        "novorPeptide": "QYVQGC(Cam)R",
+        "expectedPeptide": "QYVQGCGV",
+        "success": 0
+    },
+    {
+        "scanNum": "920",
+        "novorPeptide": "FSGVQGC(Cam)R",
+        "expectedPeptide": "QYVQGCGV",
+        "success": 0
+    },
+    {
+        "scanNum": "921",
+        "novorPeptide": "NKGLTWK",
+        "expectedPeptide": "NKGITWK",
+        "success": 0
+    },
+    {
+        "scanNum": "922",
+        "novorPeptide": "NKGLTWK",
+        "expectedPeptide": "NKGITWK",
+        "success": 0
+    },
+    {
+        "scanNum": "923",
+        "novorPeptide": "NKGLTWK",
+        "expectedPeptide": "NKGITWK",
+        "success": 0
+    },
+    {
+        "scanNum": "924",
+        "novorPeptide": "NKGLTWK",
+        "expectedPeptide": "NKGITWK",
+        "success": 0
+    },
+    {
+        "scanNum": "925",
+        "novorPeptide": "NKGLTWK",
+        "expectedPeptide": "NKGITWK",
+        "success": 0
+    },
+    {
+        "scanNum": "926",
+        "novorPeptide": "NKGLTWK",
+        "expectedPeptide": "NKGITWK",
+        "success": 0
+    },
+    {
+        "scanNum": "927",
+        "novorPeptide": "NKGLTWK",
+        "expectedPeptide": "NKGITWK",
+        "success": 0
+    },
+    {
+        "scanNum": "928",
+        "novorPeptide": "NKGLTWK",
+        "expectedPeptide": "NKGITWK",
+        "success": 0
+    },
+    {
+        "scanNum": "929",
+        "novorPeptide": "LEGLTWK",
+        "expectedPeptide": "NKGITWK",
+        "success": 0
+    },
+    {
+        "scanNum": "930",
+        "novorPeptide": "LEGLTSVK",
+        "expectedPeptide": "NKGITWK",
+        "success": 0
+    },
+    {
+        "scanNum": "931",
+        "novorPeptide": "NKSALWK",
+        "expectedPeptide": "NKGITWK",
+        "success": 0
+    },
+    {
+        "scanNum": "932",
+        "novorPeptide": "LANLRMK",
+        "expectedPeptide": "NKGITWK",
+        "success": 0
+    },
+    {
+        "scanNum": "933",
+        "novorPeptide": "NKPFGKR",
+        "expectedPeptide": "NKGITWK",
+        "success": 0
+    },
+    {
+        "scanNum": "934",
+        "novorPeptide": "NKGLTWK",
+        "expectedPeptide": "NKGITWK",
+        "success": 0
+    },
+    {
+        "scanNum": "935",
+        "novorPeptide": "ARSGATRK",
+        "expectedPeptide": "NKGITWK",
+        "success": 0
+    },
+    {
+        "scanNum": "936",
+        "novorPeptide": "NKFRPGK",
+        "expectedPeptide": "NKGITWK",
+        "success": 0
+    },
+    {
+        "scanNum": "937",
+        "novorPeptide": "NKGLTWK",
+        "expectedPeptide": "NKGITWK",
+        "success": 0
+    },
+    {
+        "scanNum": "938",
+        "novorPeptide": "LC(Cam)VLEHK",
+        "expectedPeptide": "LCVLHEK",
+        "success": 0
+    },
+    {
+        "scanNum": "939",
+        "novorPeptide": "LC(Cam)VLHEK",
+        "expectedPeptide": "LCVLHEK",
+        "success": 0
+    },
+    {
+        "scanNum": "940",
+        "novorPeptide": "LC(Cam)VLHEK",
+        "expectedPeptide": "LCVLHEK",
+        "success": 0
+    },
+    {
+        "scanNum": "941",
+        "novorPeptide": "LC(Cam)VLHEK",
+        "expectedPeptide": "LCVLHEK",
+        "success": 0
+    },
+    {
+        "scanNum": "942",
+        "novorPeptide": "LC(Cam)VLHEK",
+        "expectedPeptide": "LCVLHEK",
+        "success": 0
+    },
+    {
+        "scanNum": "943",
+        "novorPeptide": "LC(Cam)VLHEK",
+        "expectedPeptide": "LCVLHEK",
+        "success": 0
+    },
+    {
+        "scanNum": "944",
+        "novorPeptide": "LC(Cam)VLHEK",
+        "expectedPeptide": "LCVLHEK",
+        "success": 0
+    },
+    {
+        "scanNum": "945",
+        "novorPeptide": "LC(Cam)VLHEK",
+        "expectedPeptide": "LCVLHEK",
+        "success": 0
+    },
+    {
+        "scanNum": "946",
+        "novorPeptide": "LC(Cam)VLHEK",
+        "expectedPeptide": "LCVLHEK",
+        "success": 0
+    },
+    {
+        "scanNum": "947",
+        "novorPeptide": "LC(Cam)VLHEK",
+        "expectedPeptide": "LCVLHEK",
+        "success": 0
+    },
+    {
+        "scanNum": "948",
+        "novorPeptide": "KYLPGTK",
+        "expectedPeptide": "KYIPGTK",
+        "success": 0
+    },
+    {
+        "scanNum": "949",
+        "novorPeptide": "QYGLVVK",
+        "expectedPeptide": "KYIPGTK",
+        "success": 0
+    },
+    {
+        "scanNum": "950",
+        "novorPeptide": "KYLPGTK",
+        "expectedPeptide": "KYIPGTK",
+        "success": 0
+    },
+    {
+        "scanNum": "951",
+        "novorPeptide": "QYGVVLK",
+        "expectedPeptide": "KYIPGTK",
+        "success": 0
+    },
+    {
+        "scanNum": "952",
+        "novorPeptide": "KYPLGTK",
+        "expectedPeptide": "KYIPGTK",
+        "success": 0
+    },
+    {
+        "scanNum": "953",
+        "novorPeptide": "KYLPGTK",
+        "expectedPeptide": "KYIPGTK",
+        "success": 0
+    },
+    {
+        "scanNum": "954",
+        "novorPeptide": "KYPLTGK",
+        "expectedPeptide": "KYIPGTK",
+        "success": 0
+    },
+    {
+        "scanNum": "955",
+        "novorPeptide": "KYLPGTK",
+        "expectedPeptide": "KYIPGTK",
+        "success": 0
+    },
+    {
+        "scanNum": "956",
+        "novorPeptide": "KYLPGTK",
+        "expectedPeptide": "KYIPGTK",
+        "success": 0
+    },
+    {
+        "scanNum": "957",
+        "novorPeptide": "KYLPGTK",
+        "expectedPeptide": "KYIPGTK",
+        "success": 0
+    },
+    {
+        "scanNum": "958",
+        "novorPeptide": "KYLPGTK",
+        "expectedPeptide": "KYIPGTK",
+        "success": 0
+    },
+    {
+        "scanNum": "959",
+        "novorPeptide": "KYPLGTK",
+        "expectedPeptide": "KYIPGTK",
+        "success": 0
+    },
+    {
+        "scanNum": "960",
+        "novorPeptide": "KYPLGTK",
+        "expectedPeptide": "KYIPGTK",
+        "success": 0
+    },
+    {
+        "scanNum": "961",
+        "novorPeptide": "KYLPGTK",
+        "expectedPeptide": "KYIPGTK",
+        "success": 0
+    },
+    {
+        "scanNum": "962",
+        "novorPeptide": "KYPLGTK",
+        "expectedPeptide": "KYIPGTK",
+        "success": 0
+    },
+    {
+        "scanNum": "963",
+        "novorPeptide": "KYPLGTK",
+        "expectedPeptide": "KYIPGTK",
+        "success": 0
+    },
+    {
+        "scanNum": "964",
+        "novorPeptide": "KYLPGTK",
+        "expectedPeptide": "KYIPGTK",
+        "success": 0
+    },
+    {
+        "scanNum": "965",
+        "novorPeptide": "KYPLGTK",
+        "expectedPeptide": "KYIPGTK",
+        "success": 0
+    },
+    {
+        "scanNum": "966",
+        "novorPeptide": "KYVPATK",
+        "expectedPeptide": "KYIPGTK",
+        "success": 0
+    },
+    {
+        "scanNum": "967",
+        "novorPeptide": "KYAVPTK",
+        "expectedPeptide": "KYIPGTK",
+        "success": 0
+    },
+    {
+        "scanNum": "968",
+        "novorPeptide": "C(Cam)QGSDKPR",
+        "expectedPeptide": "CQNRDVR",
+        "success": 0
+    },
+    {
+        "scanNum": "969",
+        "novorPeptide": "C(Cam)AAPNKMR",
+        "expectedPeptide": "CQNRDVR",
+        "success": 0
+    },
+    {
+        "scanNum": "970",
+        "novorPeptide": "ATDYPPQR",
+        "expectedPeptide": "CQNRDVR",
+        "success": 0
+    },
+    {
+        "scanNum": "971",
+        "novorPeptide": "C(Cam)KLC(Cam)PNR",
+        "expectedPeptide": "CQNRDVR",
+        "success": 0
+    },
+    {
+        "scanNum": "972",
+        "novorPeptide": "C(Cam)MAKGAGPR",
+        "expectedPeptide": "CQNRDVR",
+        "success": 0
+    },
+    {
+        "scanNum": "973",
+        "novorPeptide": "C(Cam)LDGLDVR",
+        "expectedPeptide": "CQNRDVR",
+        "success": 0
+    },
+    {
+        "scanNum": "974",
+        "novorPeptide": "TATPGMVDR",
+        "expectedPeptide": "CQNRDVR",
+        "success": 0
+    },
+    {
+        "scanNum": "975",
+        "novorPeptide": "SSVPGC(Cam)ANR",
+        "expectedPeptide": "CQNRDVR",
+        "success": 0
+    },
+    {
+        "scanNum": "976",
+        "novorPeptide": "AMWGMPVR",
+        "expectedPeptide": "CQNRDVR",
+        "success": 0
+    },
+    {
+        "scanNum": "977",
+        "novorPeptide": "SDWDAVVR",
+        "expectedPeptide": "CQNRDVR",
+        "success": 0
+    },
+    {
+        "scanNum": "978",
+        "novorPeptide": "QEAAGGC(Cam)VR",
+        "expectedPeptide": "CQNRDVR",
+        "success": 0
+    },
+    {
+        "scanNum": "979",
+        "novorPeptide": "C(Cam)QNAADLR",
+        "expectedPeptide": "CQNRDVR",
+        "success": 0
+    },
+    {
+        "scanNum": "980",
+        "novorPeptide": "NC(Cam)NREVR",
+        "expectedPeptide": "CQNRDVR",
+        "success": 0
+    },
+    {
+        "scanNum": "981",
+        "novorPeptide": "C(Cam)C(Cam)TKPESER",
+        "expectedPeptide": "CCTKPESER",
+        "success": 0
+    },
+    {
+        "scanNum": "982",
+        "novorPeptide": "C(Cam)C(Cam)TQSNLQR",
+        "expectedPeptide": "CCTKPESER",
+        "success": 0
+    },
+    {
+        "scanNum": "983",
+        "novorPeptide": "C(Cam)C(Cam)TQPPTM(O)R",
+        "expectedPeptide": "CCTKPESER",
+        "success": 0
+    },
+    {
+        "scanNum": "984",
+        "novorPeptide": "C(Cam)C(Cam)TQKADQR",
+        "expectedPeptide": "CCTKPESER",
+        "success": 0
+    },
+    {
+        "scanNum": "985",
+        "novorPeptide": "C(Cam)C(Cam)TKPESER",
+        "expectedPeptide": "CCTKPESER",
+        "success": 0
+    },
+    {
+        "scanNum": "986",
+        "novorPeptide": "C(Cam)C(Cam)TQLGNSAR",
+        "expectedPeptide": "CCTKPESER",
+        "success": 0
+    },
+    {
+        "scanNum": "987",
+        "novorPeptide": "C(Cam)C(Cam)KTPAGC(Cam)GR",
+        "expectedPeptide": "CCTKPESER",
+        "success": 0
+    },
+    {
+        "scanNum": "988",
+        "novorPeptide": "C(Cam)C(Cam)TKPESER",
+        "expectedPeptide": "CCTKPESER",
+        "success": 0
+    },
+    {
+        "scanNum": "989",
+        "novorPeptide": "C(Cam)C(Cam)TKPESER",
+        "expectedPeptide": "CCTKPESER",
+        "success": 0
+    },
+    {
+        "scanNum": "990",
+        "novorPeptide": "C(Cam)C(Cam)TKPGQC(Cam)R",
+        "expectedPeptide": "CCTKPESER",
+        "success": 0
+    },
+    {
+        "scanNum": "991",
+        "novorPeptide": "QPYPGGGYSSPHK",
+        "expectedPeptide": "CAQCHTVEKGGK",
+        "success": 0
+    },
+    {
+        "scanNum": "992",
+        "novorPeptide": "QPYMHTPNQMK",
+        "expectedPeptide": "CAQCHTVEKGGK",
+        "success": 0
+    },
+    {
+        "scanNum": "993",
+        "novorPeptide": "C(Cam)AQC(Cam)HTVTRGGK",
+        "expectedPeptide": "CAQCHTVEKGGK",
+        "success": 0
+    },
+    {
+        "scanNum": "994",
+        "novorPeptide": "KHM(O)DETVPC(Cam)NK",
+        "expectedPeptide": "CAQCHTVEKGGK",
+        "success": 0
+    },
+    {
+        "scanNum": "995",
+        "novorPeptide": "QSC(Cam)GSHTVHPHK",
+        "expectedPeptide": "CAQCHTVEKGGK",
+        "success": 0
+    },
+    {
+        "scanNum": "996",
+        "novorPeptide": "KC(Cam)AC(Cam)HTVENAGK",
+        "expectedPeptide": "CAQCHTVEKGGK",
+        "success": 0
+    },
+    {
+        "scanNum": "997",
+        "novorPeptide": "C(Cam)AKC(Cam)HTVEQNK",
+        "expectedPeptide": "CAQCHTVEKGGK",
+        "success": 0
+    },
+    {
+        "scanNum": "998",
+        "novorPeptide": "C(Cam)VEMHTVEELK",
+        "expectedPeptide": "CAQCHTVEKGGK",
+        "success": 0
+    },
+    {
+        "scanNum": "999",
+        "novorPeptide": "C(Cam)AKC(Cam)HTVEQGGK",
+        "expectedPeptide": "CAQCHTVEKGGK",
+        "success": 0
+    },
+    {
+        "scanNum": "1000",
+        "novorPeptide": "QM(O)M(O)PHTVHPHK",
+        "expectedPeptide": "CAQCHTVEKGGK",
+        "success": 0
+    }
+]
