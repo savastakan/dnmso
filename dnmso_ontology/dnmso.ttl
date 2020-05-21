@@ -344,12 +344,12 @@
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:cardinality 1 ;
-      owl:onProperty :hasSpectrum ;
+      owl:onProperty :url ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
-      owl:cardinality 1 ;
-      owl:onProperty :url ;
+      owl:minCardinality 1 ;
+      owl:onProperty :hasSpectrum ;
     ] ;
 .
 :Spectrum

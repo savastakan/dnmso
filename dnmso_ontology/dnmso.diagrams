@@ -9,6 +9,32 @@
     <cd:nodes>
       <cd:URINode>
         <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >36</cd:height>
+        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >88</cd:width>
+        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >419</cd:y>
+        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >713</cd:x>
+        <cd:class rdf:resource="https://github.com/savastakan/dnmso#Proof"/>
+      </cd:URINode>
+    </cd:nodes>
+    <cd:nodes>
+      <cd:URINode>
+        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >60</cd:height>
+        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >220</cd:width>
+        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >488</cd:y>
+        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >358</cd:x>
+        <cd:class rdf:resource="https://github.com/savastakan/dnmso#PeakLink"/>
+      </cd:URINode>
+    </cd:nodes>
+    <cd:nodes>
+      <cd:URINode>
+        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
         >108</cd:height>
         <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
         >256</cd:width>
@@ -17,19 +43,6 @@
         <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
         >1039</cd:x>
         <cd:class rdf:resource="https://github.com/savastakan/dnmso#Sequence"/>
-      </cd:URINode>
-    </cd:nodes>
-    <cd:nodes>
-      <cd:URINode>
-        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >124</cd:height>
-        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >231</cd:width>
-        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >1209</cd:y>
-        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >1780</cd:x>
-        <cd:class rdf:resource="https://github.com/savastakan/dnmso#Modification"/>
       </cd:URINode>
     </cd:nodes>
     <cd:nodes>
@@ -45,18 +58,31 @@
         <cd:class rdf:resource="https://github.com/savastakan/dnmso#AminoAcid"/>
       </cd:URINode>
     </cd:nodes>
-    <cd:selectedResource rdf:resource="https://github.com/savastakan/dnmso#Spectrum"/>
     <cd:nodes>
       <cd:URINode>
         <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >44</cd:height>
+        >92</cd:height>
         <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >115</cd:width>
+        >182</cd:width>
         <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >1103</cd:y>
+        >816</cd:y>
         <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >684</cd:x>
-        <cd:class rdf:resource="https://github.com/savastakan/dnmso#Publication"/>
+        >1071</cd:x>
+        <cd:class rdf:resource="https://github.com/savastakan/dnmso#Prediction"/>
+      </cd:URINode>
+    </cd:nodes>
+    <rdfs:label>DNMSO_ClassGraph_V1</rdfs:label>
+    <cd:nodes>
+      <cd:URINode>
+        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >76</cd:height>
+        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >209</cd:width>
+        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >787</cd:y>
+        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1699</cd:x>
+        <cd:class rdf:resource="https://github.com/savastakan/dnmso#ModifiedAminoAcid"/>
       </cd:URINode>
     </cd:nodes>
     <cd:nodes>
@@ -70,32 +96,6 @@
         <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
         >1534</cd:x>
         <cd:class rdf:resource="https://github.com/savastakan/dnmso#seModAminoAcid"/>
-      </cd:URINode>
-    </cd:nodes>
-    <cd:nodes>
-      <cd:URINode>
-        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >76</cd:height>
-        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >199</cd:width>
-        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >405</cd:y>
-        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >1067</cd:x>
-        <cd:class rdf:resource="https://github.com/savastakan/dnmso#SequenceElement"/>
-      </cd:URINode>
-    </cd:nodes>
-    <cd:nodes>
-      <cd:URINode>
-        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >60</cd:height>
-        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >220</cd:width>
-        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >488</cd:y>
-        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >358</cd:x>
-        <cd:class rdf:resource="https://github.com/savastakan/dnmso#PeakLink"/>
       </cd:URINode>
     </cd:nodes>
     <cd:nodes>
@@ -118,23 +118,37 @@
         <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
         >195</cd:width>
         <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >952</cd:y>
+        >818</cd:y>
         <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >362</cd:x>
-        <cd:class rdf:resource="https://github.com/savastakan/dnmso#Spectrum"/>
+        >1324</cd:x>
+        <cd:class rdf:resource="https://github.com/savastakan/dnmso#Score"/>
       </cd:URINode>
     </cd:nodes>
     <cd:nodes>
       <cd:URINode>
         <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >44</cd:height>
+        >92</cd:height>
         <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >185</cd:width>
+        >146</cd:width>
         <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >261</cd:y>
+        >1193</cd:y>
         <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >1298</cd:x>
-        <cd:class rdf:resource="https://github.com/savastakan/dnmso#seAminoAcid"/>
+        >857</cd:x>
+        <cd:class rdf:resource="https://github.com/savastakan/dnmso#CV"/>
+      </cd:URINode>
+    </cd:nodes>
+    <cd:selectedResource rdf:resource="https://github.com/savastakan/dnmso#Spectrum"/>
+    <cd:nodes>
+      <cd:URINode>
+        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >76</cd:height>
+        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >221</cd:width>
+        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >665</cd:y>
+        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >702</cd:x>
+        <cd:class rdf:resource="https://github.com/savastakan/dnmso#SoftwareSetting"/>
       </cd:URINode>
     </cd:nodes>
     <cd:nodes>
@@ -153,41 +167,14 @@
     <cd:nodes>
       <cd:URINode>
         <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >140</cd:height>
+        >44</cd:height>
         <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >180</cd:width>
+        >185</cd:width>
         <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >997</cd:y>
+        >261</cd:y>
         <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >1238</cd:x>
-        <cd:class rdf:resource="https://github.com/savastakan/dnmso#cvParam"/>
-      </cd:URINode>
-    </cd:nodes>
-    <rdfs:label>DNMSO_ClassGraph_V1</rdfs:label>
-    <cd:nodes>
-      <cd:URINode>
-        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >108</cd:height>
-        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >195</cd:width>
-        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >818</cd:y>
-        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >1324</cd:x>
-        <cd:class rdf:resource="https://github.com/savastakan/dnmso#Score"/>
-      </cd:URINode>
-    </cd:nodes>
-    <cd:nodes>
-      <cd:URINode>
-        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >76</cd:height>
-        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >209</cd:width>
-        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >787</cd:y>
-        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >1699</cd:x>
-        <cd:class rdf:resource="https://github.com/savastakan/dnmso#ModifiedAminoAcid"/>
+        >1298</cd:x>
+        <cd:class rdf:resource="https://github.com/savastakan/dnmso#seAminoAcid"/>
       </cd:URINode>
     </cd:nodes>
     <cd:nodes>
@@ -206,27 +193,53 @@
     <cd:nodes>
       <cd:URINode>
         <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >36</cd:height>
+        >44</cd:height>
         <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >88</cd:width>
+        >115</cd:width>
         <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >419</cd:y>
+        >1103</cd:y>
         <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >713</cd:x>
-        <cd:class rdf:resource="https://github.com/savastakan/dnmso#Proof"/>
+        >684</cd:x>
+        <cd:class rdf:resource="https://github.com/savastakan/dnmso#Publication"/>
       </cd:URINode>
     </cd:nodes>
     <cd:nodes>
       <cd:URINode>
         <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >92</cd:height>
+        >76</cd:height>
         <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >182</cd:width>
+        >199</cd:width>
         <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >816</cd:y>
+        >405</cd:y>
         <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >1071</cd:x>
-        <cd:class rdf:resource="https://github.com/savastakan/dnmso#Prediction"/>
+        >1067</cd:x>
+        <cd:class rdf:resource="https://github.com/savastakan/dnmso#SequenceElement"/>
+      </cd:URINode>
+    </cd:nodes>
+    <cd:nodes>
+      <cd:URINode>
+        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >108</cd:height>
+        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >195</cd:width>
+        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >952</cd:y>
+        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >362</cd:x>
+        <cd:class rdf:resource="https://github.com/savastakan/dnmso#Spectrum"/>
+      </cd:URINode>
+    </cd:nodes>
+    <cd:nodes>
+      <cd:URINode>
+        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >124</cd:height>
+        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >231</cd:width>
+        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1209</cd:y>
+        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1780</cd:x>
+        <cd:class rdf:resource="https://github.com/savastakan/dnmso#Modification"/>
       </cd:URINode>
     </cd:nodes>
     <cd:nodes>
@@ -258,27 +271,14 @@
     <cd:nodes>
       <cd:URINode>
         <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >92</cd:height>
+        >140</cd:height>
         <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >146</cd:width>
+        >180</cd:width>
         <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >1193</cd:y>
+        >997</cd:y>
         <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >857</cd:x>
-        <cd:class rdf:resource="https://github.com/savastakan/dnmso#CV"/>
-      </cd:URINode>
-    </cd:nodes>
-    <cd:nodes>
-      <cd:URINode>
-        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >76</cd:height>
-        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >221</cd:width>
-        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >665</cd:y>
-        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >702</cd:x>
-        <cd:class rdf:resource="https://github.com/savastakan/dnmso#SoftwareSetting"/>
+        >1238</cd:x>
+        <cd:class rdf:resource="https://github.com/savastakan/dnmso#cvParam"/>
       </cd:URINode>
     </cd:nodes>
   </cd:Diagram>
