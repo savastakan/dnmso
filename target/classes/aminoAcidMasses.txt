@@ -1,0 +1,22 @@
+1-letter code;3-letter code;Chemical formula;Monoisotopic;Average;
+A;Ala;Alanine;C<sub>3</sub>H<sub>5</sub>ON;71.03711;71.0788;
+R;Arg;Arginine;C<sub>6</sub>H<sub>12</sub>ON<sub>4</sub>;156.10111;156.1875;
+N;Asn;Asparagine;C<sub>4</sub>H<sub>6</sub>O<sub>2</sub>N<sub>2</sub>;114.04293;114.1038;
+D;Asp;AsparticAcid;C<sub>4</sub>H<sub>5</sub>O<sub>3</sub>N;115.02694;115.02694;
+C;Cys;Cysteine;C<sub>3</sub>H<sub>5</sub>ONS;103.00919;103.1388;
+E;Glu;GlutamicAcid;C<sub>5</sub>H<sub>7</sub>O<sub>3</sub>N;129.04259;129.1155;
+Q;Gln;Glutamine;C<sub>5</sub>H<sub>8</sub>O<sub>2</sub>N<sub>2</sub>;128.05858;128.1307;
+G;Gly;Glycine;C<sub>2</sub>H<sub>3</sub>ON;57.02146;57.0519;
+H;His;Histidine;C<sub>6</sub>H<sub>7</sub>ON<sub>3</sub>;137.05891;137.1411;
+I;Ile;Isoleucine;C<sub>6</sub>H<sub>11</sub>ON;113.08406;113.1594;
+L;Leu;Leucine;C<sub>6</sub>H<sub>11</sub>ON;113.08406;113.1594;
+K;Lys;Lysine;C<sub>6</sub>H<sub>12</sub>ON<sub>2</sub>;128.09496;128.1741;
+M;Met;Methionine;C<sub>5</sub>H<sub>9</sub>ONS;131.04049;131.1926;
+F;Phe;Phenylalanine;C<sub>9</sub>H<sub>9</sub>ON;147.06841;147.1766;
+P;Pro;Proline;C<sub>5</sub>H<sub>7</sub>ON;97.05276;97.1167;
+S;Ser;Serine;C<sub>3</sub>H<sub>5</sub>O<sub>2</sub>N;87.03203;87.0782;
+T;Thr;Threonine;C<sub>4</sub>H<sub>7</sub>O<sub>2</sub>N;101.04768;101.1051;
+W;Trp;Tryptophan;C<sub>11</sub>H<sub>10</sub>ON<sub>2</sub>;186.07931;186.2132;
+Y;Tyr;Tyrosine;C<sub>9</sub>H<sub>9</sub>O<sub>2</sub>N;163.06333;163.1760;
+V;Val;Valine;C<sub>5</sub>H<sub>9</sub>ON;99.06841;99.1326;
+X;UNK;Unknown;X;10000;10000
