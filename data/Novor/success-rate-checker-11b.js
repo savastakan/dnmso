@@ -11,12 +11,20 @@ const fs = require('fs')
 const stream = require('stream')
 const readline = require('readline')
 
-const CSV_STRING = (fs.readFileSync(inputFiles.novorinput, { encoding: 'utf8' })).split('\n\n\n')[1]
+let CSV_STRING = (fs.readFileSync(inputFiles.novorinput, { encoding: 'utf8' })).split('\n\n\n')
 const MGF_SCAN_PATTERN = /seq=\{(.*?)\}(.*?)\nSCANS=(.*)/gm
 
 const instream = fs.createReadStream(inputFiles.mgfinput)
 const outstream = new stream
 const rl = readline.createInterface(instream, outstream)
+
+
+if (CSV_STRING.length > 1)
+    CSV_STRING = CSV_STRING[1]
+else
+    CSV_STRING = CSV_STRING[0]
+
+CSV_STRING = CSV_STRING.replace(/^\s*$(?:\r\n?|\n)/gm, '')
 
 new Promise(res => {
     let MGF_STRING = ''
