@@ -1,16 +1,12 @@
 {
-  "name": "novor-mr",
+  "name": "novornew",
   "version": "1.0.0",
-  "description": "A tool for checking match rates.",
-  "directories": {
-    "doc": "doc"
-  },
+  "description": "",
+  "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node main.js help"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "@fast-csv/parse": "^4.2.0"
-  }
+  "dependencies": {}
 }
